@@ -1,17 +1,15 @@
 ﻿<!DOCTYPE html>
 <html class="no-js" lang="en">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 <head>
-    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>OrganiCare</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">  
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>   
-    <link rel="stylesheet" href="assets/css/style.css">
-
-    
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">   
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">   
 </head>
 <body>
     <header>
@@ -37,9 +35,9 @@
                                 <div class="header_account_area">
                                     <div class="header_account_list register">
                                         <ul>
-                                            <li><a href="Register.html">Đăng ký</a></li>
+                                            <li><a href="login.html">Đăng ký</a></li>
                                             <li><span></span></li>
-                                            <li><a href="Login.html">Đăng nhập</a></li>
+                                            <li><a href="login.html">Đăng nhập</a></li>
                                         </ul>
                                     </div>
                                     <div class="header_account_list header_wishlist">
@@ -79,11 +77,12 @@
                             </div>
                         </div>
                         <div class="col-lg-7">
+
                             <div class="main_menu menu_position">
                                 <nav>
                                     <ul>
                                         <li>
-                                            <a class="active" href="index.html">Trang chủ</a>
+                                            <a class="active" href="Homepage.html">Trang chủ</a>
                                         </li>
                                         <li class="mega_items">
                                             <a href="shop.html">Khuyến mãi</a>
@@ -106,7 +105,6 @@
                                     </ul>
                                 </nav>
                             </div>
-
                         </div>
                         <div class="col-lg-2">
                             <div class="call-support">
@@ -118,30 +116,51 @@
             </div>
         </div>
     </header>
-
-
-    <section class="slider_section">
-        <div class="slider_area owl-carousel">
-            <div class="single_slider d-flex align-items-center" style="background-image:url(assets/Image/Banner3.jpg)">
-                <img scr="assets/img/slider/slider1.jpg" />
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="slider_content">
-                                <h1>Vegetables Big Sale</h1>
-                                <h2>Fresh Farm Products</h2>
-                                <p>
-                                    10% certifled-organic mix of fruit and veggies. Perfect for weekly cooking and snacking!
-                                </p>
-                                <a href="shop.html">Read more </a>
-                            </div>
-                        </div>
+    <div class="breadcrumbs_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="breadcrumb_content">
+                        <h3>Đăng nhập</h3>
+                        <ul>
+                            <li><a href="index.html">Trang chủ</a></li>
+                            <li>Đăng nhập</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+    <div class="customer_login">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <div class="account_form">
+                        <h2>login</h2>
+                        <form action="#">
+                            <p>
+                                <label>Tên tài khoản hoặc Email <span>*</span></label>
+                                <input type="text">
+                            </p>
+                            <p>
+                                <label>Mật khẩu <span>*</span></label>
+                                <input type="password">
+                            </p>
+                            <div class="login_submit">
+                                <a href="#">Quên mật khẩu?</a>
+                                <label for="remember">
+                                    <input id="remember" type="checkbox">
+                                    Ghi nhớ tài khoản
+                                </label>
+                                <button type="submit">Đăng nhập</button>
 
+                            </div>
+                        </form>
+                    </div>
+                </div>   
+            </div>
+        </div>
+    </div>
     <footer class="footer_widgets footer_border">
         <div class="container">
             <div class="footer_top">
@@ -205,13 +224,12 @@
                         <div class="widgets_container widget_newsletter">
                             <br />
                             <h3>Đăng ký để nhận thông tin</h3>
-                            
+
                             <div class="subscribe_form">
                                 <form id="mc-form" class="mc-form footer-newsletter">
                                     <input id="mc-email" type="email" autocomplete="off" placeholder="Điền địa chỉ email" />
                                     <button id="mc-submit">Đăng ký</button>
                                 </form>
-                                
                                 <div class="mailchimp-alerts text-centre">
                                     <div class="mailchimp-submitting"></div>
                                     <div class="mailchimp-success"></div>
