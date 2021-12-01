@@ -67,19 +67,92 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="assets\css\bootstrap.min.css" />
+    <Content Include="assets\css\bootstrap.css" />
+    <Content Include="assets\css\linearicons.css" />
+    <Content Include="assets\css\owl.carousel.css" />
     <Content Include="assets\css\style.css" />
+    <Content Include="assets\fonts\fontawesome-webfont3e6e.svg" />
+    <Content Include="assets\fonts\ionicons28b5.svg" />
+    <Content Include="assets\fonts\Linearicons-Free54e9.svg" />
+    <Content Include="assets\fonts\plaza-icon56cc.svg" />
     <Content Include="assets\Image\Banner3.jpg" />
+    <Content Include="assets\Image\Banner\banner1.jpg" />
+    <Content Include="assets\Image\Banner\banner11.jpg" />
+    <Content Include="assets\Image\ImageCategory\Hạt sen.jpg" />
+    <Content Include="assets\Image\ImageCategory\Khác.jpg" />
+    <Content Include="assets\Image\ImageCategory\Rau củ.jpg" />
+    <Content Include="assets\Image\ImageCategory\Sữa.jpg" />
+    <Content Include="assets\Image\ImageCategory\Trà hữu cơ.jpg" />
+    <Content Include="assets\Image\ImageCategory\Trái cây.jpg" />
+    <Content Include="assets\Image\ImageCategory\Tươi sống.jpg" />
     <Content Include="assets\Image\logo.png" />
+    <Content Include="assets\Image\product\product1.jpg" />
+    <Content Include="assets\Image\product\product10.jpg" />
+    <Content Include="assets\Image\product\product11.jpg" />
+    <Content Include="assets\Image\product\product12.jpg" />
+    <Content Include="assets\Image\product\product13.jpg" />
+    <Content Include="assets\Image\product\product14.jpg" />
+    <Content Include="assets\Image\product\product15.jpg" />
+    <Content Include="assets\Image\product\product16.jpg" />
+    <Content Include="assets\Image\product\product17.jpg" />
+    <Content Include="assets\Image\product\product18.jpg" />
+    <Content Include="assets\Image\product\product19.jpg" />
+    <Content Include="assets\Image\product\product2.jpg" />
+    <Content Include="assets\Image\product\product20.jpg" />
+    <Content Include="assets\Image\product\product21.jpg" />
+    <Content Include="assets\Image\product\product22.jpg" />
+    <Content Include="assets\Image\product\product23.jpg" />
+    <Content Include="assets\Image\product\product24.jpg" />
+    <Content Include="assets\Image\product\product25.jpg" />
+    <Content Include="assets\Image\product\product26.jpg" />
+    <Content Include="assets\Image\product\product27.jpg" />
+    <Content Include="assets\Image\product\product28.jpg" />
+    <Content Include="assets\Image\product\product29.jpg" />
+    <Content Include="assets\Image\product\product3.jpg" />
+    <Content Include="assets\Image\product\product30.jpg" />
+    <Content Include="assets\Image\product\product4.jpg" />
+    <Content Include="assets\Image\product\product5.jpg" />
+    <Content Include="assets\Image\product\product6.jpg" />
+    <Content Include="assets\Image\product\product7.jpg" />
+    <Content Include="assets\Image\product\product8.jpg" />
+    <Content Include="assets\Image\product\product9.jpg" />
+    <Content Include="assets\Image\product\productbig1.jpg" />
+    <Content Include="assets\Image\product\productbig10.jpg" />
+    <Content Include="assets\Image\product\productbig11.jpg" />
+    <Content Include="assets\Image\product\productbig12.jpg" />
+    <Content Include="assets\Image\product\productbig13.jpg" />
+    <Content Include="assets\Image\product\productbig14.jpg" />
+    <Content Include="assets\Image\product\productbig2.jpg" />
+    <Content Include="assets\Image\product\productbig3.jpg" />
+    <Content Include="assets\Image\product\productbig4.jpg" />
+    <Content Include="assets\Image\product\productbig5.jpg" />
+    <Content Include="assets\Image\product\productbig6.jpg" />
+    <Content Include="assets\Image\product\productbig7.jpg" />
+    <Content Include="assets\Image\product\productbig8.jpg" />
+    <Content Include="assets\Image\product\productbig9.jpg" />
     <Content Include="Homepage.html" />
-    <Content Include="Login.html" />
-    <Content Include="Register.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="assets\fonts\fontawesome-webfont3e6e.eot" />
+    <Content Include="assets\fonts\fontawesome-webfont3e6e.ttf" />
+    <Content Include="assets\fonts\fontawesome-webfont3e6e.woff" />
+    <Content Include="assets\fonts\fontawesome-webfont3e6e.woff2" />
+    <Content Include="assets\fonts\fontawesome-webfontd41d.eot" />
+    <Content Include="assets\fonts\ionicons28b5.eot" />
+    <Content Include="assets\fonts\ionicons28b5.ttf" />
+    <Content Include="assets\fonts\ionicons28b5.woff" />
+    <Content Include="assets\fonts\Linearicons-Free54e9.eot" />
+    <Content Include="assets\fonts\Linearicons-Free54e9.ttf" />
+    <Content Include="assets\fonts\Linearicons-Free54e9.woff" />
+    <Content Include="assets\fonts\Linearicons-Free54e9.woff2" />
+    <Content Include="assets\fonts\Linearicons-Freed41d.eot" />
+    <Content Include="assets\fonts\plaza-icon56cc.eot" />
+    <Content Include="assets\fonts\plaza-icon56cc.ttf" />
+    <Content Include="assets\fonts\plaza-icon56cc.woff" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -88,6 +161,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
