@@ -71,6 +71,7 @@
     <Content Include="assets\css\style.css" />
     <Content Include="assets\Image\Banner3.jpg" />
     <Content Include="assets\Image\logo.png" />
+    <Content Include="FAQ.html" />
     <Content Include="Homepage.html" />
     <Content Include="Login.html" />
     <Content Include="Register.html" />
@@ -80,6 +81,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="data\Products.json" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
