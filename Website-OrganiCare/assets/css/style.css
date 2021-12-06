@@ -242,32 +242,6 @@ figure {
     }
 
 /*-- 
-    - color
------------------------------------------*/
-/*-- 
-    - Input Placeholder
------------------------------------------*/
-input:-moz-placeholder, textarea:-moz-placeholder {
-    opacity: 1;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-}
-
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-    opacity: 1;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-}
-
-input::-moz-placeholder, textarea::-moz-placeholder {
-    opacity: 1;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-}
-
-input:-ms-input-placeholder, textarea:-ms-input-placeholder {
-    opacity: 1;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-}
-
-/*-- 
     Scroll Up 
 -----------------------------------------*/
 #scrollUp {
@@ -419,7 +393,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
     line-height: 45px;
     padding: 0 22px;
     text-transform: uppercase;
-    font-size: 13px;
+    font-size: 16px;
     border-radius: 3px;
 }
 
@@ -6496,7 +6470,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 
 .breadcrumbs_area {
-    background: url(../img/bg/banner18.jpg) no-repeat 0 0;
+    background: url(../Image/Banner18.jpg);
     background-size: cover;
     height: 200px;
     display: flex;
@@ -6596,7 +6570,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 
     .widget_list.widget_categories > ul > li > a {
-        font-size: 13px;
+        font-size: 16px;
         display: block;
         line-height: 30px;
         padding: 0 20px;
@@ -10794,7 +10768,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 /*services page css end*/
 /* 11. blog page css here */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .blog_page_section {
+    .thumpage_section {
         margin-bottom: 70px;
     }
 }
@@ -11102,7 +11076,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
     height: 34px;
     line-height: 35px;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 600;
     cursor: pointer;
     -webkit-transition: .3s;
@@ -11121,7 +11095,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
     .tag_widget ul li a {
         margin: 0 6px 0 0;
         display: block;
-        font-size: 12px;
+        font-size: 15px;
         font-weight: 400;
         border: 1px solid #ededed;
         background: #fff;
@@ -11157,7 +11131,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
     }
 
 .post_info h4 {
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 500;
     text-transform: capitalize;
     line-height: 14px;
@@ -11169,7 +11143,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
     }
 
 .post_info span {
-    font-size: 12px;
+    font-size: 15px;
 }
 
 .blog_categories ul li {
@@ -11597,14 +11571,14 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 
 .blog_details .post_content > p {
-    line-height: 24px;
+    line-height: 30px;
     margin-bottom: 10px;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 @media only screen and (max-width: 767px) {
     .blog_details .post_content > p {
-        font-size: 14px;
+        font-size: 16px;
     }
 }
 
@@ -11623,7 +11597,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 
 @media only screen and (max-width: 767px) {
     .blog_details .post_content blockquote p {
-        font-size: 15px;
+        font-size: 16px;
     }
 }
 
@@ -11640,9 +11614,9 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 
     .blog_details .social_sharing p {
-        font-size: 13px;
+        font-size: 16px;
         text-transform: capitalize;
-        margin-right: 20px;
+        margin-right: 10px;
         margin-bottom: 0;
         line-height: 13px;
         font-weight: 500;
@@ -11650,8 +11624,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 
 @media only screen and (max-width: 767px) {
     .blog_details .social_sharing p {
-        font-size: 13px;
-        margin-right: 10px;
+        font-size: 16px;
     }
 }
 
@@ -11659,22 +11632,19 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
     display: inline-block;
 }
 
-    .blog_details .social_sharing ul li a {
+    .blog_details .social_sharing ul li a  {
         background: #e6e6e6;
         border-radius: 100%;
         display: inline-block;
-        font-size: 12px;
-        height: 26px;
+        font-size: 22px;
+        background-color: deepskyblue;
+        font-weight:500;
+        height: 30px;
         line-height: 28px;
         margin-right: 5px;
         text-align: center;
-        width: 26px;
+        width: 30px;
     }
-
-        .blog_details .social_sharing ul li a:hover {
-            color: #ffffff;
-            background: #40A944;
-        }
 
 @media only screen and (max-width: 767px) {
     .blog_details .social_sharing ul li a {
@@ -11713,7 +11683,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 
 .entry_content .post_meta span {
     font-weight: 500;
-    font-size: 13px;
+    font-size: 16px;
 }
 
     .entry_content .post_meta span a:hover {
@@ -11721,7 +11691,9 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
     }
 
 .comments_box {
-    margin-bottom: 65px;
+    margin-bottom: 20px;
+    border-top: 1px solid #ededed;
+    padding: 30px 0 0 0;
 }
 
 @media only screen and (max-width: 767px) {
@@ -11731,12 +11703,44 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 
 .comments_box h3 {
-    font-size: 15px;
+    font-size: 16px;
     margin: 0 0 20px;
     font-weight: 500;
     line-height: 20px;
     text-transform: uppercase;
 }
+.your_comments_box {
+    margin-bottom: 20px;
+
+}
+
+@media only screen and (max-width: 767px) {
+    .your_comments_box {
+        margin-bottom: 55px;
+    }
+}
+
+.your_comments_box form textarea {
+    width: 92%;
+    height: 50px;
+    background: #ffffff;
+    border: 1px solid #40a944;
+    margin-bottom: 10px;
+    resize: none;
+    padding: 10px;
+    margin-left: 70px;
+}
+.your_comments_box form button {
+    border: 0;
+    line-height: 36px;
+    background: #222222;
+    font-weight: 500;
+    margin-left: 70px;
+}
+
+    .your_comments_box form button:hover {
+        background: #40A944;
+    }
 
 .comment_list {
     overflow: hidden;
@@ -11761,7 +11765,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 .comment_list .comment_content {
     margin-left: 70px;
     position: relative;
-    border: 1px solid #ebebeb;
+    border: 1px solid #40a944;
     border-radius: 3px;
     padding: 15px;
 }
@@ -11773,7 +11777,8 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 
 .comment_list .comment_content h5 {
-    font-size: 12px;
+    font-style:normal;
+    font-size: 16px;
     font-weight: 500;
     text-transform: uppercase;
     margin-bottom: 5px;
@@ -11783,62 +11788,9 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
         color: #40A944;
     }
 
-.comment_list .comment_content span {
-    line-height: 18px;
-    margin-bottom: 8px;
-    font-size: 13px;
-    font-style: italic;
-    display: inline-block;
-}
-
 .comment_list .comment_content p {
     margin-bottom: 0;
-    font-size: 14px;
-}
-
-.comment_reply {
-    position: absolute;
-    top: 20px;
-    right: 12px;
-}
-
-@media only screen and (max-width: 767px) {
-    .comment_reply {
-        top: 15px;
-    }
-}
-
-.comment_reply a {
-    padding: 2px 10px;
-    border-radius: 3px;
-    color: #fff;
-    background: #222222;
-    display: block;
-}
-
-@media only screen and (max-width: 767px) {
-    .comment_reply a {
-        line-height: 20px;
-        font-size: 13px;
-    }
-}
-
-.comment_reply a:hover {
-    background: #40A944;
-}
-
-.comments_form h3 {
-    font-size: 15px;
-    margin: 0 0 20px;
-    font-weight: 500;
-    line-height: 20px;
-    text-transform: uppercase;
-}
-
-.comments_form p {
-    font-size: 13px;
-    line-height: 17px;
-    margin-bottom: 12px;
+    font-size: 16px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -11847,28 +11799,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
     }
 }
 
-.comments_form form label {
-    font-size: 13px;
-    line-height: 20px;
-    font-weight: 500;
-    margin-bottom: 10px;
-}
 
-.comments_form form textarea {
-    width: 100%;
-    height: 200px;
-    background: #ffffff;
-    border: 1px solid #ededed;
-    margin-bottom: 10px;
-    resize: none;
-    padding: 10px;
-}
-
-@media only screen and (max-width: 767px) {
-    .comments_form form textarea {
-        height: 120px;
-    }
-}
 
 .comments_form form input {
     width: 100%;
@@ -11876,6 +11807,19 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
     border: 1px solid #ededed;
     margin-bottom: 15px;
     padding: 0 20px;
+}
+
+.button_send {
+    background: #40A944;
+    box-shadow: none;
+    color: #ffffff;
+    display: inline-block;
+    height: 35px;
+    line-height: 45px;
+    padding: 0 22px;
+    text-transform: uppercase;
+    font-size: 13px;
+    border-radius: 3px;
 }
 
 .comments_form form button {
@@ -11914,7 +11858,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .related_posts {
-        padding: 76px 0 41px;
+        padding: 20px 0 20px;
     }
 }
 
@@ -11980,10 +11924,10 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
     }
 
 .related_content .blog_meta span {
-    font-size: 12px;
+    font-size: 16px;
     line-height: 22px;
 }
-
+ 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .single_related {
         margin-bottom: 28px;

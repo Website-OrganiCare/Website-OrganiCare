@@ -130,15 +130,6 @@ p {
     margin-bottom: 1rem
 }
 
-abbr[data-bs-original-title], abbr[title] {
-    text-decoration: underline;
-    -webkit-text-decoration: underline dotted;
-    text-decoration: underline dotted;
-    cursor: help;
-    -webkit-text-decoration-skip-ink: none;
-    text-decoration-skip-ink: none
-}
-
 address {
     margin-bottom: 1rem;
     font-style: normal;
@@ -366,10 +357,6 @@ legend {
 
 legend + * {
     clear: left
-}
-
-::-webkit-datetime-edit-day-field, ::-webkit-datetime-edit-fields-wrapper, ::-webkit-datetime-edit-hour-field, ::-webkit-datetime-edit-minute, ::-webkit-datetime-edit-month-field, ::-webkit-datetime-edit-text, ::-webkit-datetime-edit-year-field {
-    padding: 0
 }
 
 ::-webkit-inner-spin-button {
@@ -2078,7 +2065,6 @@ progress {
     border: 1px solid #ced4da;
     -webkit-appearance: none;
     -moz-appearance: none;
-    appearance: none;
     border-radius: .25rem;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out
 }
@@ -2105,9 +2091,6 @@ progress {
     box-shadow: 0 0 0 .25rem rgba(13,110,253,.25)
 }
 
-.form-control::-webkit-date-and-time-value {
-    height: 1.5em
-}
 
 .form-control::-webkit-input-placeholder {
     color: #6c757d;

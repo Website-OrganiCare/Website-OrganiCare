@@ -68,10 +68,22 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="assets\css\bootstrap.min.css" />
+    <Content Include="assets\css\FontAwesome.css" />
     <Content Include="assets\css\linearicons.css" />
     <Content Include="assets\css\owl.carousel.min.css" />
     <Content Include="assets\css\style.css" />
+    <Content Include="assets\Image\Banner18.jpg" />
     <Content Include="assets\Image\Banner3.jpg" />
+    <Content Include="assets\Image\Blog-detail\Blog-hamthucan.jpg" />
+    <Content Include="assets\Image\Blog-detail\Blog-naucahoi.jpg" />
+    <Content Include="assets\Image\Blog-detail\Blog-naucom.jpg" />
+    <Content Include="assets\Image\Blog-detail\Blog-raumuong.jpg" />
+    <Content Include="assets\Image\Blog-detail\Blog-slicefood.jpg" />
+    <Content Include="assets\Image\Blog-detail\Blog-trungchien.jpg" />
+    <Content Include="assets\Image\Blog-detail\blog1.jpg" />
+    <Content Include="assets\Image\Blog-detail\Blog_noodle.jpg" />
+    <Content Include="assets\Image\comment.png.jpg" />
+    <Content Include="assets\Image\facebook.png" />
     <Content Include="assets\Image\logo.png" />
     <Content Include="assets\Image\product\product1.jpg" />
     <Content Include="assets\Image\product\product10.jpg" />
@@ -117,6 +129,7 @@
     <Content Include="assets\Image\product\productbig7.jpg" />
     <Content Include="assets\Image\product\productbig8.jpg" />
     <Content Include="assets\Image\product\productbig9.jpg" />
+    <Content Include="Blog Detail.html" />
     <Content Include="FAQ.html" />
     <Content Include="Homepage.html" />
     <Content Include="Web.config" />
