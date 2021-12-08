@@ -71,6 +71,7 @@
     <Content Include="assets\css\FontAwesome.css" />
     <Content Include="assets\css\linearicons.css" />
     <Content Include="assets\css\owl.carousel.min.css" />
+    <Content Include="assets\css\profile.css" />
     <Content Include="assets\css\style.css" />
     <Content Include="assets\Image\Banner18.jpg" />
     <Content Include="assets\Image\Banner3.jpg" />
@@ -130,8 +131,10 @@
     <Content Include="assets\Image\product\productbig8.jpg" />
     <Content Include="assets\Image\product\productbig9.jpg" />
     <Content Include="Blog Detail.html" />
+    <Content Include="customAccount.html" />
     <Content Include="FAQ.html" />
     <Content Include="Homepage.html" />
+    <Content Include="Profile page.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
