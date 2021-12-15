@@ -129,9 +129,18 @@
     <Content Include="assets\Image\product\productbig7.jpg" />
     <Content Include="assets\Image\product\productbig8.jpg" />
     <Content Include="assets\Image\product\productbig9.jpg" />
+    <Content Include="assets\Image\testimonial\testimonial_1.png" />
+    <Content Include="assets\Image\testimonial\testimonial_2.png" />
+    <Content Include="assets\Image\testimonial\testimonial_3.png" />
+    <Content Include="assets\Image\testimonial\testimonial_4.png" />
+    <Content Include="assets\Image\testimonial\testimonial_5.png" />
+    <Content Include="assets\javascript\modernizr-3.7.1.min.js" />
     <Content Include="Blog Detail.html" />
     <Content Include="FAQ.html" />
     <Content Include="Homepage.html" />
+    <Content Include="mini-cart.html" />
+    <Content Include="ProductDetails.html" />
+    <Content Include="Reviews.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

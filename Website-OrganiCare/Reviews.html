@@ -1,0 +1,492 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>OrganiCare - Đánh giá của khách hàng</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/font.awesome.css">
+    <link rel="stylesheet" href="assets/css/linearicons.css">
+    <!--rate-bar-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!--modernizr min js here-->
+    <script src="assets/js/vendor/modernizr-3.7.1.min.js"></script>
+
+    <style>
+        .testim {
+            width: 80%;
+            transform: translateY(-10%);
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 70px;
+        }
+
+            .testim .wrap {
+                position: inherit;
+                width: 100%;
+                max-width: 1020px;
+                padding: 40px 20px;
+                margin: auto;
+            }
+
+            .testim .arrow {
+                display: block;
+                position: absolute;
+                color: #868686;
+                cursor: pointer;
+                font-size: 2em;
+                top: 50%;
+                transform: translateY(-50%);
+                transition: all .3s ease-in-out;
+                padding: 5px;
+                z-index: 22222222;
+            }
+
+                .testim .arrow:before {
+                    cursor: pointer;
+                }
+
+                .testim .arrow.left {
+                    left: 10px;
+                }
+
+                .testim .arrow.right {
+                    right: 10px;
+                }
+
+                .testim .arrow:hover {
+                    color: #005959;
+                }
+
+            .testim .dots {
+                text-align: center;
+                position: absolute;
+                width: 100%;
+                bottom: 60px;
+                left: 0;
+                display: block;
+                z-index: 3333;
+                height: 12px;
+            }
+
+                .testim .dots .dot {
+                    list-style-type: none;
+                    display: inline-block;
+                    width: 12px;
+                    height: 12px;
+                    border-radius: 50%;
+                    border: 1px solid #868686;
+                    margin: 0 10px;
+                    cursor: pointer;
+                    transition: all .5s ease-in-out;
+                    position: relative;
+                }
+
+                    .testim .dots .dot.active,
+                    .testim .dots .dot:hover {
+                        background: #005959;
+                        border-color: #005959;
+                    }
+
+                    .testim .dots .dot.active {
+                        animation: testim-scale .5s ease-in-out forwards;
+                    }
+
+            .testim .cont {
+                position: relative;
+                overflow: hidden;
+            }
+
+                .testim .cont > div {
+                    text-align: center;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    padding: 0 0 70px 0;
+                    opacity: 0;
+                }
+
+                    .testim .cont > div.inactive {
+                        opacity: 1;
+                    }
+
+                    .testim .cont > div.active {
+                        position: relative;
+                        opacity: 1;
+                    }
+
+                .testim .cont div .img img {
+                    display: block;
+                    width: 150px;
+                    height: 150px;
+                    margin: auto;
+                    margin-bottom: 30px;
+                    border-radius: 50%;
+                }
+
+                .testim .cont div h3 {
+                    color: #005959;
+                    margin: 20px 0;
+                }
+
+                .testim .cont div p {
+                    color: #3a3a3a;
+                    width: 80%;
+                    margin: auto;
+                    padding-top: 5px;
+                }
+
+                .testim .cont div.active .img img {
+                    animation: testim-show .5s ease-in-out forwards;
+                }
+
+                .testim .cont div.active h2 {
+                    animation: testim-content-in .4s ease-in-out forwards;
+                }
+
+                .testim .cont div.active p {
+                    animation: testim-content-in .5s ease-in-out forwards;
+                }
+
+                .testim .cont div.inactive .img img {
+                    animation: testim-hide .5s ease-in-out forwards;
+                }
+
+                .testim .cont div.inactive h2 {
+                    animation: testim-content-out .4s ease-in-out forwards;
+                }
+
+                .testim .cont div.inactive p {
+                    animation: testim-content-out .5s ease-in-out forwards;
+                }
+
+        @keyframes testim-scale {
+            0% {
+                box-shadow: 0px 0px 0px 0px #868686;
+            }
+
+            35% {
+                box-shadow: 0px 0px 10px 5px #868686;
+            }
+
+            70% {
+                box-shadow: 0px 0px 10px 5px #005959;
+            }
+
+            100% {
+                box-shadow: 0px 0px 0px 0px #005959;
+            }
+        }
+
+        @keyframes testim-content-in {
+            from {
+                opacity: 0;
+                transform: translateY(100%);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes testim-content-out {
+            from {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+            to {
+                opacity: 0;
+                transform: translateY(-100%);
+            }
+        }
+
+        @keyframes testim-show {
+            from {
+                opacity: 0;
+                transform: scale(0);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes testim-hide {
+            from {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            to {
+                opacity: 0;
+                transform: scale(0);
+            }
+        }
+
+        @media all and (max-width: 300px) {
+            body {
+                font-size: 14px;
+            }
+        }
+
+        @media all and (max-width: 500px) {
+            .testim .arrow {
+                font-size: 1.5rem;
+            }
+
+            .testim .cont div p {
+                line-height: 25px;
+            }
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+            input[type=submit] {
+                width: 100%;
+                background-color: #005959;
+                color: white;
+                padding: 14px 20px;
+                margin: 20px 0;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+
+                input[type=submit]:hover {
+                    background-color: #48a9a6;
+                }
+    </style>
+</head>
+
+<body>
+
+    <div class="breadcrumbs_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="breadcrumb_content">
+                        <h3>Khách hàng nói gì về OrganiCare?</h3>
+                        <ul>
+                            <li><a href="Homepage.html">home</a></li>
+                            <li>Reviews</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="testim" id="testim">
+        <div class="wrap">
+            <span id="right-arrow" class="arrow right fa fa-chevron-right"></span>
+            <span id="left-arrow" class="arrow left fa fa-chevron-left"></span>
+            <ul class="dots" id="testim-dots">
+                <li class="dot active"></li>
+                <li class="dot"></li>
+                <li class="dot"></li>
+                <li class="dot"></li>
+                <li class="dot"></li>
+            </ul>
+
+            <div class="cont" id="testim-content">
+                <div class="active">
+                    <div class="img"><img src="assets/Image/testimonial/testimonial_1.png"></div>
+                    <h3>Trung Quân Idol</h3>
+                    <h5>Ca sĩ kiêm Chuyên gia về mưa</h5>
+                    <div class="product_rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                    <p>
+                        Cảm ơn OrganiCare đã cung cấp những thực phẩm hữu cơ tuyệt vời và bổ dưỡng đến cho tui vào những ngày mưa buồn.
+                        Nhờ thực phẩm của công ty mà tui có thể sáng tác ra những ca khúc tuyệt vời cho người hâm mộ.
+                        Chắc chắn sẽ quay lại sử dụng sản phẩm của OrganiCare.
+                        Chúc OrganiCare được điểm cao...à nhầm, làm ăn phát tài!!!
+                    </p>
+                </div>
+
+                <div>
+                    <div class="img"><img src="assets/Image/testimonial/testimonial_2.png"></div>
+                    <h3>Trung Quân Idol</h3>
+                    <h5>Ca sĩ kiêm Chuyên gia về mưa</h5>
+                    <div class="product_rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                    <p>
+                        Cảm ơn OrganiCare đã cung cấp những thực phẩm hữu cơ tuyệt vời và bổ dưỡng đến cho tui vào những ngày mưa buồn.
+                        Nhờ thực phẩm của công ty mà tui có thể sáng tác ra những ca khúc tuyệt vời cho người hâm mộ.
+                        Chắc chắn sẽ quay lại sử dụng sản phẩm của OrganiCare.
+                        Chúc OrganiCare được điểm cao...à nhầm, làm ăn phát tài!!!
+                    </p>
+                </div>
+
+                <div>
+                    <div class="img"><img src="assets/Image/testimonial/testimonial_3.png"></div>
+                    <h3>Trung Quân Idol</h3>
+                    <h5>Ca sĩ kiêm Chuyên gia về mưa</h5>
+                    <div class="product_rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                    <p>
+                        Cảm ơn OrganiCare đã cung cấp những thực phẩm hữu cơ tuyệt vời và bổ dưỡng đến cho tui vào những ngày mưa buồn.
+                        Nhờ thực phẩm của công ty mà tui có thể sáng tác ra những ca khúc tuyệt vời cho người hâm mộ.
+                        Chắc chắn sẽ quay lại sử dụng sản phẩm của OrganiCare.
+                        Chúc OrganiCare được điểm cao...à nhầm, làm ăn phát tài!!!
+                    </p>
+                </div>
+
+                <div>
+                    <div class="img"><img src="assets/Image/testimonial/testimonial_4.png"></div>
+                    <h3>Trung Quân Idol</h3>
+                    <h5>Ca sĩ kiêm Chuyên gia về mưa</h5>
+                    <div class="product_rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                    <p>
+                        Cảm ơn OrganiCare đã cung cấp những thực phẩm hữu cơ tuyệt vời và bổ dưỡng đến cho tui vào những ngày mưa buồn.
+                        Nhờ thực phẩm của công ty mà tui có thể sáng tác ra những ca khúc tuyệt vời cho người hâm mộ.
+                        Chắc chắn sẽ quay lại sử dụng sản phẩm của OrganiCare.
+                        Chúc OrganiCare được điểm cao...à nhầm, làm ăn phát tài!!!
+                    </p>
+                </div>
+
+                <div>
+                    <div class="img"><img src="assets/Image/testimonial/testimonial_5.png"></div>
+                    <h3>Trung Quân Idol</h3>
+                    <h5>Ca sĩ kiêm Chuyên gia về mưa</h5>
+                    <div class="product_rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                    <p>
+                        Cảm ơn OrganiCare đã cung cấp những thực phẩm hữu cơ tuyệt vời và bổ dưỡng đến cho tui vào những ngày mưa buồn.
+                        Nhờ thực phẩm của công ty mà tui có thể sáng tác ra những ca khúc tuyệt vời cho người hâm mộ.
+                        Chắc chắn sẽ quay lại sử dụng sản phẩm của OrganiCare.
+                        Chúc OrganiCare được điểm cao...à nhầm, làm ăn phát tài!!!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-12" style="text-align:left">
+                    <div class="center" style="vertical-align:middle">
+                        <h2>BẠN CÓ MUỐN ĐẶT CÂU HỎI GÌ CHO ORGANICARE KHÔNG?</h2>
+                        <p><i>(Hãy để lại thông tin để có thể theo dõi những chương trình mới nhất từ OrganiCare)</i></p>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-12">
+                    <form>
+                        <label for="name"><b>Họ và tên</b></label>
+                        <input type="text" id="name" name="name">
+
+                        <label for="email"><b>Email</b></label>
+                        <input type="email" id="email" name="email">
+
+                        <label for="question"><b>Câu hỏi</b></label>
+                        <textarea type="text" id="question" name="question"></textarea>
+
+                        <input type="submit" value="GỬI">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        'use strict'
+        var testim = document.getElementById("testim"),
+            testimDots = Array.prototype.slice.call(document.getElementById("testim-dots").children),
+            testimContent = Array.prototype.slice.call(document.getElementById("testim-content").children),
+            testimleftArrow = document.getElementById("left-arrow"),
+            testimRightArrow = document.getElementById("right-arrow"),
+            testimSpeed = 4500,
+            currentSlide = 0,
+            currentActive = 0,
+            testimTimer
+            ;
+
+        window.onload = function () {
+
+            // Testim Script
+            function playSlide(slide) {
+                for (var k = 0; k < testimDots.length; k++) {
+                    testimContent[k].classList.remove("active");
+                    testimContent[k].classList.remove("inactive");
+                    testimDots[k].classList.remove("active");
+                }
+                if (slide < 0) {
+                    slide = currentSlide = testimContent.length - 1;
+                }
+                if (slide > testimContent.length - 1) {
+                    slide = currentSlide = 0;
+                }
+                if (currentActive != currentSlide) {
+                    testimContent[currentActive].classList.add("inactive");
+                }
+                testimContent[slide].classList.add("active");
+                testimDots[slide].classList.add("active");
+
+                currentActive = currentSlide;
+
+                clearTimeout(testimTimer);
+                testimTimer = setTimeout(function () {
+                    playSlide(currentSlide += 1);
+                }, testimSpeed)
+            }
+
+            testimleftArrow.addEventListener("click", function () {
+                playSlide(currentSlide -= 1);
+            })
+            testimRightArrow.addEventListener("click", function () {
+                playSlide(currentSlide += 1);
+            })
+
+            for (var l = 0; l < testimDots.length; l++) {
+                testimDots[l].addEventListener("click", function () {
+                    playSlide(currentSlide = testimDots.indexOf(this));
+                })
+            }
+            playSlide(currentSlide);
+
+        }
+    </script>
+
+</body>
+</html>

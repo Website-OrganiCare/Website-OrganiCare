@@ -1,0 +1,642 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>OrganiCare - Chi tiết sản phẩm</title>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/slider.css" />
+
+    <script type="text/javascript" src="assets/js/jquery.js"></script>
+    <script type="text/javascript" src="assets/js/slider.js"></script>
+
+    <!--rate-bar-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .checked {
+            color: orange;
+        }
+
+        select, input {
+            width: 130px;
+            border: 1px solid #ebebeb;
+            background: none;
+            height: 42px;
+            padding: 0 12px;
+            border-radius: 5px;
+            margin-left: 15px;
+        }
+
+        .product_variant button {
+            border: 0;
+            font-size: 16px;
+            background: #005959;
+            height: 42px;
+            line-height: 42px;
+            text-transform: capitalize;
+            min-width: 225px;
+            margin-inline-end: 12px;
+            margin-top: 16px;
+        }
+
+            .product_variant button:hover {
+                background: #3E444A;
+            }
+
+        .product_d_action {
+            margin-top: 14px;
+            margin-bottom: 14px;
+        }
+
+            .product_d_action a {
+                font-size: 14px;
+                line-height: 28px;
+            }
+
+                .product_d_action a:hover {
+                    color: #005959;
+                }
+
+        .social a {
+            margin-inline-end: 10px;
+        }
+
+            .social a:hover {
+                opacity: 0.8;
+            }
+
+        img {
+            vertical-align: middle;
+        }
+
+        /* Position the image container (needed to position the left and right arrows) */
+        .product-details-tab {
+            position: relative;
+        }
+
+        /* Hide the images by default */
+        .product_slides {
+            display: none;
+        }
+
+        /* Add a pointer when hovering over the thumbnail images */
+        .cursor {
+            cursor: pointer;
+        }
+
+        /* Next & previous buttons */
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 40%;
+            width: auto;
+            padding: 16px;
+            margin-top: -50px;
+            color: #005959;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            -webkit-user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+            /* On hover, add a black background color with a little bit see-through */
+            .prev:hover,
+            .next:hover {
+                background-color: grey;
+                color: white;
+            }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Six columns side by side */
+        .column {
+            float: left;
+            width: 33.33%;
+        }
+
+        /* Add a transparency effect for thumnbail images */
+        .demo {
+            opacity: 0.6;
+        }
+
+            .active,
+            .demo:hover {
+                opacity: 1;
+            }
+
+        .tab {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+        }
+
+            .tab button {
+                background-color: inherit;
+                float: left;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                padding: 14px 16px;
+                transition: 0.3s;
+                font-size: 17px;
+            }
+
+                .tab button:hover {
+                    background-color: #ddd;
+                }
+
+                /* Create an active/current tablink class */
+                .tab button.active {
+                    background-color: #ccc;
+                }
+
+        /* Style the tab content */
+        .tabcontent {
+            display: none;
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+            border-top: none;
+        }
+
+        .box {
+            width: 200px;
+            box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 25px;
+        }
+
+        .slide-img {
+            width: 200px;
+            height: 200px;
+            position: relative;
+        }
+
+            .slide-img img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                box-sizing: border-box;
+            }
+
+        .detail-box {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            box-sizing: border-box;
+        }
+
+        .type {
+            display: flex;
+            flex-direction: column;
+        }
+
+            .type a {
+                color: #222222;
+                margin: 5px 0px;
+                font-weight: 700;
+                letter-spacing: 0.5px;
+                padding-right: 8px;
+            }
+
+        .text span {
+            color: rgba(26, 26, 26, 0.5);
+        }
+
+        .price {
+            color: #333333;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .overlay {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            width: 100%;
+            height: 100%;
+            background-color: rgba(9,95,236,0.6);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn-buy {
+            width: 160px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #FFFFFF;
+            color: #252525;
+            font-weight: 700;
+            letter-spacing: 1px;
+            border-radius: 20px;
+            box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+        }
+
+            .btn-buy:hover {
+                color: #FFFFFF;
+                background-color: #f15fa3;
+                transition: all ease 0.3s;
+            }
+
+        .overlay {
+            visibility: hidden;
+        }
+
+        .slide-img:hover .overlay {
+            visibility: visible;
+            animation: fade 0.5s;
+        }
+
+        @keyframes fade {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("product_slides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+
+        function openTabContent(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        $(document).ready(function () {
+            $('#autoWidth').lightSlider({
+                autoWidth: true,
+                loop: true,
+                onSliderLoad: function () {
+                    $('#autoWidth').removeClass('cS-hidden');
+                }
+            });
+        });
+
+    </script>
+
+</head>
+<body>
+
+    <div class="breadcrumbs_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="breadcrumb_content">
+                        <ul>
+                            <li><a href="#">Trang chủ</a></li>
+                            <li><a href="#">Trái cây</a></li>
+                            <li>Chi tiết sản phẩm</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="product_details mt-70 mb-70">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="product-details-tab">
+                        <div class="product_slides">
+                            <img src="assets/Image/product/product11.jpg" style="width:100%">
+                        </div>
+
+                        <div class="product_slides">
+                            <img src="assets/Image/product/product12.jpg" style="width:100%">
+                        </div>
+
+                        <div class="product_slides">
+                            <img src="assets/Image/product/product14.jpg" style="width:100%">
+                        </div>
+
+                        <a class="prev" onclick="plusSlides(-1)">❮</a>
+                        <a class="next" onclick="plusSlides(1)">❯</a>
+
+                        <div class="row">
+                            <div class="column">
+                                <img class="demo cursor" src="assets/Image/product/product11.jpg" style="width:100%" onclick="currentSlide(1)">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="assets/Image/product/product12.jpg" style="width:100%" onclick="currentSlide(2)">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="assets/Image/product/product14.jpg" style="width:100%" onclick="currentSlide(3)">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6">
+                    <div class="product_d_right">
+                        <form>
+                            <h3>Kiwi vàng Zespri</h3>
+                            <div class="product_rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span>&ensp;(Đánh giá từ khách hàng)</span>
+                            </div>
+                            <div class="price_box">
+                                <span class="current_price">80.000đ</span>
+                                <span class="old_price">100.000đ</span>
+                            </div>
+                            <div class="product_variant">
+                                <label for="packing">Quy cách</label>
+                                <select id="packing" name="packing">
+                                    <option value="kg">Kg</option>
+                                    <option value="bag">Túi</option>
+                                    <option value="box">Thùng</option>
+                                </select>
+                                &emsp;&emsp;
+                                <label>Số lượng</label>
+                                <input min="1" max="100" value="1" type="number">
+                            </div>
+                            <div class="product_variant">
+                                <button class="button" type="submit">Thêm vào giỏ hàng</button>
+                                <button class="button" type="submit">Mua ngay</button>
+                            </div>
+                            <div class=" product_d_action">
+                                <a href="#" title="Yêu thích">+ Thêm vào danh sách yêu thích</a>
+                            </div>
+                        </form>
+                        <div class="social">
+                            <p><b>Chia sẻ qua</b></p>
+                            <a href="#" title="Facebook"><img style="width:30px; height:30px" src="assets/Image/Icon/facebook.png" /></a>
+                            <a href="#" title="Zalo"><img style="width:30px; height:30px" src="assets/Image/Icon/zalo.png" /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="product_d_info mb-65">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="product_d_inner">
+                        <div class="product_info_button">
+                            <ul class="nav" role="tablist" id="nav-tab">
+                                <li>
+                                    <a class="tablinks" data-toggle="tab" href="#info" role="tab" aria-controls="info" aria-selected="false" onclick="openTabContent(event, 'description')">Thông tin sản phẩm</a>
+                                </li>
+                                <li>
+                                    <a class="tablinks" data-toggle="tab" href="#reviews" role="tab" aria-controls="reviews" aria-selected="false" onclick="openTabContent(event, 'review')">Đánh giá</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="info" role="tabpanel">
+                                <div class="tabcontent" id="description">
+                                    <p>Kiwi vàng có xuất xứ từ New Zealand có đài ở đầu quả và thuôn dài hơn so với kiwi xanh. Chúng có vỏ màu nâu vàng, trơn nhẵn, không có lông xù xì như kiwi xanh. Kiwi vàng có thịt quả màu vàng trong rất đẹp mắt, với nhiều hạt đen tạo thành một vòng tròn xung quanh trục dọc của quả và vị ngọt mát rất đặc trưng. Đây là loại quả ngon số 1 thế giới, với quy trình từ trồng, chăm bón đến thu, hái, vận chuyển được chính phủ New Zealand kiểm soát rất chặt chẽ để đảm bảo quả kiwi luôn đồng đều và tiêu chuẩn.</p>
+                                    <h4>GIÁ TRỊ DINH DƯỠNG CỦA KIWI</h4>
+                                    <ul style="list-style:circle; margin-left:15px">
+                                        <li>Trung bình 2 trái kiwi có thể cung cấp khoảng 230% lượng Vitamin C, gần gấp đôi so với cam.</li>
+                                        <li>Giúp vết thương nhanh lành, hấp thụ sắt để xương, mạch máu và răng chắc khỏe hơn.</li>
+                                        <li>Hỗ trợ giấc ngủ và tăng cường sự tỉnh táo vào buổi sáng.</li>
+                                        <li>2 trái kiwi chứa khoảng 30mg Magie, lượng Kali nhiều hơn chuối khoảng 20%, kiểm soát được huyết áp, ngăn ngừa sỏi thận, loãng xương và đột quỵ.</li>
+                                        <li>Giúp trái tim của bạn khỏe mạnh, điều hòa quá trình tiêu hóa và kiểm soát cholesterol,...</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="reviews" role="tabpanel">
+                                <div class="tabcontent" id="review">
+                                    <h2>1 review for Donec eu furniture</h2>
+                                    <div class="reviews_comment_box">
+                                        <div class="comment_thmb">
+                                            <img src="assets/img/blog/comment2.jpg" alt="">
+                                        </div>
+                                        <div class="comment_text">
+                                            <div class="reviews_meta">
+                                                <div class="star_rating">
+                                                    <ul>
+                                                        <li><a href="#"><i class="icon-star"></i></a></li>
+                                                        <li><a href="#"><i class="icon-star"></i></a></li>
+                                                        <li><a href="#"><i class="icon-star"></i></a></li>
+                                                        <li><a href="#"><i class="icon-star"></i></a></li>
+                                                        <li><a href="#"><i class="icon-star"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                                <p><strong>admin </strong>- September 12, 2018</p>
+                                                <span>roadthemes</span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="comment_title">
+                                        <h2>Add a review </h2>
+                                        <p>Your email address will not be published.  Required fields are marked </p>
+                                    </div>
+                                    <div class="product_ratting mb-10">
+                                        <h3>Your rating</h3>
+                                        <ul>
+                                            <li><a href="#"><i class="icon-star"></i></a></li>
+                                            <li><a href="#"><i class="icon-star"></i></a></li>
+                                            <li><a href="#"><i class="icon-star"></i></a></li>
+                                            <li><a href="#"><i class="icon-star"></i></a></li>
+                                            <li><a href="#"><i class="icon-star"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="product_review_form">
+                                        <form action="#">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <label for="review_comment">Your review </label>
+                                                    <textarea name="comment" id="review_comment"></textarea>
+                                                </div>
+                                                <div class="col-lg-6 col-md-6">
+                                                    <label for="author">Name</label>
+                                                    <input id="author" type="text">
+
+                                                </div>
+                                                <div class="col-lg-6 col-md-6">
+                                                    <label for="email">Email </label>
+                                                    <input id="email" type="text">
+                                                </div>
+                                            </div>
+                                            <button type="submit">Submit</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--box-slider-->
+    <ul id="autoWidth" class="cs-hidden">
+        <li class="item-a">
+            <div class="box">
+                <div class="slide-img">
+                    <img src="assets/Image/product/product11.jpg" />
+                    <div class="overlay">
+                        <a href="#" class="btn-buy">Mua ngay</a>
+                    </div>
+                </div>
+
+                <div class="detail-box">
+
+                </div>
+
+                <div class="type">
+                    <a href="#">Kiwi</a>
+                    <span>No </span>
+                    <a href="#" class="price">80.000đ</a>
+                </div>
+            </div>
+        </li>
+
+        <li class="item-a">
+            <div class="box">
+                <div class="slide-img">
+                    <img src="assets/Image/product/product11.jpg" />
+                    <div class="overlay">
+                        <a href="#" class="btn-buy">Mua ngay</a>
+                    </div>
+                </div>
+
+                <div class="detail-box">
+
+                </div>
+
+                <div class="type">
+                    <a href="#">Kiwi</a>
+                    <span>No </span>
+                    <a href="#" class="price">80.000đ</a>
+                </div>
+            </div>
+        </li>
+
+        <li class="item-a">
+            <div class="box">
+                <div class="slide-img">
+                    <img src="assets/Image/product/product11.jpg" />
+                    <div class="overlay">
+                        <a href="#" class="btn-buy">Mua ngay</a>
+                    </div>
+                </div>
+
+                <div class="detail-box">
+
+                </div>
+
+                <div class="type">
+                    <a href="#">Kiwi</a>
+                    <span>No </span>
+                    <a href="#" class="price">80.000đ</a>
+                </div>
+            </div>
+        </li>
+
+        <li class="item-a">
+            <div class="box">
+                <div class="slide-img">
+                    <img src="assets/Image/product/product11.jpg" />
+                    <div class="overlay">
+                        <a href="#" class="btn-buy">Mua ngay</a>
+                    </div>
+                </div>
+
+                <div class="detail-box">
+
+                </div>
+
+                <div class="type">
+                    <a href="#">Kiwi</a>
+                    <span>No </span>
+                    <a href="#" class="price">80.000đ</a>
+                </div>
+            </div>
+        </li>
+
+        <li class="item-a">
+            <div class="box">
+                <div class="slide-img">
+                    <img src="assets/Image/product/product11.jpg" />
+                    <div class="overlay">
+                        <a href="#" class="btn-buy">Mua ngay</a>
+                    </div>
+                </div>
+
+                <div class="detail-box">
+
+                </div>
+
+                <div class="type">
+                    <a href="#">Kiwi</a>
+                    <span>No </span>
+                    <a href="#" class="price">80.000đ</a>
+                </div>
+            </div>
+        </li>
+    </ul>
+
+</body>
+</html>
