@@ -69,10 +69,17 @@
   <ItemGroup>
     <Content Include="assets\css\bootstrap.min.css" />
     <Content Include="assets\css\FontAwesome.css" />
+    <Content Include="assets\css\Homepage.css" />
     <Content Include="assets\css\linearicons.css" />
+    <Content Include="assets\css\ListProduct.css" />
     <Content Include="assets\css\owl.carousel.min.css" />
+    <Content Include="assets\css\owl.theme.default.min.css" />
     <Content Include="assets\css\profile.css" />
     <Content Include="assets\css\style.css" />
+    <Content Include="assets\Image\airpay.png" />
+    <Content Include="assets\Image\Banner-01.png" />
+    <Content Include="assets\Image\Banner-02.png" />
+    <Content Include="assets\Image\Banner-03.png" />
     <Content Include="assets\Image\Banner18.jpg" />
     <Content Include="assets\Image\Banner3.jpg" />
     <Content Include="assets\Image\Blog-detail\Blog-hamthucan.jpg" />
@@ -83,9 +90,17 @@
     <Content Include="assets\Image\Blog-detail\Blog-trungchien.jpg" />
     <Content Include="assets\Image\Blog-detail\blog1.jpg" />
     <Content Include="assets\Image\Blog-detail\Blog_noodle.jpg" />
+    <Content Include="assets\Image\Category\Bông cải xanh hữu cơ.jpg" />
+    <Content Include="assets\Image\Category\Cá Hồi Hữu Cơ 200g.jpg" />
+    <Content Include="assets\Image\Category\Hạt sen.jpg" />
+    <Content Include="assets\Image\Category\Khác.jpg" />
+    <Content Include="assets\Image\Category\Sữa.jpg" />
+    <Content Include="assets\Image\Category\Trà hữu cơ.jpg" />
+    <Content Include="assets\Image\Category\Trái cây.jpg" />
     <Content Include="assets\Image\comment.png.jpg" />
     <Content Include="assets\Image\facebook.png" />
     <Content Include="assets\Image\logo.png" />
+    <Content Include="assets\Image\momo.png" />
     <Content Include="assets\Image\product\product1.jpg" />
     <Content Include="assets\Image\product\product10.jpg" />
     <Content Include="assets\Image\product\product11.jpg" />
@@ -135,13 +150,19 @@
     <Content Include="assets\Image\testimonial\testimonial_3.png" />
     <Content Include="assets\Image\testimonial\testimonial_4.png" />
     <Content Include="assets\Image\testimonial\testimonial_5.png" />
+    <Content Include="assets\Image\zalopay.png" />
+    <Content Include="assets\javascript\bootstrap.min.js" />
+    <Content Include="assets\javascript\main.js" />
     <Content Include="assets\javascript\modernizr-3.7.1.min.js" />
+    <Content Include="assets\javascript\owl.carousel.min.js" />
     <Content Include="Blog Detail.html" />
+    <Content Include="Cart_Checkout.html" />
     <Content Include="customAccount.html" />
     <Content Include="FAQ.html" />
     <Content Include="Homepage.html" />
     <Content Include="mini-cart.html" />
     <Content Include="ProductDetails.html" />
+    <Content Include="ProductList.html" />
     <Content Include="Reviews.html" />
     <Content Include="Profile page.html" />
     <Content Include="Web.config" />
@@ -151,6 +172,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="data\Products.json" />
+    <Content Include="data\DataProduct.json" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

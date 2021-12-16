@@ -3853,7 +3853,7 @@ figure {
     line-height: 24px;
     font-family: "Playfair Display", serif;
     font-style: italic;
-    font-weight:bold;
+    font-weight: bold;
     margin-bottom: 2px;
 }
 
@@ -5931,7 +5931,7 @@ figure {
 
 .category_icone {
     margin-right: 0px;
-   text-align:center;
+    text-align: center;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -5974,14 +5974,14 @@ figure {
 .category_content {
     text-align: center;
 }
-.category_content h3 {
-    font-size: 15px;
-    line-height: 16px;
-    text-transform: uppercase;
-    font-weight: 400;
-    margin-bottom: 11px;
-    
-}
+
+    .category_content h3 {
+        font-size: 15px;
+        line-height: 16px;
+        text-transform: uppercase;
+        font-weight: 400;
+        margin-bottom: 11px;
+    }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .category_content h3 {
@@ -8859,12 +8859,12 @@ figure {
         font-weight: 400;
         background-color: #f7f6f7;
         padding: 15px 10px;
-        border-top: 3px solid #40A944;
+        border-top: 3px solid #005959;
         margin-bottom: 0;
     }
 
         .user-actions h3 a {
-            color: #40A944;
+            color: #005959;
         }
 
 .checkout_info {
@@ -8878,7 +8878,7 @@ figure {
     }
 
     .checkout_info a {
-        color: #40A944;
+        color: #005959;
         margin-top: 15px;
         display: block;
     }
@@ -8919,8 +8919,8 @@ figure {
 
 .form_group button {
     display: inline-block;
-    width: 80px;
-    background: #222222;
+    width: 130px;
+    background: #005959;
     border: 0;
     color: #ffffff;
     font-weight: 500;
@@ -8930,13 +8930,13 @@ figure {
     transition: 0.3s;
     margin-right: 20px;
     cursor: pointer;
-    height: 40px;
+    height: 45px;
     line-height: 40px;
     border-radius: 3px;
 }
 
     .form_group button:hover {
-        background: #40A944;
+        background: #48A9A6;
     }
 
 .form_group input[type="checkbox"] {
@@ -8984,7 +8984,7 @@ figure {
 
 #checkout_coupon button {
     width: 130px;
-    background: #222222;
+    background: #005959;
     color: #ffffff;
     font-weight: 500;
     text-transform: uppercase;
@@ -9006,7 +9006,7 @@ figure {
 }
 
 #checkout_coupon button:hover {
-    background: #40A944;
+    background: #48A9A6;
 }
 
 .mb-20 {
@@ -9103,7 +9103,7 @@ figure {
     padding: 5px 10px;
     text-transform: capitalize;
     color: #ffffff;
-    background: #40A944;
+    background: #005959;
     font-weight: 500;
     -webkit-transition: 0.3s;
     transition: 0.3s;
@@ -9118,7 +9118,7 @@ figure {
 }
 
 .order_button button:hover {
-    background: #222222;
+    background: #48A9A6;
 }
 
 @media only screen and (max-width: 767px) {
@@ -13585,5 +13585,42 @@ figure {
         background: #000000;
         color: #ffffff;
     }
-
+.login-checkout {
+    display: flex;
+}
+@media only screen and (max-width: 767px) {
+    .login-checkout {
+        display: block;
+    }
+}
+.nice-select {
+    -webkit-tap-highlight-color: transparent;
+    background-color: #fff;
+    border-radius: 5px;
+    border: solid 1px #e8e8e8;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    clear: both;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: normal;
+    height: 40px;
+    line-height: 40px;
+    outline: none;
+    padding-left: 18px;
+    padding-right: 30px;
+    position: relative;
+    text-align: left !important;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    white-space: nowrap;
+    width: auto;
+}
 /*# sourceMappingURL=style.css.map */

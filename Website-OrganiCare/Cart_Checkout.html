@@ -1,0 +1,269 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Giỏ hàng</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <script src="https://kit.fontawesome.com/1147679ae7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/javascript/bootstrap.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="Checkout_section mt-70">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="user-actions">
+                        <h3>
+                            <i class="fa fa-file-o" aria-hidden="true"></i>
+                            Bạn chưa đăng nhập?
+                            <a class="Returning" href="#checkout_login" data-bs-toggle="collapse" aria-expanded="true">Nhấn vào đây để đăng nhập</a>
+                        </h3>
+                        <div id="checkout_login" class="collapse" data-parent="#accordion">
+                            <div class="checkout_info">
+                                <p>
+                                    Nếu bạn đã mua sắm với chúng tôi trước đây, vui lòng nhập thông tin chi tiết của bạn vào ô bên dưới.<br/>
+                                    Nếu bạn là khách hàng mới, vui lòng chuyển đến phần Lập hóa đơn & Giao hàng.
+                                </p>
+                                <form action="#" class="login-checkout row">
+                                    <div class="col-lg-6 col-md-12">
+                                        <div class="form_group">
+                                            <label>Tên tài khoản hoặc email <span>*</span></label>
+                                            <input type="text">
+                                        </div>
+                                        <div class="form_group">
+                                            <label>Mật khẩu  <span>*</span></label>
+                                            <input type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12">
+                                        <div class="form_group group_3">
+                                            <button type="submit">Đăng nhập</button>
+                                            <label for="remember_box">
+                                                <input id="remember_box" type="checkbox">
+                                                <span> Ghi nhớ mật khẩu </span>
+                                            </label>
+                                        </div>
+                                        <a href="#">Quên mật khẩu?</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-actions">
+                        <h3>
+                            <i class="fa fa-file-o" aria-hidden="true"></i>
+                            Bạn có mã giảm giá?
+                            <a class="Returning" href="#checkout_coupon" data-bs-toggle="collapse" aria-expanded="true">Nhấn vào đây để điền mã</a>
+                        </h3>
+                        <div id="checkout_coupon" class="collapse" data-parent="#accordion">
+                            <div class="checkout_info coupon_info">
+                                <form action="#">
+                                    <input placeholder="Nhập mã giảm giá" type="text">
+                                    <button type="submit">Áp dụng</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="checkout_form">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <form action="#">
+                            <h3>Thông tin</h3>
+                            <div class="row">
+                                <div class="col-lg-6 mb-20">
+                                    <label>Họ <span>*</span></label>
+                                    <input type="text">
+                                </div>
+                                <div class="col-lg-6 mb-20">
+                                    <label>Tên  <span>*</span></label>
+                                    <input type="text">
+                                </div>
+                                <div class="col-4 mb-20">
+                                    <label for="district">Quận <span>*</span></label>
+                                    <select class="nice-select select_option" name="district" id="country">
+                                        <option value="1">Quận 1</option>
+                                        <option value="2">Quận 2</option>
+                                        <option value="3">Quận 3</option>
+                                        <option value="4">Quận 4</option>
+                                        <option value="5">Quận 5</option>
+                                        <option value="6">Quận 6</option>
+                                        <option value="7">Quận 7</option>
+                                        <option value="8">Quận 8</option>
+                                        <option value="9">Quận 9</option>
+                                        <option value="10">Quận 10</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-4 mb-20">
+                                    <label for="district">Phường <span>*</span></label>
+                                    <input type="text">
+                                </div>
+                                <div class="col-lg-4 mb-20">
+                                    <label for="district">Khu phố<span>*</span></label>
+                                    <input type="text">
+                                </div>
+                                <div class="col-12 mb-20">
+                                    <label>Đường  <span>*</span></label>
+                                    <input type="text">
+                                </div>
+                                <div class="col-lg-6 mb-20">
+                                    <label>Số điện thoại<span>*</span></label>
+                                    <input type="number">
+                                </div>
+                                <div class="col-lg-6 mb-20">
+                                    <label>Email <span>*</span></label>
+                                    <input type="email">
+                                </div>
+                                <div class="col-12 mb-20">
+                                    <input id="account" type="checkbox" data-target="createp_account" />
+                                    <a data-bs-toggle="collapse" href="#collapseOne" aria-controls="collapseOne">Tạo tài khoản ngay theo thông tin trên?</a>
+                                    <div id="collapseOne" class="collapse one" data-parent="#accordion">
+                                        <div class="card-body1">
+                                            <label> Mật khẩu   <span>*</span></label>
+                                            <input placeholder="password" type="password">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="order-notes">
+                                        <label for="order_note">Ghi chú đơn hàng</label>
+                                        <textarea id="order_note" placeholder="Ghi chú về đơn hàng của bạn tại đây"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <form action="#">
+                            <h3>Đơn hàng</h3>
+                            <div class="order_table table-responsive">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Sản phẩm</th>
+                                            <th>Thành tiền</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td> Cá hồi phi lê<strong> × 1</strong></td>
+                                            <td> 165.000đ</td>
+                                        </tr>
+                                        <tr>
+                                            <td>  Thịt bò Kobe <strong> × 1</strong></td>
+                                            <td> 250.000đ</td>
+                                        </tr>
+                                        <tr>
+                                            <td>  Bắp cải tím hữu cơ<strong> × 1</strong></td>
+                                            <td> 50.000đ</td>
+                                        </tr>
+                                        <tr>
+                                            <td> Cà phê chồn <strong> × 1</strong></td>
+                                            <td> 350.000đ</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <th>Tổng tiền</th>
+                                            <td>815.000đ</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Vận chuyển</th>
+                                            <td><strong>15.000đ</strong></td>
+                                        </tr>
+                                        <tr class="order_total">
+                                            <th>Thành tiền</th>
+                                            <td><strong>850.000đ</strong></td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                            <div class="payment_method">
+                                <div class="panel-default">
+                                    <input id="payment" name="check_method" type="radio" data-target="createp_account" />
+                                    <a href="#method"> <!--data-bs-toggle="collapse" aria-controls="method"-->Tiền mặt</a>
+                                    <!--<div id="method" class="collapse one" data-parent="#accordion">
+                                    </div>-->
+                                </div>
+                                <div class="panel-default">
+                                    <input id="payment_defult" name="check_method" type="radio" data-target="createp_account" />
+                                    <a href="#collapsedefult" data-bs-toggle="collapse" aria-controls="collapsedefult">Thẻ nội địa</a>
+                                    <div id="collapsedefult" class="collapse one" data-parent="#accordion">
+                                        <div class="card-body1" style="margin-left:20px">
+                                            <div class="col-12">
+                                                <table>
+                                                    <tr>
+                                                        <td width="100px">
+                                                            <input type="radio" value="BIDV" name="card" />BIDV
+                                                        </td>
+                                                        <td>
+                                                            <input type="radio" value="BIDV" name="card" />Agribank
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <input type="radio" value="ACB" name="card" />ACB
+                                                        </td>
+                                                        <td>
+                                                            <input type="radio" value="TPB" name="card" />TPB
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel-default">
+                                    <input id="payment" name="check_method" type="radio" data-target="createp_account" />
+                                    <a href="#method" data-bs-toggle="collapse" aria-controls="method">Ví điện tử</a>
+                                    <div id="method" class="collapse one" data-parent="#accordion">
+                                        <div class="card-body1" style="margin-left:20px">
+                                            <div class="col-12">
+                                                <table>
+                                                    <tr>
+                                                        <td width="100px">
+                                                            <div class="col-lg-6" style="display:flex; width:40px;height:40px;align-content:center">
+                                                                <img src="assets/Image/airpay.png" />
+                                                                <p style="bottom:40%; transform:translateY(20%)">Airpay</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="col-lg-6" style="display:flex; width:40px;height:40px;align-content:center">
+                                                            <img src="assets/Image/momo.png" />
+                                                            <p style="bottom:40%; transform:translateY(20%)">MoMo</p>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr></tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="col-lg-6" style="display:flex; width:40px;height:40px;align-content:center">
+                                                                <img src="assets/Image/zalopay.png" />
+                                                                <p style="bottom:40%; transform:translateY(20%)">Zalopay</p>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order_button">
+                                    <button type="submit">Proceed to PayPal</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
