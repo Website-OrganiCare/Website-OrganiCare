@@ -99,6 +99,9 @@
     <Content Include="assets\Image\Category\Trái cây.jpg" />
     <Content Include="assets\Image\comment.png.jpg" />
     <Content Include="assets\Image\facebook.png" />
+    <Content Include="assets\Image\icon\comment.jpg" />
+    <Content Include="assets\Image\icon\facebook.png" />
+    <Content Include="assets\Image\icon\zalo.png" />
     <Content Include="assets\Image\logo.png" />
     <Content Include="assets\Image\momo.png" />
     <Content Include="assets\Image\product\product1.jpg" />

@@ -1,7 +1,8 @@
-﻿@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+﻿/*@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');*/
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Work+Sans:100,200,300,400,500,600,700,800,900&amp;display=swap");
 :root {
-    --main-font: 'Roboto', sans-serif;
-    --primary-color:#005959;
+    --main-font: "Work Sans", sans-serif;
+    --primary-color: #005959;
 }
 *{
     margin:0;
@@ -260,8 +261,8 @@
   border-radius: 50%;
 }
 .action_links ul li a:hover {
-  background: #005959;
-  color: #fff;
+  background: #005959 !important; 
+  color: #fff !important;
 }
     .action_links ul li a:hover i{
         color:white;
@@ -735,7 +736,7 @@
     transition: 0.5s;
 }
 
-}
+
 
 .blog-content-items-text button:hover {
     background-color: #48a9a6;
