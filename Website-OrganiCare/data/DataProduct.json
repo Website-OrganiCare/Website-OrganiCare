@@ -59,8 +59,8 @@
     "price": 120000,
     "image": "assets/Image/product/product4.jpg",
     "detail": {
-      "Tinhnang": "Giải độc mát gan",
-      "Dactinh": "",
+      "Tinhnang": "Tác dụng trị liệu cho những người mắc các chứng bệnh như: xơ cứng động mạch, đái tháo đường, bệnh động mạch vành tim, viêm thận, phù thũng, bệnh cao huyết áp và béo phì.",
+      "Dactinh": "Cây bí đao thuộc họ bầu bí nó thích hợp với khí hậu nóng ẩm và có tốc độ phát triển khá nhanh dễ dàng thích ứng với nhiều điều kiện khí hậu thời tiết khác nhau đặc biệt là sức đề kháng khả năng chống chịu sâu bệnh cực tốt. Bởi thế mà khi trồng loại cây này ta không cần sử dụng quá nhiều thuốc bảo vệ thực phẩm chính vì thế mà loại quả này được cho là khá an toàn, một loại thực phẩm sạch.",
 
       "Chinhsach": "Đổi trả trong 12h"
     }
@@ -68,16 +68,15 @@
   {
     "id": 5,
     "products_model": "SP7",
-    "products_name": "Nệm lò xo túi Cocoon 2.0 Premium",
+    "products_name": "Súp lơ hữu cơ",
     "categories_name": "RauCu",
     "categories_type": "RauCu",
     "description": "Sang trọng, tinh tế, tối ưu",
-    "price": 8361000,
+    "price": 70000,
     "image": "assets/Image/product/product5.jpg",
     "detail": {
-      "Tinhnang": "Không chỉ khoác lên mình vẻ quý phái của mẫu nệm lò xo hạng sang cùng màu trắng chủ đạo tinh khôi, COCOON 2.0 PREMIUM hỗ trợ gia tăng trải nghiệm thoải mái, thư giãn dành cho giấc ngủ bằng lớp lót bề mặt Euro top 100% cao su thiên nhiên, nâng đỡ cơ thể một cách mềm mại nhưng vẫn đảm bảo cấu trúc chắc chắn. Lớp chần cao su thiên nhiên cùng bề mặt vải được xử lý bằng công nghệ thoáng khí CoolAdapt™, cân bằng độ ẩm và kháng khuẩn trong không gian ngủ một cách hiệu quả.",
-      "Dactinh": "Lò xo túi độc lập: Hệ thống lò xo túi với độ nâng đỡ tối ưu và không gây ảnh hưởng khi cử động đối với người nằm ngủ bên cạnh. Công nghệ làm mát CoolAdapt™: Công nghệ thoáng khí tiên tiến giúp tản nhiệt, thúc đẩy sự bay hơi, tạo nên không gian phòng ngủ thoáng mát.",
-
+      "Tinhnang": "Bắp cải luộc thơm ngọt vị gừng, bắp cải xào cà chua thanh mát, dưa bắp cải muối giòn rụm, chấm cùng nước mắm cay thật ngon miệng. Cầu kỳ hơn, nhiều người còn làm gỏi bắp cải, bắp cải cuốn thịt bằm nấu canh. Nhiều người mới chỉ biết bắp cải là loại rau lành, mát, dễ ăn mà chưa biết hết những giá trị y học quý giá của nó.",
+      "Dactinh": "Bắp cải luộc thơm ngọt vị gừng, bắp cải xào cà chua thanh mát, dưa bắp cải muối giòn rụm, chấm cùng nước mắm cay thật ngon miệng. Cầu kỳ hơn, nhiều người còn làm gỏi bắp cải, bắp cải cuốn thịt bằm nấu canh. Nhiều người mới chỉ biết bắp cải là loại rau lành, mát, dễ ăn mà chưa biết hết những giá trị y học quý giá của nó.",
 
       "Chinhsach": "Đổi trả trong 12h"
     }
@@ -85,15 +84,15 @@
   {
     "id": 6,
     "products_model": "SP8",
-    "products_name": "Nệm lò xo Cassaro Plush",
+    "products_name": "Bắp cải xanh hưu cơ",
     "categories_name": "RauCu",
     "categories_type": "RauCu",
     "description": "Nệm chất lượng với thiết kế thời thượng",
-    "price": 3990000,
+    "price": 70000,
     "image": "assets/Image/product/product6.jpg",
     "detail": {
-      "Tinhnang": "Không chỉ khoác lên mình vẻ quý phái của mẫu nệm lò xo hạng sang cùng màu trắng chủ đạo tinh khôi, COCOON 2.0 PREMIUM hỗ trợ gia tăng trải nghiệm thoải mái, thư giãn dành cho giấc ngủ bằng lớp lót bề mặt Euro top 100% cao su thiên nhiên, nâng đỡ cơ thể một cách mềm mại nhưng vẫn đảm bảo cấu trúc chắc chắn. Lớp chần cao su thiên nhiên cùng bề mặt vải được xử lý bằng công nghệ thoáng khí CoolAdapt™, cân bằng độ ẩm và kháng khuẩn trong không gian ngủ một cách hiệu quả.",
-      "Dactinh": "Lò xo túi độc lập: Hệ thống lò xo túi với độ nâng đỡ tối ưu và không gây ảnh hưởng khi cử động đối với người nằm ngủ bên cạnh. Công nghệ làm mát CoolAdapt™: Công nghệ thoáng khí tiên tiến giúp tản nhiệt, thúc đẩy sự bay hơi, tạo nên không gian phòng ngủ thoáng mát.",
+      "Tinhnang": "Bắp cải luộc thơm ngọt vị gừng, bắp cải xào cà chua thanh mát, dưa bắp cải muối giòn rụm, chấm cùng nước mắm cay thật ngon miệng. Cầu kỳ hơn, nhiều người còn làm gỏi bắp cải, bắp cải cuốn thịt bằm nấu canh. Nhiều người mới chỉ biết bắp cải là loại rau lành, mát, dễ ăn mà chưa biết hết những giá trị y học quý giá của nó.",
+      "Dactinh": "Bắp cải luộc thơm ngọt vị gừng, bắp cải xào cà chua thanh mát, dưa bắp cải muối giòn rụm, chấm cùng nước mắm cay thật ngon miệng. Cầu kỳ hơn, nhiều người còn làm gỏi bắp cải, bắp cải cuốn thịt bằm nấu canh. Nhiều người mới chỉ biết bắp cải là loại rau lành, mát, dễ ăn mà chưa biết hết những giá trị y học quý giá của nó.",
 
       "Chinhsach": "Đổi trả trong 12h"
     }
@@ -101,15 +100,15 @@
   {
     "id": 7,
     "products_model": "SP9",
-    "products_name": "Nệm lò xo Cassaro Firm",
+    "products_name": "Cà chua hữu cơ",
     "categories_name": "RauCu",
     "categories_type": "RauCu",
     "description": "Nâng đỡ cơ thể nhờ đặc tính lo xo liên kết",
-    "price": 3290000,
+    "price": 100000,
     "image": "assets/Image/product/product7.jpg",
     "detail": {
-      "Tinhnang": "Nếu bạn cần tìm một sản phẩm nệm lò xo vừa đạt chuẩn chất lượng, vừa thiết kế thời thượng nhưng với mức chi trả kinh tế, CASSARO FIRM chính là đáp án. Hệ thống lò xo liên kết bền vững được nối kết chặt chẽ, chắc chắn đảm bảo nâng đỡ toàn bộ cơ thể một cách trọn vẹn. Xơ dừa tự nhiên tuần hoàn tốt nâng cao khả năng thoát ẩm và lưu thông khí hiệu quả, cho cảm giác mát mẻ và thư giãn hoàn toàn.",
-      "Dactinh": "Lò xo túi độc lập: Hệ thống lò xo túi với độ nâng đỡ tối ưu và không gây ảnh hưởng khi cử động đối với người nằm ngủ bên cạnh. Công nghệ làm mát CoolAdapt™: Công nghệ thoáng khí tiên tiến giúp tản nhiệt, thúc đẩy sự bay hơi, tạo nên không gian phòng ngủ thoáng mát.",
+      "Tinhnang": "Cà chua hướng hữu cơ là giống cà chua cao cấp khác hẳn cà chua thông thường ở điểm quả cà chua to, chắc, ít hạt, cơm dày.  Cà chua cung cấp một lượng Vitamin A, C, K tuyệt vời. Những chất này có tác dụng giúp tăng cường thị lực, phòng bệnh quáng gà. Ngoài ra, cà chua hữu cơ còn là loại thực phẩm giúp kiểm soát lượng đường trong máu, có canxi hỗ trợ cho xương chắc khỏe.",
+      "Dactinh": "Cà chua hướng hữu cơ là giống cà chua cao cấp khác hẳn cà chua thông thường ở điểm quả cà chua to, chắc, ít hạt, cơm dày.  Cà chua cung cấp một lượng Vitamin A, C, K tuyệt vời. Những chất này có tác dụng giúp tăng cường thị lực, phòng bệnh quáng gà. Ngoài ra, cà chua hữu cơ còn là loại thực phẩm giúp kiểm soát lượng đường trong máu, có canxi hỗ trợ cho xương chắc khỏe.",
 
       "Chinhsach": "Đổi trả trong 12h"
     }
@@ -117,15 +116,15 @@
   {
     "id": 8,
     "products_model": "SP10",
-    "products_name": "Nệm cao su Classic",
+    "products_name": "Cải thìa hữu cơ",
     "categories_name": "RauCu",
     "categories_type": "RauCu",
     "description": "Nâng đỡ bền bỉ từ tinh túy thiên nhiên",
-    "price": 5690000,
+    "price": 150000,
     "image": "assets/Image/product/product8.jpg",
     "detail": {
-      "Tinhnang": "Nệm cao su thiên nhiên CLASSIC truyền thống, phù hợp với những ai yêu thích thiết kế đơn giản, tinh tế và cảm giác được nâng đỡ một cách vững chắc. Ứng dụng công nghệ sản xuất nệm cao su tiên tiến, nệm giữ được mức đàn hồi hoàn hảo nhờ đặc tính dẻo của cao su thiên nhiên và có mùi cao su tự nhiên, không gây dị ứng, khó chịu khi sử dụng, cho bạn cảm giác thật sự hài lòng mỗi khi ngả lưng.",
-      "Dactinh:": "Thoáng khí tối ưu: với cấu trúc chân nệm mở, cho phép không khí đối lưu nên khả năng thông thoáng cao, không gây tình trạng bí hơi ở lưng khi nằm. Cấu trúc chân nệm vuông hỗ trợ nâng đỡ vững chắc cho lưng. Màu trắng thuần khiết: Được chọn lọc từ nguyên liệu 100% cao su thiên nhiên và không sử dụng hóa chất tẩy màu giúp nệm giữ được màu trắng tự nhiên của cao su.",
+      "Tinhnang": "Một chén cải thìa sống (tương đương khoảng 170g) chứa 9 calo, 1g protein, 1,5g carbohydrate, 0,7g chất xơ, không có cholesterol và chỉ 0,1g chất béo không có khả năng sản sinh cholesterol. Với hàm lượng dinh dưỡng lành mạnh như trên, cải thìa không chỉ ngon mà còn rất có lợi cho sức khỏe.",
+      "Dactinh:": "Cải thìa rất giàu vitamin C. Hoạt động sản sinh collagen - hệ thống nâng đỡ cấu trúc da - luôn phải được hỗ trợ từ vitamin C. Ngoài ra, loại vitamin thiết yếu này còn là một chất chống oxy hóa mạnh mẽ giúp ngăn ngừa những hư tổn trên da do tia tử ngoại, không khí ô nhiễm và khói thuốc gây ra. Vitamin C còn hỗ trợ cho collagen phát huy sức mạnh “chăm sóc sắc đẹp” cho da bằng cách đánh bay những nếp nhăn do lão hóa, cải thiện cấu trúc của toàn bộ bề mặt da.",
 
       "Chinhsach": "Đổi trả trong 12h"
     }
@@ -133,15 +132,15 @@
   {
     "id": 9,
     "products_model": "SP11",
-    "products_name": "Nệm lò xo túi Cocoon 2.0 Premium",
+    "products_name": "Đậu hà lan hữu cơ",
     "categories_name": "RauCu",
     "categories_type": "RauCu",
     "description": "Sang trọng, tinh tế, tối ưu",
-    "price": 3290000,
+    "price": 200000,
     "image": "assets/Image/product/product9.jpg",
     "detail": {
-      "Tinhnang": "Không chỉ khoác lên mình vẻ quý phái của mẫu nệm lò xo hạng sang cùng màu trắng chủ đạo tinh khôi, COCOON 2.0 PREMIUM hỗ trợ gia tăng trải nghiệm thoải mái, thư giãn dành cho giấc ngủ bằng lớp lót bề mặt Euro top 100% cao su thiên nhiên, nâng đỡ cơ thể một cách mềm mại nhưng vẫn đảm bảo cấu trúc chắc chắn. Lớp chần cao su thiên nhiên cùng bề mặt vải được xử lý bằng công nghệ thoáng khí CoolAdapt™, cân bằng độ ẩm và kháng khuẩn trong không gian ngủ một cách hiệu quả.",
-      "Dactinh": "Lò xo túi độc lập: Hệ thống lò xo túi với độ nâng đỡ tối ưu và không gây ảnh hưởng khi cử động đối với người nằm ngủ bên cạnh. Công nghệ làm mát CoolAdapt™: Công nghệ thoáng khí tiên tiến giúp tản nhiệt, thúc đẩy sự bay hơi, tạo nên không gian phòng ngủ thoáng mát.",
+      "Tinhnang": "Hạt đậu Hà Lan được dùng làm rau ăn ở các dạng tươi, đông lạnh, đóng hộp, hoặc khô. Trong ẩm thực Việt Nam, quả đậu Hà Lan non còn được dùng nguyên quả cho các món xào hoặc canh.",
+      "Dactinh": "Hạt đậu Hà Lan được dùng làm rau ăn ở các dạng tươi, đông lạnh, đóng hộp, hoặc khô. Trong ẩm thực Việt Nam, quả đậu Hà Lan non còn được dùng nguyên quả cho các món xào hoặc canh.",
 
       "Chinhsach": "Đổi trả trong 12h"
     }
@@ -149,60 +148,60 @@
   {
     "id": 10,
     "products_model": "SP12",
-    "products_name": "Nệm Foam Tempur Original Prima",
+    "products_name": "Cà dài hữu cơ",
     "categories_name": "RauCu",
     "categories_type": "RauCuFoam",
     "description": "Sang trọng, tinh tế, tối ưu",
-    "price": 83680000,
+    "price": 60000,
     "image": "assets/Image/product/product10.jpg",
     "detail": {
-      "Tinhnang": "Nếu bạn đang tìm kiếm một sản phẩm đem lại cảm giác thoải mái như không có trọng lực của Tempur nhưng vẫn muốn chuyển động một cách dễ dàng trên nệm, bộ sưu tập TEMPUR® Sensation sẽ là sự lựa chọn hoàn hảo cho bạn. Nổi trội nhất trong bộ sưu tập phải kể đến sản phẩm TEMPUR® Sensation Prima.",
-      "Dactinh": "Sản phẩm được làm từ chất liệu TEMPUR®  - loại chất liệu đặc biệt được cải tiến từ chất liệu viscoelastic. Chất liệu viscoelastic lần đầu tiên được NASA sử dụng để làm tấm đệm bảo vệ cho các phi hành gia khi du hành vào vũ trụ. Kể từ sau đó, các kỹ sư và các nhà khoa học nghiên cứu về giấc ngủ của Tempur đã dốc hết tâm huyết trong việc nghiên cứu và hoàn thiện một loại vật liệu mới, mang tên là TEMPUR®. Dưới sức nặng của sức nặng cơ thể, các loại nệm bình thường sẽ có xu hướng nén xuống. Riêng với TEMPUR®, hàng tỷ các phân tử mở sẽ di chuyển ôm sát đường cong cơ thể bạn, từ đó mang lại sự nâng đỡ tối đa ở các vị trí cần thiết, đồng thời giúp giảm thiểu tình trạng đau nhức ở các vị trí chịu lực khi nằm.",
+      "Tinhnang": "Chế biến được nhiều món như : Cà nướng mỡ hành, cà xào thịt băm, cà xào tóp mỡ, cà xào cá, cà om thịt ba chỉ đậu phụ, cà xào thịt hộp, nướng lẩu luộc hay nấu canh đều ngon !",
+      "Dactinh": "Cà xanh dài cao sản là Cây lâu năm ,thu hoạch bốn mùa. Sinh trưởng mạnh, kháng bệnh tốt, trồng được quanh năm. Trái thuôn dài 20 – 25cm, màu xanh mỡ rất đẹp, thịt chắc , vỏ mỏng , mềm không dai, ăn rất ngon",
       "Chinhsach": "Đổi trả trong 12h"
     }
   },
   {
     "id": 11,
     "products_model": "SP13",
-    "products_name": "Nệm Foam Tempur Original Prima",
+    "products_name": "Lê Ki Ma hữu cơ",
     "categories_name": "RauCu",
     "categories_type": "RauCu",
     "description": "Sang trọng, tinh tế, tối ưu",
-    "price": 83680000,
+    "price": 150000,
     "image": "assets/Image/product/product11.jpg",
     "detail": {
-      "Tinhnang": "Nệm có khả năng chống truyền rung động khá tốt. Giấc ngủ của bạn sẽ không còn bị làm phiền khi người kế bên xoay chuyển tư thế. Bên cạnh đó, công nghệ CoolTouch™ được tích hợp trong vỏ nệm có tác dụng hấp thụ lượng nhiệt dư thừa mà cơ thể tỏa ra. Nhờ đó, người dùng sẽ luôn cảm thấy mát mẻ mỗi khi nằm trên nệm",
-      "Dactinh": "Sản phẩm được làm từ chất liệu TEMPUR®  - loại chất liệu đặc biệt được cải tiến từ chất liệu viscoelastic. Chất liệu viscoelastic lần đầu tiên được NASA sử dụng để làm tấm đệm bảo vệ cho các phi hành gia khi du hành vào vũ trụ. Kể từ sau đó, các kỹ sư và các nhà khoa học nghiên cứu về giấc ngủ của Tempur đã dốc hết tâm huyết trong việc nghiên cứu và hoàn thiện một loại vật liệu mới, mang tên là TEMPUR®. Dưới sức nặng của sức nặng cơ thể, các loại nệm bình thường sẽ có xu hướng nén xuống. Riêng với TEMPUR®, hàng tỷ các phân tử mở sẽ di chuyển ôm sát đường cong cơ thể bạn, từ đó mang lại sự nâng đỡ tối đa ở các vị trí cần thiết, đồng thời giúp giảm thiểu tình trạng đau nhức ở các vị trí chịu lực khi nằm.",
+      "Tinhnang": "Được dùng để làm sinh tố chung với quả bơ và làm kem.",
+      "Dactinh": "Có hàm lượng cao vitamin B3, beta-caroten, sắt và chất xơ, tăng hồng cầu. giảm cholesterol và triglyceride, tăng lực tốt,v.v...[1] là những thành phần chống oxy hóa cực mạnh cho da và cần thiết cho hoạt động của cơ thể. Lê ki ma còn giúp tăng tỷ lệ hồng cầu trong máu, kích thích hoạt động của hệ thần kinh, chống trầm cảm, giảm cholesterol và triglyceride trong máu, ngăn ngừa các bệnh tim mạch và béo phì, hạn chế các cơn nhồi máu cơ tim, tăng hiệu quả của hệ miễn nhiễm và tăng lực rất tốt.",
       "Chinhsach": "Đổi trả trong 12h"
     }
   },
   {
     "id": 12,
     "products_model": "SP14",
-    "products_name": "Nệm Foam Tempur Hybrid Elite",
+    "products_name": "Xoài cát Bảo Lộc hữu cơ",
     "categories_name": "RauCu",
     "categories_type": "RauCu",
     "description": "Sang trọng, tinh tế, tối ưu",
-    "price": 105000000,
+    "price": 140000,
     "image": "assets/Image/product/product12.jpg",
     "detail": {
-      "Tinhnang": "Bộ sưu tập TEMPUR® Hybrid sở hữu độ đàn hồi khá cao. Đây cũng là bộ sưu tập có thiết kế sáng tạo nhất của TEMPUR. Nổi bật nhất trong bộ sưu tập phải kể đến sản phẩm TEMPUR® Hybrid Elite. TEMPUR® Hybrid Elite sở hữu tất cả các đặc điểm của một chiếc nệm hoàn hảo. Đây cũng chính là một trong những sản phẩm then chốt giúp cho TEMPUR® trở thành thương hiệu nổi tiếng trên toàn thế giới.",
-      "Dactinh": "Sản phẩm được làm từ chất liệu TEMPUR®  - loại chất liệu đặc biệt được cải tiến từ chất liệu viscoelastic. Chất liệu viscoelastic lần đầu tiên được NASA sử dụng để làm tấm đệm bảo vệ cho các phi hành gia khi du hành vào vũ trụ. Kể từ sau đó, các kỹ sư và các nhà khoa học nghiên cứu về giấc ngủ của Tempur đã dốc hết tâm huyết trong việc nghiên cứu và hoàn thiện một loại vật liệu mới, mang tên là TEMPUR®. Dưới sức nặng của sức nặng cơ thể, các loại nệm bình thường sẽ có xu hướng nén xuống. Riêng với TEMPUR®, hàng tỷ các phân tử mở sẽ di chuyển ôm sát đường cong cơ thể bạn, từ đó mang lại sự nâng đỡ tối đa ở các vị trí cần thiết, đồng thời giúp giảm thiểu tình trạng đau nhức ở các vị trí chịu lực khi nằm.",
+      "Tinhnang": "Ăn xoài sẽ giúp ngăn ngừa bệnh tim mạch, cải thiện trí nhớ, làm đẹp da, hỗ trợ tiêu hóa. Xoài được sử dụng như một thực phẩm không thể thiếu trong các món ngọt, món tráng miệng.",
+      "Dactinh": "Xoài cát Hòa Lộc là loại xoài nổi tiếng nhất Việt Nam bởi kích thước xoài lớn, hạt nhỏ, ít xơ, thịt chắc, ngọt lịm đậm đà. Vỏ xoài sáng bóng, căng tròn, vàng tươi khi xoài chín. Khi ăn không thể lẫn được với bất kì loại xoài nào khác bởi mùi thơm và vị ngon khó cưỡng.  ",
       "Chinhsach": "Đổi trả trong 12h"
     }
   },
   {
     "id": 13,
     "products_model": "SP15",
-    "products_name": "Nệm Zinus Memory Foam",
+    "products_name": "Táo xanh hữu cơ",
     "categories_name": "RauCu",
     "categories_type": "RauCu",
     "description": "Sang trọng, tinh tế, tối ưu",
-    "price": 6711000,
+    "price": 230000,
     "image": "assets/Image/product/product13.jpg",
     "detail": {
-      "Tinhnang": "Sở hữu chất liệu bọt mút độc quyền chứng chỉ BioFoam® được làm từ thực vật hữu cơ, nệm có độ bền cao và rất phù hợp sử dụng lâu dài. Đặc biệt các sản phẩm làm từ  BioFoam® đều có khả năng phân hủy hoàn toàn, thân thiện với môi trường và có thể sử dụng làm nguyên liệu tái chế.",
-      "Dactinh": "Sản phẩm được làm từ chất liệu TEMPUR®  - loại chất liệu đặc biệt được cải tiến từ chất liệu viscoelastic. Chất liệu viscoelastic lần đầu tiên được NASA sử dụng để làm tấm đệm bảo vệ cho các phi hành gia khi du hành vào vũ trụ. Kể từ sau đó, các kỹ sư và các nhà khoa học nghiên cứu về giấc ngủ của Tempur đã dốc hết tâm huyết trong việc nghiên cứu và hoàn thiện một loại vật liệu mới, mang tên là TEMPUR®. Dưới sức nặng của sức nặng cơ thể, các loại nệm bình thường sẽ có xu hướng nén xuống. Riêng với TEMPUR®, hàng tỷ các phân tử mở sẽ di chuyển ôm sát đường cong cơ thể bạn, từ đó mang lại sự nâng đỡ tối đa ở các vị trí cần thiết, đồng thời giúp giảm thiểu tình trạng đau nhức ở các vị trí chịu lực khi nằm.",
+      "Tinhnang": "Là dòng táo được trồng hữu cơ, thịt táo chứa nhiều chất pectin, một chất xơ hòa tan làm giảm cholesterol và chất chống oxy hóa, ngăn ngừa bệnh tim. ",
+      "Dactinh": "Lượng magiê và kali trong táo Organic giúp điều chỉnh áp suất máu và giữ cho nhịp đập tim ở mức ổn định, chất chống ôxy hoá tự nhiên giúp bảo vệ thành mạch máu",
       "Chinhsach": "Đổi trả trong 12h"
     }
   },
@@ -210,8 +209,8 @@
     "id": 14,
     "products_model": "SP16",
     "products_name": "Nệm Zinus Memory Foam",
-    "categories_name": "RauCu",
-    "categories_type": "RauCu",
+    "categories_name": "Nem",
+    "categories_type": "NemFoam",
     "description": "Sang trọng, tinh tế, tối ưu",
     "price": 9576000,
     "image": "assets/Image/product/product14.jpg",
@@ -225,8 +224,8 @@
     "id": 15,
     "products_model": "SP17",
     "products_name": "Nệm Lò xo Zinus Hybrid Gel",
-    "categories_name": "RauCu",
-    "categories_type": "RauCu",
+    "categories_name": "Nem",
+    "categories_type": "NemLoXo",
     "description": "Sang trọng, tinh tế, tối ưu",
     "price": 6711000,
     "image": "assets/Image/product/product15.jpg",
@@ -241,8 +240,8 @@
     "id": 16,
     "products_model": "SP18",
     "products_name": "Nệm Foam Zinus Pressure Relief",
-    "categories_name": "RauCu",
-    "categories_type": "RauCu",
+    "categories_name": "Nem",
+    "categories_type": "NemFoam",
     "description": "Sang trọng, tinh tế, tối ưu",
     "price": 8524000,
     "image": "assets/Image/product/product16.jpg",
@@ -256,8 +255,8 @@
     "id": 17,
     "products_model": "SP19",
     "products_name": "Nệm lò xo Lady Americana Florida",
-    "categories_name": "RauCu",
-    "categories_type": "RauCu",
+    "categories_name": "Nem",
+    "categories_type": "NemLoXo",
     "description": "Sang trọng, tinh tế, tối ưu",
     "price": 14711000,
     "image": "assets/Image/product/product17.jpg",
@@ -271,8 +270,8 @@
     "id": 18,
     "products_model": "SP20",
     "products_name": "Nệm lò xo Lady Americana New Mexico",
-    "categories_name": "RauCu",
-    "categories_type": "RauCu",
+    "categories_name": "Nem",
+    "categories_type": "NemLoXo",
     "description": "Sang trọng, tinh tế, tối ưu",
     "price": 24990000,
     "image": "assets/Image/product/product18.jpg",
@@ -286,8 +285,8 @@
     "id": 19,
     "products_model": "SP21",
     "products_name": "Nệm lò xo Lady Americana Restore",
-    "categories_name": "RauCu",
-    "categories_type": "RauCu",
+    "categories_name": "Nem",
+    "categories_type": "NemLoXo",
     "description": "Sang trọng, tinh tế, tối ưu",
     "price": 49990000,
     "image": "assets/Image/product/product19.jpg",
@@ -301,8 +300,8 @@
     "id": 20,
     "products_model": "SP22",
     "products_name": "Nệm lò xo Lady Americana Align",
-    "categories_name": "RauCu",
-    "categories_type": "RauCu",
+    "categories_name": "Nem",
+    "categories_type": "NemLoXo",
     "description": "Sang trọng, tinh tế, tối ưu",
     "price": 30711000,
     "image": "assets/Image/product/product20.jpg",
@@ -316,8 +315,8 @@
     "id": 21,
     "products_model": "SP23",
     "products_name": "Nệm lò xo Lady Americana Alaska",
-    "categories_name": "RauCu",
-    "categories_type": "RauCu",
+    "categories_name": "Nem",
+    "categories_type": "NemLoXo",
     "description": "Sang trọng, tinh tế, tối ưu",
     "price": 10871000,
     "image": "assets/Image/product/product21.jpg",
