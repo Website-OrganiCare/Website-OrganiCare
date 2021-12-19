@@ -1,7 +1,8 @@
-﻿@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+﻿/*@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');*/
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Work+Sans:100,200,300,400,500,600,700,800,900&amp;display=swap");
 :root {
-    --main-font: 'Roboto', sans-serif;
-    --primary-color:#005959;
+    --main-font: "Work Sans", sans-serif;
+    --primary-color: #005959;
 }
 *{
     margin:0;
@@ -152,21 +153,34 @@
     position:absolute;
     width:100%;
     display:flex;
-    
     justify-content:space-between;
     top:40%;
     transform:translateY(-50%);
 }
 .owl-nav button{
-    border:none;
+    border:none!important;
+    background-color:transparent!important;
+    outline:none;
 }
-.owl-nav button span{
-    font-size:50px;
+    .owl-nav button:hover{
+        opacity:1!important
+    }
+    .owl-nav button span {
+        font-size: 50px;
+    }
+.owl-nav button.owl-prev {
+    left: 0;
+    padding-left: 50px;
 }
-.owl-dots button{
-    border:none;
-    background:none;
+
+.owl-nav button.owl-next {
+    right: 0;
+    padding-right: 50px;
 }
+    .owl-dots button {
+        border: none;
+        background: none;
+    }
 .owl-dot span{
     background-color:#c4c4c4!important;
 }
@@ -260,8 +274,8 @@
   border-radius: 50%;
 }
 .action_links ul li a:hover {
-  background: #005959;
-  color: #fff;
+  background: #005959 !important; 
+  color: #fff !important;
 }
     .action_links ul li a:hover i{
         color:white;
@@ -272,6 +286,9 @@
         display: block;
         padding: 20px;
     }
+.category-content-items:hover{
+    cursor:pointer;
+}
 .category-name {
     position: relative;
     display: block;
@@ -330,7 +347,7 @@
 
 @media (min-width:768px) {
     .container, .container-md, .container-sm {
-        max-width: 720px
+        max-width: 740px
     }
 }
 
@@ -735,7 +752,7 @@
     transition: 0.5s;
 }
 
-}
+
 
 .blog-content-items-text button:hover {
     background-color: #48a9a6;

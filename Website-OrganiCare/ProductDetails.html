@@ -5,20 +5,20 @@
     <title>OrganiCare - Chi tiết sản phẩm</title>
 
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/homepage.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/slider.css" />
-
-    <script type="text/javascript" src="assets/js/jquery.js"></script>
-    <script type="text/javascript" src="assets/js/slider.js"></script>
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
 
     <!--rate-bar-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/1147679ae7.js" crossorigin="anonymous"></script>
     <style>
         .checked {
             color: orange;
         }
 
-        select, input {
+        select, input[type=number] {
             width: 130px;
             border: 1px solid #ebebeb;
             background: none;
@@ -121,7 +121,6 @@
             clear: both;
         }
 
-        /* Six columns side by side */
         .column {
             float: left;
             width: 33.33%;
@@ -155,12 +154,12 @@
             }
 
                 .tab button:hover {
-                    background-color: #ddd;
+                    font-weight: bolder;
                 }
 
                 /* Create an active/current tablink class */
                 .tab button.active {
-                    background-color: #ccc;
+                    font-weight: bolder;
                 }
 
         /* Style the tab content */
@@ -191,148 +190,8 @@
                 object-fit: cover;
                 box-sizing: border-box;
             }
-
-        .detail-box {
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 20px;
-            box-sizing: border-box;
-        }
-
-        .type {
-            display: flex;
-            flex-direction: column;
-        }
-
-            .type a {
-                color: #222222;
-                margin: 5px 0px;
-                font-weight: 700;
-                letter-spacing: 0.5px;
-                padding-right: 8px;
-            }
-
-        .text span {
-            color: rgba(26, 26, 26, 0.5);
-        }
-
-        .price {
-            color: #333333;
-            font-weight: 600;
-            letter-spacing: 0.5px;
-        }
-
-        .overlay {
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%,-50%);
-            width: 100%;
-            height: 100%;
-            background-color: rgba(9,95,236,0.6);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .btn-buy {
-            width: 160px;
-            height: 40px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #FFFFFF;
-            color: #252525;
-            font-weight: 700;
-            letter-spacing: 1px;
-            border-radius: 20px;
-            box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
-        }
-
-            .btn-buy:hover {
-                color: #FFFFFF;
-                background-color: #f15fa3;
-                transition: all ease 0.3s;
-            }
-
-        .overlay {
-            visibility: hidden;
-        }
-
-        .slide-img:hover .overlay {
-            visibility: visible;
-            animation: fade 0.5s;
-        }
-
-        @keyframes fade {
-            0% {
-                opacity: 0;
-            }
-
-            100% {
-                opacity: 1;
-            }
-        }
+            
     </style>
-
-    <script>
-        var slideIndex = 1;
-        showSlides(slideIndex);
-
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("product_slides");
-            var dots = document.getElementsByClassName("demo");
-            var captionText = document.getElementById("caption");
-            if (n > slides.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = slides.length }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-            captionText.innerHTML = dots[slideIndex - 1].alt;
-        }
-
-        function openTabContent(evt, tabName) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-            document.getElementById(tabName).style.display = "block";
-            evt.currentTarget.className += " active";
-        }
-
-        $(document).ready(function () {
-            $('#autoWidth').lightSlider({
-                autoWidth: true,
-                loop: true,
-                onSliderLoad: function () {
-                    $('#autoWidth').removeClass('cS-hidden');
-                }
-            });
-        });
-
-    </script>
-
 </head>
 <body>
 
@@ -372,7 +231,7 @@
                         <a class="prev" onclick="plusSlides(-1)">❮</a>
                         <a class="next" onclick="plusSlides(1)">❯</a>
 
-                        <div class="row">
+                        <div class="row" style="margin-top: 20px">
                             <div class="column">
                                 <img class="demo cursor" src="assets/Image/product/product11.jpg" style="width:100%" onclick="currentSlide(1)">
                             </div>
@@ -423,8 +282,8 @@
                         </form>
                         <div class="social">
                             <p><b>Chia sẻ qua</b></p>
-                            <a href="#" title="Facebook"><img style="width:30px; height:30px" src="assets/Image/Icon/facebook.png" /></a>
-                            <a href="#" title="Zalo"><img style="width:30px; height:30px" src="assets/Image/Icon/zalo.png" /></a>
+                            <a href="#" title="Facebook"><img style="width:30px; height:30px" src="assets/Image/icon/facebook.png" /></a>
+                            <a href="#" title="Zalo"><img style="width:30px; height:30px" src="assets/Image/icon/zalo.png" /></a>
                         </div>
                     </div>
                 </div>
@@ -436,207 +295,242 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="product_d_inner">
-                        <div class="product_info_button">
-                            <ul class="nav" role="tablist" id="nav-tab">
-                                <li>
-                                    <a class="tablinks" data-toggle="tab" href="#info" role="tab" aria-controls="info" aria-selected="false" onclick="openTabContent(event, 'description')">Thông tin sản phẩm</a>
-                                </li>
-                                <li>
-                                    <a class="tablinks" data-toggle="tab" href="#reviews" role="tab" aria-controls="reviews" aria-selected="false" onclick="openTabContent(event, 'review')">Đánh giá</a>
-                                </li>
-                            </ul>
-                        </div>
+                    <div class="tab">
+                        <button class="tablinks" onclick="openTab(event, 'ProductInfo')">Thông tin sản phẩm</button>
+                        <button class="tablinks" onclick="openTab(event, 'Review')">Đánh giá</button>
+                    </div>
 
-                        <div class="tab-content">
-                            <div class="tab-pane fade show active" id="info" role="tabpanel">
-                                <div class="tabcontent" id="description">
-                                    <p>Kiwi vàng có xuất xứ từ New Zealand có đài ở đầu quả và thuôn dài hơn so với kiwi xanh. Chúng có vỏ màu nâu vàng, trơn nhẵn, không có lông xù xì như kiwi xanh. Kiwi vàng có thịt quả màu vàng trong rất đẹp mắt, với nhiều hạt đen tạo thành một vòng tròn xung quanh trục dọc của quả và vị ngọt mát rất đặc trưng. Đây là loại quả ngon số 1 thế giới, với quy trình từ trồng, chăm bón đến thu, hái, vận chuyển được chính phủ New Zealand kiểm soát rất chặt chẽ để đảm bảo quả kiwi luôn đồng đều và tiêu chuẩn.</p>
-                                    <h4>GIÁ TRỊ DINH DƯỠNG CỦA KIWI</h4>
-                                    <ul style="list-style:circle; margin-left:15px">
-                                        <li>Trung bình 2 trái kiwi có thể cung cấp khoảng 230% lượng Vitamin C, gần gấp đôi so với cam.</li>
-                                        <li>Giúp vết thương nhanh lành, hấp thụ sắt để xương, mạch máu và răng chắc khỏe hơn.</li>
-                                        <li>Hỗ trợ giấc ngủ và tăng cường sự tỉnh táo vào buổi sáng.</li>
-                                        <li>2 trái kiwi chứa khoảng 30mg Magie, lượng Kali nhiều hơn chuối khoảng 20%, kiểm soát được huyết áp, ngăn ngừa sỏi thận, loãng xương và đột quỵ.</li>
-                                        <li>Giúp trái tim của bạn khỏe mạnh, điều hòa quá trình tiêu hóa và kiểm soát cholesterol,...</li>
-                                    </ul>
+                    <div id="ProductInfo" class="tabcontent" style="display:block">
+                        <p style="color:#000000">Kiwi vàng có xuất xứ từ New Zealand có đài ở đầu quả và thuôn dài hơn so với kiwi xanh. Chúng có vỏ màu nâu vàng, trơn nhẵn, không có lông xù xì như kiwi xanh. Kiwi vàng có thịt quả màu vàng trong rất đẹp mắt, với nhiều hạt đen tạo thành một vòng tròn xung quanh trục dọc của quả và vị ngọt mát rất đặc trưng. Đây là loại quả ngon số 1 thế giới, với quy trình từ trồng, chăm bón đến thu, hái, vận chuyển được chính phủ New Zealand kiểm soát rất chặt chẽ để đảm bảo quả kiwi luôn đồng đều và tiêu chuẩn.</p>
+                        <h4>GIÁ TRỊ DINH DƯỠNG CỦA KIWI</h4>
+                        <ul style="list-style:circle; margin-left:15px">
+                            <li>Trung bình 2 trái kiwi có thể cung cấp khoảng 230% lượng Vitamin C, gần gấp đôi so với cam.</li>
+                            <li>Giúp vết thương nhanh lành, hấp thụ sắt để xương, mạch máu và răng chắc khỏe hơn.</li>
+                            <li>Hỗ trợ giấc ngủ và tăng cường sự tỉnh táo vào buổi sáng.</li>
+                            <li>2 trái kiwi chứa khoảng 30mg Magie, lượng Kali nhiều hơn chuối khoảng 20%, kiểm soát được huyết áp, ngăn ngừa sỏi thận, loãng xương và đột quỵ.</li>
+                            <li>Giúp trái tim của bạn khỏe mạnh, điều hòa quá trình tiêu hóa và kiểm soát cholesterol,...</li>
+                        </ul>
+                    </div>
+
+                    <div id="Review" class="tabcontent">
+                        <div class="reviews_comment_box">
+                            <div class="comment_thmb">
+                                <img src="assets/Image/icon/comment.jpg" alt="">
+                            </div>
+                            <div class="comment_text">
+                                <div class="reviews_meta">
+                                    <div class="star_rating">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                    </div>
+                                    <p><strong>NGƯỜI BÍ ẨN </strong>- 17/12/2021</p>
+                                    <span>Thực phẩm ngon, chất lượng!!!</span>
                                 </div>
                             </div>
 
-                            <div class="tab-pane fade" id="reviews" role="tabpanel">
-                                <div class="tabcontent" id="review">
-                                    <h2>1 review for Donec eu furniture</h2>
-                                    <div class="reviews_comment_box">
-                                        <div class="comment_thmb">
-                                            <img src="assets/img/blog/comment2.jpg" alt="">
-                                        </div>
-                                        <div class="comment_text">
-                                            <div class="reviews_meta">
-                                                <div class="star_rating">
-                                                    <ul>
-                                                        <li><a href="#"><i class="icon-star"></i></a></li>
-                                                        <li><a href="#"><i class="icon-star"></i></a></li>
-                                                        <li><a href="#"><i class="icon-star"></i></a></li>
-                                                        <li><a href="#"><i class="icon-star"></i></a></li>
-                                                        <li><a href="#"><i class="icon-star"></i></a></li>
-                                                    </ul>
-                                                </div>
-                                                <p><strong>admin </strong>- September 12, 2018</p>
-                                                <span>roadthemes</span>
-                                            </div>
-                                        </div>
+                        </div>
+                        <div class="comment_title">
+                            <p><strong>THÊM NHẬN XÉT MỚI</strong></p>
+                            <span>Đánh giá của bạn &ensp;</span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <div class="product_review_form">
+                            <form action="#">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <label for="review_comment">Nhận xét của bạn</label>
+                                        <textarea name="comment" id="review_comment"></textarea>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6">
+                                        <label for="author">Tên </label>
+                                        <input id="author" type="text">
 
                                     </div>
-                                    <div class="comment_title">
-                                        <h2>Add a review </h2>
-                                        <p>Your email address will not be published.  Required fields are marked </p>
-                                    </div>
-                                    <div class="product_ratting mb-10">
-                                        <h3>Your rating</h3>
-                                        <ul>
-                                            <li><a href="#"><i class="icon-star"></i></a></li>
-                                            <li><a href="#"><i class="icon-star"></i></a></li>
-                                            <li><a href="#"><i class="icon-star"></i></a></li>
-                                            <li><a href="#"><i class="icon-star"></i></a></li>
-                                            <li><a href="#"><i class="icon-star"></i></a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="product_review_form">
-                                        <form action="#">
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <label for="review_comment">Your review </label>
-                                                    <textarea name="comment" id="review_comment"></textarea>
-                                                </div>
-                                                <div class="col-lg-6 col-md-6">
-                                                    <label for="author">Name</label>
-                                                    <input id="author" type="text">
-
-                                                </div>
-                                                <div class="col-lg-6 col-md-6">
-                                                    <label for="email">Email </label>
-                                                    <input id="email" type="text">
-                                                </div>
-                                            </div>
-                                            <button type="submit">Submit</button>
-                                        </form>
+                                    <div class="col-lg-6 col-md-6">
+                                        <label for="email">Email </label>
+                                        <input id="email" type="text">
                                     </div>
                                 </div>
+                                <button type="submit">GỬI</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <section class="product-section">
+        <div class="container">
+            <h4 class="title-h4">Sản phẩm tương tự</h4>
+            <div class="product-items">
+                <div class="product-content owl-carousel owl-theme">
+                    <div class="product-content-items item">
+                        <img src="assets/Image/product/product1.jpg" alt="" />
+                        <div class="product-content-items-text">
+                            <h5>Chanh không hạt</h5>
+                            <p>150.000 VNĐ</p>
+                            <div class="action_links">
+                                <ul>
+                                    <li class="add_to_cart"><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+                                    <li class="wishlist"><a href="wishlist.html"><i class=" fas fa-heart"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-content-items item">
+                        <img src="assets/Image/product/product2.jpg" alt="" />
+                        <div class="product-content-items-text">
+                            <h5>Chanh không hạt</h5>
+
+                            <p>150.000 VNĐ</p>
+
+                            <div class="action_links">
+                                <ul>
+                                    <li class="add_to_cart"><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+                                    <li class="wishlist"><a href="wishlist.html"><i class=" fas fa-heart"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-content-items item">
+                        <img src="assets/Image/product/product3.jpg" alt="" />
+                        <div class="product-content-items-text">
+                            <h5>Chanh không hạt</h5>
+
+                            <p>150.000 VNĐ</p>
+
+                            <div class="action_links">
+                                <ul>
+                                    <li class="add_to_cart"><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+                                    <li class="wishlist"><a href="wishlist.html"><i class=" fas fa-heart"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-content-items item">
+                        <img src="assets/Image/product/product4.jpg" alt="" />
+                        <div class="product-content-items-text">
+                            <h5>Chanh không hạt</h5>
+                            <p>150.000 VNĐ</p>
+
+
+                            <div class="action_links">
+                                <ul>
+                                    <li class="add_to_cart"><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+                                    <li class="wishlist"><a href="wishlist.html"><i class=" fas fa-heart"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-content-items item">
+                        <img src="assets/Image/product/product5.jpg" alt="" />
+                        <div class="product-content-items-text">
+                            <h5>Chanh không hạt</h5>
+
+                            <p>150.000 VNĐ</p>
+
+
+                            <div class="action_links">
+                                <ul>
+                                    <li class="add_to_cart"><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+                                    <li class="wishlist"><a href="wishlist.html"><i class=" fas fa-heart"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-content-items item">
+                        <img src="assets/Image/product/product6.jpg" alt="" />
+                        <div class="product-content-items-text">
+                            <h5>Chanh không hạt</h5>
+
+                            <p>150.000 VNĐ</p>
+
+
+                            <div class="action_links">
+                                <ul>
+                                    <li class="add_to_cart"><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+                                    <li class="wishlist"><a href="wishlist.html"><i class=" fas fa-heart"></i></a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!--box-slider-->
-    <ul id="autoWidth" class="cs-hidden">
-        <li class="item-a">
-            <div class="box">
-                <div class="slide-img">
-                    <img src="assets/Image/product/product11.jpg" />
-                    <div class="overlay">
-                        <a href="#" class="btn-buy">Mua ngay</a>
-                    </div>
-                </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="assets/javascript/owl.carousel.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
 
-                <div class="detail-box">
+        var slideIndex = 1;
+        showSlides(slideIndex);
 
-                </div>
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
 
-                <div class="type">
-                    <a href="#">Kiwi</a>
-                    <span>No </span>
-                    <a href="#" class="price">80.000đ</a>
-                </div>
-            </div>
-        </li>
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
 
-        <li class="item-a">
-            <div class="box">
-                <div class="slide-img">
-                    <img src="assets/Image/product/product11.jpg" />
-                    <div class="overlay">
-                        <a href="#" class="btn-buy">Mua ngay</a>
-                    </div>
-                </div>
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("product_slides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
 
-                <div class="detail-box">
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
 
-                </div>
-
-                <div class="type">
-                    <a href="#">Kiwi</a>
-                    <span>No </span>
-                    <a href="#" class="price">80.000đ</a>
-                </div>
-            </div>
-        </li>
-
-        <li class="item-a">
-            <div class="box">
-                <div class="slide-img">
-                    <img src="assets/Image/product/product11.jpg" />
-                    <div class="overlay">
-                        <a href="#" class="btn-buy">Mua ngay</a>
-                    </div>
-                </div>
-
-                <div class="detail-box">
-
-                </div>
-
-                <div class="type">
-                    <a href="#">Kiwi</a>
-                    <span>No </span>
-                    <a href="#" class="price">80.000đ</a>
-                </div>
-            </div>
-        </li>
-
-        <li class="item-a">
-            <div class="box">
-                <div class="slide-img">
-                    <img src="assets/Image/product/product11.jpg" />
-                    <div class="overlay">
-                        <a href="#" class="btn-buy">Mua ngay</a>
-                    </div>
-                </div>
-
-                <div class="detail-box">
-
-                </div>
-
-                <div class="type">
-                    <a href="#">Kiwi</a>
-                    <span>No </span>
-                    <a href="#" class="price">80.000đ</a>
-                </div>
-            </div>
-        </li>
-
-        <li class="item-a">
-            <div class="box">
-                <div class="slide-img">
-                    <img src="assets/Image/product/product11.jpg" />
-                    <div class="overlay">
-                        <a href="#" class="btn-buy">Mua ngay</a>
-                    </div>
-                </div>
-
-                <div class="detail-box">
-
-                </div>
-
-                <div class="type">
-                    <a href="#">Kiwi</a>
-                    <span>No </span>
-                    <a href="#" class="price">80.000đ</a>
-                </div>
-            </div>
-        </li>
-    </ul>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 4
+                }
+            }
+        })
+    </script>
 
 </body>
 </html>

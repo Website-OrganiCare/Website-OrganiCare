@@ -21,20 +21,21 @@
 .category-filter {
     border: 1px solid #f1f1f1;
     background-color: #ffffff;
-    box-shadow: 0 6px 15px 0 #242526;
-    padding: 20px 0px 0 15px;
+    box-shadow: 0 1px 3px 0 #242526;
+    padding: 5px 0px 5px 15px;
     vertical-align:central;
     border-radius:10px;
     margin-bottom:20px;
 }
 .category-filter-title{
-    position:absolute;
+    position:relative;
     margin:0;
 }
     .category-filter-title h3{
         margin:0;
+        font-size:22px!important;
     }
-    .category-filter-title a.filter-toggle i {
+    .category-filter-title .filter-toggle i {
         position: absolute;
         top: 50%;
         padding: 0;
@@ -46,17 +47,27 @@
         cursor: pointer;
         color: #444;
     }
-.category-filter-content ul{
-    padding:20px;
-    margin:0
+
+.category-filter-content ul {
+    padding: 10px;
+    margin: 0
 }
 .category-filter-content ul li{
     list-style:none;
     font-size:14px;
 }
+    .category-filter-content ul li a{
+        text-decoration:none;
+        color:#333;
+        cursor:pointer;
+    }
+        .category-filter-content ul li a:hover{
+            color:#005959;
+            font-weight:bold;
+        }
 
         .category-filter-title i .filter-toggle::before {
-            vertical-align:central;
+            vertical-align: central;
         }
         .category-filter .category-filter-title {
         justify-content: space-between;
@@ -64,7 +75,25 @@
     }
     .category-filter-title {
         display: flex;
+        cursor:pointer;
     }
+.shop_toggle {
+    position: absolute;
+    top: 50%;
+    padding: 8px 12px;
+    background-color: transparent;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 10px;
+    font-size: 12px;
+    cursor: pointer;
+    color: #444;
+}
+@media only screen and (max-width:992px){
+    .category-filter-content{
+        display:none;
+    }
+}
 /*--------------Product------------------- */
 img {
     max-width: 100%;
@@ -75,9 +104,15 @@ img {
     padding-top: 80px;
 }
 
-h1 {
-    color: var(--primary-color);
+ h1 {
+    color:#005959;
+    font-size:28px!important;
 }
+ @media only screen and (max-width:992px){
+     h1{
+         font-size:24px!important;
+     }
+ }
 
 .item-product:hover {
     box-shadow: 0px 2px 20px 0px rgba(0,0,0,0.1);
@@ -94,7 +129,7 @@ h1 {
 }
 
 .item-info-name {
-    color: var(--primary-color);
+    color: #005959;
     font-weight: 500;
     text-decoration: none;
 }
@@ -108,7 +143,7 @@ h1 {
 }
 
 .item-info-price {
-    color: var(--main-color);
+    color: #005959;
     font-weight: 500;
 }
 /* Giới hạn số dòng text */
