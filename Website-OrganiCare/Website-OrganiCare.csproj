@@ -97,6 +97,9 @@
     <Content Include="assets\Image\Category\Sữa.jpg" />
     <Content Include="assets\Image\Category\Trà hữu cơ.jpg" />
     <Content Include="assets\Image\Category\Trái cây.jpg" />
+    <Content Include="assets\Image\Checkout\minus %281%29.png" />
+    <Content Include="assets\Image\Checkout\plus %281%29.png" />
+    <Content Include="assets\Image\Checkout\trash.png" />
     <Content Include="assets\Image\comment.png.jpg" />
     <Content Include="assets\Image\facebook.png" />
     <Content Include="assets\Image\logo.png" />
@@ -155,6 +158,7 @@
     <Content Include="assets\javascript\main.js" />
     <Content Include="assets\javascript\modernizr-3.7.1.min.js" />
     <Content Include="assets\javascript\owl.carousel.min.js" />
+    <Content Include="assets\javascript\Cart-Checkout.js" />
     <Content Include="Blog Detail.html" />
     <Content Include="Cart_Checkout.html" />
     <Content Include="customAccount.html" />
