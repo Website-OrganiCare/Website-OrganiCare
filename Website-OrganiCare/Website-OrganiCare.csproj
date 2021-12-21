@@ -168,6 +168,7 @@
     <Content Include="FAQ.html" />
     <Content Include="Homepage.html" />
     <Content Include="mini-cart.html" />
+    <Content Include="MyAccount.html" />
     <Content Include="ProductDetails.html" />
     <Content Include="ProductList.html" />
     <Content Include="Reviews.html" />

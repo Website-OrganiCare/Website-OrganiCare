@@ -1,0 +1,271 @@
+﻿
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+        .topbar {
+            background-color: teal;
+            overflow: hidden;
+            text-align: center;
+            color: aliceblue;
+        }
+
+            .topbar a {
+                float: right;
+                color: white;
+                text-align: left;
+                padding: 20px 26px;
+                text-decoration: none;
+                font-size: 30px;
+            }
+
+        .sidebar {
+            background-color: teal;
+            color: white;
+            height: 100%;
+        }
+
+            .sidebar a {
+                margin-left: 10px;
+                display: block;
+                color: white;
+                padding: 10px;
+                font-size: 15px;
+                text-decoration: none;
+            }
+
+        .card {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .content {
+            background-color: whitesmoke;
+        }
+    </style>
+
+    <!-- CSS
+    ========================= -->
+    <!--bootstrap min css-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!--owl carousel min css-->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <!--linearicons css-->
+    <link rel="stylesheet" href="assets/css/linearicons.css">
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <!--breadcrumbs area start-->
+    <div class="breadcrumbs_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="breadcrumb_content">
+                        <h3>
+                            Tài khoản khách hàng
+                        </h3>
+                        <ul>
+                            <li><a href="#">Thông tin khách hàng</a></li>
+                            <li> <a href="#"></a>Trang chủ</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--breadcrumbs area end-->
+    <!-- my account start  -->
+    <section class="main_content_area">
+        <div class="container">
+            <div class="account_dashboard">
+                <div class="row">
+                    <div class="col-sm-12 col-md-3 col-lg-3">
+                        <!-- Nav tabs -->
+                        <div class="dashboard_tab_button">
+                            <ul role="tablist" class="nav flex-column dashboard-list" id="nav-tab">
+                                <li><a href="#dashboard" data-toggle="tab" class="nav-link active">Đổi mật khẩu</a></li>
+                                <li> <a href="#orders" data-toggle="tab" class="nav-link">Đơn hàng</a></li>
+                                <li><a href="#address" data-toggle="tab" class="nav-link">Địa chỉ</a></li>
+                                <li><a href="#account-details" data-toggle="tab" class="nav-link">Thông tin khách hàng</a></li>
+                                <li><a href="login.html" class="nav-link">Đăng xuất</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-9 col-lg-9">
+                        <!-- Tab panes -->
+                        <div class="tab-content dashboard_content">
+                            <div class="tab-pane fade show active" id="dashboard">
+                                <h3 class="m-3">Đổi mật khẩu</h3>
+                                <div class="login">
+                                    <div class="login_form_container">
+                                        <div class="account_login_form">
+                                            <form action="#">
+                                                <label>Nhập mật khẩu hiện tại:</label>
+                                                <input type="password" name="pwdNow">
+
+                                                <label>Nhập mật khẩu mới:</label>
+                                                <input type="password" name="pwdNew">
+
+                                                <label>Xác nhận mật khẩu mới:</label>
+                                                <input type="password" name="pwdCheck">
+
+                                                <br>
+                                                <div class="save_button primary_btn default_button">
+                                                    <button type="submit">Lưu</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="orders">
+                                <h3>Đơn hàng</h3>
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Đơn hàng</th>
+                                                <th>Ngày đặt hàng</th>
+                                                <th>Tình trạng</th>
+                                                <th>Tổng tiền</th>
+                                                <th>Hành động</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>11/12/2021</td>
+                                                <td><span class="success">Đã giao hàng</span></td>
+                                                <td>$25.00</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>20/12/2021</td>
+                                                <td>Chờ mua hàng</td>
+                                                <td>$17.00</td>
+                                                <td><a href="cart.html" class="view">Mua hàng ngay</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="address">
+                                <h3 class="billing-address">Địa chỉ giao hàng</h3>
+                                <label>Số nhà:        </label>
+                                <input type="text" name="number"><br /><br />
+
+                                <label>Xã:            </label>
+                                <input type="text" name="last-name"><br /><br />
+
+                                <label>Email:         </label>
+                                <input type="text" name="email-name"><br /><br />
+
+                                <label>Mật khẩu:      </label>
+                                <input type="password" name="user-password"><br />
+
+                            </div>
+                            <div class="tab-pane fade" id="account-details">
+                                <h3>Thông tin khách hàng</h3>
+                                <div class="login">
+                                    <div class="login_form_container">
+                                        <div class="account_login_form">
+                                            <form action="#">
+                                                <p>Bạn có tài khoản chưa? <a href="#">Đăng nhập!</a></p>
+                                                <div class="input-radio">
+                                                    <span class="custom-radio"><input type="radio" value="1" name="id_gender" autofocus>Nam</span>
+                                                    <span class="custom-radio"><input type="radio" value="1" name="id_gender">Nữ</span>
+                                                </div> <br>
+                                                <label>Họ và tên:</label>Nguyen Huu Thang
+
+
+                                                <input type="text" name="first-name">
+
+                                                <label>Tên</label>
+                                                <input type="text" name="last-name">
+
+                                                <label>Email</label>
+                                                <input type="text" name="email-name">
+
+                                                <label>Mật khẩu</label>
+                                                <input type="password" name="user-password">
+
+                                                <label>Ngày sinh</label>
+                                                <input type="text" placeholder="MM/DD/YYYY" value="" name="birthday">
+
+                                                <span class="example">
+                                                </span>
+                                                <br>
+                                                <span class="custom_checkbox">
+                                                    <input type="checkbox" value="1" name="optin">
+                                                    <label>Nhận ưu đãi từ các đối tác của OrganiCare</label>
+                                                </span>
+                                                <br>
+                                                <span class="custom_checkbox">
+                                                    <input type="checkbox" value="1" name="newsletter">
+                                                    <label>Đăng ký nhận email từ OrganiCare<br></label><br />
+                                                    <i>Khách hàng có thể nhận các thông báo cập nhật, khuyến mãi, mã giảm giá từ OrganiCare.</i>
+                                                </span>
+                                                <div class="save_button primary_btn default_button">
+                                                    <button type="submit">Lưu</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- my account end   -->
+    <!-- JS
+    ============================================ -->
+    <!--jquery min js-->
+    <script src="assets/js/vendor/jquery-3.4.1.min.js"></script>
+    <!--popper min js-->
+    <script src="assets/js/popper.js"></script>
+    <!--bootstrap min js-->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!--owl carousel min js-->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <!--slick min js-->
+    <script src="assets/js/slick.min.js"></script>
+    <!--magnific popup min js-->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!--counterup min js-->
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <!--jquery countdown min js-->
+    <script src="assets/js/jquery.countdown.js"></script>
+    <!--jquery ui min js-->
+    <script src="assets/js/jquery.ui.js"></script>
+    <!--jquery elevatezoom min js-->
+    <script src="assets/js/jquery.elevatezoom.js"></script>
+    <!--isotope packaged min js-->
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <!--slinky menu js-->
+    <script src="assets/js/slinky.menu.js"></script>
+    <!--instagramfeed menu js-->
+    <script src="assets/js/jquery.instagramFeed.min.js"></script>
+    <!-- tippy bundle umd js -->
+    <script src="assets/js/tippy-bundle.umd.js"></script>
+    <!-- Plugins JS -->
+    <script src="assets/js/plugins.js"></script>
+
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+
+
+</body>
+
+</html>
