@@ -165,7 +165,6 @@
     <Content Include="assets\javascript\Cart-Checkout.js" />
     <Content Include="Blog Detail.html" />
     <Content Include="Cart_Checkout.html" />
-    <Content Include="customAccount.html" />
     <Content Include="FAQ.html" />
     <Content Include="Homepage.html" />
     <Content Include="mini-cart.html" />
