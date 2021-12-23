@@ -91,6 +91,15 @@
     <Content Include="assets\Image\Blog-detail\Blog-trungchien.jpg" />
     <Content Include="assets\Image\Blog-detail\blog1.jpg" />
     <Content Include="assets\Image\Blog-detail\Blog_noodle.jpg" />
+    <Content Include="assets\Image\Blog\Blog-cahoi.jpg" />
+    <Content Include="assets\Image\Blog\Blog-chocolate.jpg" />
+    <Content Include="assets\Image\Blog\Blog-coffee.jpg" />
+    <Content Include="assets\Image\Blog\Blog-cookies.jpg" />
+    <Content Include="assets\Image\Blog\Blog-fastfood.jpg" />
+    <Content Include="assets\Image\Blog\Blog-friedrice.jpg" />
+    <Content Include="assets\Image\Blog\Blog-salad.jpg" />
+    <Content Include="assets\Image\Blog\Blog-smoothies.jpg" />
+    <Content Include="assets\Image\Blog\Blog-tea.jpg" />
     <Content Include="assets\Image\Category\Bông cải xanh hữu cơ.jpg" />
     <Content Include="assets\Image\Category\Cá Hồi Hữu Cơ 200g.jpg" />
     <Content Include="assets\Image\Category\Hạt sen.jpg" />
@@ -176,6 +185,7 @@
     <Content Include="assets\javascript\slinky.menu.js" />
     <Content Include="assets\javascript\tippy-bundle.umd.js" />
     <Content Include="Blog Detail.html" />
+    <Content Include="Blog.html" />
     <Content Include="Cart_Checkout.html" />
     <Content Include="FAQ.html" />
     <Content Include="Homepage.html" />
