@@ -159,10 +159,22 @@
     <Content Include="assets\Image\testimonial\testimonial_5.png" />
     <Content Include="assets\Image\zalopay.png" />
     <Content Include="assets\javascript\bootstrap.min.js" />
+    <Content Include="assets\javascript\isotope.pkgd.min.js" />
+    <Content Include="assets\javascript\jquery.countdown.js" />
+    <Content Include="assets\javascript\jquery.counterup.min.js" />
+    <Content Include="assets\javascript\jquery.elevatezoom.js" />
+    <Content Include="assets\javascript\jquery.instagramFeed.min.js" />
+    <Content Include="assets\javascript\jquery.magnific-popup.min.js" />
+    <Content Include="assets\javascript\jquery.ui.js" />
     <Content Include="assets\javascript\main.js" />
     <Content Include="assets\javascript\modernizr-3.7.1.min.js" />
     <Content Include="assets\javascript\owl.carousel.min.js" />
     <Content Include="assets\javascript\Cart-Checkout.js" />
+    <Content Include="assets\javascript\plugins.js" />
+    <Content Include="assets\javascript\popper.js" />
+    <Content Include="assets\javascript\slick.min.js" />
+    <Content Include="assets\javascript\slinky.menu.js" />
+    <Content Include="assets\javascript\tippy-bundle.umd.js" />
     <Content Include="Blog Detail.html" />
     <Content Include="Cart_Checkout.html" />
     <Content Include="FAQ.html" />
@@ -172,7 +184,6 @@
     <Content Include="ProductDetails.html" />
     <Content Include="ProductList.html" />
     <Content Include="Reviews.html" />
-    <Content Include="Profile page.html" />
     <Content Include="SanPhamKhuyenMai.html" />
     <Content Include="Web.config" />
   </ItemGroup>
