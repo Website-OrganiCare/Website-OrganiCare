@@ -6,6 +6,7 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <style type="text/css">
         .topbar {
             background-color: teal;
@@ -44,10 +45,20 @@
             flex-direction: column;
         }
 
-        .content {
-            background-color: whitesmoke;
+        .panel {
+            padding: 0 12px;
+            margin: 5px;
+            display: none;
+            background-color: white;
+            overflow: hidden;
+            text-align: justify;
         }
     </style>
+    <script>
+        function logOut() {
+            alert("Bạn có chắc muốn đăng xuất không?");
+        }
+    </script>
 
     <!-- CSS
     ========================= -->
@@ -73,8 +84,8 @@
                             Tài khoản khách hàng
                         </h3>
                         <ul>
-                            <li><a href="#">Thông tin khách hàng</a></li>
-                            <li> <a href="#"></a>Trang chủ</li>
+                            <li><a href="Homepage.html">Trang chủ</a></li>
+                            <li> <a href="#">Thông tin khách hàng</a></li>
                         </ul>
                     </div>
                 </div>
@@ -95,7 +106,7 @@
                                 <li> <a href="#orders" data-toggle="tab" class="nav-link">Đơn hàng</a></li>
                                 <li><a href="#address" data-toggle="tab" class="nav-link">Địa chỉ</a></li>
                                 <li><a href="#account-details" data-toggle="tab" class="nav-link">Thông tin khách hàng</a></li>
-                                <li><a href="login.html" class="nav-link">Đăng xuất</a></li>
+                                <li><a href="#" class="nav-link" onclick="logOut()">Đăng xuất</a></li>
                             </ul>
                         </div>
                     </div>
@@ -128,78 +139,105 @@
                             </div>
                             <div class="tab-pane fade" id="orders">
                                 <h3>Đơn hàng</h3>
-                                <div class="table-responsive">
-                                    <table class="table">
-                                        <thead>
-                                            <tr>
-                                                <th>Đơn hàng</th>
-                                                <th>Ngày đặt hàng</th>
-                                                <th>Tình trạng</th>
-                                                <th>Tổng tiền</th>
-                                                <th>Hành động</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>1</td>
-                                                <td>11/12/2021</td>
-                                                <td><span class="success">Đã giao hàng</span></td>
-                                                <td>$25.00</td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td>2</td>
-                                                <td>20/12/2021</td>
-                                                <td>Chờ mua hàng</td>
-                                                <td>$17.00</td>
-                                                <td><a href="cart.html" class="view">Mua hàng ngay</a></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                                <div class="accordion_area">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="accordion-item">
+                                                    <button class="accordion"><p>Làm thế nào để bảo quản được thực phẩm hữu cơ?</p></button>
+                                                    <div class="panel">
+                                                        <div class="table-responsive">
+                                                            <table class="table">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>Đơn hàng</th>
+                                                                        <th>Ngày đặt hàng</th>
+                                                                        <th>Tình trạng</th>
+                                                                        <th>Tổng tiền</th>
+                                                                        <th>Hành động</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>1</td>
+                                                                        <td>11/12/2021</td>
+                                                                        <td><span class="success">Đã giao hàng</span></td>
+                                                                        <td>$25.00</td>
+                                                                        <td></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>2</td>
+                                                                        <td>20/12/2021</td>
+                                                                        <td>Chờ mua hàng</td>
+                                                                        <td>$17.00</td>
+                                                                        <td><a href="cart.html" class="view">Mua hàng ngay</a></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion-item">
+                                                    <button class="accordion"><p>Làm thế nào để bảo quản được thực phẩm hữu cơ?</p></button>
+                                                    <div class="panel">
+                                                        <div class="table-responsive">
+                                                            <table class="table">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>Đơn hàng</th>
+                                                                        <th>Ngày đặt hàng</th>
+                                                                        <th>Tình trạng</th>
+                                                                        <th>Tổng tiền</th>
+                                                                        <th>Hành động</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>1</td>
+                                                                        <td>11/12/2021</td>
+                                                                        <td><span class="success">Đã giao hàng</span></td>
+                                                                        <td>$25.00</td>
+                                                                        <td></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>2</td>
+                                                                        <td>20/12/2021</td>
+                                                                        <td>Chờ mua hàng</td>
+                                                                        <td>$17.00</td>
+                                                                        <td><a href="cart.html" class="view">Mua hàng ngay</a></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="tab-pane" id="address">
-                                <h3 class="billing-address">Địa chỉ giao hàng</h3>
-                                <label>Số nhà:        </label>
-                                <input type="text" name="number"><br /><br />
-
-                                <label>Xã:            </label>
-                                <input type="text" name="last-name"><br /><br />
-
-                                <label>Email:         </label>
-                                <input type="text" name="email-name"><br /><br />
-
-                                <label>Mật khẩu:      </label>
-                                <input type="password" name="user-password"><br />
-
-                            </div>
-                            <div class="tab-pane fade" id="account-details">
-                                <h3>Thông tin khách hàng</h3>
+                                <h3 class="billing-address">Cập nhật địa chỉ giao hàng</h3>
                                 <div class="login">
                                     <div class="login_form_container">
                                         <div class="account_login_form">
                                             <form action="#">
-                                                <p>Bạn có tài khoản chưa? <a href="#">Đăng nhập!</a></p>
-                                                <div class="input-radio">
-                                                    <span class="custom-radio"><input type="radio" value="1" name="id_gender" autofocus>Nam</span>
-                                                    <span class="custom-radio"><input type="radio" value="1" name="id_gender">Nữ</span>
-                                                </div> <br>
-                                                <label>Họ và tên:</label>Nguyen Huu Thang
+
+                                                <label>Số nhà:</label>
+                                                <input type="text" value="192/2" name="houseNumber">
 
 
-                                                <input type="text" name="first-name">
+                                                <label>Tên đường:</label>
+                                                <input type="text" value="Trần Văn Kiểu" name="roadName">
 
-                                                <label>Tên</label>
-                                                <input type="text" name="last-name">
+                                                <label>Phường:</label>
+                                                <input type="text" value="10" name="groupName">
 
-                                                <label>Email</label>
-                                                <input type="text" name="email-name">
+                                                <label>Quận:</label>
+                                                <input type="text" value="6" name="districtName">
 
-                                                <label>Mật khẩu</label>
-                                                <input type="password" name="user-password">
-
-                                                <label>Ngày sinh</label>
-                                                <input type="text" placeholder="MM/DD/YYYY" value="" name="birthday">
+                                                <label>Thành phố:</label>
+                                                <input type="text" value="Hồ Chí Minh" name="districtName">
 
                                                 <span class="example">
                                                 </span>
@@ -221,6 +259,38 @@
                                         </div>
                                     </div>
                                 </div>
+
+                            </div>
+                            <div class="tab-pane fade" id="account-details">
+                                <h3>Thông tin khách hàng</h3>
+                                <div class="login">
+                                    <div class="login_form_container">
+                                        <div class="account_login_form">
+                                            <form action="#">
+                                                <div class="input-radio">
+                                                    <label>Giới tính:</label><br />
+                                                    <span class="custom-radio"><input type="radio" value="1" name="id_gender" checked>Nam</span>
+                                                    <span class="custom-radio"><input type="radio" value="1" name="id_gender">Nữ</span>
+                                                </div>
+                                                <label>Họ và tên:</label>
+                                                <input type="text" value="Victor Nguyen" name="fullName">
+
+                                                <label>Email:</label>
+                                                <input type="text" value="Victor2022@gmail.com" name="email">
+
+                                                <label>Hạng mức thành viên:</label>
+                                                <input type="text" value="Gold" name="customRank">
+
+                                                <label>Ngày sinh:</label>
+                                                <input type="text" value="18/12/2000" name="birthDay">
+
+                                                <label>Địa chỉ giao hàng:</label>
+                                                <input type="text" value="192/2, Trần Văn Kiểu, Phường 10, Quận 6, TPHCM" name="address">
+
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -231,40 +301,56 @@
     <!-- my account end   -->
     <!-- JS
     ============================================ -->
-    <!--jquery min js-->
-    <script src="assets/js/vendor/jquery-3.4.1.min.js"></script>
     <!--popper min js-->
-    <script src="assets/js/popper.js"></script>
+    <script src="assets/javascript/popper.js"></script>
     <!--bootstrap min js-->
-    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/javascript/bootstrap.min.js"></script>
     <!--owl carousel min js-->
-    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/javascript/owl.carousel.min.js"></script>
     <!--slick min js-->
-    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/javascript/slick.min.js"></script>
     <!--magnific popup min js-->
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/javascript/jquery.magnific-popup.min.js"></script>
     <!--counterup min js-->
-    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/javascript/jquery.counterup.min.js"></script>
     <!--jquery countdown min js-->
-    <script src="assets/js/jquery.countdown.js"></script>
+    <script src="assets/javascript/jquery.countdown.js"></script>
     <!--jquery ui min js-->
-    <script src="assets/js/jquery.ui.js"></script>
+    <script src="assets/javascript/jquery.ui.js"></script>
     <!--jquery elevatezoom min js-->
-    <script src="assets/js/jquery.elevatezoom.js"></script>
+    <script src="assets/javascript/jquery.elevatezoom.js"></script>
     <!--isotope packaged min js-->
-    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/javascript/isotope.pkgd.min.js"></script>
     <!--slinky menu js-->
-    <script src="assets/js/slinky.menu.js"></script>
+    <script src="assets/javascript/slinky.menu.js"></script>
     <!--instagramfeed menu js-->
-    <script src="assets/js/jquery.instagramFeed.min.js"></script>
+    <script src="assets/javascript/jquery.instagramFeed.min.js"></script>
     <!-- tippy bundle umd js -->
-    <script src="assets/js/tippy-bundle.umd.js"></script>
+    <script src="assets/javascript/tippy-bundle.umd.js"></script>
     <!-- Plugins JS -->
-    <script src="assets/js/plugins.js"></script>
+    <script src="assets/javascript/plugins.js"></script>
 
     <!-- Main JS -->
-    <script src="assets/js/main.js"></script>
+    <script src="assets/javascript/main.js"></script>
+    <!-- -->
+    <script src="assets/javascript/modernizr-3.7.1.min.js"></script>
 
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
 
 </body>
 
