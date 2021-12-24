@@ -12,6 +12,39 @@
     <script src="https://kit.fontawesome.com/1147679ae7.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div class="topnav" id="myTopnav">
+        <ul>
+            <li>
+                <a href="#home" class="active">Trang chủ</a>
+            </li>
+            <li>
+                <a href="#">Danh mục</a>
+                <ul>
+                    <li><a href="">Rau củ</a></li>
+                    <li><a href="">Tươi sống</a></li>
+                    <li><a href="">Hoa quả</a></li>
+                    <li><a href="">Đồ uống</a></li>
+                    <li><a href="">Bơ - sữa</a></li>
+                    <li><a href="">Khác</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="SanPhamKhuyenMai.html">Khuyến mãi</a>
+            </li>
+            <li>
+                <a href="Blog Detail.html">Blog</a>
+            </li>
+            <li>
+                <a href="Reviews.html">Đánh giá</a>
+            </li>
+            <li>
+                <a href="#">Về chúng tôi</a>
+            </li>
+        </ul>
+        <a href="javascript:void(0);" class="icon" onclick="navTop()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
     <section id="slider">
         <div class="aspect-ratio-169">
             <img src="assets/Image/Banner-01.png" />
@@ -311,23 +344,23 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="assets/javascript/owl.carousel.min.js" crossorigin="anonymous"></script>
     <script type="text/javascript">
-                        $('.owl-carousel').owlCarousel({
-                            loop: true,
-                            margin: 10,
-                            padding:10,
-                            nav: true,
-                            responsive: {
-                                0: {
-                                    items: 1
-                                },
-                                600: {
-                                    items: 3
-                                },
-                                1000: {
-                                    items: 4
-                                }
-                            }
-                        })
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            padding: 10,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 4
+                }
+            }
+        })
     </script>
 </body>
 </html>
