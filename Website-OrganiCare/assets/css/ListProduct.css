@@ -1,21 +1,13 @@
 ﻿html {
     margin: 0;
-    font-family: var(--main-font);
-    font-size: var(--main-font-size);
     color: var(--main-color);
     box-sizing: border-box;
 }
 
 :root {
-    --main-font: Averta;
-    --main-font-size: 17px;
-    --sub-font-size: 18px;
     --main-color: #727272;
     --primary-color: #003349;
     --link-color: #0080ff;
-    --xanh-nhat: #e1f1ef;
-    --cam-nhat: #fde6de;
-    --cam-nhat-2: #fff8ed;
 }
 /*----------------Filter-------------------*/
 .category-filter {
@@ -343,6 +335,8 @@ img {
 }
 .cart-item img{
     width:80px;
+    margin-left:auto;
+    margin-right:auto;
 }
 .cart-item-info{
     text-align:left;
@@ -362,7 +356,13 @@ img {
 .cart-total h3{
     margin-right:0.2rem;
     font-size:1.3rem;
-
+    margin-bottom:0!important;
+    font-weight:500;
+}
+h3.cart-item-name{
+    color:#005959;
+    font-weight:600;
+    font-size:1.3rem;
 }
 #cart-total-value{
     font-size:1.3rem;

@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Admin_TongQuan.html" />
+    <Content Include="assets\css\admin.css" />
     <Content Include="assets\css\bootstrap.min.css" />
     <Content Include="assets\css\FontAwesome.css" />
     <Content Include="assets\css\homepage.css" />
@@ -108,6 +109,7 @@
     <Content Include="assets\Image\icon\comment.jpg" />
     <Content Include="assets\Image\icon\facebook.png" />
     <Content Include="assets\Image\icon\zalo.png" />
+    <Content Include="assets\Image\Admin\kanon.jpg" />
     <Content Include="assets\Image\logo.png" />
     <Content Include="assets\Image\momo.png" />
     <Content Include="assets\Image\product\product1.jpg" />

@@ -47,7 +47,7 @@
         function updateCartInfo() {
             let cartInfor = findCartInfo();
             cartCountInfo.textContent = cartInfor.productCount;
-            cartTotalValue.textContent = cartInfor.total;
+            cartTotalValue.textContent = cartInfor.total + ' VNĐ';
 }
 updateCartInfo();
 //load product item conten from JSON file
@@ -107,7 +107,7 @@ updateCartInfo();
             cartItem.innerHTML = `
                 <img src="${product.image}" alt="product image" />
                 <div class="cart-item-info">
-                    <h5 class="cart-item-name">${product.name}</h5>
+                    <h3 class="cart-item-name">${product.name}</h3>
                     <span class="cart-item-category">${product.category}</span>
                     <span class="cart-item-price">${product.price}</span>
                 </div>
@@ -153,7 +153,7 @@ updateCartInfo();
                 }, 0);
             //Thêm hết giá của tất cả trong cart lại
             return {
-                total: total.toFixed(2),
+                total: total.toFixed(0),
                 productCount: products.length
             }
             
