@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Admin - Sản phẩm/Tất cả sản phẩm</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/linearicons.css" />
+    <link rel="stylesheet" href="assets/css/FontAwesome.css" />
+</head>
+<body>
+    <div class="wrapper-block">
+        <div>
+            <button class="btn btn-primary">
+                <span>Tạo đơn hàng</span>
+            </button>
+        </div>
+            <div class="admin-order-tabs-wrapper">
+                <ul role="tablist" class="admin-order-tabs">
+                    <li class="admin-order-tab-container">
+                        <a class="admin-order-tab admin-order-tab-selected">
+                            <span>Tất cả đơn hàng</span>
+                        </a>
+                        <a class="admin-order-tab admin-order-tab-selected">
+                            <span>Chưa thanh toán</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="order-detail">
+                    <h5 style="padding:5px">
+                        Hiển thị
+                        <select>
+                            <option value="10">10</option>
+                            <option value="15">15</option>
+                            <option value="20">20</option>
+                            <option value="50">50</option>
+                        </select>
+                        đơn
+                    </h5>
+                    <div class="widget_search_order">
+                        <div class="order_search_box">
+                            <input placeholder="Tìm đơn hàng..." type="text">
+                        </div>
+                    </div>
+                    <h5>
+                        <img class="order-search-icon" src="assets/Image/Admin/filter.png" />
+                        Lọc
+                    </h5>
+                </div>
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>
+                            <label class="admin-order-child-container">
+                                <input type="checkbox">
+                                <span class="admin-order-checkmark"></span>
+                            </label>
+                        </th>
+                        <th>Mã</th>
+                        <th>Ngày tạo</th>
+                        <th>Khách hàng</th>
+                        <th>Thanh toán</th>
+                        <th>Trạng thái đơn</th>
+                        <th>Tổng tiền</th>
+                        <th>Kênh</th>
+                    </tr>
+                    <tr>
+                        <td><button class="admin-accordion"><img class="img-play-btn" src="assets/Image/Admin/play.png"/></button>
+                            <div class="panel">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </td>
+                        <td>
+                            <label class="admin-order-child-container">
+                                <input type="checkbox">
+                                <span class="admin-order-checkmark"></span>
+                            </label>
+                        </td>
+                        <td>10004</td>
+                        <td>30/11/2021</td>
+                        <td><b><a href="#"><u>Thiên Kim</u></a></b></td>
+                        <td>Tiền mặt</td>
+                        <td><span class="status chuathanhtoan">Chưa thanh toán</span></td>
+                        <td>1.000.000đ</td>
+                        <td>Web</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="admin-order-child-container">
+                                <input type="checkbox">
+                                <span class="admin-order-checkmark"></span>
+                            </label>
+                        </td>
+                        <td>10003</td>
+                        <td>22/11/2021</td>
+                        <td><b><u><a href="#">Hữu Thắng</a></u></b></td>
+                        <td>Vietcombank</td>
+                        <td><span class="status chuagiaohang">Chưa giao hàng</span></td>
+                        <td>500.000đ</td>
+                        <td>Shopee</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="admin-order-child-container">
+                                <input type="checkbox">
+                                <span class="admin-order-checkmark"></span>
+                            </label>
+                        </td>
+                        <td>10002</td>
+                        <td>17/11/2021</td>
+                        <td><b><u><a href="#">Quân Nguyễn</a></u></b></td>
+                        <td>MoMo</td>
+                        <td><span class="status dangduocgiao">Đang được giao</span></td>
+                        <td>300.000đ</td>
+                        <td>Lazada</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="admin-order-child-container">
+                                <input type="checkbox">
+                                <span class="admin-order-checkmark"></span>
+                            </label>
+                        </td>
+                        <td>10001</td>
+                        <td>10/11/2021</td>
+                        <td><b><u><a href="#">Châu Cao</a></u></b></td>
+                        <td>AirPay</td>
+                        <td><span class="status dangduocgiao">Đang được giao</span></td>
+                        <td>700.000đ</td>
+                        <td>Tại shop</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="admin-order-child-container">
+                                <input type="checkbox">
+                                <span class="admin-order-checkmark"></span>
+                            </label>
+                        </td>
+                        <td>10000</td>
+                        <td>02/11/2021</td>
+                        <td><b><u><a href="#">Nhật Phan</a></u></b></td>
+                        <td>BIDV</td>
+                        <td><span class="status chuathanhtoan">Chưa thanh toán</span></td>
+                        <td>1.900.000đ</td>
+                        <td>App</td>
+                    </tr>
+                </table>
+                <div style="border: 1px solid #e3e9ed"></div>
+                <div class="order-detail">
+                    <h5 style="padding:5px">Đã tìm thấy 5 kết quả</h5>
+                    <span>
+                    Trang
+                        <input style="width:45px" type="number"/>
+                        / 1
+                    </span>
+                </div>
+            </div>
+        </div>
+
+    <script src="assets/javascript/Admin-Order.js"></script>
+</body>
+</html>

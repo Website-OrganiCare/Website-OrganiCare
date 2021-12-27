@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin_Tatcadonhang.html" />
     <Content Include="Admin_TongQuan.html" />
     <Content Include="assets\css\bootstrap.min.css" />
     <Content Include="assets\css\FontAwesome.css" />
@@ -77,6 +78,11 @@
     <Content Include="assets\css\owl.theme.default.min.css" />
     <Content Include="assets\css\profile.css" />
     <Content Include="assets\css\style.css" />
+    <Content Include="assets\Image\Admin\filter.png" />
+    <Content Include="assets\Image\Admin\magnifier.png" />
+    <Content Include="assets\Image\Admin\notification.png" />
+    <Content Include="assets\Image\Admin\play.png" />
+    <Content Include="assets\Image\Admin\user.png" />
     <Content Include="assets\Image\airpay.png" />
     <Content Include="assets\Image\Banner-01.png" />
     <Content Include="assets\Image\Banner-02.png" />
@@ -167,6 +173,7 @@
     <Content Include="assets\Image\testimonial\testimonial_4.png" />
     <Content Include="assets\Image\testimonial\testimonial_5.png" />
     <Content Include="assets\Image\zalopay.png" />
+    <Content Include="assets\javascript\Admin-Order.js" />
     <Content Include="assets\javascript\bootstrap.min.js" />
     <Content Include="assets\javascript\isotope.pkgd.min.js" />
     <Content Include="assets\javascript\jquery.countdown.js" />
