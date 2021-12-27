@@ -87,7 +87,9 @@
     <Content Include="assets\Image\Banner-01.png" />
     <Content Include="assets\Image\Banner-02.png" />
     <Content Include="assets\Image\Banner-03.png" />
+    <Content Include="assets\Image\banner1.jpg" />
     <Content Include="assets\Image\Banner18.jpg" />
+    <Content Include="assets\Image\banner2.jpg" />
     <Content Include="assets\Image\Banner3.jpg" />
     <Content Include="assets\Image\Blog-detail\Blog-hamthucan.jpg" />
     <Content Include="assets\Image\Blog-detail\Blog-naucahoi.jpg" />
@@ -97,15 +99,6 @@
     <Content Include="assets\Image\Blog-detail\Blog-trungchien.jpg" />
     <Content Include="assets\Image\Blog-detail\blog1.jpg" />
     <Content Include="assets\Image\Blog-detail\Blog_noodle.jpg" />
-    <Content Include="assets\Image\Blog\Blog-cahoi.jpg" />
-    <Content Include="assets\Image\Blog\Blog-chocolate.jpg" />
-    <Content Include="assets\Image\Blog\Blog-coffee.jpg" />
-    <Content Include="assets\Image\Blog\Blog-cookies.jpg" />
-    <Content Include="assets\Image\Blog\Blog-fastfood.jpg" />
-    <Content Include="assets\Image\Blog\Blog-friedrice.jpg" />
-    <Content Include="assets\Image\Blog\Blog-salad.jpg" />
-    <Content Include="assets\Image\Blog\Blog-smoothies.jpg" />
-    <Content Include="assets\Image\Blog\Blog-tea.jpg" />
     <Content Include="assets\Image\Category\Bông cải xanh hữu cơ.jpg" />
     <Content Include="assets\Image\Category\Cá Hồi Hữu Cơ 200g.jpg" />
     <Content Include="assets\Image\Category\Hạt sen.jpg" />
@@ -175,24 +168,12 @@
     <Content Include="assets\Image\zalopay.png" />
     <Content Include="assets\javascript\Admin-Order.js" />
     <Content Include="assets\javascript\bootstrap.min.js" />
-    <Content Include="assets\javascript\isotope.pkgd.min.js" />
-    <Content Include="assets\javascript\jquery.countdown.js" />
-    <Content Include="assets\javascript\jquery.counterup.min.js" />
-    <Content Include="assets\javascript\jquery.elevatezoom.js" />
-    <Content Include="assets\javascript\jquery.instagramFeed.min.js" />
-    <Content Include="assets\javascript\jquery.magnific-popup.min.js" />
-    <Content Include="assets\javascript\jquery.ui.js" />
     <Content Include="assets\javascript\main.js" />
     <Content Include="assets\javascript\modernizr-3.7.1.min.js" />
     <Content Include="assets\javascript\owl.carousel.min.js" />
     <Content Include="assets\javascript\Cart-Checkout.js" />
-    <Content Include="assets\javascript\plugins.js" />
-    <Content Include="assets\javascript\popper.js" />
-    <Content Include="assets\javascript\slick.min.js" />
-    <Content Include="assets\javascript\slinky.menu.js" />
-    <Content Include="assets\javascript\tippy-bundle.umd.js" />
+    <Content Include="assets\javascript\listproduct.js" />
     <Content Include="Blog Detail.html" />
-    <Content Include="Blog.html" />
     <Content Include="Cart_Checkout.html" />
     <Content Include="FAQ.html" />
     <Content Include="Homepage.html" />
@@ -201,8 +182,10 @@
     <Content Include="ProductDetails.html" />
     <Content Include="ProductList.html" />
     <Content Include="Reviews.html" />
+    <Content Include="Profile page.html" />
     <Content Include="SanPhamKhuyenMai.html" />
     <Content Include="Web.config" />
+    <Content Include="Wishlist.html" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
