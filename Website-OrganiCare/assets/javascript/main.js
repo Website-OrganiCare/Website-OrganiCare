@@ -39,3 +39,12 @@ function slider(index) {
 
 }
 setInterval(imgSlide, 5000);
+function navTop() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+

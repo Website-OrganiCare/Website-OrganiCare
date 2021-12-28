@@ -1,0 +1,344 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Admin - Tổng Quan</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/admin.css" />
+    <script src="https://kit.fontawesome.com/1147679ae7.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <i class="fas fa-building"></i>                       
+                        </span>
+                        <span class="title">OrganiCare</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <i class="fas fa-search"></i>
+                        </span>
+                        <span class="title search"><label><input type="text" placeholder="Tìm kiếm" /></label></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <i class="fas fa-home"></i>
+                        </span>
+                        <span class="title">Tổng quan</span>
+                    </a>
+                </li>
+                <li class="item-sub">
+                    <a href="#" class="btn-sub">
+                        <span class="icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </span>
+                        <span class="title">Đơn hàng<i class="fas fa-chevron-down drop-down-submenu"></i></span>
+                    </a>
+                    <div class="sub-menu">
+                       <a href="#">
+                           <span>Tất cả đơn hàng</span>
+                       </a>
+                        <a href="#">
+                            <span>Đơn hàng chưa được xác nhận</span>
+                        </a>
+                    </div>
+                </li>
+                <li class="item-sub">
+                    <a href="#" class="btn-sub">
+                        <span class="icon">
+                            <i class="fas fa-carrot"></i>
+                        </span>
+                        <span class="title">Sản phẩm<i class="fas fa-chevron-down drop-down-submenu"></i></span>
+                    </a>
+                    <div class="sub-menu">
+                        <a href="#">
+                            <span>Tất cả sản phẩm</span>
+                        </a>
+                        <a href="#">
+                            <span>Hàng tổn kho</span>
+                        </a>
+                    </div>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <i class="fas fa-truck"></i>
+                        </span>
+                        <span class="title">Vận chuyển</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <i class="fas fa-user"></i>
+                        </span>
+                        <span class="title">Khách hàng</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </span>
+                        <span class="title">Báo cáo</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="topbar">
+                <div class="flex-item">
+                    <div class="toggle" onclick="toggleMenu()"></div>
+                    <div class="main-title">
+                        <h1>Tổng quan</h1>
+                    </div>
+                </div>
+                <div class="flex-item">
+                    <span class="fas fa-bell"></span>
+                    <div class="user">
+                        <img src="assets/Image/Admin/kanon.jpg" />
+                    </div>
+                </div>
+            </div>
+            <div class="topbar">
+                <div class="flex-item">
+                    <div class="main-title">
+                        <h3>Kết quả kinh doanh</h3>
+                    </div>
+                    <span class="fas fa-sync"></span>
+                </div>
+                <div class="flex-item" style="width:200px">
+                    <select name="OrderStatus">
+                        <option>Hôm nay</option>
+                        <option>Tuần này</option>
+                        <option>Tháng này</option>
+                        <option>Tháng trước</option>
+                        <option>6 tháng</option>
+                        <option>1 năm</option>
+                    </select>
+                </div>
+            </div>
+            <hr />
+            <div class="topbar">
+                <div class="flex-item" style="margin-left:auto; margin-right:0; width:250px">
+                    <select name="OrderStatus">
+                        <option>Trên mọi kênh bán hàng</option>
+                        <option>Chỉ trên website</option>
+                        <option>Chỉ trên kênh Facebook</option>
+                    </select>
+                </div>
+            </div>
+            <hr />
+            <div class="cardBox">
+                <div class="card">
+                    <div>
+                        <div class="cardName">Doanh thu thuần</div>
+                        <div class="numbers">5.000.000đ</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="cardName">Số lượng đơn hàng</div>
+                        <div class="numbers">500 đơn</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class="fas fa-box-open"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="cardName">Chi phí phát sinh</div>
+                        <div class="numbers">50.000đ</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class="fas fa-file-invoice-dollar"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="details">
+                <div>
+                    <div class="recentOrders">
+                        <div class="cardHeader">
+                            <h3>Đơn hàng</h3>
+                            <a href="#" class="btn">View All</a>
+                        </div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Trạng thái đơn hàng</td>
+                                    <td colspan="2">
+                                        <select name="OrderStatus">
+                                            <option>Hôm nay</option>
+                                            <option>Tuần này</option>
+                                            <option>Tháng này</option>
+                                            <option>Tháng trước</option>
+                                            <option>6 tháng</option>
+                                            <option>1 năm</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        Đơn hàng chưa thanh toán
+                                    </td>
+                                    <td>10 đơn </td>
+                                    <td><i class="fas fa-angle-right"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Đơn hàng chưa giao
+                                    </td>
+                                    <td>10 đơn </td>
+                                    <td><i class="fas fa-angle-right"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Đơn hàng đang được giao
+                                    </td>
+                                    <td>10 đơn</td>
+                                    <td><i class="fas fa-angle-right"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Đơn hàng đã bị hủy
+                                    </td>
+                                    <td>10 đơn</td>
+                                    <td><i class="fas fa-angle-right"></i></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <hr />
+                    <div class="selling-product">
+                        <div class="cardHeader">
+                            <h3>Sản phẩm</h3>
+                            <a href="" class="btn">View All</a>
+                        </div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td colspan="2">Sản phẩm bán chạy nhất</td>
+                                    <td>
+                                        <select name="ProductStatus">
+                                            <option>Hôm nay</option>
+                                            <option>Tuần này</option>
+                                            <option>Tháng này</option>
+                                            <option>Tháng trước</option>
+                                            <option>6 tháng</option>
+                                            <option>1 năm</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img src="assets/Image/Category/Bông cải xanh hữu cơ.jpg" />
+                                    </td>
+                                    <td>
+                                        Bông cải xanh hữu cơ <br />
+                                        100.000đ
+                                    </td>
+                                    <td>50 sản phẩm</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="assets/Image/Category/Bông cải xanh hữu cơ.jpg" />
+                                    </td>
+                                    <td>
+                                        Bông cải xanh hữu cơ <br />
+                                        100.000đ
+                                    </td>
+                                    <td>50 sản phẩm</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="recentActivities">
+                    <div class="cardHeader"><h3>Hoạt động</h3></div>
+                    <ul class="user-timeline user-timeline-compact">
+                        <li class="latest">
+                            <div class="user-timeline-title">Hôm nay</div>
+                            <div class="user-timeline-description"></div>
+                        </li>
+                        <li class="latest">
+                            <div class="user-timeline-title">Trung Quân - 20:00 CH</div>
+                            <div class="user-timeline-description">Trung Quân đã tạo sản phẩm Cá sấu đông lạnh</div>
+                        </li>
+                        <li class="latest">
+                            <div class="user-timeline-title">Băng Châu - 17:00 CH</div>
+                            <div class="user-timeline-description">Băng Châu đã cập nhật thông tin khách hàng Thắng Nguyễn</div>
+                        </li>
+                        <li class="latest">
+                            <div class="user-timeline-title">Minh Nhật - 15:00 CH</div>
+                            <div class="user-timeline-description">Minh Nhật đã tạo khách hàng Kim Tô</div>
+                        </li>
+                        <li class="latest">
+                            <div class="user-timeline-title">Trung Quân - 20:00 CH</div>
+                            <div class="user-timeline-description">Trung Quân đã tạo sản phẩm Cá sấu đông lạnh</div>
+                        </li>
+                        <li class="latest">
+                            <div class="user-timeline-title">Hữu Thắng - 13:00 CH</div>
+                            <div class="user-timeline-description">Hữu Thắng đã cập nhật sản phẩm Quýt Cái Bè</div>
+                        </li>
+                        <li class="latest">
+                            <div class="user-timeline-title">Thiên Kim - 11:00 SA</div>
+                            <div class="user-timeline-description">Thiên Kim đã tạo sản phẩm Bông cải xanh hữu cơ</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggleMenu() {
+            let toggle = document.querySelector('.toggle');
+            let navigation = document.querySelector('.navigation');
+            let main = document.querySelector('.main');
+
+            toggle.classList.toggle('acitve');
+            navigation.classList.toggle('active');
+            main.classList.toggle('active');
+        }
+        toggleSubMenu();
+        function toggleSubMenu() {
+            let item_sub = document.querySelectorAll('.item-sub');
+            item_sub.forEach(item => {
+                var tagA = item.querySelector('.btn-sub');
+                tagA.addEventListener('click', () => {
+                    item.classList.toggle('active');
+                    let arrow = item.querySelector('.title .fas');
+                        if (arrow.classList.contains('fa-chevron-down')) {
+                            arrow.classList.replace('fa-chevron-down', 'fa-chevron-up');
+                        } else {
+                            arrow.classList.replace('fa-chevron-up', 'fa-chevron-down');
+                        }
+                });
+            })
+        }
+        let list_li = document.querySelectorAll('.navigation ul li');
+        list_li.forEach(liTag => {
+            let aTag = liTag.querySelector('.navigation ul li a')
+            liTag.addEventListener('click', () => {
+                aTag.style.background = '#28a9a6';
+                aTag.style.fontWeight = '600';
+            });
+            
+        })
+    </script>
+</body>
+</html>

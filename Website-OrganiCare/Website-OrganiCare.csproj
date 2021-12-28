@@ -69,10 +69,13 @@
   <ItemGroup>
     <Content Include="Admin_Customer.html" />
     <Content Include="assets\css\app.min.css" />
+    <Content Include="Admin_TongQuan.html" />
+    <Content Include="assets\css\admin.css" />
     <Content Include="assets\css\bootstrap.min.css" />
     <Content Include="assets\css\FontAwesome.css" />
     <Content Include="assets\css\Homepage.css" />
     <Content Include="assets\css\icons.min.css" />
+    <Content Include="assets\css\homepage.css" />
     <Content Include="assets\css\linearicons.css" />
     <Content Include="assets\css\ListProduct.css" />
     <Content Include="assets\css\owl.carousel.min.css" />
@@ -83,7 +86,9 @@
     <Content Include="assets\Image\Banner-01.png" />
     <Content Include="assets\Image\Banner-02.png" />
     <Content Include="assets\Image\Banner-03.png" />
+    <Content Include="assets\Image\banner1.jpg" />
     <Content Include="assets\Image\Banner18.jpg" />
+    <Content Include="assets\Image\banner2.jpg" />
     <Content Include="assets\Image\Banner3.jpg" />
     <Content Include="assets\Image\Blog-detail\Blog-hamthucan.jpg" />
     <Content Include="assets\Image\Blog-detail\Blog-naucahoi.jpg" />
@@ -100,11 +105,15 @@
     <Content Include="assets\Image\Category\Sữa.jpg" />
     <Content Include="assets\Image\Category\Trà hữu cơ.jpg" />
     <Content Include="assets\Image\Category\Trái cây.jpg" />
+    <Content Include="assets\Image\Checkout\minus %281%29.png" />
+    <Content Include="assets\Image\Checkout\plus %281%29.png" />
+    <Content Include="assets\Image\Checkout\trash.png" />
     <Content Include="assets\Image\comment.png.jpg" />
     <Content Include="assets\Image\facebook.png" />
     <Content Include="assets\Image\icon\comment.jpg" />
     <Content Include="assets\Image\icon\facebook.png" />
     <Content Include="assets\Image\icon\zalo.png" />
+    <Content Include="assets\Image\Admin\kanon.jpg" />
     <Content Include="assets\Image\logo.png" />
     <Content Include="assets\Image\momo.png" />
     <Content Include="assets\Image\product\product1.jpg" />
@@ -163,17 +172,21 @@
     <Content Include="assets\javascript\modernizr-3.7.1.min.js" />
     <Content Include="assets\javascript\owl.carousel.min.js" />
     <Content Include="assets\javascript\vendor.min.js" />
+    <Content Include="assets\javascript\Cart-Checkout.js" />
+    <Content Include="assets\javascript\listproduct.js" />
     <Content Include="Blog Detail.html" />
     <Content Include="Cart_Checkout.html" />
-    <Content Include="customAccount.html" />
     <Content Include="FAQ.html" />
     <Content Include="Homepage.html" />
     <Content Include="mini-cart.html" />
+    <Content Include="MyAccount.html" />
     <Content Include="ProductDetails.html" />
     <Content Include="ProductList.html" />
     <Content Include="Reviews.html" />
     <Content Include="Profile page.html" />
+    <Content Include="SanPhamKhuyenMai.html" />
     <Content Include="Web.config" />
+    <Content Include="Wishlist.html" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />

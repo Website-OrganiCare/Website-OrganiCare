@@ -53,7 +53,7 @@ html, body {
 
 body {
     line-height: 24px;
-    font-size: 14px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     visibility: visible;
@@ -5625,8 +5625,8 @@ figure {
 }
 
     .blog_content h4 {
-        font-size: 17px;
-        text-transform: capitalize;
+        font-size: 16px;
+        text-transform: initial;
         line-height: 18px;
         margin-bottom: 5px;
         font-weight: 500;
@@ -9103,7 +9103,7 @@ figure {
     padding: 5px 10px;
     text-transform: capitalize;
     color: #ffffff;
-    background: #005959;
+    background: #40A944;
     font-weight: 500;
     -webkit-transition: 0.3s;
     transition: 0.3s;
@@ -9113,12 +9113,12 @@ figure {
 
 @media only screen and (max-width: 767px) {
     .order_button button {
-        font-size: 14px;
+        font-size: 16px;
     }
 }
 
 .order_button button:hover {
-    background: #48A9A6;
+    background: #006a04;
 }
 
 @media only screen and (max-width: 767px) {
@@ -11093,7 +11093,7 @@ figure {
 }
 
     .tag_widget ul li a {
-        margin: 0 6px 0 0;
+        margin: 0 6px 30px 0;
         display: block;
         font-size: 15px;
         font-weight: 400;
@@ -11133,7 +11133,7 @@ figure {
 .post_info h4 {
     font-size: 16px;
     font-weight: 500;
-    text-transform: capitalize;
+    text-transform: initial;
     line-height: 14px;
     margin-bottom: 5px;
 }
@@ -11903,7 +11903,7 @@ figure {
     font-weight: 500;
     line-height: 13px;
     margin-bottom: 0;
-    text-transform: uppercase;
+    text-transform: initial;
 }
 
     .related_content h4 a {
@@ -13622,5 +13622,144 @@ figure {
     user-select: none;
     white-space: nowrap;
     width: auto;
+}
+
+.quantity {
+    
+    justify-content: center;
+    align-content: center;
+}
+
+    .quantity input {
+        -webkit-appearance: none;
+        border: none;
+        text-align: center;
+        width: 32px;
+        font-size: 16px;
+        color: #43484D;
+        font-weight: 300;
+    }
+
+
+.plus-btn {
+    width: 40px;
+    height: 40px;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+
+.minus-btn {
+    width: 40px;
+    height: 40px;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+
+.delete-btn {
+    width: 50px;
+    height: 50px;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Customize the label (the container) */
+.child-container {
+    display: inline-grid;
+    position: relative;
+    padding-left: 26px;
+    margin-bottom: 16px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+    /* Hide the browser's default checkbox */
+    .child-container input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+
+    }
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.child-container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.child-container input:checked ~ .checkmark {
+    background-color: #40A944;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.child-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.child-container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+.update-button button {
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 30px;
+    padding: 5px 10px;
+    text-transform: initial;
+    color: #ffffff;
+    background: #40A944;
+    font-weight: 500;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 767px) {
+    .update-button button {
+        font-size: 16px;
+    }
+}
+
+.update-button button:hover {
+    background: #006a04;
 }
 /*# sourceMappingURL=style.css.map */

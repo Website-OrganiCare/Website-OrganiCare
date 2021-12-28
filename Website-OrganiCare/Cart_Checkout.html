@@ -11,9 +11,169 @@
     <script src="assets/javascript/bootstrap.min.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="assets/javascript/Cart-Checkout.js"></script>
+
+    <div class="breadcrumbs_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="breadcrumb_content">
+                        <h3>Xem giỏ hàng</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="Checkout_section mt-70">
         <div class="container">
             <div class="row">
+                <table id="myTable" class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>
+                                <label class="child-container">
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </th>
+                            <th>Hình ảnh</th>
+                            <th>Tên sản phẩm</th>
+                            <th>Giá</th>
+                            <th>Số lượng</th>
+                            <th>Tổng</th>
+                            <th>Tùy chọn</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <label class="child-container">
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </td>
+                            <td>
+                                <img src="assets/Image/product/product1.jpg">
+                            </td>
+                            <td>Chanh không hạt</td>
+                            <td>20.000đ</td>
+                            <td>
+                                <div class="quantity">
+                                    <button class="minus-btn" type="button" name="button" data-quantity="minus" data-field="quantity" id="minus">
+                                        <img src="assets/Image/Checkout/minus (1).png" />
+                                    </button>
+                                    <input id="input" type="text" name="quantity" value="2">
+                                    <button class="plus-btn" type="button" name="button" data-quantity="plus" data-field="quantity">
+                                        <img src="assets/Image/Checkout/plus (1).png" />
+                                    </button>
+                                </div>
+                            </td>
+                            <td>40.000đ</td>
+                            <td>
+                                <button class="delete-btn" type="button" name="button">
+                                    <img src="assets/Image/Checkout/trash.png" />
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="child-container">
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </td>
+                            <td>
+                                <img src="assets/Image/product/product1.jpg">
+                            </td>
+                            <td>Chanh không hạt</td>
+                            <td>20.000đ</td>
+                            <td>
+                                <div class="quantity">
+                                    <button class="minus-btn" type="button" name="button" data-quantity="minus" data-field="quantity">
+                                        <img src="assets/Image/Checkout/minus (1).png" />
+                                    </button>
+                                    <input id="number" type="text" name="quantity" value="3">
+                                    <button class="plus-btn" type="button" name="button" data-quantity="plus" data-field="quantity">
+                                        <img src="assets/Image/Checkout/plus (1).png" />
+                                    </button>
+                                </div>
+                            </td>
+                            <td>40.000đ</td>
+                            <td>
+                                <button class="delete-btn" type="button" name="button">
+                                    <img src="assets/Image/Checkout/trash.png" />
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="child-container">
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </td>
+                            <td>
+                                <img src="assets/Image/product/product1.jpg">
+                            </td>
+                            <td>Chanh không hạt</td>
+                            <td>20.000đ</td>
+                            <td>
+                                <div class="quantity">
+                                    <button class="minus-btn" type="button" name="button" data-quantity="minus" data-field="quantity">
+                                        <img src="assets/Image/Checkout/minus (1).png" />
+                                    </button>
+                                    <input id="number" type="text" name="quantity" value="2">
+                                    <button class="plus-btn" type="button" name="button" data-quantity="plus" data-field="quantity">
+                                        <img src="assets/Image/Checkout/plus (1).png" />
+                                    </button>
+                                </div>
+                            </td>
+                            <td>40.000đ</td>
+                            <td>
+                                <button class="delete-btn" type="button" name="button">
+                                    <img src="assets/Image/Checkout/trash.png" />
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="child-container">
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </td>
+                            <td>
+                                <img src="assets/Image/product/product1.jpg">
+                            </td>
+                            <td>Chanh không hạt</td>
+                            <td>20.000đ</td>
+                            <td>
+                                <div class="quantity">
+                                    <button class="minus-btn" type="button" name="button" data-quantity="minus" data-field="quantity">
+                                        <img src="assets/Image/Checkout/minus (1).png" />
+                                    </button>
+                                    <input id="number" type="text" name="quantity" value="2">
+                                    <button class="plus-btn" type="button" name="button" data-quantity="plus" data-field="quantity">
+                                        <img src="assets/Image/Checkout/plus (1).png" />
+                                    </button>
+                                </div>
+                            </td>
+                            <td>40.000đ</td>
+                            <td>
+                                <button class="delete-btn" type="button" name="button">
+                                    <img src="assets/Image/Checkout/trash.png" />
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div style="text-align:right" class="update-button">
+                    <button type="button">Cập nhật giỏ hàng</button>
+                </div>
+
                 <div class="col-12">
                     <div class="user-actions">
                         <h3>
@@ -24,7 +184,7 @@
                         <div id="checkout_login" class="collapse" data-parent="#accordion">
                             <div class="checkout_info">
                                 <p>
-                                    Nếu bạn đã mua sắm với chúng tôi trước đây, vui lòng nhập thông tin chi tiết của bạn vào ô bên dưới.<br/>
+                                    Nếu bạn đã mua sắm với chúng tôi trước đây, vui lòng nhập thông tin chi tiết của bạn vào ô bên dưới.<br />
                                     Nếu bạn là khách hàng mới, vui lòng chuyển đến phần Lập hóa đơn & Giao hàng.
                                 </p>
                                 <form action="#" class="login-checkout row">
@@ -234,8 +394,8 @@
                                                         </td>
                                                         <td>
                                                             <div class="col-lg-6" style="display:flex; width:40px;height:40px;align-content:center">
-                                                            <img src="assets/Image/momo.png" />
-                                                            <p style="bottom:40%; transform:translateY(20%)">MoMo</p>
+                                                                <img src="assets/Image/momo.png" />
+                                                                <p style="bottom:40%; transform:translateY(20%)">MoMo</p>
                                                             </div>
                                                         </td>
                                                     </tr>
