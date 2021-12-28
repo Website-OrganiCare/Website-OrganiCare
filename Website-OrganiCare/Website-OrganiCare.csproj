@@ -67,7 +67,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Admin_Tatcadonhang.html" />
+    <Content Include="Admin_DonHangChuaXacNhan.html" />
+    <Content Include="Admin_TatCaDonHang.html" />
     <Content Include="Admin_TongQuan.html" />
     <Content Include="assets\css\admin.css" />
     <Content Include="assets\css\bootstrap.min.css" />

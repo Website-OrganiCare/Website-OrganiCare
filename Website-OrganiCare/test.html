@@ -7,400 +7,818 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/linearicons.css" />
     <link rel="stylesheet" href="assets/css/FontAwesome.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/admin.css" />
+    <script src="https://kit.fontawesome.com/1147679ae7.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
-    <div class="wrapper-block">
-        <div>
-            <button class="btn btn-primary">
-                <span>Tạo đơn hàng</span>
-            </button>
-        </div>
-        <div class="admin-order-tabs-wrapper">
-            <div class="order-tab">
-            <button class="tablinks" onclick="openTab(event, 'London')">London</button>
-            <button class="tablinks" onclick="openTab(event, 'Paris')">Paris</button>
-            <button class="tablinks" onclick="openTab(event, 'Tokyo')">Tokyo</button>
-         </div>
-
-        <!--<ul role="tablist" class="admin-order-tabs">
-            <li class="admin-order-tab-container">
-                <a class="admin-order-tab admin-order-tab-selected">
-                    <span>Tất cả đơn hàng</span>
-                </a>
-                <a class="admin-order-tab admin-order-tab-selected">
-                    <span>Chưa thanh toán</span>
+    <div class="navigation">
+        <ul>
+            <li>
+                <a href="#">
+                    <span class="icon">
+                        <i class="fas fa-building"></i>
+                    </span>
+                    <span class="title">OrganiCare</span>
                 </a>
             </li>
-        </ul>-->
-        <div class="order-detail">
-            <span style="padding:5px">
-                Hiển thị
-                <select>
-                    <option value="10">10</option>
-                    <option value="15">15</option>
-                    <option value="20">20</option>
-                    <option value="50">50</option>
-                </select>
-                đơn
-            </span>
-            <span class="widget_search_order">
-                <span class="order_search_box">
-                    <input placeholder="Tìm đơn hàng..." type="text">
-                </span>
-            </span>
-            <span>
-                <img class="order-search-icon" src="assets/Image/Admin/filter.png" />
-                Lọc
-            </span>
-        </div>
-        <table id="London" class="order-tabcontent">
-            <tr>
-                <th style="width:5px"></th>
-                <th>
-                    <label class="admin-order-child-container">
-                        <input type="checkbox">
-                        <span class="admin-order-checkmark"></span>
-                    </label>
-                </th>
-                <th>Mã</th>
-                <th>Ngày tạo</th>
-                <th>Khách hàng</th>
-                <th>Thanh toán</th>
-                <th>Trạng thái đơn</th>
-                <th>Tổng tiền</th>
-                <th>Kênh</th>
-            </tr>
-            <tr data-toggle="collapse" href="#collapse10004" aria-expanded="false" aria-controls="collapse10004">
-                <td>
-                    <button class="btn-more-info" style="background-color:transparent"><img src="assets/Image/Admin/information.png" /></button>
-                </td>
-                <td>
-                    <label class="admin-order-child-container">
-                        <input type="checkbox">
-                        <span class="admin-order-checkmark"></span>
-                    </label>
-                </td>
-                <td>10004</td>
-                <td>30/11/2021</td>
-                <td><b><a href="#"><u>Thiên Kim</u></a></b></td>
-                <td>Tiền mặt</td>
-                <td><span class="status chuathanhtoan">Chưa thanh toán</span></td>
-                <td>1.000.000đ</td>
-                <td>Web</td>
-
-            </tr>
-            <tr class="collapse" id="collapse10004">
-                <td colspan="2"><img height="100" width="100" src="assets/Image/Admin/tao-ninh-thuan.jpg" /></td>
-                <td>
-                    <b>Táo Ninh Thuận</b>
-                </td>
-                <td>
-                    <div>x 10</div>
-                    <div>100.000đ</div>
-                    <div><b>Tổng: 1.000.000đ</b></div>
-                </td>
-                <td colspan="2">
-                    <div><i>Thông tin giao hàng:</i></div>
-                    <div><b>Thiên Kim</b></div>
-                    <div>17 Bùi Đình Túy, P.12, Q.Bình Thạnh, TP.HCM</div>
-                    <div>SĐT: 0932129085</div>
-                </td>
-                <td colspan="3">
-                    <div>Ghi chú:</div>
-                    <textarea cols="32" rows="3"></textarea>
-                </td>
-            </tr>
-            <tr data-toggle="collapse" href="#collapse10003" aria-expanded="false" aria-controls="collapse10003">
-                <td>
-                    <button class="btn-more-info" style="background-color:transparent"><img src="assets/Image/Admin/information.png" /></button>
-                </td>
-                <td>
-                    <label class="admin-order-child-container">
-                        <input type="checkbox">
-                        <span class="admin-order-checkmark"></span>
-                    </label>
-                </td>
-                <td>10003</td>
-                <td>22/11/2021</td>
-                <td><b><u><a href="#">Hữu Thắng</a></u></b></td>
-                <td>Vietcombank</td>
-                <td><span class="status chuagiaohang">Chưa giao hàng</span></td>
-                <td>500.000đ</td>
-                <td>Shopee</td>
-            </tr>
-            <tr class="collapse" id="collapse10003">
-                <td colspan="2"><img height="100" width="100" src="assets/Image/Admin/tao-ninh-thuan.jpg" /></td>
-                <td>
-                    <b>Táo Ninh Thuận</b>
-                </td>
-                <td>
-                    <div>x 5</div>
-                    <div>100.000đ</div>
-                    <div><b>Tổng: 500.000đ</b></div>
-                </td>
-                <td colspan="2">
-                    <div><i>Thông tin giao hàng:</i></div>
-                    <div><b>Hữu Thắng</b></div>
-                    <div>16 Bùi Đình Túy, P.12, Q.Bình Thạnh, TP.HCM</div>
-                    <div>SĐT: 0932129084</div>
-                </td>
-                <td colspan="3">
-                    <div>Ghi chú:</div>
-                    <textarea cols="32" rows="3"></textarea>
-                </td>
-            </tr>
-            <tr data-toggle="collapse" href="#collapse10002" aria-expanded="false" aria-controls="collapse10002">
-                <td>
-                    <button class="btn-more-info" style="background-color:transparent"><img src="assets/Image/Admin/information.png" /></button>
-                </td>
-                <td>
-                    <label class="admin-order-child-container">
-                        <input type="checkbox">
-                        <span class="admin-order-checkmark"></span>
-                    </label>
-                </td>
-                <td>10002</td>
-                <td>17/11/2021</td>
-                <td><b><u><a href="#">Quân Nguyễn</a></u></b></td>
-                <td>MoMo</td>
-                <td><span class="status dangduocgiao">Đang được giao</span></td>
-                <td>300.000đ</td>
-                <td>Lazada</td>
-            </tr>
-            <tr class="collapse" id="collapse10002">
-                <td colspan="2"><img height="100" width="100" src="assets/Image/Admin/tao-ninh-thuan.jpg" /></td>
-                <td>
-                    <b>Táo Ninh Thuận</b>
-                </td>
-                <td>
-                    <div>x 3</div>
-                    <div>100.000đ</div>
-                    <div><b>Tổng: 300.000đ</b></div>
-                </td>
-                <td colspan="2">
-                    <div><i>Thông tin giao hàng:</i></div>
-                    <div><b>Quân Nguyễn</b></div>
-                    <div>15 Bùi Đình Túy, P.12, Q.Bình Thạnh, TP.HCM</div>
-                    <div>SĐT: 0932129086</div>
-                </td>
-                <td colspan="3">
-                    <div>Ghi chú:</div>
-                    <textarea cols="32" rows="3"></textarea>
-                </td>
-            </tr>
-            <tr data-toggle="collapse" href="#collapse10001" aria-expanded="false" aria-controls="collapse10001">
-                <td>
-                    <button class="btn-more-info" style="background-color:transparent"><img src="assets/Image/Admin/information.png" /></button>
-                </td>
-                <td>
-                    <label class="admin-order-child-container">
-                        <input type="checkbox">
-                        <span class="admin-order-checkmark"></span>
-                    </label>
-                </td>
-                <td>10001</td>
-                <td>10/11/2021</td>
-                <td><b><u><a href="#">Châu Cao</a></u></b></td>
-                <td>AirPay</td>
-                <td><span class="status dangduocgiao">Đang được giao</span></td>
-                <td>700.000đ</td>
-                <td>Tại shop</td>
-            </tr>
-            <tr class="collapse" id="collapse10001">
-                <td colspan="2"><img height="100" width="100" src="assets/Image/Admin/tao-ninh-thuan.jpg" /></td>
-                <td>
-                    <b>Táo Ninh Thuận</b>
-                </td>
-                <td>
-                    <div>x 7</div>
-                    <div>100.000đ</div>
-                    <div><b>Tổng: 700.000đ</b></div>
-                </td>
-                <td colspan="2">
-                    <div><i>Thông tin giao hàng:</i></div>
-                    <div><b>Châu Cao</b></div>
-                    <div>14 Bùi Đình Túy, P.12, Q.Bình Thạnh, TP.HCM</div>
-                    <div>SĐT: 0932129087</div>
-                </td>
-                <td colspan="3">
-                    <div>Ghi chú:</div>
-                    <textarea cols="32" rows="3"></textarea>
-                </td>
-            </tr>
-            <tr data-toggle="collapse" href="#collapse10000" aria-expanded="false" aria-controls="collapse10000">
-                <td>
-                    <button class="btn-more-info" style="background-color:transparent"><img src="assets/Image/Admin/information.png" /></button>
-                </td>
-                <td>
-                    <label class="admin-order-child-container">
-                        <input type="checkbox">
-                        <span class="admin-order-checkmark"></span>
-                    </label>
-                </td>
-                <td>10000</td>
-                <td>02/11/2021</td>
-                <td><b><u><a href="#">Nhật Phan</a></u></b></td>
-                <td>BIDV</td>
-                <td><span class="status chuathanhtoan">Chưa thanh toán</span></td>
-                <td>1.900.000đ</td>
-                <td>App</td>
-            </tr>
-            <tr class="collapse" id="collapse10000">
-                <td colspan="2"><img height="100" width="100" src="assets/Image/Admin/tao-ninh-thuan.jpg" /></td>
-                <td>
-                    <b>Táo Ninh Thuận</b>
-                </td>
-                <td>
-                    <div>x 19</div>
-                    <div>100.000đ</div>
-                    <div><b>Tổng: 1.900.000đ</b></div>
-                </td>
-                <td colspan="2">
-                    <div><i>Thông tin giao hàng:</i></div>
-                    <div><b>Nhật Phan</b></div>
-                    <div>12 Bùi Đình Túy, P.12, Q.Bình Thạnh, TP.HCM</div>
-                    <div>SĐT: 0932129081</div>
-                </td>
-                <td colspan="3">
-                    <div>Ghi chú:</div>
-                    <textarea cols="32" rows="3"></textarea>
-                </td>
-            </tr>
-        </table>
-        <div style="border: 1px solid #e3e9ed"></div>
-        <div class="order-detail">
-            <h5 style="padding:5px">Đã tìm thấy 5 kết quả</h5>
-            <span>
-                Trang
-                <input style="width:45px" type="number" />
-                / 1
-            </span>
+            <li>
+                <a href="#">
+                    <span class="icon">
+                        <i class="fas fa-search"></i>
+                    </span>
+                    <span class="title search"><label><input type="text" placeholder="Tìm kiếm" /></label></span>
+                </a>
+            </li>
+            <li>
+                <a href="Admin_TongQuan.html">
+                    <span class="icon">
+                        <i class="fas fa-home"></i>
+                    </span>
+                    <span class="title">Tổng quan</span>
+                </a>
+            </li>
+            <li class="item-sub">
+                <a href="#" class="btn-sub">
+                    <span class="icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </span>
+                    <span class="title">Đơn hàng<i class="fas fa-chevron-down drop-down-submenu"></i></span>
+                </a>
+                <div class="sub-menu">
+                    <a href="#">
+                        <span>Tất cả đơn hàng</span>
+                    </a>
+                    <a href="#">
+                        <span>Đơn hàng chưa xác nhận</span>
+                    </a>
+                </div>
+            </li>
+            <li class="item-sub">
+                <a href="#" class="btn-sub">
+                    <span class="icon">
+                        <i class="fas fa-carrot"></i>
+                    </span>
+                    <span class="title">Sản phẩm<i class="fas fa-chevron-down drop-down-submenu"></i></span>
+                </a>
+                <div class="sub-menu">
+                    <a href="#">
+                        <span>Tất cả sản phẩm</span>
+                    </a>
+                    <a href="#">
+                        <span>Hàng tổn kho</span>
+                    </a>
+                </div>
+            <li>
+                <a href="#">
+                    <span class="icon">
+                        <i class="fas fa-truck"></i>
+                    </span>
+                    <span class="title">Vận chuyển</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon">
+                        <i class="fas fa-user"></i>
+                    </span>
+                    <span class="title">Khách hàng</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </span>
+                    <span class="title">Báo cáo</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="main">
+        <div class="topbar">
+            <div class="flex-item">
+                <div class="toggle" onclick="toggleMenu()"></div>
+                <div class="main-title">
+                    <h1>Đơn hàng / Tất cả đơn hàng</h1>
+                </div>
+            </div>
+            <div class="flex-item">
+                <span class="fas fa-bell"></span>
+                <div class="user">
+                    <img src="assets/Image/Admin/kanon.jpg" />
+                </div>
+            </div>
         </div>
 
-    <table id="Paris" class="order-tabcontent">
-        <tr>
-            <th style="width:5px"></th>
-            <th>
-                <label class="admin-order-child-container">
-                    <input type="checkbox">
-                    <span class="admin-order-checkmark"></span>
-                </label>
-            </th>
-            <th>Mã</th>
-            <th>Ngày tạo</th>
-            <th>Khách hàng</th>
-            <th>Thanh toán</th>
-            <th>Trạng thái đơn</th>
-            <th>Tổng tiền</th>
-            <th>Kênh</th>
-        </tr>
-        <tr data-toggle="collapse" href="#collapse10004" aria-expanded="false" aria-controls="collapse10004">
-            <td>
-                <button class="btn-more-info" style="background-color:transparent"><img src="assets/Image/Admin/information.png" /></button>
-            </td>
-            <td>
-                <label class="admin-order-child-container">
-                    <input type="checkbox">
-                    <span class="admin-order-checkmark"></span>
-                </label>
-            </td>
-            <td>10004</td>
-            <td>30/11/2021</td>
-            <td><b><a href="#"><u>Thiên Kim</u></a></b></td>
-            <td>Tiền mặt</td>
-            <td><span class="status chuathanhtoan">Chưa thanh toán</span></td>
-            <td>1.000.000đ</td>
-            <td>Web</td>
+        <div class="wrapper-block">
+            <div>
+                <button class="btn btn-primary">
+                    <span>Tạo đơn hàng</span>
+                </button>
+            </div>
+            <div class="admin-order-tabs-wrapper">
+                <div class="admin-order-tabs-wrapper">
+                    <div class="order-tab">
+                        <button class="tablinks" onclick="openTab(event, 'Tatca')">Tất cả đơn hàng</button>
+                        <button class="tablinks" onclick="openTab(event, 'Chuathanhtoan')">Chưa thanh toán</button>
+                        <button class="tablinks" onclick="openTab(event, 'Chuagiaohang')">Chưa giao hàng</button>
+                        <button class="tablinks" onclick="openTab(event, 'Dangduocgiao')">Đang được giao</button>
+                    </div>
+                    <!--<ul role="tablist" class="admin-order-tabs">
+                        <li class="admin-order-tab-container">
+                            <a class="admin-order-tab admin-order-tab-selected">
+                                <span>Tất cả đơn hàng</span>
+                            </a>
+                            <a>
+                                <span>Chưa thanh toán</span>
+                            </a>
+                        </li>
+                    </ul>-->
+                    <div class="order-detail">
+                        <div style="padding:5px">
+                            <span>Hiển thị</span>
+                            <span>
+                                <select style="width:fit-content">
+                                    <option value="10">10</option>
+                                    <option value="15">15</option>
+                                    <option value="20">20</option>
+                                    <option value="50">50</option>
+                                </select>
+                            </span>
+                            <span>đơn</span>
+                        </div>
+                        <span style="width:800px;text-align:center" class="widget_search_order">
+                            <span class="order_search_box">
+                                <input placeholder="Tìm đơn hàng..." type="text">
+                            </span>
+                        </span>
+                        <span style="padding-right:5px;text-align:right">
+                            <img class="order-search-icon" src="assets/Image/Admin/filter.png" />
+                            Lọc
+                        </span>
+                    </div>
+                    <!--Bảng tất cả đơn hàng-->
+                    <table id="Tatca" class="order-tabcontent">
+                        <tr>
+                            <!--<th style="width:5px"></th>-->
+                            <th>
+                                <label class="admin-order-child-container">
+                                    <input type="checkbox">
+                                    <span class="admin-order-checkmark"></span>
+                                </label>
+                            </th>
+                            <th>Mã</th>
+                            <th>Ngày tạo</th>
+                            <th>Khách hàng</th>
+                            <th>Thanh toán</th>
+                            <th>Trạng thái đơn</th>
+                            <th>Tổng tiền</th>
+                            <th>Kênh</th>
+                        </tr>
+                        <tr data-toggle="collapse" href="#collapse10004" aria-expanded="false" aria-controls="collapse10004">
+                            <!--<td>
+                                <button class="btn-more-info" style="background-color:transparent"><img src="assets/Image/Admin/information.png" /></button>
+                            </td>-->
+                            <td>
+                                <label class="admin-order-child-container">
+                                    <input type="checkbox">
+                                    <span class="admin-order-checkmark"></span>
+                                </label>
+                            </td>
+                            <td>10004</td>
+                            <td>30/11/2021</td>
+                            <td><b><a href="#"><u>Thiên Kim</u></a></b></td>
+                            <td>Tiền mặt</td>
+                            <td><span class="status chuathanhtoan">Chưa thanh toán</span></td>
+                            <td>1.000.000đ</td>
+                            <td>Web</td>
 
-        </tr>
-        <tr class="collapse" id="collapse10004">
-            <td colspan="2"><img height="100" width="100" src="assets/Image/Admin/tao-ninh-thuan.jpg" /></td>
-            <td>
-                <b>Táo Ninh Thuận</b>
-            </td>
-            <td>
-                <div>x 10</div>
-                <div>100.000đ</div>
-                <div><b>Tổng: 1.000.000đ</b></div>
-            </td>
-            <td colspan="2">
-                <div><i>Thông tin giao hàng:</i></div>
-                <div><b>Thiên Kim</b></div>
-                <div>17 Bùi Đình Túy, P.12, Q.Bình Thạnh, TP.HCM</div>
-                <div>SĐT: 0932129085</div>
-            </td>
-            <td colspan="3">
-                <div>Ghi chú:</div>
-                <textarea cols="32" rows="3"></textarea>
-            </td>
-        </tr>
-    </table>
-    <table id="Tokyo" class="order-tabcontent">
-        <tr>
-            <th style="width:5px"></th>
-            <th>
-                <label class="admin-order-child-container">
-                    <input type="checkbox">
-                    <span class="admin-order-checkmark"></span>
-                </label>
-            </th>
-            <th>Mã</th>
-            <th>Ngày tạo</th>
-            <th>Khách hàng</th>
-            <th>Thanh toán</th>
-            <th>Trạng thái đơn</th>
-            <th>Tổng tiền</th>
-            <th>Kênh</th>
-        </tr>
-        <tr data-toggle="collapse" href="#collapse10004" aria-expanded="false" aria-controls="collapse10004">
-            <td>
-                <button class="btn-more-info" style="background-color:transparent"><img src="assets/Image/Admin/information.png" /></button>
-            </td>
-            <td>
-                <label class="admin-order-child-container">
-                    <input type="checkbox">
-                    <span class="admin-order-checkmark"></span>
-                </label>
-            </td>
-            <td>10004</td>
-            <td>30/11/2021</td>
-            <td><b><a href="#"><u>Thiên Kim</u></a></b></td>
-            <td>Tiền mặt</td>
-            <td><span class="status chuathanhtoan">Chưa thanh toán</span></td>
-            <td>1.000.000đ</td>
-            <td>Web</td>
+                        </tr>
+                        <tr class="collapse" id="collapse10004">
+                            <td colspan="2"><img height="100" width="100" src="assets/Image/Admin/tao-ninh-thuan.jpg" /></td>
+                            <td>
+                                <b>Táo Ninh Thuận</b>
+                            </td>
+                            <td>
+                                <div>x 10</div>
+                                <div>100.000đ</div>
+                                <div><b>Tổng: 1.000.000đ</b></div>
+                            </td>
+                            <td colspan="2">
+                                <div><i>Thông tin giao hàng:</i></div>
+                                <div><b>Thiên Kim</b></div>
+                                <div>17 Bùi Đình Túy, P.12, Q.Bình Thạnh, TP.HCM</div>
+                                <div>SĐT: 0932129085</div>
+                            </td>
+                            <td colspan="3">
+                                <div>Ghi chú:</div>
+                                <textarea cols="32" rows="3"></textarea>
+                            </td>
+                        </tr>
+                        <tr data-toggle="collapse" href="#collapse10003" aria-expanded="false" aria-controls="collapse10003">
+                            <!--<td>
+                                <button class="btn-more-info" style="background-color:transparent"><img src="assets/Image/Admin/information.png" /></button>
+                            </td>-->
+                            <td>
+                                <label class="admin-order-child-container">
+                                    <input type="checkbox">
+                                    <span class="admin-order-checkmark"></span>
+                                </label>
+                            </td>
+                            <td>10003</td>
+                            <td>22/11/2021</td>
+                            <td><b><u><a href="#">Hữu Thắng</a></u></b></td>
+                            <td>Vietcombank</td>
+                            <td><span class="status chuagiaohang">Chưa giao hàng</span></td>
+                            <td>500.000đ</td>
+                            <td>Shopee</td>
+                        </tr>
+                        <tr class="collapse" id="collapse10003">
+                            <td colspan="2"><img height="100" width="100" src="assets/Image/Admin/tao-ninh-thuan.jpg" /></td>
+                            <td>
+                                <b>Táo Ninh Thuận</b>
+                            </td>
+                            <td>
+                                <div>x 5</div>
+                                <div>100.000đ</div>
+                                <div><b>Tổng: 500.000đ</b></div>
+                            </td>
+                            <td colspan="2">
+                                <div><i>Thông tin giao hàng:</i></div>
+                                <div><b>Hữu Thắng</b></div>
+                                <div>16 Bùi Đình Túy, P.12, Q.Bình Thạnh, TP.HCM</div>
+                                <div>SĐT: 0932129084</div>
+                            </td>
+                            <td colspan="3">
+                                <div>Ghi chú:</div>
+                                <textarea cols="32" rows="3"></textarea>
+                            </td>
+                        </tr>
+                        <tr data-toggle="collapse" href="#collapse10002" aria-expanded="false" aria-controls="collapse10002">
+                            <!--<td>
+                                <button class="btn-more-info" style="background-color:transparent"><img src="assets/Image/Admin/information.png" /></button>
+                            </td>-->
+                            <td>
+                                <label class="admin-order-child-container">
+                                    <input type="checkbox">
+                                    <span class="admin-order-checkmark"></span>
+                                </label>
+                            </td>
+                            <td>10002</td>
+                            <td>17/11/2021</td>
+                            <td><b><u><a href="#">Quân Nguyễn</a></u></b></td>
+                            <td>MoMo</td>
+                            <td><span class="status dangduocgiao">Đang được giao</span></td>
+                            <td>300.000đ</td>
+                            <td>Lazada</td>
+                        </tr>
+                        <tr class="collapse" id="collapse10002">
+                            <td colspan="2"><img height="100" width="100" src="assets/Image/Admin/tao-ninh-thuan.jpg" /></td>
+                            <td>
+                                <b>Táo Ninh Thuận</b>
+                            </td>
+                            <td>
+                                <div>x 3</div>
+                                <div>100.000đ</div>
+                                <div><b>Tổng: 300.000đ</b></div>
+                            </td>
+                            <td colspan="2">
+                                <div><i>Thông tin giao hàng:</i></div>
+                                <div><b>Quân Nguyễn</b></div>
+                                <div>15 Bùi Đình Túy, P.12, Q.Bình Thạnh, TP.HCM</div>
+                                <div>SĐT: 0932129086</div>
+                            </td>
+                            <td colspan="3">
+                                <div>Ghi chú:</div>
+                                <textarea cols="32" rows="3"></textarea>
+                            </td>
+                        </tr>
+                        <tr data-toggle="collapse" href="#collapse10001" aria-expanded="false" aria-controls="collapse10001">
+                            <!--<td>
+                                <button class="btn-more-info" style="background-color:transparent"><img src="assets/Image/Admin/information.png" /></button>
+                            </td>-->
+                            <td>
+                                <label class="admin-order-child-container">
+                                    <input type="checkbox">
+                                    <span class="admin-order-checkmark"></span>
+                                </label>
+                            </td>
+                            <td>10001</td>
+                            <td>10/11/2021</td>
+                            <td><b><u><a href="#">Châu Cao</a></u></b></td>
+                            <td>AirPay</td>
+                            <td><span class="status dangduocgiao">Đang được giao</span></td>
+                            <td>700.000đ</td>
+                            <td>Tại shop</td>
+                        </tr>
+                        <tr class="collapse" id="collapse10001">
+                            <td colspan="2"><img height="100" width="100" src="assets/Image/Admin/tao-ninh-thuan.jpg" /></td>
+                            <td>
+                                <b>Táo Ninh Thuận</b>
+                            </td>
+                            <td>
+                                <div>x 7</div>
+                                <div>100.000đ</div>
+                                <div><b>Tổng: 700.000đ</b></div>
+                            </td>
+                            <td colspan="2">
+                                <div><i>Thông tin giao hàng:</i></div>
+                                <div><b>Châu Cao</b></div>
+                                <div>14 Bùi Đình Túy, P.12, Q.Bình Thạnh, TP.HCM</div>
+                                <div>SĐT: 0932129087</div>
+                            </td>
+                            <td colspan="3">
+                                <div>Ghi chú:</div>
+                                <textarea cols="32" rows="3"></textarea>
+                            </td>
+                        </tr>
+                        <tr data-toggle="collapse" href="#collapse10000" aria-expanded="false" aria-controls="collapse10000">
+                            <!--<td>
+                                <button class="btn-more-info" style="background-color:transparent"><img src="assets/Image/Admin/information.png" /></button>
+                            </td>-->
+                            <td>
+                                <label class="admin-order-child-container">
+                                    <input type="checkbox">
+                                    <span class="admin-order-checkmark"></span>
+                                </label>
+                            </td>
+                            <td>10000</td>
+                            <td>02/11/2021</td>
+                            <td><b><u><a href="#">Nhật Phan</a></u></b></td>
+                            <td>BIDV</td>
+                            <td><span class="status chuathanhtoan">Chưa thanh toán</span></td>
+                            <td>1.900.000đ</td>
+                            <td>App</td>
+                        </tr>
+                        <tr class="collapse" id="collapse10000">
+                            <td colspan="2"><img height="100" width="100" src="assets/Image/Admin/tao-ninh-thuan.jpg" /></td>
+                            <td>
+                                <b>Táo Ninh Thuận</b>
+                            </td>
+                            <td>
+                                <div>x 19</div>
+                                <div>100.000đ</div>
+                                <div><b>Tổng: 1.900.000đ</b></div>
+                            </td>
+                            <td colspan="2">
+                                <div><i>Thông tin giao hàng:</i></div>
+                                <div><b>Nhật Phan</b></div>
+                                <div>12 Bùi Đình Túy, P.12, Q.Bình Thạnh, TP.HCM</div>
+                                <div>SĐT: 0932129081</div>
+                            </td>
+                            <td colspan="3">
+                                <div>Ghi chú:</div>
+                                <textarea cols="32" rows="3"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="6">
+                                Đã tìm thấy 5 kết quả
+                            </td>
+                            <td colspan="2" style="text-align:right">
+                                Trang
+                                <input style="width:45px" type="number" />
+                                / 1
+                            </td>
+                        </tr>
+                    </table>
+                    <!--Bảng Đơn hàng chưa thanh toán-->
+                    <table id="Chuathanhtoan" class="order-tabcontent">
+                        <tr>
+                            <!--<th style="width:5px"></th>-->
+                            <th>
+                                <label class="admin-order-child-container">
+                                    <input type="checkbox">
+                                    <span class="admin-order-checkmark"></span>
+                                </label>
+                            </th>
+                            <th>Mã</th>
+                            <th>Ngày tạo</th>
+                            <th>Khách hàng</th>
+                            <th>Thanh toán</th>
+                            <th>Trạng thái đơn</th>
+                            <th>Tổng tiền</th>
+                            <th>Kênh</th>
+                        </tr>
+                        <tr data-toggle="collapse" href="#collapse10004" aria-expanded="false" aria-controls="collapse10004">
+                            <!--<td>
+                                <button class="btn-more-info" style="background-color:transparent"><img src="assets/Image/Admin/information.png" /></button>
+                            </td>-->
+                            <td>
+                                <label class="admin-order-child-container">
+                                    <input type="checkbox">
+                                    <span class="admin-order-checkmark"></span>
+                                </label>
+                            </td>
+                            <td>10004</td>
+                            <td>30/11/2021</td>
+                            <td><b><a href="#"><u>Thiên Kim</u></a></b></td>
+                            <td>Tiền mặt</td>
+                            <td><span class="status chuathanhtoan">Chưa thanh toán</span></td>
+                            <td>1.000.000đ</td>
+                            <td>Web</td>
 
-        </tr>
-        <tr class="collapse" id="collapse10004">
-            <td colspan="2"><img height="100" width="100" src="assets/Image/Admin/tao-ninh-thuan.jpg" /></td>
-            <td>
-                <b>Táo Ninh Thuận</b>
-            </td>
-            <td>
-                <div>x 10</div>
-                <div>100.000đ</div>
-                <div><b>Tổng: 1.000.000đ</b></div>
-            </td>
-            <td colspan="2">
-                <div><i>Thông tin giao hàng:</i></div>
-                <div><b>Thiên Kim</b></div>
-                <div>17 Bùi Đình Túy, P.12, Q.Bình Thạnh, TP.HCM</div>
-                <div>SĐT: 0932129085</div>
-            </td>
-            <td colspan="3">
-                <div>Ghi chú:</div>
-                <textarea cols="32" rows="3"></textarea>
-            </td>
-        </tr>
-        </table>
+                        </tr>
+                        <tr class="collapse" id="collapse10004">
+                            <td colspan="2"><img height="100" width="100" src="assets/Image/Admin/tao-ninh-thuan.jpg" /></td>
+                            <td>
+                                <b>Táo Ninh Thuận</b>
+                            </td>
+                            <td>
+                                <div>x 10</div>
+                                <div>100.000đ</div>
+                                <div><b>Tổng: 1.000.000đ</b></div>
+                            </td>
+                            <td colspan="2">
+                                <div><i>Thông tin giao hàng:</i></div>
+                                <div><b>Thiên Kim</b></div>
+                                <div>17 Bùi Đình Túy, P.12, Q.Bình Thạnh, TP.HCM</div>
+                                <div>SĐT: 0932129085</div>
+                            </td>
+                            <td colspan="3">
+                                <div>Ghi chú:</div>
+                                <textarea cols="32" rows="3"></textarea>
+                            </td>
+                        </tr>
+                        <tr data-toggle="collapse" href="#collapse10000" aria-expanded="false" aria-controls="collapse10000">
+                            <!--<td>
+                                <button class="btn-more-info" style="background-color:transparent"><img src="assets/Image/Admin/information.png" /></button>
+                            </td>-->
+                            <td>
+                                <label class="admin-order-child-container">
+                                    <input type="checkbox">
+                                    <span class="admin-order-checkmark"></span>
+                                </label>
+                            </td>
+                            <td>10000</td>
+                            <td>02/11/2021</td>
+                            <td><b><u><a href="#">Nhật Phan</a></u></b></td>
+                            <td>BIDV</td>
+                            <td><span class="status chuathanhtoan">Chưa thanh toán</span></td>
+                            <td>1.900.000đ</td>
+                            <td>App</td>
+                        </tr>
+                        <tr class="collapse" id="collapse10000">
+                            <td colspan="2"><img height="100" width="100" src="assets/Image/Admin/tao-ninh-thuan.jpg" /></td>
+                            <td>
+                                <b>Táo Ninh Thuận</b>
+                            </td>
+                            <td>
+                                <div>x 19</div>
+                                <div>100.000đ</div>
+                                <div><b>Tổng: 1.900.000đ</b></div>
+                            </td>
+                            <td colspan="2">
+                                <div><i>Thông tin giao hàng:</i></div>
+                                <div><b>Nhật Phan</b></div>
+                                <div>12 Bùi Đình Túy, P.12, Q.Bình Thạnh, TP.HCM</div>
+                                <div>SĐT: 0932129081</div>
+                            </td>
+                            <td colspan="3">
+                                <div>Ghi chú:</div>
+                                <textarea cols="32" rows="3"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="6">
+                                Đã tìm thấy 2 kết quả
+                            </td>
+                            <td colspan="2" style="text-align:right">
+                                Trang
+                                <input style="width:45px" type="number" />
+                                / 1
+                            </td>
+                        </tr>
+                    </table>
+                    <!--Bảng đơn chưa thanh toán-->
+                    <table id="Chuathanhtoan" class="order-tabcontent">
+                        <tr>
+                            <!--<th style="width:5px"></th>-->
+                            <th>
+                                <label class="admin-order-child-container">
+                                    <input type="checkbox">
+                                    <span class="admin-order-checkmark"></span>
+                                </label>
+                            </th>
+                            <th>Mã</th>
+                            <th>Ngày tạo</th>
+                            <th>Khách hàng</th>
+                            <th>Thanh toán</th>
+                            <th>Trạng thái đơn</th>
+                            <th>Tổng tiền</th>
+                            <th>Kênh</th>
+                        </tr>
+                        <tr data-toggle="collapse" href="#collapse10004" aria-expanded="false" aria-controls="collapse10004">
+                            <!--<td>
+                                <button class="btn-more-info" style="background-color:transparent"><img src="assets/Image/Admin/information.png" /></button>
+                            </td>-->
+                            <td>
+                                <label class="admin-order-child-container">
+                                    <input type="checkbox">
+                                    <span class="admin-order-checkmark"></span>
+                                </label>
+                            </td>
+                            <td>10004</td>
+                            <td>30/11/2021</td>
+                            <td><b><a href="#"><u>Thiên Kim</u></a></b></td>
+                            <td>Tiền mặt</td>
+                            <td><span class="status chuathanhtoan">Chưa thanh toán</span></td>
+                            <td>1.000.000đ</td>
+                            <td>Web</td>
+
+                        </tr>
+                        <tr class="collapse" id="collapse10004">
+                            <td colspan="2"><img height="100" width="100" src="assets/Image/Admin/tao-ninh-thuan.jpg" /></td>
+                            <td>
+                                <b>Táo Ninh Thuận</b>
+                            </td>
+                            <td>
+                                <div>x 10</div>
+                                <div>100.000đ</div>
+                                <div><b>Tổng: 1.000.000đ</b></div>
+                            </td>
+                            <td colspan="2">
+                                <div><i>Thông tin giao hàng:</i></div>
+                                <div><b>Thiên Kim</b></div>
+                                <div>17 Bùi Đình Túy, P.12, Q.Bình Thạnh, TP.HCM</div>
+                                <div>SĐT: 0932129085</div>
+                            </td>
+                            <td colspan="3">
+                                <div>Ghi chú:</div>
+                                <textarea cols="32" rows="3"></textarea>
+                            </td>
+                        </tr>
+                        <tr data-toggle="collapse" href="#collapse10000" aria-expanded="false" aria-controls="collapse10000">
+                            <!--<td>
+                                <button class="btn-more-info" style="background-color:transparent"><img src="assets/Image/Admin/information.png" /></button>
+                            </td>-->
+                            <td>
+                                <label class="admin-order-child-container">
+                                    <input type="checkbox">
+                                    <span class="admin-order-checkmark"></span>
+                                </label>
+                            </td>
+                            <td>10000</td>
+                            <td>02/11/2021</td>
+                            <td><b><u><a href="#">Nhật Phan</a></u></b></td>
+                            <td>BIDV</td>
+                            <td><span class="status chuathanhtoan">Chưa thanh toán</span></td>
+                            <td>1.900.000đ</td>
+                            <td>App</td>
+                        </tr>
+                        <tr class="collapse" id="collapse10000">
+                            <td colspan="2"><img height="100" width="100" src="assets/Image/Admin/tao-ninh-thuan.jpg" /></td>
+                            <td>
+                                <b>Táo Ninh Thuận</b>
+                            </td>
+                            <td>
+                                <div>x 19</div>
+                                <div>100.000đ</div>
+                                <div><b>Tổng: 1.900.000đ</b></div>
+                            </td>
+                            <td colspan="2">
+                                <div><i>Thông tin giao hàng:</i></div>
+                                <div><b>Nhật Phan</b></div>
+                                <div>12 Bùi Đình Túy, P.12, Q.Bình Thạnh, TP.HCM</div>
+                                <div>SĐT: 0932129081</div>
+                            </td>
+                            <td colspan="3">
+                                <div>Ghi chú:</div>
+                                <textarea cols="32" rows="3"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="6">
+                                Đã tìm thấy 2 kết quả
+                            </td>
+                            <td colspan="2" style="text-align:right">
+                                Trang
+                                <input style="width:45px" type="number" />
+                                / 1
+                            </td>
+                        </tr>
+                    </table>
+                    <!--Bảng đơn chưa giao hàng-->
+                    <table id="Chuagiaohang" class="order-tabcontent">
+                        <tr>
+                            <!--<th style="width:5px"></th>-->
+                            <th>
+                                <label class="admin-order-child-container">
+                                    <input type="checkbox">
+                                    <span class="admin-order-checkmark"></span>
+                                </label>
+                            </th>
+                            <th>Mã</th>
+                            <th>Ngày tạo</th>
+                            <th>Khách hàng</th>
+                            <th>Thanh toán</th>
+                            <th>Trạng thái đơn</th>
+                            <th>Tổng tiền</th>
+                            <th>Kênh</th>
+                        </tr>
+                        <tr data-toggle="collapse" href="#collapse10003" aria-expanded="false" aria-controls="collapse10003">
+                            <!--<td>
+                                <button class="btn-more-info" style="background-color:transparent"><img src="assets/Image/Admin/information.png" /></button>
+                            </td>-->
+                            <td>
+                                <label class="admin-order-child-container">
+                                    <input type="checkbox">
+                                    <span class="admin-order-checkmark"></span>
+                                </label>
+                            </td>
+                            <td>10003</td>
+                            <td>22/11/2021</td>
+                            <td><b><u><a href="#">Hữu Thắng</a></u></b></td>
+                            <td>Vietcombank</td>
+                            <td><span class="status chuagiaohang">Chưa giao hàng</span></td>
+                            <td>500.000đ</td>
+                            <td>Shopee</td>
+                        </tr>
+                        <tr class="collapse" id="collapse10003">
+                            <td colspan="2"><img height="100" width="100" src="assets/Image/Admin/tao-ninh-thuan.jpg" /></td>
+                            <td>
+                                <b>Táo Ninh Thuận</b>
+                            </td>
+                            <td>
+                                <div>x 5</div>
+                                <div>100.000đ</div>
+                                <div><b>Tổng: 500.000đ</b></div>
+                            </td>
+                            <td colspan="2">
+                                <div><i>Thông tin giao hàng:</i></div>
+                                <div><b>Hữu Thắng</b></div>
+                                <div>16 Bùi Đình Túy, P.12, Q.Bình Thạnh, TP.HCM</div>
+                                <div>SĐT: 0932129084</div>
+                            </td>
+                            <td colspan="3">
+                                <div>Ghi chú:</div>
+                                <textarea cols="32" rows="3"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="6">
+                                Đã tìm thấy 1 kết quả
+                            </td>
+                            <td colspan="2" style="text-align:right">
+                                Trang
+                                <input style="width:45px" type="number" />
+                                / 1
+                            </td>
+                        </tr>
+                    </table>
+                    <!--Bảng đơn đang được giao-->
+                    <table id="Dangduocgiao" class="order-tabcontent">
+                        <tr>
+                            <!--<th style="width:5px"></th>-->
+                            <th>
+                                <label class="admin-order-child-container">
+                                    <input type="checkbox">
+                                    <span class="admin-order-checkmark"></span>
+                                </label>
+                            </th>
+                            <th>Mã</th>
+                            <th>Ngày tạo</th>
+                            <th>Khách hàng</th>
+                            <th>Thanh toán</th>
+                            <th>Trạng thái đơn</th>
+                            <th>Tổng tiền</th>
+                            <th>Kênh</th>
+                        </tr>
+                        <tr data-toggle="collapse" href="#collapse10002" aria-expanded="false" aria-controls="collapse10002">
+                            <!--<td>
+                                <button class="btn-more-info" style="background-color:transparent"><img src="assets/Image/Admin/information.png" /></button>
+                            </td>-->
+                            <td>
+                                <label class="admin-order-child-container">
+                                    <input type="checkbox">
+                                    <span class="admin-order-checkmark"></span>
+                                </label>
+                            </td>
+                            <td>10002</td>
+                            <td>17/11/2021</td>
+                            <td><b><u><a href="#">Quân Nguyễn</a></u></b></td>
+                            <td>MoMo</td>
+                            <td><span class="status dangduocgiao">Đang được giao</span></td>
+                            <td>300.000đ</td>
+                            <td>Lazada</td>
+                        </tr>
+                        <tr class="collapse" id="collapse10002">
+                            <td colspan="2"><img height="100" width="100" src="assets/Image/Admin/tao-ninh-thuan.jpg" /></td>
+                            <td>
+                                <b>Táo Ninh Thuận</b>
+                            </td>
+                            <td>
+                                <div>x 3</div>
+                                <div>100.000đ</div>
+                                <div><b>Tổng: 300.000đ</b></div>
+                            </td>
+                            <td colspan="2">
+                                <div><i>Thông tin giao hàng:</i></div>
+                                <div><b>Quân Nguyễn</b></div>
+                                <div>15 Bùi Đình Túy, P.12, Q.Bình Thạnh, TP.HCM</div>
+                                <div>SĐT: 0932129086</div>
+                            </td>
+                            <td colspan="3">
+                                <div>Ghi chú:</div>
+                                <textarea cols="32" rows="3"></textarea>
+                            </td>
+                        </tr>
+                        <tr data-toggle="collapse" href="#collapse10001" aria-expanded="false" aria-controls="collapse10001">
+                            <!--<td>
+                                <button class="btn-more-info" style="background-color:transparent"><img src="assets/Image/Admin/information.png" /></button>
+                            </td>-->
+                            <td>
+                                <label class="admin-order-child-container">
+                                    <input type="checkbox">
+                                    <span class="admin-order-checkmark"></span>
+                                </label>
+                            </td>
+                            <td>10001</td>
+                            <td>10/11/2021</td>
+                            <td><b><u><a href="#">Châu Cao</a></u></b></td>
+                            <td>AirPay</td>
+                            <td><span class="status dangduocgiao">Đang được giao</span></td>
+                            <td>700.000đ</td>
+                            <td>Tại shop</td>
+                        </tr>
+                        <tr class="collapse" id="collapse10001">
+                            <td colspan="2"><img height="100" width="100" src="assets/Image/Admin/tao-ninh-thuan.jpg" /></td>
+                            <td>
+                                <b>Táo Ninh Thuận</b>
+                            </td>
+                            <td>
+                                <div>x 7</div>
+                                <div>100.000đ</div>
+                                <div><b>Tổng: 700.000đ</b></div>
+                            </td>
+                            <td colspan="2">
+                                <div><i>Thông tin giao hàng:</i></div>
+                                <div><b>Châu Cao</b></div>
+                                <div>14 Bùi Đình Túy, P.12, Q.Bình Thạnh, TP.HCM</div>
+                                <div>SĐT: 0932129087</div>
+                            </td>
+                            <td colspan="3">
+                                <div>Ghi chú:</div>
+                                <textarea cols="32" rows="3"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="6">
+                                Đã tìm thấy 2 kết quả
+                            </td>
+                            <td colspan="2" style="text-align:right">
+                                Trang
+                                <input style="width:45px" type="number" />
+                                / 1
+                            </td>
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
         </div>
-        </div>
+    </div>
+    <script src="assets/javascript/Admin-Order.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+        function toggleMenu() {
+            let toggle = document.querySelector('.toggle');
+            let navigation = document.querySelector('.navigation');
+            let main = document.querySelector('.main');
 
-        <script src="assets/javascript/Admin-Order.js"></script>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+            toggle.classList.toggle('acitve');
+            navigation.classList.toggle('active');
+            main.classList.toggle('active');
+        }
+        toggleSubMenu();
+        function toggleSubMenu() {
+            let item_sub = document.querySelectorAll('.item-sub');
+            item_sub.forEach(item => {
+                var tagA = item.querySelector('.btn-sub');
+                tagA.addEventListener('click', () => {
+                    item.classList.toggle('active');
+                    let arrow = item.querySelector('.title .fas');
+                    if (arrow.classList.contains('fa-chevron-down')) {
+                        arrow.classList.replace('fa-chevron-down', 'fa-chevron-up');
+                    } else {
+                        arrow.classList.replace('fa-chevron-up', 'fa-chevron-down');
+                    }
+                });
+            })
+        }
+        let list_li = document.querySelectorAll('.navigation ul li');
+        list_li.forEach(liTag => {
+            let aTag = liTag.querySelector('.navigation ul li a')
+            liTag.addEventListener('click', () => {
+                aTag.style.background = '#28a9a6';
+                aTag.style.fontWeight = '600';
+            });
 
+        })
+    </script>
 </body>
 </html>

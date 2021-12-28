@@ -8,6 +8,8 @@
     for (i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
-    document.getElementById(tabName).style.display = "grid";
+    document.getElementById(tabName).style.display = "table";
     evt.currentTarget.className += " active";
 }
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
