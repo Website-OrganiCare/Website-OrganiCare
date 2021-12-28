@@ -79,9 +79,11 @@
     <Content Include="assets\css\profile.css" />
     <Content Include="assets\css\style.css" />
     <Content Include="assets\Image\Admin\filter.png" />
+    <Content Include="assets\Image\Admin\info.png" />
     <Content Include="assets\Image\Admin\magnifier.png" />
     <Content Include="assets\Image\Admin\notification.png" />
     <Content Include="assets\Image\Admin\play.png" />
+    <Content Include="assets\Image\Admin\tao-ninh-thuan.jpg" />
     <Content Include="assets\Image\Admin\user.png" />
     <Content Include="assets\Image\airpay.png" />
     <Content Include="assets\Image\Banner-01.png" />
@@ -175,6 +177,7 @@
     <Content Include="assets\javascript\listproduct.js" />
     <Content Include="Blog Detail.html" />
     <Content Include="Cart_Checkout.html" />
+    <Content Include="assets\Image\Admin\information.png" />
     <Content Include="FAQ.html" />
     <Content Include="Homepage.html" />
     <Content Include="mini-cart.html" />
@@ -184,6 +187,7 @@
     <Content Include="Reviews.html" />
     <Content Include="Profile page.html" />
     <Content Include="SanPhamKhuyenMai.html" />
+    <Content Include="test.html" />
     <Content Include="Web.config" />
     <Content Include="Wishlist.html" />
   </ItemGroup>
