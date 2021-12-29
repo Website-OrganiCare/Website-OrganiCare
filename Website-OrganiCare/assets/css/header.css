@@ -5,12 +5,12 @@
     text-decoration: none;
     font-family: 'Times New Roman', Times, serif;
 }
-.wrapper{
+#header .wrapper{
     background: #005959;
     position: fixed;
     width: 100%;
 }
-.wrapper nav{
+#header .wrapper nav{
     position: relative;
     display: flex;
     max-width: calc(100% - 200px);
@@ -19,56 +19,54 @@
     align-items: center;
     justify-content: space-between;
 }
-nav .content{
+#header nav .content{
     display: flex;
     align-items: center;
 }
 
-nav .content .links{
+#header nav .content .links{
     margin-left: 80px;
     display: flex;
 }
-.content .logo a{
+#header .content .logo a{
     color:#fff ;
     font-size: 30px;
     font-weight: 600;
 }
-.content .links li{
+#header .content .links li{
     list-style: none;
     line-height: 70px;
 }
-.content .links li a,
-.content .links li label{
+#header .content .links li a,
+#header .content .links li label{
     color: #fff;
     font-size: 18px;
     font-weight: 500;
     padding: 9px 17px;
-    border-radius: 5px;
     transition: all 0.3s ease;
-    margin: 5px;
+    /* margin: 5px; */
 }
-.content .links li a:hover,
-.content .links li label:hover{
+#header .content .links li a:hover,
+#header .content .links li label:hover{
     background: #48a9a6;
 }
-.wrapper .search-icon,
-.wrapper .cart-icon,
-.wrapper .menu-icon{
-    color: #fff;
+#header .wrapper .search-icon,
+#header .wrapper .cart-icon,
+#header .wrapper .menu-icon{
+    color: white;
     font-size: 18px;
     cursor: pointer;
     line-height: 70px;
     width: 70px;
     text-align:center;
 }
-.wrapper .menu-icon{
+#header .wrapper .menu-icon{
     display: none;
 }
-.wrapper #show-search:checked ~.search-icon i::before{
+#header .wrapper #show-search:checked ~.search-icon i::before{
     content: "\f00d";
-    position: fixed;
 }
-.wrapper .search-box{
+#header .wrapper .search-box{
     position: absolute;
     height: 100%;
     max-width: calc(100% - 50px);
@@ -78,11 +76,11 @@ nav .content .links{
     transition: all 0.3s ease;
 
 }
-.wrapper #show-search:checked ~ .search-box{
+#header .wrapper #show-search:checked ~ .search-box{
     opacity: 1;
     pointer-events: auto;
 }
-.search-box input{
+#header .search-box input{
     width: 100%;
     height: 100%;
     border: none;
@@ -92,11 +90,11 @@ nav .content .links{
     background:#005959;
     padding: 0 50px 0 15px;
 }
-.search-box input::placeholder{
+#header .search-box input::placeholder{
     color: white;
 
 }
-.search-box .go-icon{
+#header .search-box .go-icon{
     position:absolute;
     right: 40px;
     top: 50%;
@@ -110,12 +108,14 @@ nav .content .links{
     font-size: 20px;
     cursor: pointer;
 }
-.wrapper input[type="checkbox"]{
+#header .wrapper input[type="checkbox"]{
     display: none;
 }
 
+
+
 /*Dropdown menu*/
-    .content .links ul{
+#header .content .links ul{
         position: absolute;
         background: #005959;
         top:70px;
@@ -123,13 +123,13 @@ nav .content .links{
         opacity: 0;
         visibility: hidden;
     }
-    .content .links li:hover > ul{
+#header .content .links li:hover > ul{
         top: 70px;
         opacity: 1;
         visibility: visible;
         transition: all 0.3s ease;
     }
-    .content .links ul li a{
+#header    .content .links ul li a{
         display: block;
         width: 100%;
         line-height: 30px;
@@ -138,35 +138,48 @@ nav .content .links{
     
 
 /* Responsive */
-@media screen and (max-width: 1250px){
-    .wrapper nav{
+@media screen and (max-width: 1050px){
+    #header .wrapper nav{
         max-width: 100%;
         padding: 0 20px;
     }
 
-    nav .content .links{
+    #header nav .content .links{
         margin-left: 30px;
 
     }
-    .content .links li a{
+    #header .content .links li a{
         padding: 8px 13px;
     } 
-    .wrapper .search-box{
+    #header .wrapper .search-box{
         max-width: calc(100% - 100px);
     }
-    .wrapper .search-box input{
+    #header .wrapper .search-box input{
         padding: 0 100x 0 15px; 
     }
 }
+@media screen and (min-width: 900px) and (max-width: 957px) { 
+    
+    
+    #header .content .links li label,
+    #header .content .links li a{
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 9px 5px;
+    transition: all 0.3s ease;
+    margin: 5px;
+}
+}
 @media screen and (max-width: 900px){
-    .wrapper .menu-icon{
+    #header .wrapper .menu-icon{
         display: block;
     }
 
-    .wrapper #show-menu:checked ~ .menu-icon i::before{
+    #header .wrapper #show-menu:checked ~ .menu-icon i::before{
         content: "\f00d" ;
     }
-    nav .content .links{
+    #header nav .content .links{
         display: block;
         position: fixed;
         height: 100%;
@@ -179,26 +192,26 @@ nav .content .links{
         overflow-y: auto;
         transition: all 0.3s ease;
     }
-    nav #show-menu:checked ~ .content .links{
+    #header nav #show-menu:checked ~ .content .links{
         left: 0%;
     }
-    .content .links li{
+    #header .content .links li{
         margin: 15px 20px;
     }
-    .content .links li a,
-    .content .links li label{
+    #header .content .links li a,
+    #header .content .links li label{
         line-height: 40px;
         font-size: 20px;
         display: block;
         padding: 8px 18px;
         cursor: pointer;
     }
-    .content .links li a.desktop-link {
+    #header .content .links li a.desktop-link {
         display: none;
     }
 
     /* Dropdown responsive */
-    .content .links ul{
+    #header .content .links ul{
         position: static;
         opacity: 1;
         visibility: visible;
@@ -206,10 +219,10 @@ nav .content .links{
         max-height: 0px ;
         overflow: hidden;
     }
-    .content .links #show-features:checked ~ ul{
+    #header .content .links #show-features:checked ~ ul{
         max-height: 100vh;
     }
-    .content .links ul li{
+    #header .content .links ul li{
         margin: 7px 20px;
     }
     .content .links ul li a{
