@@ -1,0 +1,443 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Admin - Tổng Quan</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/admin.css" />
+    <script src="https://kit.fontawesome.com/1147679ae7.js" crossorigin="anonymous"></script>
+    <style type="text/css">
+        .container .sales-boxes {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+            .container .sales-boxes .box .title-product {
+                font-size: 24px;
+                font-weight: 500;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <i class="fas fa-building"></i>
+                        </span>
+                        <span class="title">OrganiCare</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <i class="fas fa-search"></i>
+                        </span>
+                        <span class="title search"><label><input type="text" placeholder="Tìm kiếm" /></label></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <i class="fas fa-home"></i>
+                        </span>
+                        <span class="title">Tổng quan</span>
+                    </a>
+                </li>
+                <li class="item-sub">
+                    <a href="#" class="btn-sub">
+                        <span class="icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </span>
+                        <span class="title">Đơn hàng<i class="fas fa-chevron-down drop-down-submenu"></i></span>
+                    </a>
+                    <div class="sub-menu">
+                        <a href="Admin_TatCaDonHang.html">
+                            <span>Tất cả đơn hàng</span>
+                        </a>
+                        <a href="#">
+                            <span>Đơn hàng chưa được xác nhận</span>
+                        </a>
+                    </div>
+                </li>
+                <li class="item-sub">
+                    <a href="#" class="btn-sub">
+                        <span class="icon">
+                            <i class="fas fa-carrot"></i>
+                        </span>
+                        <span class="title">Sản phẩm<i class="fas fa-chevron-down drop-down-submenu"></i></span>
+                    </a>
+                    <div class="sub-menu">
+                        <a href="Admin_SanPham.html">
+                            <span>Tất cả sản phẩm</span>
+                        </a>
+                        <a href="Admin_Quanlykho.html">
+                            <span>Hàng tổn kho</span>
+                        </a>
+                    </div>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <i class="fas fa-truck"></i>
+                        </span>
+                        <span class="title">Vận chuyển</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <i class="fas fa-user"></i>
+                        </span>
+                        <span class="title">Khách hàng</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </span>
+                        <span class="title">Báo cáo</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="topbar">
+                <div class="flex-item">
+                    <div class="toggle" onclick="toggleMenu()"></div>
+                    <div class="main-title">
+                        <h1>Sản phẩm/Quản lý tồn kho</h1>
+                    </div>
+                </div>
+                <div class="flex-item">
+                    <span class="fas fa-bell"></span>
+                    <div class="user">
+                        <img src="assets/Image/Admin/kanon.jpg" />
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <div class="details">
+                <div>
+                    <div class="recentOrders">
+                        <div class="cardHeader">
+                            <h3>Tất cả sản phẩm</h3>
+                            <a href="#" class="btn">Điều chuyển</a>
+                        </div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Kho lưu trữ:</td>
+                                    <td colspan="2">
+                                        <select name="Warehouse">
+                                            <option>Kho trung tâm</option>
+                                            <option>Kho 1</option>
+                                            <option>Kho 2</option>
+                                            <option>Kho 3</option>
+                                            <option>Kho 4</option>
+                                            <option>Kho 5</option>
+                                            <option>Kho 6</option>
+                                            <option>Kho 7</option>
+                                            <option>Kho 8</option>
+                                            <option>Kho 9</option>
+                                            <option>Kho 10</option>
+
+                                        </select>
+                                    </td>
+                                    <td colspan="3">
+                                        <a href="#">
+                                            <span class="title search">
+                                                <label>
+                                                    <input type="text" placeholder="Tìm kiếm" />
+                                                </label>
+                                            </span>
+                                        </a>
+                                    </td>
+                                    <td colspan="1" style="text-align: left">
+                                        <a href="#" class="btn">
+                                            <span class="icon">
+                                                <i class="fas fa-search"></i>
+                                            </span>
+                                        </a>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" onclick="checkAll(this)"/> SKU</td>
+                                    <td>Hình ảnh</td>
+                                    <td>Tên sản phẩm</td>
+                                    <td>Khả dụng</td>
+                                    <td>Đặt</td>
+                                    <td>Giá trị</td>
+                                    <td>Cập nhật tồn kho</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="checkbox" /> WH_OR01</td>
+                                    <td><img src="assets/Image/product/product1.jpg" width="50" height="50" /></td>
+                                    <td>Bông cải xanh</td>
+                                    <td>200/200</td>
+                                    <td>0</td>
+                                    <td>11.000.000</td>
+                                    <td>
+                                        <div class="buttons_added">
+                                            <input class="minus is-form" type="button" value="-">
+                                            <input aria-label="quantity" class="input-qty" max="1000" min="-200" name="Quanware" type="number" value="0">
+                                            <input class="plus is-form" type="button" value="+">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" /> WH_OR01</td>
+                                    <td><img src="assets/Image/product/product1.jpg" width="50" height="50" /></td>
+                                    <td>Bông cải xanh</td>
+                                    <td>200/200</td>
+                                    <td>0</td>
+                                    <td>11.000.000</td>
+                                    <td>
+                                        <div class="buttons_added">
+                                            <input class="minus is-form" type="button" value="-">
+                                            <input aria-label="quantity" class="input-qty" max="1000" min="-200" name="Quanware" type="number" value="0">
+                                            <input class="plus is-form" type="button" value="+">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" /> WH_OR01</td>
+                                    <td><img src="assets/Image/product/product1.jpg" width="50" height="50" /></td>
+                                    <td>Bông cải xanh</td>
+                                    <td>200/200</td>
+                                    <td>0</td>
+                                    <td>11.000.000</td>
+                                    <td>
+                                        <div class="buttons_added">
+                                            <input class="minus is-form" type="button" value="-">
+                                            <input aria-label="quantity" class="input-qty" max="1000" min="-200" name="Quanware" type="number" value="0">
+                                            <input class="plus is-form" type="button" value="+">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" /> WH_OR01</td>
+                                    <td><img src="assets/Image/product/product1.jpg" width="50" height="50" /></td>
+                                    <td>Bông cải xanh</td>
+                                    <td>200/200</td>
+                                    <td>0</td>
+                                    <td>11.000.000</td>
+                                    <td>
+                                        <div class="buttons_added">
+                                            <input class="minus is-form" type="button" value="-">
+                                            <input aria-label="quantity" class="input-qty" max="1000" min="-200" name="Quanware" type="number" value="0">
+                                            <input class="plus is-form" type="button" value="+">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" /> WH_OR01</td>
+                                    <td><img src="assets/Image/product/product1.jpg" width="50" height="50" /></td>
+                                    <td>Bông cải xanh</td>
+                                    <td>200/200</td>
+                                    <td>0</td>
+                                    <td>11.000.000</td>
+                                    <td>
+                                        <div class="buttons_added">
+                                            <input class="minus is-form" type="button" value="-">
+                                            <input aria-label="quantity" class="input-qty" max="1000" min="-200" name="Quanware" type="number" value="0">
+                                            <input class="plus is-form" type="button" value="+">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" /> WH_OR01</td>
+                                    <td><img src="assets/Image/product/product1.jpg" width="50" height="50" /></td>
+                                    <td>Bông cải xanh</td>
+                                    <td>200/200</td>
+                                    <td>0</td>
+                                    <td>11.000.000</td>
+                                    <td>
+                                        <div class="buttons_added">
+                                            <input class="minus is-form" type="button" value="-">
+                                            <input aria-label="quantity" class="input-qty" max="1000" min="-200" name="Quanware" type="number" value="0">
+                                            <input class="plus is-form" type="button" value="+">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" /> WH_OR01</td>
+                                    <td><img src="assets/Image/product/product1.jpg" width="50" height="50" /></td>
+                                    <td>Bông cải xanh</td>
+                                    <td>200/200</td>
+                                    <td>0</td>
+                                    <td>11.000.000</td>
+                                    <td>
+                                        <div class="buttons_added">
+                                            <input class="minus is-form" type="button" value="-">
+                                            <input aria-label="quantity" class="input-qty" max="1000" min="-200" name="Quanware" type="number" value="0">
+                                            <input class="plus is-form" type="button" value="+">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" /> WH_OR01</td>
+                                    <td><img src="assets/Image/product/product1.jpg" width="50" height="50" /></td>
+                                    <td>Bông cải xanh</td>
+                                    <td>200/200</td>
+                                    <td>0</td>
+                                    <td>11.000.000</td>
+                                    <td>
+                                        <div class="buttons_added">
+                                            <input class="minus is-form" type="button" value="-">
+                                            <input aria-label="quantity" class="input-qty" max="1000" min="-200" name="Quanware" type="number" value="0">
+                                            <input class="plus is-form" type="button" value="+">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" /> WH_OR01</td>
+                                    <td><img src="assets/Image/product/product1.jpg" width="50" height="50" /></td>
+                                    <td>Bông cải xanh</td>
+                                    <td>200/200</td>
+                                    <td>0</td>
+                                    <td>11.000.000</td>
+                                    <td>
+                                        <div class="buttons_added">
+                                            <input class="minus is-form" type="button" value="-">
+                                            <input aria-label="quantity" class="input-qty" max="1000" min="-200" name="Quanware" type="number" value="0">
+                                            <input class="plus is-form" type="button" value="+">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" /> WH_OR01</td>
+                                    <td><img src="assets/Image/product/product1.jpg" width="50" height="50" /></td>
+                                    <td>Bông cải xanh</td>
+                                    <td>200/200</td>
+                                    <td>0</td>
+                                    <td>11.000.000</td>
+                                    <td>
+                                        <div class="buttons_added">
+                                            <input class="minus is-form" type="button" value="-">
+                                            <input aria-label="quantity" class="input-qty" max="1000" min="-200" name="Quanware" type="number" value="0">
+                                            <input class="plus is-form" type="button" value="+">
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <thead>
+                                <tr>
+                                    <td colspan="3"></td>
+                                    <td>Tổng giá trị:</td>
+                                    <td colspan="2">110.000.000 VNĐ</td>
+                                    <td><a href="#" class="btn" onclick="alert('Cập nhật thành công!')">Lưu</a></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4">Đã tìm thấy 10 kết quả</td>
+                                    <td colspan="2" style="text-align: right">Trang hiển thị:</td>
+                                    <td style="text-align: center">
+                                        <select name="ViewPage">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>5</option>
+                                            <option>6</option>
+                                            <option>7</option>
+                                            <option>8</option>
+                                            <option>9</option>
+                                            <option>10</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                    <hr />
+                </div>
+                <div class="recentActivities">
+                    <div class="cardHeader"><h3>Hoạt động</h3></div>
+                    <ul class="user-timeline user-timeline-compact">
+                        <li class="latest">
+                            <div class="user-timeline-title">
+                                <input style="font-size: 15px; font-weight: bold" type="date" value="2021-12-29" />
+                            </div>
+                            <div class="user-timeline-description"></div>
+                        </li>
+                        <li class="latest">
+                            <div class="user-timeline-title">Trung Quân - 20:00 CH</div>
+                            <div class="user-timeline-description">Trung Quân đã cập nhật số lượng tồn kho sản phẩm Bông cải xanh</div>
+                        </li>
+                        <li class="latest">
+                            <div class="user-timeline-title">Băng Châu - 17:00 CH</div>
+                            <div class="user-timeline-description">Băng Châu đã điều chuyển sản phẩm Bông cải xanh từ kho trung tâm tới kho 1</div>
+                        </li>
+                        <li class="latest">
+                            <div class="user-timeline-title">Minh Nhật - 15:00 CH</div>
+                            <div class="user-timeline-description">Minh Nhật đã cập nhật số lượng tồn kho sản phẩm Bông cải xanh</div>
+                        </li>
+                        <li class="latest">
+                            <div class="user-timeline-title">Trung Quân - 20:00 CH</div>
+                            <div class="user-timeline-description">Trung Quân đã cập nhật số lượng tồn kho sản phẩm Bông cải xanh </div>
+                        </li>
+                        <li class="latest">
+                            <div class="user-timeline-title">Hữu Thắng - 13:00 CH</div>
+                            <div class="user-timeline-description">Hữu Thắng đã điều chuyển sản phẩm Bông cải xanh từ kho trung tâm tới kho 2</div>
+                        </li>
+                        <li class="latest">
+                            <div class="user-timeline-title">Thiên Kim - 11:00 SA</div>
+                            <div class="user-timeline-description">Thiên Kim đã điều chuyển sản phẩm Bông cải xanh từ kho trung tâm tới kho 1</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggleMenu() {
+            let toggle = document.querySelector('.toggle');
+            let navigation = document.querySelector('.navigation');
+            let main = document.querySelector('.main');
+
+            toggle.classList.toggle('acitve');
+            navigation.classList.toggle('active');
+            main.classList.toggle('active');
+        }
+        toggleSubMenu();
+        function toggleSubMenu() {
+            let item_sub = document.querySelectorAll('.item-sub');
+            item_sub.forEach(item => {
+                var tagA = item.querySelector('.btn-sub');
+                tagA.addEventListener('click', () => {
+                    item.classList.toggle('active');
+                    let arrow = item.querySelector('.title .fas');
+                        if (arrow.classList.contains('fa-chevron-down')) {
+                            arrow.classList.replace('fa-chevron-down', 'fa-chevron-up');
+                        } else {
+                            arrow.classList.replace('fa-chevron-up', 'fa-chevron-down');
+                        }
+                });
+            })
+        }
+        let list_li = document.querySelectorAll('.navigation ul li');
+        list_li.forEach(liTag => {
+            let aTag = liTag.querySelector('.navigation ul li a')
+            liTag.addEventListener('click', () => {
+                aTag.style.background = '#28a9a6';
+                aTag.style.fontWeight = '600';
+            });
+
+        })
+
+        function checkAll(bx) {
+            var cbs = document.getElementsByTagName('input');
+            for (var i = 0; i < cbs.length; i++) {
+                if (cbs[i].type == 'checkbox') {
+                    cbs[i].checked = bx.checked;
+                }
+            }
+        }
+    </script>
+</body>
+</html>
