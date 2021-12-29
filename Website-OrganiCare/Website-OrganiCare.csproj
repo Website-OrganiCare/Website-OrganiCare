@@ -188,9 +188,12 @@
     <Content Include="assets\javascript\Cart-Checkout.js" />
     <Content Include="assets\javascript\listproduct.js" />
     <Content Include="Blog Detail.html" />
+    <Content Include="Blog.html" />
     <Content Include="Cart_Checkout.html" />
     <Content Include="assets\Image\Admin\information.png" />
     <Content Include="FAQ.html" />
+    <Content Include="Footer.html" />
+    <Content Include="Header.html" />
     <Content Include="Forgot_Password.html" />
     <Content Include="Homepage.html" />
     <Content Include="mini-cart.html" />
@@ -200,7 +203,6 @@
     <Content Include="Recover.html" />
     <Content Include="Reviews.html" />
     <Content Include="SanPhamKhuyenMai.html" />
-    <Content Include="test.html" />
     <Content Include="Web.config" />
     <Content Include="Wishlist.html" />
   </ItemGroup>
