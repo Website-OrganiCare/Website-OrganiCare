@@ -68,7 +68,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 48px;
+    font-size: 35px;
     line-height: 1;
     font-weight: 700;
 }
@@ -90,8 +90,9 @@ h4 {
 }
 
 h5 {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 18px;
+    margin-top:5px;
 }
 
 h6 {
@@ -119,13 +120,14 @@ a, button, img, input, span {
 }
 
 a:focus {
-    color: inherit;
+    color: #48a9a6;
     outline: none;
     text-decoration: none;
 }
 
 a:hover {
     text-decoration: none;
+    color: #48a9a6
 }
 
 button, input[type="submit"] {
@@ -11194,90 +11196,6 @@ figure {
 }
 
 /*blog page css end*/
-/*blog fullwidth css here*/
-.blog_fullwidth {
-    margin-bottom: 0;
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    .blog_fullwidth {
-        margin-bottom: 60px;
-        margin-top: 80px;
-    }
-}
-
-@media only screen and (max-width: 767px) {
-    .blog_fullwidth {
-        margin-bottom: 60px;
-        margin-top: 60px;
-    }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    .blog_fullwidth .blog_wrapper {
-        margin-bottom: 66px;
-    }
-}
-
-@media only screen and (max-width: 767px) {
-    .blog_fullwidth .blog_wrapper {
-        margin-bottom: 56px;
-    }
-}
-
-.blog_fullwidth .blog_thumb {
-    width: 100%;
-    float: inherit;
-}
-
-    .blog_fullwidth .blog_thumb iframe {
-        height: 550px;
-    }
-
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-    .blog_fullwidth .blog_thumb iframe {
-        height: 440px;
-    }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    .blog_fullwidth .blog_thumb iframe {
-        height: 440px;
-    }
-}
-
-@media only screen and (max-width: 767px) {
-    .blog_fullwidth .blog_thumb iframe {
-        height: 200px;
-    }
-}
-
-.blog_fullwidth .blog_content {
-    padding-top: 24px;
-}
-
-@media only screen and (max-width: 767px) {
-    .blog_fullwidth .blog_content {
-        padding-top: 18px;
-    }
-}
-
-.blog_fullwidth .blog_content p.post_desc {
-    margin-bottom: 0;
-    padding: 16px 0 20px;
-    max-width: 82%;
-}
-
-@media only screen and (max-width: 767px) {
-    .blog_fullwidth .blog_content p.post_desc {
-        max-width: 100%;
-        padding: 12px 0 17px;
-    }
-}
-
-.blog_fullwidth .blog_content h4 {
-    margin-bottom: 8px;
-}
 
 .blog_thumb_active:hover .owl-nav > div {
     left: 20px;
@@ -13745,7 +13663,7 @@ figure {
     padding: 5px 10px;
     text-transform: initial;
     color: #ffffff;
-    background: #40A944;
+    background: #005959;
     font-weight: 500;
     -webkit-transition: 0.3s;
     transition: 0.3s;
@@ -13763,3 +13681,236 @@ figure {
     background: #006a04;
 }
 /*# sourceMappingURL=style.css.map */
+
+.wrapper-block {
+    padding: 20px;
+}
+
+.order-card {
+    background-color: white;
+    padding: 5px;
+    border-radius:10px;
+}
+
+.admin-order-tabs-wrapper {
+    border-bottom: transparent;
+    background-color: #fff;
+    border-radius: 4px;
+    margin: 15px 0;
+    box-shadow: 0 0 10px rgb(33 33 33 / 5%);
+}
+
+    .admin-order-tabs-wrapper table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    .admin-order-tabs-wrapper table tr:nth-child(odd){
+        background-color: #f8f8fb
+    }
+    .admin-order-tabs-wrapper table th,
+    .admin-order-tabs-wrapper table td {
+        padding:5px;
+        text-align:left;
+        font-size:16px;
+    }
+    .admin-order-tabs-wrapper table tr:hover {
+        
+        border-bottom: 3px solid #005959;
+    }
+
+.admin-order-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-bottom: 1px solid #e3e9ed;
+}
+
+.admin-order-tab-container {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.admin-order-tab {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    white-space: nowrap;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    height: 101%;
+    margin: 0 5px;
+    padding-top: 16px;
+    padding-bottom: 14px;
+}
+
+.admin-order-tab-selected {
+    border-bottom: 2px solid #005959;
+}
+
+.order-detail {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.widget_search_order input {
+    height: 30px;
+    border: 1px solid #ededed;
+    background: #fff;
+    color: #222222;
+    width: 100%;
+    padding:10px;
+    border-radius: 5px;
+}
+
+.order_search_box {
+    position: relative;
+    width: 100%;
+}
+
+.order-search-icon {
+    height:20px;
+    width:20px;
+}
+
+.admin-order-child-container {
+    display: inline-grid;
+    position: relative;
+    padding:0 0 0 10px;
+    margin-bottom: 18px;
+    cursor: pointer;
+    font-size: 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+    /* Hide the browser's default checkbox */
+    .admin-order-child-container input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+/* Create a custom checkbox */
+.admin-order-checkmark {
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.admin-order-child-container:hover input ~ .admin-order-checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.admin-order-child-container input:checked ~ .admin-order-checkmark {
+    background-color: #48a9a6;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.admin-order-checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.admin-order-child-container input:checked ~ .admin-order-checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.admin-order-child-container .admin-order-checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.status {
+    font-weight:500;
+    border-radius:10px;
+    padding:0 5px 0 5px;
+    font-size:16px;
+}
+
+.chuathanhtoan {
+    background-color:#fff0f0;
+    color: #E81212;
+}
+
+.chuagiaohang {
+    background-color: #ffffd7;
+    color: #f5de00;
+}
+
+.dangduocgiao {
+    background-color: #ebffec;
+    color: #40A944;
+}
+
+.btn-more-info {
+    width: 15px;
+    height: 15px;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Style the tab */
+.order-tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+    /* Style the buttons inside the tab */
+    .order-tab button {
+        border:none;
+        background-color:#fff;
+        float: left;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+        font-size: 16px;
+    }
+
+        /* Change background color of buttons on hover */
+        .order-tab button:hover {
+            color:white;
+            background-color: #005959;
+        }
+
+        /* Create an active/current tablink class */
+        .order-tab button.active {
+            color:white;
+            background-color: #48a9a6;
+        }
+
+/* Style the tab content */
+.order-tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
