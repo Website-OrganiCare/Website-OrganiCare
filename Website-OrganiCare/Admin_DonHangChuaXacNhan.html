@@ -1,0 +1,265 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Admin - Đơn hàng/Đơn hàng chưa xác nhận</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/linearicons.css" />
+    <link rel="stylesheet" href="assets/css/FontAwesome.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/admin.css" />
+    <script src="https://kit.fontawesome.com/1147679ae7.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="navigation">
+        <ul>
+            <li>
+                <a href="#">
+                    <span class="icon">
+                        <i class="fas fa-building"></i>
+                    </span>
+                    <span class="title">OrganiCare</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon">
+                        <i class="fas fa-search"></i>
+                    </span>
+                    <span class="title search"><label><input type="text" placeholder="Tìm kiếm" /></label></span>
+                </a>
+            </li>
+            <li>
+                <a href="Admin_TongQuan.html">
+                    <span class="icon">
+                        <i class="fas fa-home"></i>
+                    </span>
+                    <span class="title">Tổng quan</span>
+                </a>
+            </li>
+            <li class="item-sub">
+                <a href="#" class="btn-sub">
+                    <span class="icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </span>
+                    <span class="title">Đơn hàng<i class="fas fa-chevron-down drop-down-submenu"></i></span>
+                </a>
+                <div class="sub-menu">
+                    <a href="Admin_TatCaDonHang.html">
+                        <span>Tất cả đơn hàng</span>
+                    </a>
+                    <a href="Admin_DonHangChuaXacNhan.html">
+                        <span>Đơn hàng chưa xác nhận</span>
+                    </a>
+                </div>
+            </li>
+            <li class="item-sub">
+                <a href="#" class="btn-sub">
+                    <span class="icon">
+                        <i class="fas fa-carrot"></i>
+                    </span>
+                    <span class="title">Sản phẩm<i class="fas fa-chevron-down drop-down-submenu"></i></span>
+                </a>
+                <div class="sub-menu">
+                    <a href="#">
+                        <span>Tất cả sản phẩm</span>
+                    </a>
+                    <a href="#">
+                        <span>Hàng tổn kho</span>
+                    </a>
+                </div>
+            <li>
+                <a href="#">
+                    <span class="icon">
+                        <i class="fas fa-truck"></i>
+                    </span>
+                    <span class="title">Vận chuyển</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon">
+                        <i class="fas fa-user"></i>
+                    </span>
+                    <span class="title">Khách hàng</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </span>
+                    <span class="title">Báo cáo</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="main">
+        <div class="topbar">
+            <div class="flex-item">
+                <div class="toggle" onclick="toggleMenu()"></div>
+                <div class="main-title">
+                    <h1>Đơn hàng / Đơn hàng chưa xác nhận</h1>
+                </div>
+            </div>
+            <div class="flex-item">
+                <span class="fas fa-bell"></span>
+                <div class="user">
+                    <img src="assets/Image/Admin/kanon.jpg" />
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper-block">
+            <div>
+                <button class="btn btn-primary">
+                    <span>Xác nhận đơn</span>
+                </button>
+            </div>
+            <div class="admin-order-tabs-wrapper">
+                <div class="admin-order-tabs-wrapper">
+                    <div class="order-tab">
+                        <button style="background-color:#48a9a6;color:white">Chưa xác nhận</button>
+                    </div>
+                    <div class="order-detail">
+                        <div style="padding:5px">
+                            <span>Hiển thị</span>
+                            <span>
+                                <select style="width:fit-content">
+                                    <option value="10">10</option>
+                                    <option value="15">15</option>
+                                    <option value="20">20</option>
+                                    <option value="50">50</option>
+                                </select>
+                            </span>
+                            <span>đơn</span>
+                        </div>
+                        <span style="width:800px;text-align:center" class="widget_search_order">
+                            <span class="order_search_box">
+                                <input placeholder="Tìm đơn hàng..." type="text">
+                            </span>
+                        </span>
+                        <span style="padding-right:5px;text-align:right">
+                            <img class="order-search-icon" src="assets/Image/Admin/filter.png" />
+                            Lọc
+                        </span>
+                    </div>
+                    <table>
+                        <tr>
+                            <!--<th style="width:5px"></th>-->
+                            <th>
+                                <label class="admin-order-child-container">
+                                    <input type="checkbox">
+                                    <span class="admin-order-checkmark"></span>
+                                </label>
+                            </th>
+                            <th>Mã</th>
+                            <th>Ngày tạo</th>
+                            <th>Khách hàng</th>
+                            <th>Thanh toán</th>
+                            <th>Trạng thái đơn</th>
+                            <th>Tổng tiền</th>
+                            <th>Kênh</th>
+                        </tr>
+                        <tr data-toggle="collapse" href="#collapse10000" aria-expanded="false" aria-controls="collapse10000">
+                            <!--<td>
+                <button class="btn-more-info" style="background-color:transparent"><img src="assets/Image/Admin/information.png" /></button>
+            </td>-->
+                            <td>
+                                <label class="admin-order-child-container">
+                                    <input type="checkbox">
+                                    <span class="admin-order-checkmark"></span>
+                                </label>
+                            </td>
+                            <td>10000</td>
+                            <td>17/11/2021</td>
+                            <td><b><a href="#"><u>Thắng Nguyễn</u></a></b></td>
+                            <td>ZaloPay</td>
+                            <td><span class="status chuathanhtoan">Chưa xác nhận !</span></td>
+                            <td>100.000đ</td>
+                            <td>Web</td>
+
+                        </tr>
+                        <tr class="collapse" id="collapse10000">
+                            <td colspan="2"><img height="100" width="100" src="assets/Image/Admin/tao-ninh-thuan.jpg" /></td>
+                            <td>
+                                <b>Táo Ninh Thuận</b>
+                            </td>
+                            <td>
+                                <div>x 1</div>
+                                <div>100.000đ</div>
+                                <div><b>Tổng: 100.000đ</b></div>
+                            </td>
+                            <td colspan="2">
+                                <div><i>Thông tin giao hàng:</i></div>
+                                <div><b>Thắng Nguyễn</b></div>
+                                <div>
+                                    1A Nguyễn Đình Chiểu, P. Đa Kao,
+                                    Q.1, TP.HCM
+                                </div>
+                                <div>SĐT: 0932123456</div>
+                            </td>
+                            <td colspan="3">
+                                <div>Ghi chú:</div>
+                                <textarea cols="32" rows="3"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="6">
+                                Đã tìm thấy 1 kết quả
+                            </td>
+                            <td colspan="2" style="text-align:right">
+                                Trang
+                                <input style="width:30px" value="1" type="number" />
+                                / 1
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/javascript/Admin-Order.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+        function toggleMenu() {
+            let toggle = document.querySelector('.toggle');
+            let navigation = document.querySelector('.navigation');
+            let main = document.querySelector('.main');
+
+            toggle.classList.toggle('acitve');
+            navigation.classList.toggle('active');
+            main.classList.toggle('active');
+        }
+        toggleSubMenu();
+        function toggleSubMenu() {
+            let item_sub = document.querySelectorAll('.item-sub');
+            item_sub.forEach(item => {
+                var tagA = item.querySelector('.btn-sub');
+                tagA.addEventListener('click', () => {
+                    item.classList.toggle('active');
+                    let arrow = item.querySelector('.title .fas');
+                    if (arrow.classList.contains('fa-chevron-down')) {
+                        arrow.classList.replace('fa-chevron-down', 'fa-chevron-up');
+                    } else {
+                        arrow.classList.replace('fa-chevron-up', 'fa-chevron-down');
+                    }
+                });
+            })
+        }
+        let list_li = document.querySelectorAll('.navigation ul li');
+        list_li.forEach(liTag => {
+            let aTag = liTag.querySelector('.navigation ul li a')
+            liTag.addEventListener('click', () => {
+                aTag.style.background = '#28a9a6';
+                aTag.style.fontWeight = '600';
+            });
+
+        })
+    </script>
+</body>
+</html>
