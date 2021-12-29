@@ -205,7 +205,6 @@
     <Content Include="ProductList.html" />
     <Content Include="Recover.html" />
     <Content Include="Reviews.html" />
-    <Content Include="Profile page.html" />
     <Content Include="SanPhamKhuyenMai.html" />
     <Content Include="Web.config" />
     <Content Include="Wishlist.html" />
