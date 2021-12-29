@@ -21,7 +21,7 @@ content="text/html;charset=UTF-8"/>
            <input type="text" name="">
            <div class="font">Email</div>
            <input type="text" name="">
-           <button type="submit">Đăng ký</button>
+           <button type="submit" onclick="RegisterSuccessful()">Đăng ký</button>
         </form>
         <h5><i>(Mọi thông tin của bạn cung cấp sẽ được chúng tôi bảo mật)</i></h5>
     </div>
@@ -42,6 +42,8 @@ content="text/html;charset=UTF-8"/>
         document.querySelector("#close").addEventListener("click",function(){
             document.querySelector(".popup").style.display = "none";
     });
+    function RegisterSuccessful() {
+            alert("Đăng ký thành công!")};
         
     </Script>
 </body>
