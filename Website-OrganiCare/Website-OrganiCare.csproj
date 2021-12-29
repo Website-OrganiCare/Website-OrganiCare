@@ -77,6 +77,8 @@
     <Content Include="assets\css\admin.css" />
     <Content Include="assets\css\bootstrap.min.css" />
     <Content Include="assets\css\FontAwesome.css" />
+    <Content Include="assets\css\footer.css" />
+    <Content Include="assets\css\header.css" />
     <Content Include="assets\css\Homepage.css" />
     <Content Include="assets\css\icons.min.css" />
     <Content Include="assets\css\homepage.css" />
@@ -117,6 +119,7 @@
     <Content Include="assets\Image\Category\Sữa.jpg" />
     <Content Include="assets\Image\Category\Trà hữu cơ.jpg" />
     <Content Include="assets\Image\Category\Trái cây.jpg" />
+    <Content Include="assets\Image\Checkout\add-to-cart.png" />
     <Content Include="assets\Image\Checkout\minus %281%29.png" />
     <Content Include="assets\Image\Checkout\plus %281%29.png" />
     <Content Include="assets\Image\Checkout\trash.png" />
