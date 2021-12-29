@@ -68,6 +68,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Admin_DonHangChuaXacNhan.html" />
+    <Content Include="Admin_Quanlykho.html" />
+    <Content Include="Admin_SanPham.html" />
     <Content Include="Admin_TatCaDonHang.html" />
     <Content Include="Admin_TongQuan.html" />
     <Content Include="assets\css\admin.css" />
@@ -76,6 +78,7 @@
     <Content Include="assets\css\homepage.css" />
     <Content Include="assets\css\linearicons.css" />
     <Content Include="assets\css\ListProduct.css" />
+    <Content Include="assets\css\Login_Signup_ForgotPassword.css" />
     <Content Include="assets\css\owl.carousel.min.css" />
     <Content Include="assets\css\owl.theme.default.min.css" />
     <Content Include="assets\css\profile.css" />
@@ -182,11 +185,13 @@
     <Content Include="Cart_Checkout.html" />
     <Content Include="assets\Image\Admin\information.png" />
     <Content Include="FAQ.html" />
+    <Content Include="Forgot_Password.html" />
     <Content Include="Homepage.html" />
     <Content Include="mini-cart.html" />
     <Content Include="MyAccount.html" />
     <Content Include="ProductDetails.html" />
     <Content Include="ProductList.html" />
+    <Content Include="Recover.html" />
     <Content Include="Reviews.html" />
     <Content Include="Profile page.html" />
     <Content Include="SanPhamKhuyenMai.html" />
