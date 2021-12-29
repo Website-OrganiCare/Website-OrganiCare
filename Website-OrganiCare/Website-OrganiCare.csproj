@@ -67,6 +67,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin_Customer.html" />
+    <Content Include="assets\css\app.min.css" />
     <Content Include="Admin_DonHangChuaXacNhan.html" />
     <Content Include="Admin_Quanlykho.html" />
     <Content Include="Admin_SanPham.html" />
@@ -75,6 +77,8 @@
     <Content Include="assets\css\admin.css" />
     <Content Include="assets\css\bootstrap.min.css" />
     <Content Include="assets\css\FontAwesome.css" />
+    <Content Include="assets\css\Homepage.css" />
+    <Content Include="assets\css\icons.min.css" />
     <Content Include="assets\css\homepage.css" />
     <Content Include="assets\css\linearicons.css" />
     <Content Include="assets\css\ListProduct.css" />
@@ -174,11 +178,13 @@
     <Content Include="assets\Image\testimonial\testimonial_4.png" />
     <Content Include="assets\Image\testimonial\testimonial_5.png" />
     <Content Include="assets\Image\zalopay.png" />
+    <Content Include="assets\javascript\app.min.js" />
     <Content Include="assets\javascript\Admin-Order.js" />
     <Content Include="assets\javascript\bootstrap.min.js" />
     <Content Include="assets\javascript\main.js" />
     <Content Include="assets\javascript\modernizr-3.7.1.min.js" />
     <Content Include="assets\javascript\owl.carousel.min.js" />
+    <Content Include="assets\javascript\vendor.min.js" />
     <Content Include="assets\javascript\Cart-Checkout.js" />
     <Content Include="assets\javascript\listproduct.js" />
     <Content Include="Blog Detail.html" />
