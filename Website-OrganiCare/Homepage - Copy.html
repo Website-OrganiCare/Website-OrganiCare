@@ -10,9 +10,101 @@
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
     <script src="https://kit.fontawesome.com/1147679ae7.js" crossorigin="anonymous"></script>
+    <style type="text/css">
+        .box{
+            width:300px;
+            box-shadow:2px 2px 30px rgba(0,0,0,0.2);
+            border-radius:10px;
+            overflow:hidden;
+            
+        }
+        .slide-img{
+            height:300px;
+            position:relative;
+        }
+        .slide-img img{
+            width:100%;
+            height:100%;
+            object-fit:cover;
+            box-sizing:border-box;
+        }
+        .detail-box{
+            width:100%;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:10px 20px;
+            box-sizing:border-box;
+        }
+        .type{
+            display:flex;
+            flex-direction:column;
+        }
+        .type a{
+            color:#222222;
+            margin:2px 0px;
+            font-weight:700;
+            letter-spacing:0.5px;
+            padding-right:8px;
+        }
+        .type span{
+            color:rgba(26,26,26,0.5);   
+        }
+        .price{
+            color:#333;
+            font-weight:600;
+            font-size:1.1rem;
+            letter-spacing:0.5px;
+        }
+        .overlay{
+            position:absolute;
+            left:50%;
+            top:50%;
+            transform:translate(-50%,-50%);
+            width:100%;
+            height:100%;
+            background-color:rgba(92,95,236,0.6);
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+        .btn-buy{
+            width:160px;
+            height:40px;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background-color:#fff;
+            color:#252525;
+            font-weight:700;
+            letter-spacing:1px;
+            border-radius:20px;
+            box-shadow:2px 2px 30px rgba(0,0,0,0.2);
+        }
+        .btn-buy:hover{
+            color:#fff;
+            background-color:#f15fa3;
+            transition:all ease 0.3s;
+        }
+        .overlay{
+            visibility:hidden;
+        }
+       .slide-img:horizontal .overlay{
+           visibility:visible;
+           animation: fade 0.5s;
+       }
+       @keyframes fade{
+           0%{
+               opacity:0;
+           }
+           100%{
+               opacity:1;
+           }
+       }
+    </style>
 </head>
 <body>
-    <section id="slider">
+    <!--<section id="slider">
         <div class="aspect-ratio-169">
             <img src="assets/Image/Banner-01.png" />
             <img src="assets/Image/Banner-02.png" />
@@ -24,57 +116,6 @@
             <div class="dot"></div>
         </div>
     </section>
-    <!--<section class="slider">
-        <div class="slider-content">
-            <div class="slider-content-pre-next">
-                <i class="fas fa-chevron-left"></i>
-                <i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="slider-content-item rows active">
-                <div class="slider-content-item-left">
-                    <div class="slider-content-item-left-text">
-                        <h2>Khuyến mãi trong ngày</h2>
-                        <h4>Tất cả rau củ ở OrganiCare</h4>
-                        <button>
-                            <p>Xem ngay</p><i class="fas fa-arrow-alt-circle-right"></i>
-                        </button>
-                    </div>
-                </div>
-                <div class="slider-content-item-right">
-                    <img src="assets/Image/img1.png" alt="" />
-                </div>
-            </div>
-            <div class="slider-content-item rows">
-                <div class="slider-content-item-left">
-                    <div class="slider-content-item-left-text">
-                        <h2>Sale lớn sập sàn</h2>
-                        <h4>Hoa quả tươi ngon ở OrganiCare</h4>
-                        <button class="btnXemNgay">
-                            <p>Thêm giỏ hàng</p><i class="fas fa-shopping-cart"></i>
-                        </button>
-                    </div>
-                </div>
-                <div class="slider-content-item-right">
-                    <img src="assets/Image/img2.png" alt="" />
-                </div>
-            </div>
-            <div class="slider-content-item rows">
-                <div class="slider-content-item-left">
-                    <div class="slider-content-item-left-text">
-                        <h2>Giá yêu thương</h2>
-                        <h4>Thực phẩm tươi sạch ở OrganiCare</h4>
-                        <button class="btnXemNgay">
-                            <p>Thêm giỏ hàng</p><i class="fas fa-shopping-cart"></i>
-                        </button>
-                    </div>
-                </div>
-                <div class="slider-content-item-right">
-                    <img src="assets/Image/img3.png" alt="" />
-                </div>
-            </div>
-
-        </div>
-    </section>-->
     <section class="category-section">
         <div class="container">
             <h4 class="title-h4">Danh mục sản phẩm</h4>
@@ -119,9 +160,24 @@
                 </div>
             </div>
         </div>
-    </section>
-    
-    <section class="product-section">
+    </section>-->
+    <div class="box">
+        <div class="slide-img">
+            <img src="assets/Image/product/product1.jpg"/>
+            <div class="overlay">
+                <a href="#" class="btn-buy">Buy now</a>
+            </div>
+        </div>
+
+        <div class="detail-box">
+            <div class="type">
+                <a href="#"> Rabbed cardigan</a>
+                <span>Noe Arrival</span>
+            </div>
+            <a href="#" class="price">$23</a>
+        </div>
+    </div>
+    <!--<section class="product-section">
         <div class="container">
             <h4 class="title-h4">Sản phẩm bán chạy</h4>
             <div class="product-items">
@@ -219,8 +275,8 @@
                 </div>
             </div>
         </div>
-    </section>
-    <br />
+    </section>-->
+    <!--<br />
     <section class="banner-section">
         <div class="banner-area">
             <div class="container">
@@ -289,31 +345,31 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>-->
     <script src="assets/javascript/main.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="assets/javascript/owl.carousel.min.js" crossorigin="anonymous"></script>
     <script type="text/javascript">
-        $('.owl-carousel').owlCarousel({
-            loop: true,
-            margin: 10,
-            padding: 10,
-            nav: true,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                767: {
-                    items: 2
-                },
-                992: {
-                    items:3
-                },
-                1000: {
-                    items: 4
-                }
-            }
-        })
+        //$('.owl-carousel').owlCarousel({
+        //    loop: true,
+        //    margin: 10,
+        //    padding: 10,
+        //    nav: true,
+        //    responsive: {
+        //        0: {
+        //            items: 1
+        //        },
+        //        767: {
+        //            items: 2
+        //        },
+        //        992: {
+        //            items:3
+        //        },
+        //        1000: {
+        //            items: 4
+        //        }
+        //    }
+        //})
     </script>
 </body>
 </html>
