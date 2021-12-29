@@ -1,0 +1,311 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Admin - Báo cáo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/admin.css" />
+    <script src="https://kit.fontawesome.com/1147679ae7.js" crossorigin="anonymous"></script>
+
+    <style type="text/css">
+        a {
+            color: #005959;
+        }
+    </style>
+</head>
+<body>
+    <div class="navigation">
+        <ul>
+            <li>
+                <a href="#">
+                    <span class="icon">
+                        <i class="fas fa-building"></i>
+                    </span>
+                    <span class="title">OrganiCare</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon">
+                        <i class="fas fa-search"></i>
+                    </span>
+                    <span class="title search"><label><input type="text" placeholder="Tìm kiếm" /></label></span>
+                </a>
+            </li>
+            <li>
+                <a href="Admin_TongQuan.html">
+                    <span class="icon">
+                        <i class="fas fa-home"></i>
+                    </span>
+                    <span class="title">Tổng quan</span>
+                </a>
+            </li>
+            <li class="item-sub">
+                <a href="#" class="btn-sub">
+                    <span class="icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </span>
+                    <span class="title">Đơn hàng<i class="fas fa-chevron-down drop-down-submenu"></i></span>
+                </a>
+                <div class="sub-menu">
+                    <a href="Admin_Tatcadonhang.html">
+                        <span>Tất cả đơn hàng</span>
+                    </a>
+                    <a href="Admin_DonHangChuaXacNhan.html">
+                        <span>Đơn hàng chưa xác nhận</span>
+                    </a>
+                </div>
+            </li>
+            <li class="item-sub">
+                <a href="#" class="btn-sub">
+                    <span class="icon">
+                        <i class="fas fa-carrot"></i>
+                    </span>
+                    <span class="title">Sản phẩm<i class="fas fa-chevron-down drop-down-submenu"></i></span>
+                </a>
+                <div class="sub-menu">
+                    <a href="#">
+                        <span>Tất cả sản phẩm</span>
+                    </a>
+                    <a href="#">
+                        <span>Hàng tổn kho</span>
+                    </a>
+                </div>
+            <li>
+                <a href="Admin_Delivery.html">
+                    <span class="icon">
+                        <i class="fas fa-truck"></i>
+                    </span>
+                    <span class="title">Vận chuyển</span>
+                </a>
+            </li>
+            <li>
+                <a href="Admin_Customer.html">
+                    <span class="icon">
+                        <i class="fas fa-user"></i>
+                    </span>
+                    <span class="title">Khách hàng</span>
+                </a>
+            </li>
+            <li>
+                <a href="Admin_Report.html">
+                    <span class="icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </span>
+                    <span class="title">Báo cáo</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="main">
+        <div class="topbar">
+            <div class="flex-item">
+                <div class="toggle" onclick="toggleMenu()"></div>
+                <div class="main-title">
+                    <h1>Báo cáo</h1>
+                </div>
+            </div>
+            <div class="flex-item">
+                <span class="fas fa-bell"></span>
+                <div class="user">
+                    <img src="assets/Image/Admin/kanon.jpg" />
+                </div>
+            </div>
+        </div>
+
+        <div class="topbar">
+            <div class="flex-item">
+                <div class="main-title">
+                    <h3>Kết quả kinh doanh</h3>
+                </div>
+                <span class="fas fa-sync"></span>
+            </div>
+            <div class="flex-item" style="width:200px">
+                <select name="OrderStatus">
+                    <option>Hôm nay</option>
+                    <option>Tuần này</option>
+                    <option>Tháng này</option>
+                    <option>Tháng trước</option>
+                    <option>6 tháng</option>
+                    <option>1 năm</option>
+                </select>
+            </div>
+        </div>
+        <hr />
+
+        <div class="topbar">
+            <div class="flex-item" style="margin-left:auto; margin-right:0; width:250px">
+                <select name="OrderStatus">
+                    <option>Trên mọi kênh bán hàng</option>
+                    <option>Chỉ trên website</option>
+                    <option>Chỉ trên kênh Facebook</option>
+                </select>
+            </div>
+        </div>
+        <hr />
+
+        <div class="cardBox">
+            <div class="card">
+                <div>
+                    <div class="cardName">Doanh thu thuần</div>
+                    <div class="numbers">5.000.000đ</div>
+                </div>
+                <div class="iconBox">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <div class="cardName">Số lượng đơn hàng</div>
+                    <div class="numbers">500 đơn</div>
+                </div>
+                <div class="iconBox">
+                    <i class="fas fa-box-open"></i>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <div class="cardName">Chi phí phát sinh</div>
+                    <div class="numbers">50.000đ</div>
+                </div>
+                <div class="iconBox">
+                    <i class="fas fa-file-invoice-dollar"></i>
+                </div>
+            </div>
+        </div>
+        <center><a href="#"><i>Xem chi tiết</i></a></center>
+        <br />
+
+        <div class="topbar">
+            <div class="flex-item">
+                <div class="main-title">
+                    <h3>Chọn báo cáo mà bạn muốn xem</h3>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <br />
+
+        <div class="cardReportBox">
+            <div class="cardReport">
+                <div>
+                    <div class="cardReportName">Báo cáo bán hàng</div>
+                    <div class="cardSubtitle">Dòng tiền bán háng</div>
+                    <br />
+                    <div class="cardDetail"><a href="#">-> Xem báo cáo</a></div>
+                </div>
+            </div>
+            <div class="cardReport">
+                <div>
+                    <div class="cardReportName">Báo cáo bán hàng</div>
+                    <div class="cardSubtitle">Theo sản phẩm</div>
+                    <br />
+                    <div class="cardDetail"><a href="#">-> Xem báo cáo</a></div>
+                </div>
+            </div>
+            <div class="cardReport">
+                <div>
+                    <div class="cardReportName">Báo cáo bán hàng</div>
+                    <div class="cardSubtitle">Theo kênh bán hàng</div>
+                    <br />
+                    <div class="cardDetail"><a href="#">-> Xem báo cáo</a></div>
+                </div>
+            </div>
+            <div class="cardReport">
+                <div>
+                    <div class="cardReportName">Báo cáo bán hàng</div>
+                    <div class="cardSubtitle">Theo khách hàng</div>
+                    <br />
+                    <div class="cardDetail"><a href="#">-> Xem báo cáo</a></div>
+                </div>
+            </div>
+            <div class="cardReport">
+                <div>
+                    <div class="cardReportName">Báo cáo bán hàng</div>
+                    <div class="cardSubtitle">Theo ngày giờ</div>
+                    <br />
+                    <div class="cardDetail"><a href="#">-> Xem báo cáo</a></div>
+                </div>
+            </div>
+            <div class="cardReport">
+                <div>
+                    <div class="cardReportName">Báo cáo bán hàng</div>
+                    <div class="cardSubtitle">Lượt truy cập</div>
+                    <br />
+                    <div class="cardDetail"><a href="#">-> Xem báo cáo</a></div>
+                </div>
+            </div>
+            <div class="cardReport">
+                <div>
+                    <div class="cardReportName">Báo cáo bán hàng</div>
+                    <div class="cardSubtitle">Bảng cân đối kế toán</div>
+                    <br />
+                    <div class="cardDetail"><a href="#">-> Xem báo cáo</a></div>
+                </div>
+            </div>
+            <div class="cardReport">
+                <div>
+                    <div class="cardReportName">Báo cáo bán hàng</div>
+                    <div class="cardSubtitle">Báo cáo kết quả kinh doanh</div>
+                    <br />
+                    <div class="cardDetail"><a href="#">-> Xem báo cáo</a></div>
+                </div>
+            </div>
+            <div class="cardReport">
+                <div>
+                    <div class="cardReportName">Báo cáo bán hàng</div>
+                    <div class="cardSubtitle">Báo cáo lưu chuyển tiền tệ</div>
+                    <br />
+                    <div class="cardDetail"><a href="#">-> Xem báo cáo</a></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    
+
+    <script src="assets/javascript/Admin-Order.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+        function toggleMenu() {
+            let toggle = document.querySelector('.toggle');
+            let navigation = document.querySelector('.navigation');
+            let main = document.querySelector('.main');
+
+            toggle.classList.toggle('acitve');
+            navigation.classList.toggle('active');
+            main.classList.toggle('active');
+        }
+        toggleSubMenu();
+        function toggleSubMenu() {
+            let item_sub = document.querySelectorAll('.item-sub');
+            item_sub.forEach(item => {
+                var tagA = item.querySelector('.btn-sub');
+                tagA.addEventListener('click', () => {
+                    item.classList.toggle('active');
+                    let arrow = item.querySelector('.title .fas');
+                    if (arrow.classList.contains('fa-chevron-down')) {
+                        arrow.classList.replace('fa-chevron-down', 'fa-chevron-up');
+                    } else {
+                        arrow.classList.replace('fa-chevron-up', 'fa-chevron-down');
+                    }
+                });
+            })
+        }
+        let list_li = document.querySelectorAll('.navigation ul li');
+        list_li.forEach(liTag => {
+            let aTag = liTag.querySelector('.navigation ul li a')
+            liTag.addEventListener('click', () => {
+                aTag.style.background = '#28a9a6';
+                aTag.style.fontWeight = '600';
+            });
+
+        })
+    </script>
+
+</body>
+</html>
