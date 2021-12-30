@@ -8843,7 +8843,7 @@ figure {
     padding: 5px 10px;
     text-transform: capitalize;
     color: #ffffff;
-    background: #40A944;
+    background: #005959;
     font-weight: 500;
     -webkit-transition: 0.3s;
     transition: 0.3s;
@@ -13450,7 +13450,7 @@ figure {
 }
 
 .update-button button:hover {
-    background: #006a04;
+    background: #48a9a6;
 }
 /*# sourceMappingURL=style.css.map */
 
