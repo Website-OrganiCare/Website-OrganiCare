@@ -108,6 +108,11 @@ hr {
     color: white;
     padding-right:18px;
 }
+.navigation ul li a.active{
+    border-left:3px solid #28a9a6;
+    font-size:20px;
+    font-weight:600;
+}
 .navigation ul li a .icon{
     position:relative;
     display:block;

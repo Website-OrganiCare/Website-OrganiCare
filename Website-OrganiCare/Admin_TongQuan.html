@@ -29,7 +29,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#" class="active">
                         <span class="icon">
                             <i class="fas fa-home"></i>
                         </span>
@@ -330,15 +330,14 @@
                 });
             })
         }
-        let list_li = document.querySelectorAll('.navigation ul li');
-        list_li.forEach(liTag => {
-            let aTag = liTag.querySelector('.navigation ul li a')
-            liTag.addEventListener('click', () => {
-                aTag.style.background = '#28a9a6';
-                aTag.style.fontWeight = '600';
-            });
+        //let list_li = document.querySelectorAll('.navigation ul li');
+        //list_li.forEach(liTag => {
+        //    let aTag = liTag.querySelector('.navigation ul li a')
+        //    liTag.addEventListener('click', () => {
+        //        aTag.classList.add('active');
+        //    });
             
-        })
+        //})
     </script>
 </body>
 </html>

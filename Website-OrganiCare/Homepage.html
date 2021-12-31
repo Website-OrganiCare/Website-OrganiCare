@@ -9,9 +9,50 @@
     <link rel="stylesheet" href="assets/css/homepage.css" />
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/header.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <link rel="stylesheet" href="assets/css/lightslider.css">
     <script src="https://kit.fontawesome.com/1147679ae7.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/javascript/jQuery360.js"></script>
+    <script type="text/javascript" src="assets/javascript/lightslider.js"></script>
 </head>
 <body>
+    <div id="header">
+        <div class="wrapper" style="z-index:999">
+            <nav>
+                <input type="checkbox" id="show-search">
+                <input type="checkbox" id="show-menu">
+                <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+                <div class="content">
+                    <div class="logo"><a href="#">OrganiCare</a></div>
+                    <ul class="links">
+                        <li>
+                            <input type="checkbox" id="show-features">
+                            <label for="show-features">Danh mục</label>
+                            <ul>
+                                <li><a href="ProductList.html">Rau củ</a></li>
+                                <li><a href="#">Trái cây </a></li>
+                                <li><a href="#">Thịt và thuỷ hải sản</a></li>
+                                <li><a href="#">Đồ uống</a></li>
+                                <li><a href="#">Ngũ cốc, đậu và hạt</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="Homepage.html">Trang chủ</a></li>
+                        <li><a href="SanPhamKhuyenMai.html">Khuyến mãi</a></li>
+                        <li><a href="Blog.html">Blog</a></li>
+                        <li><a href="Reviews.html">Đánh giá</a></li>
+                        <li><a href="#">Về chúng tôi</a></li>
+                    </ul>
+                </div>
+                <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+                <form action="#" class="search-box">
+                    <input type="text" placeholder="Tìm kiếm sản phẩm...">
+                    <button class="go-icon" id="Go-to-search page result"><i class="fas fa-long-arrow-alt-right"></i></button>
+                </form>
+                <label for="show-cart" class="cart-icon"><i class="fas fa-shopping-cart"></i></label>
+            </nav>
+        </div>
+    </div>
     <section id="slider">
         <div class="aspect-ratio-169">
             <img src="assets/Image/Banner-01.png" />
@@ -24,57 +65,7 @@
             <div class="dot"></div>
         </div>
     </section>
-    <!--<section class="slider">
-        <div class="slider-content">
-            <div class="slider-content-pre-next">
-                <i class="fas fa-chevron-left"></i>
-                <i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="slider-content-item rows active">
-                <div class="slider-content-item-left">
-                    <div class="slider-content-item-left-text">
-                        <h2>Khuyến mãi trong ngày</h2>
-                        <h4>Tất cả rau củ ở OrganiCare</h4>
-                        <button>
-                            <p>Xem ngay</p><i class="fas fa-arrow-alt-circle-right"></i>
-                        </button>
-                    </div>
-                </div>
-                <div class="slider-content-item-right">
-                    <img src="assets/Image/img1.png" alt="" />
-                </div>
-            </div>
-            <div class="slider-content-item rows">
-                <div class="slider-content-item-left">
-                    <div class="slider-content-item-left-text">
-                        <h2>Sale lớn sập sàn</h2>
-                        <h4>Hoa quả tươi ngon ở OrganiCare</h4>
-                        <button class="btnXemNgay">
-                            <p>Thêm giỏ hàng</p><i class="fas fa-shopping-cart"></i>
-                        </button>
-                    </div>
-                </div>
-                <div class="slider-content-item-right">
-                    <img src="assets/Image/img2.png" alt="" />
-                </div>
-            </div>
-            <div class="slider-content-item rows">
-                <div class="slider-content-item-left">
-                    <div class="slider-content-item-left-text">
-                        <h2>Giá yêu thương</h2>
-                        <h4>Thực phẩm tươi sạch ở OrganiCare</h4>
-                        <button class="btnXemNgay">
-                            <p>Thêm giỏ hàng</p><i class="fas fa-shopping-cart"></i>
-                        </button>
-                    </div>
-                </div>
-                <div class="slider-content-item-right">
-                    <img src="assets/Image/img3.png" alt="" />
-                </div>
-            </div>
 
-        </div>
-    </section>-->
     <section class="category-section">
         <div class="container">
             <h4 class="title-h4">Danh mục sản phẩm</h4>
@@ -89,13 +80,13 @@
                     <div class="category-content-items item">
                         <img src="assets/Image/Category/Cá Hồi Hữu Cơ 200g.jpg" alt="" />
                         <div class="category-name">
-                            <h4>Tươi sống</h4>
+                            <h4>Thịt và thủy hản sản</h4>
                         </div>
                     </div>
                     <div class="category-content-items item">
                         <img src="assets/Image/Category/Trái cây.jpg" alt="" />
                         <div class="category-name">
-                            <h4>Hoa quả</h4>
+                            <h4>Trái cây</h4>
                         </div>
                     </div>
                     <div class="category-content-items item">
@@ -107,115 +98,176 @@
                     <div class="category-content-items item">
                         <img src="assets/Image/Category/Hạt sen.jpg" alt="" />
                         <div class="category-name">
-                            <h4>Hạt dinh dưỡng</h4>
-                        </div>
-                    </div>
-                    <div class="category-content-items item">
-                        <img src="assets/Image/Category/Khác.jpg" alt="" />
-                        <div class="category-name">
-                            <h4>Khác</h4>
+                            <h4>Ngũ cốc, đậu hạt</h4>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
+
     <section class="product-section">
         <div class="container">
             <h4 class="title-h4">Sản phẩm bán chạy</h4>
             <div class="product-items">
-                <div class="product-content owl-carousel owl-theme">
-                    <div class="product-content-items item">
-                        <img src="assets/Image/product/product1.jpg" alt="" />
-                        <div class="product-content-items-text">
-                            <h5>Chanh không hạt</h5>
-                            <p>150.000 VNĐ</p>
-                            <div class="action_links">
-                                <ul>
-                                    <li class="add_to_cart"><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
-                                    <li class="wishlist"><a href="wishlist.html"><i class=" fas fa-heart"></i></a></li>
-                                </ul>
+                <div class="product-content">
+                    <ul id="autoWidth" class="cs-hidden">
+                        <li class="item-a">
+                            <div class="product-content">
+                                <div class="product-content-items">
+                                    <img src="assets/Image/product/product1.jpg" alt="" />
+                                    <div class="product-content-items-text">
+                                        <h5>Chanh không hạt</h5>
+                                        <p>150.000 VNĐ</p>
+                                        <div class="action_links">
+                                            <ul>
+                                                <li class="add_to_cart"><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+                                                <li class="wishlist"><a href="wishlist.html"><i class=" fas fa-heart"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="product-content-items item">
-                        <img src="assets/Image/product/product2.jpg" alt="" />
-                        <div class="product-content-items-text">
-                            <h5>Chanh không hạt</h5>
-
-                            <p>150.000 VNĐ</p>
-
-                            <div class="action_links">
-                                <ul>
-                                    <li class="add_to_cart"><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
-                                    <li class="wishlist"><a href="wishlist.html"><i class=" fas fa-heart"></i></a></li>
-                                </ul>
+                        </li>
+                        <li class="item-b">
+                            <div class="product-content">
+                                <div class="product-content-items">
+                                    <img src="assets/Image/product/product1.jpg" alt="" />
+                                    <div class="product-content-items-text">
+                                        <h5>Chanh không hạt</h5>
+                                        <p>150.000 VNĐ</p>
+                                        <div class="action_links">
+                                            <ul>
+                                                <li class="add_to_cart"><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+                                                <li class="wishlist"><a href="wishlist.html"><i class=" fas fa-heart"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="product-content-items item">
-                        <img src="assets/Image/product/product3.jpg" alt="" />
-                        <div class="product-content-items-text">
-                            <h5>Chanh không hạt</h5>
-
-                            <p>150.000 VNĐ</p>
-
-                            <div class="action_links">
-                                <ul>
-                                    <li class="add_to_cart"><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
-                                    <li class="wishlist"><a href="wishlist.html"><i class=" fas fa-heart"></i></a></li>
-                                </ul>
+                        </li>
+                        <li class="item-c">
+                            <div class="product-content">
+                                <div class="product-content-items">
+                                    <img src="assets/Image/product/product1.jpg" alt="" />
+                                    <div class="product-content-items-text">
+                                        <h5>Chanh không hạt</h5>
+                                        <p>150.000 VNĐ</p>
+                                        <div class="action_links">
+                                            <ul>
+                                                <li class="add_to_cart"><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+                                                <li class="wishlist"><a href="wishlist.html"><i class=" fas fa-heart"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="product-content-items item">
-                        <img src="assets/Image/product/product4.jpg" alt="" />
-                        <div class="product-content-items-text">
-                            <h5>Chanh không hạt</h5>
-                            <p>150.000 VNĐ</p>
+                        </li>
 
-
-                            <div class="action_links">
-                                <ul>
-                                    <li class="add_to_cart"><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
-                                    <li class="wishlist"><a href="wishlist.html"><i class=" fas fa-heart"></i></a></li>
-                                </ul>
+                        <li class="item-d">
+                            <div class="product-content">
+                                <div class="product-content-items">
+                                    <img src="assets/Image/product/product1.jpg" alt="" />
+                                    <div class="product-content-items-text">
+                                        <h5>Chanh không hạt</h5>
+                                        <p>150.000 VNĐ</p>
+                                        <div class="action_links">
+                                            <ul>
+                                                <li class="add_to_cart"><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+                                                <li class="wishlist"><a href="wishlist.html"><i class=" fas fa-heart"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="product-content-items item">
-                        <img src="assets/Image/product/product5.jpg" alt="" />
-                        <div class="product-content-items-text">
-                            <h5>Chanh không hạt</h5>
-
-                            <p>150.000 VNĐ</p>
-
-
-                            <div class="action_links">
-                                <ul>
-                                    <li class="add_to_cart"><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
-                                    <li class="wishlist"><a href="wishlist.html"><i class=" fas fa-heart"></i></a></li>
-                                </ul>
+                        </li>
+                        <li class="item-e">
+                            <div class="product-content">
+                                <div class="product-content-items">
+                                    <img src="assets/Image/product/product1.jpg" alt="" />
+                                    <div class="product-content-items-text">
+                                        <h5>Chanh không hạt</h5>
+                                        <p>150.000 VNĐ</p>
+                                        <div class="action_links">
+                                            <ul>
+                                                <li class="add_to_cart"><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+                                                <li class="wishlist"><a href="wishlist.html"><i class=" fas fa-heart"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="product-content-items item">
-                        <img src="assets/Image/product/product6.jpg" alt="" />
-                        <div class="product-content-items-text">
-                            <h5>Chanh không hạt</h5>
-
-                            <p>150.000 VNĐ</p>
-
-
-                            <div class="action_links">
-                                <ul>
-                                    <li class="add_to_cart"><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
-                                    <li class="wishlist"><a href="wishlist.html"><i class=" fas fa-heart"></i></a></li>
-                                </ul>
+                        </li>
+                        <li class="item-f">
+                            <div class="product-content">
+                                <div class="product-content-items">
+                                    <img src="assets/Image/product/product1.jpg" alt="" />
+                                    <div class="product-content-items-text">
+                                        <h5>Chanh không hạt</h5>
+                                        <p>150.000 VNĐ</p>
+                                        <div class="action_links">
+                                            <ul>
+                                                <li class="add_to_cart"><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+                                                <li class="wishlist"><a href="wishlist.html"><i class=" fas fa-heart"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
+                        </li>
+                        <li class="item-g">
+                            <div class="product-content">
+                                <div class="product-content-items">
+                                    <img src="assets/Image/product/product1.jpg" alt="" />
+                                    <div class="product-content-items-text">
+                                        <h5>Chanh không hạt</h5>
+                                        <p>150.000 VNĐ</p>
+                                        <div class="action_links">
+                                            <ul>
+                                                <li class="add_to_cart"><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+                                                <li class="wishlist"><a href="wishlist.html"><i class=" fas fa-heart"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-h">
+                            <div class="product-content">
+                                <div class="product-content-items">
+                                    <img src="assets/Image/product/product1.jpg" alt="" />
+                                    <div class="product-content-items-text">
+                                        <h5>Chanh không hạt</h5>
+                                        <p>150.000 VNĐ</p>
+                                        <div class="action_links">
+                                            <ul>
+                                                <li class="add_to_cart"><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+                                                <li class="wishlist"><a href="wishlist.html"><i class=" fas fa-heart"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-i">
+                            <div class="product-content">
+                                <div class="product-content-items">
+                                    <img src="assets/Image/product/product1.jpg" alt="" />
+                                    <div class="product-content-items-text">
+                                        <h5>Chanh không hạt</h5>
+                                        <p>150.000 VNĐ</p>
+                                        <div class="action_links">
+                                            <ul>
+                                                <li class="add_to_cart"><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+                                                <li class="wishlist"><a href="wishlist.html"><i class=" fas fa-heart"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
                 </div>
             </div>
         </div>
@@ -226,8 +278,12 @@
             <div class="container">
                 <div class="row">
                     <div class="single-banner">
-                         <a href=""><img src="assets/Image/banner1.jpg" alt=""></a>
-                         <a href="shop.html"><img src="assets/Image/banner2.jpg" alt="" ></a>
+                        <div class="banner_thumb">
+                            <a href=""><img src="assets/Image/banner1.jpg" alt=""></a>
+                        </div>
+                        <div class="banner_thumb">
+                            <a href="shop.html"><img src="assets/Image/banner2.jpg" alt=""></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -290,8 +346,49 @@
             </div>
         </div>
     </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <ul>
+                        <li><a href="#">Về chúng tôi</a></li>
+                        <li><a href="#">Thực phẩm Organic</a></li>
+                        <li><a href="#">Chứng nhận</a></li>
+                        <li><a href="#">Cửa hàng bán lẻ</a></li>
+                        <li><a href="#">Khám phá nông trại</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <ul>
+                        <li><a href="ProductList.html">Xem toàn bộ sản phẩm</a></li>
+                        <li><a href="#">Đăng nhập</a></li>
+                        <li><a href="#">Đăng ký</a></li>
+                        <li><a href="Cart_Checkout.html">Xem giỏ hàng</a></li>
+                        <li><a href="#">Hỗ trợ khách hàng</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <ul>
+                        <li><a href="FAQ.html">FAQs</a></li>
+                        <li><a href="#">Các điều kiện đi kèm</a></li>
+                        <li><a href="#">Chính sách huỷ đơn</a></li>
+                        <li><a href="#">Chính sách hoàn trả</a></li>
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Liên hệ với chúng tôi</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="assets/javascript/main.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="assets/javascript/owl.carousel.min.js" crossorigin="anonymous"></script>
     <script type="text/javascript">
         $('.owl-carousel').owlCarousel({
@@ -307,13 +404,23 @@
                     items: 2
                 },
                 992: {
-                    items:3
+                    items: 3
                 },
                 1000: {
-                    items: 4
+                    items: 4,
+                    nav: false
                 }
             }
         })
+        $(document).ready(function () {
+            $('#autoWidth').lightSlider({
+                autoWidth: true,
+                loop: true,
+                onSliderLoad: function () {
+                    $('#autoWidth').removeClass('cS-hidden');
+                }
+            });
+        });
     </script>
 </body>
 </html>
