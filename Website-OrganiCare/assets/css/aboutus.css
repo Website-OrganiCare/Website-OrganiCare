@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&family=Roboto:wght@300;400;700&display=swap');
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: white;
+}
+.Content .heading{
+    text-align: center;
+    font-size: 50px;
+    margin: 0px;
+    padding: 20px;
+    color: #005959;
+}
+.Content .image-container{
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Content .image{
+    width: fit-content;
+    background: white;
+    margin: 2px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: #005959;
+}
+.Content .content-container{
+    margin: 5px 70px;
+    padding: 20px;
+    text-align: justify;
+}
+.OurTeam .heading{
+    text-align: center;
+    font-size: 50px;
+    margin: 0px;
+    padding: 0px;
+    color: #005959;
+    padding-top: 50px;
+}
+.OurTeam .image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+.OurTeam .image{
+    width: 120px;
+    height: 120px;
+    background: white;
+    margin: 2px 50px;
+    border-radius: 50%;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: #005959;
+}
+.OurTeam .image:hover{
+    border: 3px solid #005959;
+}
+.OurTeam img{
+    width: 116px;
+    height: 116px;
+    border-radius: 50%;
+}
+.OurTeam .info-container{
+    width: 1100px;
+    height: 350px;
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    background: #005959;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 50px rgb(243, 243, 243);
+    color: white;
+}
+.OurTeam .profile{
+    width: 250px;
+    height: 325px;
+    padding: 10px;
+    margin: 0;
+    position: relative;
+}
+.OurTeam .name{
+    margin-top: 80px;
+    padding: 0px 15px;
+    text-align: left;
+    font-size: 50px;
+    line-height: 20px;
+}
+.OurTeam .status{
+    padding: 0px 20px;
+    text-align: left;
+    line-height: 20px;
+    margin: 0;
+}
+.OurTeam .about{
+    height: 240px;
+    padding: 0px 20px;
+}
+.contact .contact-container{
+    width: 1100px;
+    height: 350px;
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 5px;
+    color: #005959;
+}
+.contact .contact-container .image{
+    margin-left: 100px;
+}
+
