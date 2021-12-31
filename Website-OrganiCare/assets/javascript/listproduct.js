@@ -32,10 +32,6 @@
             loadJSON();
             loadCart();
         });
-    //toggle navbar when toggle button iss clicked
-    //document.querySelector('.navbar-toggler').addEventListener('click', function () {
-    //    document.querySelector('.navbar-collapse').classList.toggle('show-navbar');
-    //});
     //show-hide cart container
         document.getElementById('cart-btn').addEventListener('click', () => {
             cartContainer.classList.toggle('show-cart-container');

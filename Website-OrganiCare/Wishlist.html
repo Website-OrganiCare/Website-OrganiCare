@@ -33,28 +33,27 @@
                 <table id="myTable" class="table table-bordered">
                     <thead>
                         <tr>
-                            <!--<th>
+                            <th>
                                 <label class="child-container">
-                                    <input type="checkbox">
+                                    <input type="checkbox" onclick="checkAll(this)">
                                     <span class="checkmark"></span>
                                 </label>
-                            </th>-->
+                            </th>
                             <th>Hình ảnh</th>
                             <th>Tên sản phẩm</th>
                             <th>Giá</th>
-                            <!--<th>Chứng nhận</th>-->
                             <th>Trạng thái hàng</th>
                             <th>Tùy chọn</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <!--<td>
+                            <td>
                                 <label class="child-container">
                                     <input type="checkbox">
                                     <span class="checkmark"></span>
                                 </label>
-                            </td>-->
+                            </td>
                             <td>
                                 <img src="assets/Image/product/product1.jpg">
                             </td>
@@ -62,17 +61,7 @@
                             <td>20.000đ</td>
                             <td>
                                 Còn hàng
-                                <!--<div class="quantity">
-                                    <button class="minus-btn" type="button" name="button" data-quantity="minus" data-field="quantity" id="minus">
-                                        <img src="assets/Image/Checkout/minus (1).png" />
-                                    </button>
-                                    <input id="input" type="text" name="quantity" value="2">
-                                    <button class="plus-btn" type="button" name="button" data-quantity="plus" data-field="quantity">
-                                        <img src="assets/Image/Checkout/plus (1).png" />
-                                    </button>
-                                </div>-->
                             </td>
-                            <!--<td>40.000đ</td>-->
                             <td>
                                 <button class="delete-btn" type="button" name="button">
                                     <img src="assets/Image/Checkout/trash.png" />
@@ -83,12 +72,12 @@
                             </td>
                         </tr>
                         <tr>
-                            <!--<td>
+                            <td>
                                 <label class="child-container">
                                     <input type="checkbox">
                                     <span class="checkmark"></span>
                                 </label>
-                            </td>-->
+                            </td>
                             <td>
                                 <img src="assets/Image/product/product1.jpg">
                             </td>
@@ -96,17 +85,7 @@
                             <td>20.000đ</td>
                             <td>
                                 Còn hàng
-                                <!--<div class="quantity">
-                                    <button class="minus-btn" type="button" name="button" data-quantity="minus" data-field="quantity">
-                                        <img src="assets/Image/Checkout/minus (1).png" />
-                                    </button>
-                                    <input id="number" type="text" name="quantity" value="3">
-                                    <button class="plus-btn" type="button" name="button" data-quantity="plus" data-field="quantity">
-                                        <img src="assets/Image/Checkout/plus (1).png" />
-                                    </button>
-                                </div>-->
                             </td>
-                            <!--<td>40.000đ</td>-->
                             <td>
                                 <button class="delete-btn" type="button" name="button">
                                     <img src="assets/Image/Checkout/trash.png" />
@@ -117,12 +96,12 @@
                             </td>
                         </tr>
                         <tr>
-                            <!--<td>
+                            <td>
                                 <label class="child-container">
                                     <input type="checkbox">
                                     <span class="checkmark"></span>
                                 </label>
-                            </td>-->
+                            </td>
                             <td>
                                 <img src="assets/Image/product/product1.jpg">
                             </td>
@@ -130,17 +109,8 @@
                             <td>20.000đ</td>
                             <td>
                                 Còn hàng
-                                <!--<div class="quantity">
-                                    <button class="minus-btn" type="button" name="button" data-quantity="minus" data-field="quantity">
-                                        <img src="assets/Image/Checkout/minus (1).png" />
-                                    </button>
-                                    <input id="number" type="text" name="quantity" value="2">
-                                    <button class="plus-btn" type="button" name="button" data-quantity="plus" data-field="quantity">
-                                        <img src="assets/Image/Checkout/plus (1).png" />
-                                    </button>
-                                </div>-->
+
                             </td>
-                            <!--<td>40.000đ</td>-->
                             <td>
                                 <button class="delete-btn" type="button" name="button">
                                     <img src="assets/Image/Checkout/trash.png" />
@@ -151,12 +121,12 @@
                             </td>
                         </tr>
                         <tr>
-                            <!--<td>
+                            <td>
                                 <label class="child-container">
                                     <input type="checkbox">
                                     <span class="checkmark"></span>
                                 </label>
-                            </td>-->
+                            </td>
                             <td>
                                 <img src="assets/Image/product/product1.jpg">
                             </td>
@@ -164,17 +134,7 @@
                             <td>20.000đ</td>
                             <td>
                                 Hết hàng
-                                <!--<div class="quantity">
-                                    <button class="minus-btn" type="button" name="button" data-quantity="minus" data-field="quantity">
-                                        <img src="assets/Image/Checkout/minus (1).png" />
-                                    </button>
-                                    <input id="number" type="text" name="quantity" value="2">
-                                    <button class="plus-btn" type="button" name="button" data-quantity="plus" data-field="quantity">
-                                        <img src="assets/Image/Checkout/plus (1).png" />
-                                    </button>
-                                </div>-->
                             </td>
-                            <!--<td>40.000đ</td>-->
                             <td>
                                 <button class="delete-btn" type="button" name="button">
                                     <img src="assets/Image/Checkout/trash.png" />
@@ -192,6 +152,15 @@
             </div>
         </div>
     </div>
-
+    <script type="text/javascript">
+        function checkAll(bx) {
+            var cbs = document.getElementsByTagName('input');
+            for (var i = 0; i < cbs.length; i++) {
+                if (cbs[i].type == 'checkbox') {
+                    cbs[i].checked = bx.checked;
+                }
+            }
+        }
+    </script>
 </body>
 </html>

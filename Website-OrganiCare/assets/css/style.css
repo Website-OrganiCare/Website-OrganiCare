@@ -111,7 +111,6 @@ a, button {
     cursor: pointer;
 }
 
-
 a, button, img, input, span {
     transition: all 0.3s ease 0s;
 }
@@ -248,7 +247,7 @@ figure {
     Scroll Up 
 -----------------------------------------*/
 #scrollUp {
-    background: #40A944 none repeat scroll 0 0;
+    background: #005959 none repeat scroll 0 0;
     bottom: 85px;
     color: #ffffff;
     cursor: pointer;
@@ -388,7 +387,7 @@ figure {
 
 /* 02. Element */
 .button {
-    background: #40A944;
+    background: #005959;
     box-shadow: none;
     color: #ffffff;
     display: inline-block;
@@ -507,7 +506,7 @@ figure {
     }
 
         .offcanvas_main_menu li a:hover {
-            color: #48a9a6;
+            color: #005959;
         }
 
     .offcanvas_main_menu li ul.sub-menu {
@@ -525,7 +524,7 @@ figure {
     }
 
         .offcanvas_footer span a:hover {
-            color: #48a9a6;
+            color: #005959;
         }
 
 .slinky-theme-default a:not(.back) {
@@ -537,7 +536,7 @@ figure {
 
     .slinky-theme-default a:not(.back):hover {
         background: inherit;
-        color: #48a9a6;
+        color: #005959;
     }
 
 .canvas_close {
@@ -560,8 +559,8 @@ figure {
     }
 
         .canvas_close a:hover {
-            background: #48a9a6;
-            border-color: #48a9a6;
+            background: #005959;
+            border-color: #005959;
             color: #fff;
         }
 
@@ -599,8 +598,8 @@ figure {
 }
 
 .canvas_open a:hover {
-    color: #48a9a6;
-    border-color: #48a9a6;
+    color: #005959;
+    border-color: #005959;
 }
 
 .sticky-header.sticky {
@@ -697,7 +696,224 @@ figure {
     }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .language_currency {
+        display: none;
+        margin-bottom: 14px;
+        text-align: center;
+    }
+}
 
+@media only screen and (max-width: 767px) {
+    .language_currency {
+        display: none;
+        margin-bottom: 17px;
+        text-align: center;
+    }
+}
+
+.language_currency > ul > li {
+    display: inline-block;
+    position: relative;
+    margin-right: 16px;
+    padding-right: 18px;
+}
+
+    .language_currency > ul > li:last-child {
+        margin-right: 0;
+        padding-right: 0;
+    }
+
+        .language_currency > ul > li:last-child::before {
+            display: none;
+        }
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .language_currency > ul > li {
+        margin-right: 7px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .language_currency > ul > li {
+        margin-right: 7px;
+    }
+}
+
+.language_currency > ul > li::before {
+    content: "";
+    width: 1px;
+    height: 14px;
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+    right: 0;
+}
+
+.language_currency > ul > li:hover ul.dropdown_currency, .language_currency > ul > li:hover ul.dropdown_language {
+    visibility: visible;
+    max-height: 200px;
+}
+
+.language_currency > ul > li:hover > a {
+    color: #005959;
+}
+
+.language_currency > ul > li > a {
+    text-transform: capitalize;
+    line-height: 39px;
+    font-size: 14px;
+    display: inline-block;
+    font-weight: 400;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .language_currency > ul > li > a {
+        line-height: 22px;
+        color: #222222;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .language_currency > ul > li > a {
+        line-height: 22px;
+        color: #222222;
+    }
+}
+
+.language_currency > ul > li > a i {
+    margin-left: 3px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .language_currency > ul > li > a i {
+        margin-left: 0px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .language_currency > ul > li > a i {
+        margin-left: 0px;
+    }
+}
+
+.language_currency > ul > li > a img {
+    margin-right: 4px;
+}
+
+.language_currency > ul > li:hover a:not([href]):not([tabindex]) {
+    color: #005959;
+}
+
+.dropdown_currency, .dropdown_language {
+    position: absolute;
+    background: #fff;
+    border: 1px solid #ededed;
+    padding: 10px 20px;
+    text-align: left;
+    top: 100%;
+    left: 0;
+    -webkit-transition: all .5s ease-out;
+    transition: all .5s ease-out;
+    overflow: hidden;
+    z-index: 9999;
+    border-radius: 3px;
+    visibility: hidden;
+    max-height: 0;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .dropdown_currency, .dropdown_language {
+        left: auto;
+        right: 0;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .dropdown_currency, .dropdown_language {
+        left: auto;
+        right: 0;
+    }
+}
+
+.dropdown_currency li a, .dropdown_language li a {
+    text-transform: capitalize;
+    display: block;
+    font-size: 13px;
+    white-space: nowrap;
+    line-height: 28px;
+    color: #222222;
+}
+
+    .dropdown_currency li a:hover, .dropdown_language li a:hover {
+        color: #005959;
+    }
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .dropdown_language {
+        left: -10px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .dropdown_language {
+        left: -10px;
+    }
+}
+
+.header_social {
+    text-align: right;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .header_social {
+        text-align: center !important;
+        margin-bottom: 18px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .header_social {
+        text-align: center !important;
+        margin-bottom: 18px;
+    }
+}
+
+.header_social ul li {
+    display: inline-block;
+    margin-right: 18px;
+}
+
+    .header_social ul li:last-child {
+        margin-right: 0;
+    }
+
+    .header_social ul li a {
+        font-size: 16px;
+    }
+
+        .header_social ul li a:hover {
+            color: #005959;
+        }
+
+.header_middle {
+    padding: 30px 0 24px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .header_middle {
+        margin-bottom: 29px;
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .header_middle {
+        margin-bottom: 29px;
+        padding: 0;
+    }
+}
 
 .logo img {
     max-width: 150px;
@@ -754,7 +970,7 @@ figure {
 }
 
     .dropdown_links li a:hover {
-        color: #48a9a6;
+        color: #005959;
     }
 
 .hover_category {
@@ -1021,12 +1237,12 @@ figure {
     border-radius: 0 30px 30px 0;
     -webkit-transition: 0.3s;
     transition: 0.3s;
-    background: #40A944;
+    background: #005959;
     color: #fff;
 }
 
     .search_box button:hover {
-        background: #48a9a6;
+        background: #222222;
     }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -1082,7 +1298,7 @@ figure {
 }
 
     .header_account_list > a:hover {
-        color: #48a9a6;
+        color: #005959;
     }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -1112,7 +1328,7 @@ figure {
     }
 
         .header_account_list.register ul li a:hover {
-            color: #48a9a6;
+            color: #005959;
         }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -1178,7 +1394,7 @@ figure {
 }
 
 /*mini cart css here*/
-/*.mini_cart_wrapper {
+.mini_cart_wrapper {
     position: relative;
 }
 
@@ -1202,7 +1418,7 @@ figure {
 }
 
     .mini_cart_close > a:hover {
-        color: #48a9a6;
+        color: #005959;
     }
 
 .mini_cart {
@@ -1238,7 +1454,7 @@ figure {
 }
 
     .cart_img:hover {
-        border-color: #48a9a6;
+        border-color: #005959;
     }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -1278,7 +1494,7 @@ figure {
 }
 
 .cart_info a:hover {
-    color: #48a9a6;
+    color: #005959;
 }
 
 .cart_info p {
@@ -1297,7 +1513,7 @@ figure {
 }
 
     .cart_remove a:hover {
-        color: #48a9a6;
+        color: #005959;
     }
 
 .cart_item {
@@ -1357,10 +1573,10 @@ figure {
 }
 
     .cart_button a:hover {
-        background: #48a9a6;
-        border-color: #48a9a6;
+        background: #005959;
+        border-color: #005959;
         color: #fff;
-    }*/
+    }
 
 /*mini cart css end*/
 /* 2.4 main menu css here */
@@ -1412,7 +1628,7 @@ figure {
 }
 
 .main_menu nav > ul > li:hover > a {
-    color: #40A944;
+    color: #005959;
 }
 
     .main_menu nav > ul > li:hover > a::before {
@@ -1434,7 +1650,7 @@ figure {
     }
 
     .main_menu nav > ul > li > a.active {
-        color: #40A944;
+        color: #005959;
     }
 
 .main_menu nav > ul > li ul.sub_menu {
@@ -1466,7 +1682,7 @@ figure {
     }
 
         .main_menu nav > ul > li ul.sub_menu li a:hover {
-            color: #40A944;
+            color: #005959;
         }
 
 .main_menu nav > ul > li.mega_items {
@@ -1508,7 +1724,7 @@ figure {
     }
 
         .mega_menu_inner > li > a:hover {
-            color: #40A944;
+            color: #005959;
         }
 
     .mega_menu_inner > li ul li {
@@ -1524,7 +1740,7 @@ figure {
         }
 
             .mega_menu_inner > li ul li a:hover {
-                color: #40A944;
+                color: #005959;
             }
 
 /*main menu css end*/
@@ -1537,7 +1753,7 @@ figure {
     position: relative;
     cursor: pointer;
     height: 51px;
-    background: #40A944;
+    background: #005959;
     border-radius: 10px 10px 0 0;
     padding-left: 20px;
 }
@@ -1696,13 +1912,13 @@ figure {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .categories_menu_toggle > ul > li > a:hover {
-        color: #40A944;
+        color: #005959;
     }
 }
 
 @media only screen and (max-width: 767px) {
     .categories_menu_toggle > ul > li > a:hover {
-        color: #40A944;
+        color: #005959;
     }
 }
 
@@ -1717,7 +1933,7 @@ figure {
 }
 
 .categories_menu_toggle > ul > li:hover > a {
-    color: #40A944;
+    color: #005959;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -1819,7 +2035,7 @@ figure {
 }
 
     .categories_menu_toggle > ul > li ul.categories_mega_menu > li > a:hover {
-        color: #40A944;
+        color: #005959;
     }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -1931,7 +2147,7 @@ figure {
 }
 
     .categorie_sub_menu li a:hover {
-        color: #40A944;
+        color: #005959;
     }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -2006,7 +2222,7 @@ figure {
 }
 
     .categories_menu_toggle ul li.has-sub ul.categorie_sub li a:hover {
-        color: #40A944;
+        color: #005959;
     }
 
 .categories_menu_toggle ul li ul.categories_mega_menu > li:first-child {
@@ -2083,7 +2299,7 @@ figure {
     }
 
         .call-support p a:hover {
-            color: #40A944;
+            color: #005959;
         }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -2769,7 +2985,7 @@ figure {
 }
 
     .slider_area .owl-nav div:hover {
-        color: #40A944;
+        color: #005959;
     }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -2843,13 +3059,13 @@ figure {
 }
 
     .slider_area .owl-dots .owl-dot.active {
-        background: #40A944;
-        border-color: #40A944;
+        background: #005959;
+        border-color: #005959;
     }
 
     .slider_area .owl-dots .owl-dot:hover {
-        background: #40A944;
-        border-color: #40A944;
+        background: #005959;
+        border-color: #005959;
     }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -3444,13 +3660,13 @@ figure {
     line-height: 24px;
     font-weight: 500;
     display: inline-block;
-    border-bottom: 2px solid #40A944;
+    border-bottom: 2px solid #005959;
     text-transform: uppercase;
     margin-top: 36px;
 }
 
     .banner_content a:hover {
-        color: #40A944;
+        color: #005959;
     }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -3701,12 +3917,12 @@ figure {
 }
 
     .product_tab_btn ul li a:hover {
-        border-color: #40A944;
+        border-color: #005959;
     }
 
     .product_tab_btn ul li a.active {
-        color: #40A944;
-        border-color: #40A944;
+        color: #005959;
+        border-color: #005959;
     }
 
 @media only screen and (max-width: 767px) {
@@ -3806,7 +4022,7 @@ figure {
             }
 
                 .action_links ul li a:hover {
-                    background: #40A944;
+                    background: #005959;
                     color: #fff;
                 }
 
@@ -3834,7 +4050,7 @@ figure {
         right: 20px;
         text-transform: uppercase;
         color: #ffffff;
-        background: #40A944;
+        background: #005959;
         font-size: 12px;
         height: 20px;
         line-height: 20px;
@@ -3870,7 +4086,7 @@ figure {
 }
 
 .product_content h4 a:hover {
-    color: #40A944;
+    color: #005959;
 }
 
 .product_content p {
@@ -3880,7 +4096,7 @@ figure {
 }
 
     .product_content p a:hover {
-        color: #40A944;
+        color: #005959;
     }
 
 .price_box {
@@ -4006,7 +4222,7 @@ figure {
 }
 
     .product_carousel .owl-nav div:hover {
-        color: #40A944;
+        color: #005959;
     }
 
     .product_carousel .owl-nav div.owl-next {
@@ -5206,11 +5422,11 @@ figure {
 
 /*home five css here*/
 .product_five .deals_title {
-    background: #40A944;
+    background: #005959;
 }
 
 .product_five .addto_cart_btn a {
-    background: #40A944;
+    background: #005959;
 }
 
 /*instagram css here*/
@@ -5392,7 +5608,7 @@ figure {
 }
 
     .blog_carousel .owl-nav div:hover {
-        color: #40A944;
+        color: #005959;
     }
 
     .blog_carousel .owl-nav div.owl-next {
@@ -5438,7 +5654,7 @@ figure {
 }
 
 .blog_content h4 a:hover {
-    color: #40A944;
+    color: #005959;
 }
 
 .articles_date {
@@ -5451,7 +5667,7 @@ figure {
     }
 
         .articles_date p a:hover {
-            color: #40A944;
+            color: #005959;
         }
 
 .blog_footer {
@@ -5467,14 +5683,14 @@ figure {
     }
 
         .blog_footer > a:hover {
-            color: #40A944;
+            color: #005959;
         }
 
         .blog_footer > a::before {
             position: absolute;
             /*font-family: "Linearicons";
             content: "\e87a";*/
-            color: #40A944;
+            color: #005959;
             right: -23px;
             font-size: 18px;
             z-index: 9;
@@ -5559,7 +5775,7 @@ figure {
 }
 
 .newsletter_area_start .section_title h2 span {
-    color: #40A944;
+    color: #005959;
 }
 
 .newsletter_container {
@@ -5650,7 +5866,7 @@ figure {
     transition: 0.3s;
     padding: 0 15px;
     border-radius: 0 30px 30px 0;
-    background: #40A944;
+    background: #005959;
     color: #fff;
 }
 
@@ -6046,7 +6262,7 @@ figure {
 }
 
 .widgets_container.contact_us > p a:hover {
-    color: #40A944;
+    color: #005959;
 }
 
 .footer_logo {
@@ -6073,7 +6289,7 @@ figure {
 }
 
     .footer_menu ul li a:hover {
-        color: #40A944;
+        color: #005959;
     }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -6160,7 +6376,7 @@ figure {
 
 .footer_bottom {
     padding: 29px 0;
-    background: #40A944;
+    background: #005959;
 }
 
 @media only screen and (max-width: 767px) {
@@ -6291,7 +6507,7 @@ figure {
 .breadcrumb_content ul li {
     display: inline-block;
     text-transform: capitalize;
-    font-size: 30px;
+    font-size: 14px;
     margin-right: 3px;
     padding-right: 13px;
     position: relative;
@@ -6314,7 +6530,7 @@ figure {
         }
 
     .breadcrumb_content ul li a:hover {
-        color: #48a9a6;
+        color: #005959;
     }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -6363,7 +6579,7 @@ figure {
     }
 
         .widget_list.widget_categories > ul > li > a:hover {
-            color: #40A944;
+            color: #005959;
         }
 
     .widget_list.widget_categories > ul > li:last-child > a {
@@ -6407,7 +6623,7 @@ figure {
         }
 
             .widget_list.widget_categories > ul > li ul li a:hover {
-                color: #40A944;
+                color: #005959;
             }
 
     .widget_list:last-child {
@@ -6449,7 +6665,7 @@ figure {
 }
 
     .widget_list > ul > li > a:hover {
-        color: #48a9a6;
+        color: #005959;
     }
 
     .widget_list > ul > li > a span {
@@ -6457,7 +6673,7 @@ figure {
     }
 
 .ui-slider-horizontal .ui-slider-range {
-    background: #40A944;
+    background: #005959;
     height: 2px;
 }
 
@@ -6477,7 +6693,7 @@ figure {
     top: -7px;
     cursor: pointer;
     border-radius: 50%;
-    border: 2px solid #40A944;
+    border: 2px solid #005959;
 }
 
 .widget_list.widget_filter {
@@ -6519,7 +6735,7 @@ figure {
 }
 
     .widget_list.widget_filter form button:hover {
-        background: #48a9a6;
+        background: #005959;
     }
 
 .tag_cloud a {
@@ -6540,8 +6756,8 @@ figure {
 }
 
 .tag_cloud a:hover {
-    background: #40A944;
-    border-color: #40A944;
+    background: #005959;
+    border-color: #005959;
     color: #ffffff;
 }
 
@@ -6615,7 +6831,7 @@ figure {
     }
 
     .list_button ul li a:hover {
-        color: #48a9a6;
+        color: #005959;
     }
 
     .list_button ul li a i {
@@ -6628,11 +6844,11 @@ figure {
     }
 
     .list_button ul li a.active {
-        color: #40A944;
+        color: #005959;
     }
 
         .list_button ul li a.active i {
-            background: #40A944;
+            background: #005959;
             color: #ffffff;
         }
 
@@ -6641,7 +6857,7 @@ figure {
 }
 
     .product_ratting ul li a {
-        color: #40A944;
+        color: #005959;
     }
 
 @media only screen and (max-width: 767px) {
@@ -6682,13 +6898,11 @@ figure {
     .pagination ul li a {
         display: block;
         border-radius: 3px;
-        background: #005959;
-        color:#FFF
     }
 
         .pagination ul li a:hover {
-            background: #48a9a6;
-            color:#fff;
+            background: #005959;
+            color: #ffffff;
         }
 
     .pagination ul li.current {
@@ -6888,7 +7102,7 @@ figure {
 }
 
     .list_action_right ul li.add_to_cart a:hover {
-        background: #40A944;
+        background: #005959;
     }
 
 @media only screen and (max-width: 767px) {
@@ -6907,7 +7121,7 @@ figure {
 }
 
     .list_action_right ul li a:hover {
-        border-color: #40A944;
+        border-color: #005959;
     }
 
 @media only screen and (max-width: 767px) {
@@ -7141,7 +7355,7 @@ figure {
 }
 
     .product_d_right h1 a:hover {
-        color: #40A944;
+        color: #005959;
     }
 
 .product_d_right .product_ratting {
@@ -7159,7 +7373,7 @@ figure {
 }
 
     .product_d_right .product_ratting ul li a:hover {
-        color: #40A944;
+        color: #005959;
     }
 
 .product_d_right .product_ratting ul li.review a {
@@ -7168,7 +7382,7 @@ figure {
 }
 
     .product_d_right .product_ratting ul li.review a:hover {
-        color: #40A944;
+        color: #005959;
     }
 
 .product_d_right .price_box {
@@ -7336,7 +7550,7 @@ figure {
     }
 
     .product_nav ul li a {
-        background: #40A944;
+        background: #005959;
         border-radius: 3px;
         color: #ffffff;
         display: block;
@@ -7405,7 +7619,7 @@ figure {
     border: 0;
     font-size: 16px;
     margin-left: 20px;
-    background: #40A944;
+    background: #005959;
     height: 42px;
     line-height: 42px;
     text-transform: capitalize;
@@ -7530,7 +7744,7 @@ figure {
     }
 
         .product_d_action ul li a:hover {
-            color: #40A944;
+            color: #005959;
         }
 
 .product_meta {
@@ -7553,7 +7767,7 @@ figure {
     }
 
         .product_meta span a:hover {
-            color: #40A944;
+            color: #005959;
         }
 
 .product_info_button {
@@ -7700,7 +7914,7 @@ figure {
 }
 
     .reviews_wrapper .product_ratting ul li a {
-        color: #40A944;
+        color: #005959;
     }
 
     .reviews_wrapper .product_ratting h3 {
@@ -7744,7 +7958,7 @@ figure {
     }
 
         .star_rating ul li a {
-            color: #40A944;
+            color: #005959;
         }
 
 .reviews_comment_box {
@@ -7810,7 +8024,7 @@ figure {
     }
 
         .s-tab-zoom.owl-carousel .owl-nav div:hover {
-            background: #40A944;
+            background: #005959;
             color: #ffffff;
         }
 
@@ -7942,7 +8156,7 @@ figure {
             }
 
                 .grouped_form table tbody tr td.grouped-product-list.label a:hover {
-                    color: #40A944;
+                    color: #005959;
                 }
 
             .grouped_form table tbody tr td.grouped-product-list.price {
@@ -8008,7 +8222,7 @@ figure {
         }
 
         .product_d_meta span a:hover {
-            color: #40A944;
+            color: #005959;
         }
 
 /*product sidebar css here*/
@@ -8181,7 +8395,55 @@ figure {
     }
 }
 
+.product_right_sidebar {
+    margin-bottom: 70px;
+}
 
+@media only screen and (max-width: 767px) {
+    .product_right_sidebar {
+        margin-bottom: 60px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .product_right_sidebar .product-details-tab {
+        margin-bottom: 58px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .product_right_sidebar .row {
+        flex-direction: row;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .product_right_sidebar .row {
+        flex-direction: row;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .product_right_sidebar .priduct_social ul li {
+        margin-right: 2px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .product_right_sidebar .product_d_right h1 {
+        font-size: 20px;
+    }
+}
+
+.product_right_sidebar .single-zoom-thumb {
+    width: 86%;
+}
+
+@media only screen and (max-width: 767px) {
+    .product_right_sidebar .single-zoom-thumb {
+        width: 90%;
+    }
+}
 
 /* 13. cart page css here */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -8228,7 +8490,7 @@ figure {
 }
 
 .table_desc .cart_page table thead tr th {
-    border-bottom: 3px solid #40A944;
+    border-bottom: 3px solid #005959;
     border-right: 1px solid #ededed;
     font-size: 16px;
     font-weight: 500;
@@ -8271,7 +8533,7 @@ figure {
     }
 
         .table_desc .cart_page table tbody tr td.product_remove a:hover {
-            color: #48a9a6;
+            color: #005959;
         }
 
 .table_desc .cart_page table tbody tr td.product_thumb {
@@ -8311,7 +8573,7 @@ figure {
     }
 
         .table_desc .cart_page table tbody tr td.product_name a:hover {
-            color: #48a9a6;
+            color: #005959;
         }
 
 .table_desc .cart_page table tbody tr td.product-price {
@@ -8399,7 +8661,7 @@ figure {
 }
 
     .cart_submit button:hover {
-        background: #48a9a6;
+        background: #005959;
     }
 
 .coupon_inner {
@@ -8429,7 +8691,7 @@ figure {
     }
 
         .coupon_inner button:hover {
-            background: #48a9a6;
+            background: #005959;
         }
 
     .coupon_inner input {
@@ -8468,7 +8730,7 @@ figure {
 }
 
     .coupon_inner a:hover {
-        color: #48a9a6;
+        color: #005959;
     }
 
 .coupon_code {
@@ -8533,7 +8795,7 @@ figure {
 }
 
     .checkout_btn a {
-        background: #40A944;
+        background: #005959;
         color: #ffffff;
         font-size: 15px;
         padding: 3px 14px;
@@ -8545,7 +8807,7 @@ figure {
     }
 
         .checkout_btn a:hover {
-            background: #48a9a6;
+            background: #222222;
             color: #ffffff;
         }
 
@@ -8709,7 +8971,7 @@ figure {
     }
 
         .form_group.group_3 label:hover {
-            color: #40A944;
+            color: #005959;
         }
 
 #checkout_coupon input {
@@ -8798,7 +9060,7 @@ figure {
 }
 
     .checkout_form label span {
-        color: #40A944;
+        color: #005959;
     }
 
     .checkout_form label.righ_0 {
@@ -8858,7 +9120,7 @@ figure {
 }
 
 .order_button button:hover {
-    background: #48a9a6;
+    background: #006a04;
 }
 
 @media only screen and (max-width: 767px) {
@@ -8959,7 +9221,7 @@ figure {
 }
 
 .table_desc.wishlist table tbody tr td.product_total a {
-    background: #40A944;
+    background: #005959;
     font-size: 12px;
     font-weight: 500;
     height: 38px;
@@ -9002,7 +9264,7 @@ figure {
         }
 
             .wishlist_share ul li a:hover {
-                color: #48a9a6;
+                color: #005959;
             }
 
 .wishlist_area {
@@ -9069,7 +9331,7 @@ figure {
     }
 
     .contact_message ul li a:hover {
-        color: #48a9a6;
+        color: #005959;
     }
 
 .contact_message label {
@@ -9120,7 +9382,7 @@ figure {
 }
 
     .contact_message button:hover {
-        background: #48a9a6;
+        background: #005959;
     }
 
 @media only screen and (max-width: 767px) {
@@ -9187,7 +9449,7 @@ figure {
 }
 
     .account_form label:hover {
-        color: #40A944;
+        color: #005959;
     }
 
 .account_form input {
@@ -9200,7 +9462,7 @@ figure {
 }
 
 .account_form button {
-    background: #40A944;
+    background: #005959;
     border: 0;
     color: #ffffff;
     display: inline-block;
@@ -9238,7 +9500,7 @@ figure {
     }
 
         .login_submit a:hover {
-            color: #48a9a6;
+            color: #005959;
         }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -9302,7 +9564,7 @@ figure {
 }
 
 .accordion_area .accordion-header {
-    background: #40A944;
+    background: #005959;
 }
 
     .accordion_area .accordion-header:first-child {
@@ -9417,12 +9679,12 @@ figure {
     }
 
         .dashboard_tab_button ul li a:hover {
-            background: #48a9a6;
+            background: #005959;
             color: #ffffff;
         }
 
         .dashboard_tab_button ul li a.active {
-            background: #40A944;
+            background: #005959;
         }
 
 .main_content_area {
@@ -9451,14 +9713,14 @@ figure {
 }
 
 .dashboard_content button {
-    color: #40A944;
+    color: #005959;
     font-weight: 500;
     border: 0;
     background: inherit;
 }
 
 .dashboard_content p a {
-    color: #40A944;
+    color: #005959;
     font-weight: 500;
 }
 
@@ -9487,7 +9749,7 @@ figure {
 }
 
 .table-responsive table tbody tr td:last-child a {
-    color: #40A944;
+    color: #005959;
 }
 
 .table-responsive .table {
@@ -9972,7 +10234,7 @@ figure {
     content: "";
     width: 37px;
     height: 2px;
-    background: #40A944;
+    background: #005959;
     bottom: 0;
     left: 50%;
     transform: translatex(-50%);
@@ -9984,7 +10246,7 @@ figure {
 }
 
     .team_content p a:hover {
-        color: #40A944;
+        color: #005959;
     }
 
 /*about page css end*/
@@ -10097,13 +10359,13 @@ figure {
 
 .panel-heading .panel-title a[aria-expanded="true"]::before {
     background: #fff;
-    color: #40A944;
+    color: #005959;
 }
 
 .faq-style-wrap .panel-title a[aria-expanded="true"] {
     border-radius: 3px 3px 0 0;
     color: #ffffff;
-    background: #40A944;
+    background: #005959;
 }
 
 .panel.panel-default {
@@ -10229,7 +10491,7 @@ figure {
     .services_icone i {
         font-size: 35px;
         line-height: 46px;
-        color: #40A944;
+        color: #005959;
     }
 
 .services_desc h3 {
@@ -10341,9 +10603,9 @@ figure {
 }
 
     .unlimited_services_content .view__work a:hover {
-        background: #40A944;
+        background: #005959;
         color: #fff;
-        border-color: #40A944;
+        border-color: #005959;
     }
 
 .priceing_table {
@@ -10368,7 +10630,7 @@ figure {
 
 .priceing_title {
     padding: 20px;
-    background: #40A944;
+    background: #005959;
 }
 
     .priceing_title h1 {
@@ -10420,8 +10682,8 @@ figure {
     }
 
         .priceing_list a.list_button, .priceing_list a:hover {
-            background: #40A944;
-            border-color: #40A944;
+            background: #005959;
+            border-color: #005959;
             color: #fff;
         }
 
@@ -10492,9 +10754,9 @@ figure {
     }
 
         .advantages_button a:hover {
-            background: #40A944;
+            background: #005959;
             color: #fff;
-            border-color: #40A944;
+            border-color: #005959;
         }
 
 @media only screen and (max-width: 767px) {
@@ -10559,7 +10821,7 @@ figure {
     font-weight: 500;
     padding: 0 20px;
     display: inline-block;
-    background: #40A944;
+    background: #005959;
     color: #fff;
     border-radius: 5px;
 }
@@ -10648,7 +10910,7 @@ figure {
 }
 
 .blog_wrapper .blog_meta p a {
-    color: #40A944;
+    color: #005959;
 }
 
     .blog_wrapper .blog_meta p a:hover {
@@ -10698,7 +10960,7 @@ figure {
 .readmore_button a {
     height: 38px;
     line-height: 40px;
-    background: #40A944;
+    background: #005959;
     border: 0;
     color: #fff;
     display: block;
@@ -10756,11 +11018,11 @@ figure {
 }
 
 .blog_sidebar_widget .widget_list.comments .post_info span a {
-    color: #40A944;
+    color: #005959;
 }
 
 .blog_sidebar_widget .widget_list.comments .post_info a:hover {
-    color: #40A944;
+    color: #005959;
 }
 
 .blog_sidebar_widget .widget_categories {
@@ -10791,10 +11053,6 @@ figure {
     line-height: 35px;
 }
 
-.blog_sidebar_widget .widget_categories ul li a:hover{
-    color:#005959
-}
-
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .blog_sidebar_widget .tag_widget ul li a {
         padding: 0 12px;
@@ -10814,7 +11072,7 @@ figure {
 .widget_search button {
     color: #fff;
     display: inline-block;
-    background: #005959;
+    background: #242424;
     border: none;
     padding: 0 20px;
     height: 34px;
@@ -10829,7 +11087,7 @@ figure {
 }
 
     .widget_search button:hover {
-        background: #48a9a6;
+        background: #005959;
     }
 
 .tag_widget ul li {
@@ -10842,16 +11100,15 @@ figure {
         font-size: 15px;
         font-weight: 400;
         border: 1px solid #ededed;
-        background: #005959;
-        color:#fff;
+        background: #fff;
         padding: 0 15px;
         line-height: 29px;
         border-radius: 3px;
     }
 
         .tag_widget ul li a:hover {
-            background: #48a9a6;
-            border-color: #48a9a6;
+            background: #005959;
+            border-color: #005959;
             color: #fff;
         }
 
@@ -10884,7 +11141,7 @@ figure {
 }
 
     .post_info h4 a:hover {
-        color: #48a9a6;
+        color: #005959;
     }
 
 .post_info span {
@@ -10903,7 +11160,7 @@ figure {
     }
 
         .blog_categories ul li a:hover {
-            color: #48a9a6;
+            color: #005959;
         }
 
     .blog_categories ul li:last-child a {
@@ -10930,7 +11187,6 @@ figure {
     border: 1px solid #ededed;
     justify-content: center;
     padding: 10px 0;
-    color:white;
 }
 
 @media only screen and (max-width: 767px) {
@@ -11224,24 +11480,7 @@ figure {
     float: inherit;
     padding-left: 0;
     padding-top: 30px;
-    font-size:16px;
 }
-    .blog_details .blog_content h4 a {
-        font-size:20px;
-        font-weight:bold;
-    }
-    .blog_details .blog_content h4 a:hover {
-        color: #48a9a6
-    }
-    .blog_details .blog_content div {
-        font-size:16px;
-    }
-    .blog_details .blog_content div p a {
-        font-size:16px
-    }
-    .blog_details .blog_content div p a:hover {
-        color: #48a9a6
-    }
 
 @media only screen and (max-width: 767px) {
     .blog_details .blog_content {
@@ -11267,7 +11506,7 @@ figure {
     padding: 30px 45px;
     background: #f6f6f6;
     border: 1px solid #ebebeb;
-    border-left: 4px solid #40A944;
+    border-left: 4px solid #005959;
 }
 
     .blog_details .post_content blockquote p {
@@ -11366,7 +11605,7 @@ figure {
 }
 
     .entry_content .post_meta span a:hover {
-        color: #48a9a6;
+        color: #005959;
     }
 
 .comments_box {
@@ -11409,24 +11648,16 @@ figure {
     padding: 10px;
     margin-left: 70px;
 }
-
-@media only screen and (max-width: 767px) {
-    .your_comments_box form textarea {
-        margin-left: 55px;
-        width: 88%
-    }
-}
-
 .your_comments_box form button {
     border: 0;
     line-height: 36px;
-    background: #005959;
+    background: #222222;
     font-weight: 500;
     margin-left: 70px;
 }
 
     .your_comments_box form button:hover {
-        background: #48a9a6;
+        background: #005959;
     }
 
 .comment_list {
@@ -11472,7 +11703,7 @@ figure {
 }
 
     .comment_list .comment_content h5 a:hover {
-        color: #48a9a6;
+        color: #005959;
     }
 
 .comment_list .comment_content p {
@@ -11497,7 +11728,7 @@ figure {
 }
 
 .button_send {
-    background: #40A944;
+    background: #005959;
     box-shadow: none;
     color: #ffffff;
     display: inline-block;
@@ -11517,8 +11748,7 @@ figure {
 }
 
     .comments_form form button:hover {
-        background: #48a9a6;
-        color:white;
+        background: #005959;
     }
 
 @media only screen and (max-width: 767px) {
@@ -11596,12 +11826,10 @@ figure {
 
     .related_content h4 a {
         color: #222222;
-        font-size:18px;
-        margin-bottom:10px
     }
 
         .related_content h4 a:hover {
-            color: #48a9a6;
+            color: #005959;
         }
 
 .related_content span {
@@ -11718,7 +11946,7 @@ figure {
     }
 
         .modal_social ul li.facebook a:hover {
-            background: #40A944;
+            background: #005959;
         }
 
     .modal_social ul li.twitter a {
@@ -11726,7 +11954,7 @@ figure {
     }
 
         .modal_social ul li.twitter a:hover {
-            background: #40A944;
+            background: #005959;
         }
 
     .modal_social ul li.pinterest a {
@@ -11734,7 +11962,7 @@ figure {
     }
 
         .modal_social ul li.pinterest a:hover {
-            background: #40A944;
+            background: #005959;
         }
 
     .modal_social ul li.google-plus a {
@@ -11742,7 +11970,7 @@ figure {
     }
 
         .modal_social ul li.google-plus a:hover {
-            background: #40A944;
+            background: #005959;
         }
 
     .modal_social ul li.linkedin a {
@@ -11750,7 +11978,7 @@ figure {
     }
 
         .modal_social ul li.linkedin a:hover {
-            background: #40A944;
+            background: #005959;
         }
 
 .modal_price {
@@ -11759,7 +11987,7 @@ figure {
 
     .modal_price span {
         font-weight: 600;
-        color: #40A944;
+        color: #005959;
         font-size: 16px;
     }
 
@@ -11843,9 +12071,9 @@ figure {
 }
 
 .modal_add_to_cart form button:hover {
-    background: #40A944;
+    background: #005959;
     color: #ffffff;
-    border-color: #40A944;
+    border-color: #005959;
 }
 
 .modal_body {
@@ -11895,7 +12123,7 @@ figure {
 }
 
 .modal-content button.close:hover {
-    color: #40A944;
+    color: #005959;
 }
 
 .modal_add_to_cart.mb-15 {
@@ -11935,7 +12163,7 @@ figure {
     }
 
         .product_navactive.owl-carousel .owl-nav div:hover {
-            background: #40A944;
+            background: #005959;
             color: #ffffff;
         }
 
@@ -12058,7 +12286,7 @@ figure {
 }
 
     #frm_subscribe form a.theme-btn-outlined:hover {
-        background: #40A944;
+        background: #005959;
     }
 
 @media only screen and (max-width: 767px) {
@@ -12108,7 +12336,7 @@ figure {
 }
 
     #popup2:hover {
-        background: #40A944;
+        background: #005959;
     }
 
 /*newsletter popup css end*/
@@ -12136,7 +12364,7 @@ figure {
     .error_form h1 {
         font-size: 200px;
         font-weight: 700;
-        color: #40A944;
+        color: #005959;
         letter-spacing: 10px;
         line-height: 160px;
         margin: 0 0 52px;
@@ -12221,13 +12449,13 @@ figure {
 }
 
     .error_form form button:hover {
-        color: #40A944;
+        color: #005959;
     }
 
 .error_form a {
     color: #fff;
     display: inline-block;
-    background: #40A944;
+    background: #005959;
     font-size: 12px;
     font-weight: bold;
     height: 40px;
@@ -12357,7 +12585,7 @@ figure {
 }
 
     .privacy_content p a:hover {
-        color: #40A944;
+        color: #005959;
     }
 
 .privacy_content.section_1 h2 {
@@ -13399,7 +13627,7 @@ figure {
 
 /* When the checkbox is checked, add a blue background */
 .child-container input:checked ~ .checkmark {
-    background-color: #40A944;
+    background-color: #005959;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
@@ -13450,7 +13678,7 @@ figure {
 }
 
 .update-button button:hover {
-    background: #48a9a6;
+    background: #006a04;
 }
 /*# sourceMappingURL=style.css.map */
 
@@ -13636,7 +13864,7 @@ figure {
 
 .dangduocgiao {
     background-color: #ebffec;
-    color: #40A944;
+    color: #005959;
 }
 
 .btn-more-info {
@@ -13676,7 +13904,7 @@ figure {
         /* Create an active/current tablink class */
         .order-tab button.active {
             color:white;
-            background-color: #005959;
+            background-color: #48a9a6;
         }
 
 /* Style the tab content */
