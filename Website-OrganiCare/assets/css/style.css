@@ -111,6 +111,7 @@ a, button {
     cursor: pointer;
 }
 
+
 a, button, img, input, span {
     transition: all 0.3s ease 0s;
 }
@@ -506,7 +507,7 @@ figure {
     }
 
         .offcanvas_main_menu li a:hover {
-            color: #40A944;
+            color: #48a9a6;
         }
 
     .offcanvas_main_menu li ul.sub-menu {
@@ -524,7 +525,7 @@ figure {
     }
 
         .offcanvas_footer span a:hover {
-            color: #40A944;
+            color: #48a9a6;
         }
 
 .slinky-theme-default a:not(.back) {
@@ -536,7 +537,7 @@ figure {
 
     .slinky-theme-default a:not(.back):hover {
         background: inherit;
-        color: #40A944;
+        color: #48a9a6;
     }
 
 .canvas_close {
@@ -559,8 +560,8 @@ figure {
     }
 
         .canvas_close a:hover {
-            background: #40A944;
-            border-color: #40A944;
+            background: #48a9a6;
+            border-color: #48a9a6;
             color: #fff;
         }
 
@@ -598,8 +599,8 @@ figure {
 }
 
 .canvas_open a:hover {
-    color: #40A944;
-    border-color: #40A944;
+    color: #48a9a6;
+    border-color: #48a9a6;
 }
 
 .sticky-header.sticky {
@@ -696,224 +697,7 @@ figure {
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    .language_currency {
-        display: none;
-        margin-bottom: 14px;
-        text-align: center;
-    }
-}
 
-@media only screen and (max-width: 767px) {
-    .language_currency {
-        display: none;
-        margin-bottom: 17px;
-        text-align: center;
-    }
-}
-
-.language_currency > ul > li {
-    display: inline-block;
-    position: relative;
-    margin-right: 16px;
-    padding-right: 18px;
-}
-
-    .language_currency > ul > li:last-child {
-        margin-right: 0;
-        padding-right: 0;
-    }
-
-        .language_currency > ul > li:last-child::before {
-            display: none;
-        }
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    .language_currency > ul > li {
-        margin-right: 7px;
-    }
-}
-
-@media only screen and (max-width: 767px) {
-    .language_currency > ul > li {
-        margin-right: 7px;
-    }
-}
-
-.language_currency > ul > li::before {
-    content: "";
-    width: 1px;
-    height: 14px;
-    background: rgba(0, 0, 0, 0.3);
-    position: absolute;
-    top: 50%;
-    transform: translatey(-50%);
-    right: 0;
-}
-
-.language_currency > ul > li:hover ul.dropdown_currency, .language_currency > ul > li:hover ul.dropdown_language {
-    visibility: visible;
-    max-height: 200px;
-}
-
-.language_currency > ul > li:hover > a {
-    color: #40A944;
-}
-
-.language_currency > ul > li > a {
-    text-transform: capitalize;
-    line-height: 39px;
-    font-size: 14px;
-    display: inline-block;
-    font-weight: 400;
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    .language_currency > ul > li > a {
-        line-height: 22px;
-        color: #222222;
-    }
-}
-
-@media only screen and (max-width: 767px) {
-    .language_currency > ul > li > a {
-        line-height: 22px;
-        color: #222222;
-    }
-}
-
-.language_currency > ul > li > a i {
-    margin-left: 3px;
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    .language_currency > ul > li > a i {
-        margin-left: 0px;
-    }
-}
-
-@media only screen and (max-width: 767px) {
-    .language_currency > ul > li > a i {
-        margin-left: 0px;
-    }
-}
-
-.language_currency > ul > li > a img {
-    margin-right: 4px;
-}
-
-.language_currency > ul > li:hover a:not([href]):not([tabindex]) {
-    color: #40A944;
-}
-
-.dropdown_currency, .dropdown_language {
-    position: absolute;
-    background: #fff;
-    border: 1px solid #ededed;
-    padding: 10px 20px;
-    text-align: left;
-    top: 100%;
-    left: 0;
-    -webkit-transition: all .5s ease-out;
-    transition: all .5s ease-out;
-    overflow: hidden;
-    z-index: 9999;
-    border-radius: 3px;
-    visibility: hidden;
-    max-height: 0;
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    .dropdown_currency, .dropdown_language {
-        left: auto;
-        right: 0;
-    }
-}
-
-@media only screen and (max-width: 767px) {
-    .dropdown_currency, .dropdown_language {
-        left: auto;
-        right: 0;
-    }
-}
-
-.dropdown_currency li a, .dropdown_language li a {
-    text-transform: capitalize;
-    display: block;
-    font-size: 13px;
-    white-space: nowrap;
-    line-height: 28px;
-    color: #222222;
-}
-
-    .dropdown_currency li a:hover, .dropdown_language li a:hover {
-        color: #40A944;
-    }
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    .dropdown_language {
-        left: -10px;
-    }
-}
-
-@media only screen and (max-width: 767px) {
-    .dropdown_language {
-        left: -10px;
-    }
-}
-
-.header_social {
-    text-align: right;
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    .header_social {
-        text-align: center !important;
-        margin-bottom: 18px;
-    }
-}
-
-@media only screen and (max-width: 767px) {
-    .header_social {
-        text-align: center !important;
-        margin-bottom: 18px;
-    }
-}
-
-.header_social ul li {
-    display: inline-block;
-    margin-right: 18px;
-}
-
-    .header_social ul li:last-child {
-        margin-right: 0;
-    }
-
-    .header_social ul li a {
-        font-size: 16px;
-    }
-
-        .header_social ul li a:hover {
-            color: #40A944;
-        }
-
-.header_middle {
-    padding: 30px 0 24px;
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    .header_middle {
-        margin-bottom: 29px;
-        padding: 0;
-    }
-}
-
-@media only screen and (max-width: 767px) {
-    .header_middle {
-        margin-bottom: 29px;
-        padding: 0;
-    }
-}
 
 .logo img {
     max-width: 150px;
@@ -970,7 +754,7 @@ figure {
 }
 
     .dropdown_links li a:hover {
-        color: #40A944;
+        color: #48a9a6;
     }
 
 .hover_category {
@@ -1242,7 +1026,7 @@ figure {
 }
 
     .search_box button:hover {
-        background: #222222;
+        background: #48a9a6;
     }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -1298,7 +1082,7 @@ figure {
 }
 
     .header_account_list > a:hover {
-        color: #40A944;
+        color: #48a9a6;
     }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -1328,7 +1112,7 @@ figure {
     }
 
         .header_account_list.register ul li a:hover {
-            color: #40A944;
+            color: #48a9a6;
         }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -1394,7 +1178,7 @@ figure {
 }
 
 /*mini cart css here*/
-.mini_cart_wrapper {
+/*.mini_cart_wrapper {
     position: relative;
 }
 
@@ -1418,7 +1202,7 @@ figure {
 }
 
     .mini_cart_close > a:hover {
-        color: #40A944;
+        color: #48a9a6;
     }
 
 .mini_cart {
@@ -1454,7 +1238,7 @@ figure {
 }
 
     .cart_img:hover {
-        border-color: #40A944;
+        border-color: #48a9a6;
     }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -1494,7 +1278,7 @@ figure {
 }
 
 .cart_info a:hover {
-    color: #40A944;
+    color: #48a9a6;
 }
 
 .cart_info p {
@@ -1513,7 +1297,7 @@ figure {
 }
 
     .cart_remove a:hover {
-        color: #40A944;
+        color: #48a9a6;
     }
 
 .cart_item {
@@ -1573,10 +1357,10 @@ figure {
 }
 
     .cart_button a:hover {
-        background: #40A944;
-        border-color: #40A944;
+        background: #48a9a6;
+        border-color: #48a9a6;
         color: #fff;
-    }
+    }*/
 
 /*mini cart css end*/
 /* 2.4 main menu css here */
@@ -6507,7 +6291,7 @@ figure {
 .breadcrumb_content ul li {
     display: inline-block;
     text-transform: capitalize;
-    font-size: 14px;
+    font-size: 30px;
     margin-right: 3px;
     padding-right: 13px;
     position: relative;
@@ -6530,7 +6314,7 @@ figure {
         }
 
     .breadcrumb_content ul li a:hover {
-        color: #40A944;
+        color: #48a9a6;
     }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -6665,7 +6449,7 @@ figure {
 }
 
     .widget_list > ul > li > a:hover {
-        color: #40A944;
+        color: #48a9a6;
     }
 
     .widget_list > ul > li > a span {
@@ -6735,7 +6519,7 @@ figure {
 }
 
     .widget_list.widget_filter form button:hover {
-        background: #40A944;
+        background: #48a9a6;
     }
 
 .tag_cloud a {
@@ -6831,7 +6615,7 @@ figure {
     }
 
     .list_button ul li a:hover {
-        color: #40A944;
+        color: #48a9a6;
     }
 
     .list_button ul li a i {
@@ -6898,15 +6682,17 @@ figure {
     .pagination ul li a {
         display: block;
         border-radius: 3px;
+        background: #005959;
+        color:#FFF
     }
 
         .pagination ul li a:hover {
-            background: #40A944;
-            color: #ffffff;
+            background: #48a9a6;
+            color:#fff;
         }
 
     .pagination ul li.current {
-        background: #40A944;
+        background: #005959;
         color: #ffffff;
     }
 
@@ -8395,55 +8181,7 @@ figure {
     }
 }
 
-.product_right_sidebar {
-    margin-bottom: 70px;
-}
 
-@media only screen and (max-width: 767px) {
-    .product_right_sidebar {
-        margin-bottom: 60px;
-    }
-}
-
-@media only screen and (max-width: 767px) {
-    .product_right_sidebar .product-details-tab {
-        margin-bottom: 58px;
-    }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    .product_right_sidebar .row {
-        flex-direction: row;
-    }
-}
-
-@media only screen and (max-width: 767px) {
-    .product_right_sidebar .row {
-        flex-direction: row;
-    }
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-    .product_right_sidebar .priduct_social ul li {
-        margin-right: 2px;
-    }
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-    .product_right_sidebar .product_d_right h1 {
-        font-size: 20px;
-    }
-}
-
-.product_right_sidebar .single-zoom-thumb {
-    width: 86%;
-}
-
-@media only screen and (max-width: 767px) {
-    .product_right_sidebar .single-zoom-thumb {
-        width: 90%;
-    }
-}
 
 /* 13. cart page css here */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -8533,7 +8271,7 @@ figure {
     }
 
         .table_desc .cart_page table tbody tr td.product_remove a:hover {
-            color: #40A944;
+            color: #48a9a6;
         }
 
 .table_desc .cart_page table tbody tr td.product_thumb {
@@ -8573,7 +8311,7 @@ figure {
     }
 
         .table_desc .cart_page table tbody tr td.product_name a:hover {
-            color: #40A944;
+            color: #48a9a6;
         }
 
 .table_desc .cart_page table tbody tr td.product-price {
@@ -8661,7 +8399,7 @@ figure {
 }
 
     .cart_submit button:hover {
-        background: #40A944;
+        background: #48a9a6;
     }
 
 .coupon_inner {
@@ -8691,7 +8429,7 @@ figure {
     }
 
         .coupon_inner button:hover {
-            background: #40A944;
+            background: #48a9a6;
         }
 
     .coupon_inner input {
@@ -8730,7 +8468,7 @@ figure {
 }
 
     .coupon_inner a:hover {
-        color: #40A944;
+        color: #48a9a6;
     }
 
 .coupon_code {
@@ -8807,7 +8545,7 @@ figure {
     }
 
         .checkout_btn a:hover {
-            background: #222222;
+            background: #48a9a6;
             color: #ffffff;
         }
 
@@ -9105,7 +8843,7 @@ figure {
     padding: 5px 10px;
     text-transform: capitalize;
     color: #ffffff;
-    background: #40A944;
+    background: #005959;
     font-weight: 500;
     -webkit-transition: 0.3s;
     transition: 0.3s;
@@ -9120,7 +8858,7 @@ figure {
 }
 
 .order_button button:hover {
-    background: #006a04;
+    background: #48a9a6;
 }
 
 @media only screen and (max-width: 767px) {
@@ -9264,7 +9002,7 @@ figure {
         }
 
             .wishlist_share ul li a:hover {
-                color: #40A944;
+                color: #48a9a6;
             }
 
 .wishlist_area {
@@ -9331,7 +9069,7 @@ figure {
     }
 
     .contact_message ul li a:hover {
-        color: #40A944;
+        color: #48a9a6;
     }
 
 .contact_message label {
@@ -9382,7 +9120,7 @@ figure {
 }
 
     .contact_message button:hover {
-        background: #40A944;
+        background: #48a9a6;
     }
 
 @media only screen and (max-width: 767px) {
@@ -9500,7 +9238,7 @@ figure {
     }
 
         .login_submit a:hover {
-            color: #40A944;
+            color: #48a9a6;
         }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -9679,7 +9417,7 @@ figure {
     }
 
         .dashboard_tab_button ul li a:hover {
-            background: #40A944;
+            background: #48a9a6;
             color: #ffffff;
         }
 
@@ -11053,6 +10791,10 @@ figure {
     line-height: 35px;
 }
 
+.blog_sidebar_widget .widget_categories ul li a:hover{
+    color:#005959
+}
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .blog_sidebar_widget .tag_widget ul li a {
         padding: 0 12px;
@@ -11072,7 +10814,7 @@ figure {
 .widget_search button {
     color: #fff;
     display: inline-block;
-    background: #242424;
+    background: #005959;
     border: none;
     padding: 0 20px;
     height: 34px;
@@ -11087,7 +10829,7 @@ figure {
 }
 
     .widget_search button:hover {
-        background: #40A944;
+        background: #48a9a6;
     }
 
 .tag_widget ul li {
@@ -11100,15 +10842,16 @@ figure {
         font-size: 15px;
         font-weight: 400;
         border: 1px solid #ededed;
-        background: #fff;
+        background: #005959;
+        color:#fff;
         padding: 0 15px;
         line-height: 29px;
         border-radius: 3px;
     }
 
         .tag_widget ul li a:hover {
-            background: #40A944;
-            border-color: #40A944;
+            background: #48a9a6;
+            border-color: #48a9a6;
             color: #fff;
         }
 
@@ -11141,7 +10884,7 @@ figure {
 }
 
     .post_info h4 a:hover {
-        color: #40A944;
+        color: #48a9a6;
     }
 
 .post_info span {
@@ -11160,7 +10903,7 @@ figure {
     }
 
         .blog_categories ul li a:hover {
-            color: #40A944;
+            color: #48a9a6;
         }
 
     .blog_categories ul li:last-child a {
@@ -11187,6 +10930,7 @@ figure {
     border: 1px solid #ededed;
     justify-content: center;
     padding: 10px 0;
+    color:white;
 }
 
 @media only screen and (max-width: 767px) {
@@ -11480,7 +11224,24 @@ figure {
     float: inherit;
     padding-left: 0;
     padding-top: 30px;
+    font-size:16px;
 }
+    .blog_details .blog_content h4 a {
+        font-size:20px;
+        font-weight:bold;
+    }
+    .blog_details .blog_content h4 a:hover {
+        color: #48a9a6
+    }
+    .blog_details .blog_content div {
+        font-size:16px;
+    }
+    .blog_details .blog_content div p a {
+        font-size:16px
+    }
+    .blog_details .blog_content div p a:hover {
+        color: #48a9a6
+    }
 
 @media only screen and (max-width: 767px) {
     .blog_details .blog_content {
@@ -11605,7 +11366,7 @@ figure {
 }
 
     .entry_content .post_meta span a:hover {
-        color: #40A944;
+        color: #48a9a6;
     }
 
 .comments_box {
@@ -11642,22 +11403,30 @@ figure {
     width: 92%;
     height: 50px;
     background: #ffffff;
-    border: 1px solid #40a944;
+    border: 1px solid #005959;
     margin-bottom: 10px;
     resize: none;
     padding: 10px;
     margin-left: 70px;
 }
+
+@media only screen and (max-width: 767px) {
+    .your_comments_box form textarea {
+        margin-left: 55px;
+        width: 88%
+    }
+}
+
 .your_comments_box form button {
     border: 0;
     line-height: 36px;
-    background: #222222;
+    background: #005959;
     font-weight: 500;
     margin-left: 70px;
 }
 
     .your_comments_box form button:hover {
-        background: #40A944;
+        background: #48a9a6;
     }
 
 .comment_list {
@@ -11683,7 +11452,7 @@ figure {
 .comment_list .comment_content {
     margin-left: 70px;
     position: relative;
-    border: 1px solid #40a944;
+    border: 1px solid #005959;
     border-radius: 3px;
     padding: 15px;
 }
@@ -11703,7 +11472,7 @@ figure {
 }
 
     .comment_list .comment_content h5 a:hover {
-        color: #40A944;
+        color: #48a9a6;
     }
 
 .comment_list .comment_content p {
@@ -11748,7 +11517,8 @@ figure {
 }
 
     .comments_form form button:hover {
-        background: #40A944;
+        background: #48a9a6;
+        color:white;
     }
 
 @media only screen and (max-width: 767px) {
@@ -11826,10 +11596,12 @@ figure {
 
     .related_content h4 a {
         color: #222222;
+        font-size:18px;
+        margin-bottom:10px
     }
 
         .related_content h4 a:hover {
-            color: #40A944;
+            color: #48a9a6;
         }
 
 .related_content span {
@@ -13678,7 +13450,7 @@ figure {
 }
 
 .update-button button:hover {
-    background: #006a04;
+    background: #48a9a6;
 }
 /*# sourceMappingURL=style.css.map */
 
@@ -13904,7 +13676,7 @@ figure {
         /* Create an active/current tablink class */
         .order-tab button.active {
             color:white;
-            background-color: #48a9a6;
+            background-color: #005959;
         }
 
 /* Style the tab content */

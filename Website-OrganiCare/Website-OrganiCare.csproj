@@ -68,6 +68,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Admin_Customer.html" />
+    <Content Include="Admin_Delivery.html" />
+    <Content Include="Admin_Report.html" />
     <Content Include="assets\css\app.min.css" />
     <Content Include="Admin_DonHangChuaXacNhan.html" />
     <Content Include="Admin_Quanlykho.html" />
@@ -85,9 +87,11 @@
     <Content Include="assets\css\linearicons.css" />
     <Content Include="assets\css\ListProduct.css" />
     <Content Include="assets\css\Login_Signup_ForgotPassword.css" />
+    <Content Include="assets\css\minicart.css" />
     <Content Include="assets\css\owl.carousel.min.css" />
     <Content Include="assets\css\owl.theme.default.min.css" />
     <Content Include="assets\css\profile.css" />
+    <Content Include="assets\css\slick.css" />
     <Content Include="assets\css\style.css" />
     <Content Include="assets\Image\Admin\filter.png" />
     <Content Include="assets\Image\Admin\info.png" />

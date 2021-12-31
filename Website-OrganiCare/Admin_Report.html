@@ -2,15 +2,16 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Admin - Đơn hàng/Đơn hàng chưa xác nhận</title>
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/linearicons.css" />
-    <link rel="stylesheet" href="assets/css/FontAwesome.css" />
+    <title>Admin - Báo cáo</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/admin.css" />
     <script src="https://kit.fontawesome.com/1147679ae7.js" crossorigin="anonymous"></script>
 
+    <style type="text/css">
+        a {
+            color: #005959;
+        }
+    </style>
 </head>
 <body>
     <div class="navigation">
@@ -96,12 +97,13 @@
             </li>
         </ul>
     </div>
+
     <div class="main">
         <div class="topbar">
             <div class="flex-item">
                 <div class="toggle" onclick="toggleMenu()"></div>
                 <div class="main-title">
-                    <h1>Đơn hàng / Đơn hàng chưa xác nhận</h1>
+                    <h1>Báo cáo</h1>
                 </div>
             </div>
             <div class="flex-item">
@@ -112,115 +114,158 @@
             </div>
         </div>
 
-        <div class="wrapper-block">
-            <div>
-                <button class="btn btn-primary">
-                    <span>Xác nhận đơn</span>
-                </button>
+        <div class="topbar">
+            <div class="flex-item">
+                <div class="main-title">
+                    <h3>Kết quả kinh doanh</h3>
+                </div>
+                <span class="fas fa-sync"></span>
             </div>
-            <div class="admin-order-tabs-wrapper">
-                <div class="admin-order-tabs-wrapper">
-                    <div class="order-tab">
-                        <button style="background-color:#005959;color:white">Chưa xác nhận</button>
-                    </div>
-                    <div class="order-detail">
-                        <div style="padding:5px">
-                            <span>Hiển thị</span>
-                            <span>
-                                <select style="width:fit-content">
-                                    <option value="10">10</option>
-                                    <option value="15">15</option>
-                                    <option value="20">20</option>
-                                    <option value="50">50</option>
-                                </select>
-                            </span>
-                            <span>đơn</span>
-                        </div>
-                        <span style="width:800px;text-align:center" class="widget_search_order">
-                            <span class="order_search_box">
-                                <input placeholder="Tìm đơn hàng..." type="text">
-                            </span>
-                        </span>
-                        <span style="padding-right:5px;text-align:right">
-                            <img class="order-search-icon" src="assets/Image/Admin/filter.png" />
-                            Lọc
-                        </span>
-                    </div>
-                    <table>
-                        <tr>
-                            <!--<th style="width:5px"></th>-->
-                            <th>
-                                <label class="admin-order-child-container">
-                                    <input type="checkbox">
-                                    <span class="admin-order-checkmark"></span>
-                                </label>
-                            </th>
-                            <th>Mã</th>
-                            <th>Ngày tạo</th>
-                            <th>Khách hàng</th>
-                            <th>Thanh toán</th>
-                            <th>Trạng thái đơn</th>
-                            <th>Tổng tiền</th>
-                            <th>Kênh</th>
-                        </tr>
-                        <tr data-toggle="collapse" href="#collapse10000" aria-expanded="false" aria-controls="collapse10000">
-                            <!--<td>
-                                <button class="btn-more-info" style="background-color:transparent"><img src="assets/Image/Admin/information.png" /></button>
-                            </td>-->
-                            <td>
-                                <label class="admin-order-child-container">
-                                    <input type="checkbox">
-                                    <span class="admin-order-checkmark"></span>
-                                </label>
-                            </td>
-                            <td>10000</td>
-                            <td>17/11/2021</td>
-                            <td><b><a href="#"><u>Thắng Nguyễn</u></a></b></td>
-                            <td>ZaloPay</td>
-                            <td><span class="status chuathanhtoan">Chưa xác nhận !</span></td>
-                            <td>100.000đ</td>
-                            <td>Web</td>
+            <div class="flex-item" style="width:200px">
+                <select name="OrderStatus">
+                    <option>Hôm nay</option>
+                    <option>Tuần này</option>
+                    <option>Tháng này</option>
+                    <option>Tháng trước</option>
+                    <option>6 tháng</option>
+                    <option>1 năm</option>
+                </select>
+            </div>
+        </div>
+        <hr />
 
-                        </tr>
-                        <tr class="collapse" id="collapse10000">
-                            <td colspan="2"><img height="100" width="100" src="assets/Image/Admin/tao-ninh-thuan.jpg" /></td>
-                            <td>
-                                <b>Táo Ninh Thuận</b>
-                            </td>
-                            <td>
-                                <div>x 1</div>
-                                <div>100.000đ</div>
-                                <div><b>Tổng: 100.000đ</b></div>
-                            </td>
-                            <td colspan="2">
-                                <div><i>Thông tin giao hàng:</i></div>
-                                <div><b>Thắng Nguyễn</b></div>
-                                <div>
-                                    1A Nguyễn Đình Chiểu, P. Đa Kao,
-                                    Q.1, TP.HCM
-                                </div>
-                                <div>SĐT: 0932123456</div>
-                            </td>
-                            <td colspan="3">
-                                <div>Ghi chú:</div>
-                                <textarea cols="32" rows="3"></textarea>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="6">
-                                Đã tìm thấy 1 kết quả
-                            </td>
-                            <td colspan="2" style="text-align:right">
-                                Trang
-                                <input style="width:30px" value="1" type="number" />
-                                / 1
-                            </td>
-                        </tr>
-                    </table>
+        <div class="topbar">
+            <div class="flex-item" style="margin-left:auto; margin-right:0; width:250px">
+                <select name="OrderStatus">
+                    <option>Trên mọi kênh bán hàng</option>
+                    <option>Chỉ trên website</option>
+                    <option>Chỉ trên kênh Facebook</option>
+                </select>
+            </div>
+        </div>
+        <hr />
+
+        <div class="cardBox">
+            <div class="card">
+                <div>
+                    <div class="cardName">Doanh thu thuần</div>
+                    <div class="numbers">5.000.000đ</div>
+                </div>
+                <div class="iconBox">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <div class="cardName">Số lượng đơn hàng</div>
+                    <div class="numbers">500 đơn</div>
+                </div>
+                <div class="iconBox">
+                    <i class="fas fa-box-open"></i>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <div class="cardName">Chi phí phát sinh</div>
+                    <div class="numbers">50.000đ</div>
+                </div>
+                <div class="iconBox">
+                    <i class="fas fa-file-invoice-dollar"></i>
                 </div>
             </div>
         </div>
+        <center><a href="#"><i>Xem chi tiết</i></a></center>
+        <br />
+
+        <div class="topbar">
+            <div class="flex-item">
+                <div class="main-title">
+                    <h3>Chọn báo cáo mà bạn muốn xem</h3>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <br />
+
+        <div class="cardReportBox">
+            <div class="cardReport">
+                <div>
+                    <div class="cardReportName">Báo cáo bán hàng</div>
+                    <div class="cardSubtitle">Dòng tiền bán háng</div>
+                    <br />
+                    <div class="cardDetail"><a href="#">-> Xem báo cáo</a></div>
+                </div>
+            </div>
+            <div class="cardReport">
+                <div>
+                    <div class="cardReportName">Báo cáo bán hàng</div>
+                    <div class="cardSubtitle">Theo sản phẩm</div>
+                    <br />
+                    <div class="cardDetail"><a href="#">-> Xem báo cáo</a></div>
+                </div>
+            </div>
+            <div class="cardReport">
+                <div>
+                    <div class="cardReportName">Báo cáo bán hàng</div>
+                    <div class="cardSubtitle">Theo kênh bán hàng</div>
+                    <br />
+                    <div class="cardDetail"><a href="#">-> Xem báo cáo</a></div>
+                </div>
+            </div>
+            <div class="cardReport">
+                <div>
+                    <div class="cardReportName">Báo cáo bán hàng</div>
+                    <div class="cardSubtitle">Theo khách hàng</div>
+                    <br />
+                    <div class="cardDetail"><a href="#">-> Xem báo cáo</a></div>
+                </div>
+            </div>
+            <div class="cardReport">
+                <div>
+                    <div class="cardReportName">Báo cáo bán hàng</div>
+                    <div class="cardSubtitle">Theo ngày giờ</div>
+                    <br />
+                    <div class="cardDetail"><a href="#">-> Xem báo cáo</a></div>
+                </div>
+            </div>
+            <div class="cardReport">
+                <div>
+                    <div class="cardReportName">Báo cáo Website</div>
+                    <div class="cardSubtitle">Lượt truy cập</div>
+                    <br />
+                    <div class="cardDetail"><a href="#">-> Xem báo cáo</a></div>
+                </div>
+            </div>
+            <div class="cardReport">
+                <div>
+                    <div class="cardReportName">Báo cáo tài chính</div>
+                    <div class="cardSubtitle">Bảng cân đối kế toán</div>
+                    <br />
+                    <div class="cardDetail"><a href="#">-> Xem báo cáo</a></div>
+                </div>
+            </div>
+            <div class="cardReport">
+                <div>
+                    <div class="cardReportName">Báo cáo tài chính</div>
+                    <div class="cardSubtitle">Báo cáo kết quả kinh doanh</div>
+                    <br />
+                    <div class="cardDetail"><a href="#">-> Xem báo cáo</a></div>
+                </div>
+            </div>
+            <div class="cardReport">
+                <div>
+                    <div class="cardReportName">Báo cáo tài chính</div>
+                    <div class="cardSubtitle">Báo cáo lưu chuyển tiền tệ</div>
+                    <br />
+                    <div class="cardDetail"><a href="#">-> Xem báo cáo</a></div>
+                </div>
+            </div>
+
+        </div>
     </div>
+
+
+
     <script src="assets/javascript/Admin-Order.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -261,5 +306,6 @@
 
         })
     </script>
+
 </body>
 </html>
