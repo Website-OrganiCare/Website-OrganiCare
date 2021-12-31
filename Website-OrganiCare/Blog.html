@@ -2,13 +2,51 @@
 <html>
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/linearicons.css" />
     <link rel="stylesheet" href="assets/css/FontAwesome.css" />
+
+    <link rel="stylesheet" href="assets/css/header.css">
+    <script src="https://kit.fontawesome.com/447269edb0.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div class="wrapper">
+        <nav>
+            <input type="checkbox" id="show-search">
+            <input type="checkbox" id="show-menu">
+            <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+            <div class="content">
+                <div class="logo"><a href="#">OrganiCare</a></div>
+                <ul class="links">
+                    <li>
+                        <input type="checkbox" id="show-features">
+                        <label for="show-features">Danh mục</label>
+                        <ul>
+                            <li><a href="#">Rau củ</a></li>
+                            <li><a href="#">Trái cây </a></li>
+                            <li><a href="#">Thịt và thuỷ hải sản</a></li>
+                            <li><a href="#">Đồ uống</a></li>
+                            <li><a href="#">Ngũ cốc, đậu và hạt</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="#">Khuyến mãi</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Đánh giá</a></li>
+                    <li><a href="#">Về chúng tôi</a></li>
+                </ul>
+            </div>
+            <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+            <form action="#" class="search-box">
+                <input type="text" placeholder="Tìm kiếm sản phẩm...">
+                <button class="go-icon" id="Go-to-search page result"><i class="fas fa-long-arrow-alt-right"></i></button>
+            </form>
+            <label for="show-cart" class="cart-icon"><i class="fas fa-shopping-cart"></i></label>
+        </nav>
+    </div>
     <!--Blog detail - breadcrumbs area-->
     <div class="breadcrumbs_area">
         <div class="container">
@@ -230,7 +268,7 @@
                                             <a href="blog-details.html"><img src="assets/Image/Blog/Blog-tea.jpg" alt=""></a>
                                         </div>
                                         <figcaption class="blog_content">
-                                            <h4 class="post_title"><a href="#">Vừa nhâm nhi tách trà thơm vừa đọc sách thì còn gì bằng nhỉ</a></h4>
+                                            <h4 class="post_title"><a href="#">Cách pha trà đúng chuẩn Trà đạo Nhật Bản</a></h4>
                                             <div class="articles_date">
                                                 <p>15/11/2021 || <a href="#">Thức uống</a> </p>
                                             </div>

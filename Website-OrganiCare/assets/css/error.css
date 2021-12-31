@@ -1,0 +1,298 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* 
+Làm từ trên xuống dưới 
+Làm từ ngoài vào trong
+Tổng quan đến chi tiết
+*/
+/* 
+Vị trí của nó
+Kích thước của nó (width - height)
+Màu sắc
+Kiểu dáng (Kiểu chữ) (Hình dáng) 
+*/
+html{
+    font-family:'Times New Roman', Times, serif;
+
+}
+
+#main{
+    
+}
+
+#preheader{
+    height: 200px;
+    width: 100%;
+    display: inline-block;
+}
+#pre-header-logo{
+    width: 20%;
+    position:absolute;
+    float: left;
+}
+#pre-header-search-wrap{
+    width: 500px;
+    width: 70%;
+    float:right;
+    margin: 50px auto;
+    text-align: center;
+}
+
+#preheader .search-wrap .search-box{
+    position: absolute;
+    width: 500px;
+    height: 40px;
+}
+
+#preheader .search-wrap .search-box .input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+#preheader .search-wrap .search-box .btn{
+    position:absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 100%;
+    background-color: #005959;
+    z-index: 1;
+    cursor: pointer;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+#preheader .search-wrap .search-box .btn:hover{
+    background-color: #119292;
+}
+
+#preheader .search-wrap .search-box .btn.btn-common .fas{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+
+#header{
+    height: 50px;
+    background-color: #005959;
+}
+
+#nav{
+
+}
+
+#nav > li{
+    /* Chỉ dừng đến li cấp 1 */
+    display: inline-block;
+}
+
+#nav li{
+    
+    position: relative;
+}
+
+#nav>li>a{
+    color: #005959;
+
+}
+
+#nav li a {
+    color: white;
+    text-decoration: none;
+    line-height: 50px;
+    padding: 0 20px;
+    display: block;
+}
+
+#nav li:hover .subnav{
+    /* Di vào subnav - con của li đầu (Danh mục) */
+    display: block;
+}
+
+/* Selector */
+#nav > li:hover > a,
+#nav .subnav li:hover a{
+    /* Thẻ a được hover và chỉ tác động tầng 1 */
+    color:#005959 ;
+    background-color: white;
+}
+
+
+#nav .subnav{
+    display: none;
+    position: absolute;
+    background-color:#005959 ;
+    width: 180%;
+    box-shadow: 0 0 rgba(0,0,0,0.3);
+}
+
+#nav .subnav a{
+    /* Tác động tầng 2 (Những trái cây, rau củ,...) */
+    color: #005959,
+}
+
+
+#slider{
+    /* position: relative;
+    padding-top: 50%;
+    background: url("Banner-01.png") top center/ cover no-repeat; */
+}
+
+#content{
+    height: 100%;
+}
+
+#content .content-section
+{
+    width: 100%;
+    max-width: 100%;
+    padding: 25px 0 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content .section-halfheading{
+    font-size: 25px;
+    font-weight: 1000;
+    color:#005959 ;
+    padding: 20px;
+}
+
+#content .section-subheading{
+    font-size: 15px;
+}
+
+#content .search-wrap{
+    width: 500px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+#content .search-wrap .search-box{
+    position: relative;
+    width: 500px;
+    height: 40px;
+}
+
+#content .search-wrap .search-box .input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+#content .search-wrap .search-box .btn{
+    position:absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 100%;
+    background-color: #005959;
+    z-index: 1;
+    cursor: pointer;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+#content .search-wrap .search-box .btn:hover{
+    background-color: #119292;
+}
+
+#content .search-wrap .search-box .btn.btn-common .fas{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+
+#content .button-contentframe{
+    width: 300px;
+    height: 50px;
+    background-color:#005959 ;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    border-top-left-radius: 70px;
+    border-top-right-radius: 70px;
+}
+
+#content .button-contentframe:hover{
+    background-color: #119292;
+}
+
+#content .section-button{
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: auto;
+}
+
+#content .button-contentframe > .section-button{
+
+    text-align: center;
+    padding-top: 10px;
+}
+
+#content .section-heading,
+#content .section-halfheading,
+#content .section-subheading{
+    text-align: center;  
+}
+
+
+#footer{
+    background:#005959;
+    height: 200px;
+}
+table{
+    color: white;
+    position:relative;
+    margin-left: 10%;
+}
+td{
+    width: 200px;
+    padding: 5px;
+    position: relative;
+}
+tr{
+    position: relative;
+}
+
+
+
+/* 
+Responsive
+PC: >=1024px
+Tablet: >=740px & <1024px
+Mobile <740px
+*/
+/* PC */
+@media(min-width: 1024px){
+    header{
+        padding: 10px 20px;
+        flex-direction: column;
+    }
+}
+/* Tablet */
+@media(min-width: 740px) and (max-width: 1024px){
+
+}
+/* Mobile */
+@media(max-width: 1024px){
+
+}

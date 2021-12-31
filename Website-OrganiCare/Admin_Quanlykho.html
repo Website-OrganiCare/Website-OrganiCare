@@ -5,6 +5,7 @@
     <title>Admin - Tổng Quan</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/admin.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/1147679ae7.js" crossorigin="anonymous"></script>
     <style type="text/css">
         .container .sales-boxes {
@@ -17,7 +18,14 @@
                 font-size: 24px;
                 font-weight: 500;
             }
+
+        .quantity input {
+            height: 30px;
+            width: 25px;
+            border: none;
+        }
     </style>
+    <script src="assets/javascript/Cart-Checkout.js"></script>
 </head>
 <body>
     <div class="container">
@@ -40,7 +48,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="Admin_TongQuan.html">
                         <span class="icon">
                             <i class="fas fa-home"></i>
                         </span>
@@ -58,8 +66,8 @@
                         <a href="Admin_TatCaDonHang.html">
                             <span>Tất cả đơn hàng</span>
                         </a>
-                        <a href="#">
-                            <span>Đơn hàng chưa được xác nhận</span>
+                        <a href="Admin_DonHangChuaXacNhan.html">
+                            <span>Đơn hàng chưa xác nhận</span>
                         </a>
                     </div>
                 </li>
@@ -79,7 +87,7 @@
                         </a>
                     </div>
                 <li>
-                    <a href="#">
+                    <a href="Admin_Delivery.html">
                         <span class="icon">
                             <i class="fas fa-truck"></i>
                         </span>
@@ -87,7 +95,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="Admin_Customer.html">
                         <span class="icon">
                             <i class="fas fa-user"></i>
                         </span>
@@ -95,7 +103,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="Admin_Report.html">
                         <span class="icon">
                             <i class="fas fa-chart-bar"></i>
                         </span>
@@ -147,7 +155,7 @@
 
                                         </select>
                                     </td>
-                                    <td colspan="3">
+                                    <td colspan="4">
                                         <a href="#">
                                             <span class="title search">
                                                 <label>
@@ -163,10 +171,9 @@
                                             </span>
                                         </a>
                                     </td>
-
                                 </tr>
                                 <tr>
-                                    <td><input type="checkbox" onclick="checkAll(this)"/> SKU</td>
+                                    <td><input type="checkbox" onclick="checkAll(this)" /> SKU</td>
                                     <td>Hình ảnh</td>
                                     <td>Tên sản phẩm</td>
                                     <td>Khả dụng</td>
@@ -184,10 +191,14 @@
                                     <td>0</td>
                                     <td>11.000.000</td>
                                     <td>
-                                        <div class="buttons_added">
-                                            <input class="minus is-form" type="button" value="-">
-                                            <input aria-label="quantity" class="input-qty" max="1000" min="-200" name="Quanware" type="number" value="0">
-                                            <input class="plus is-form" type="button" value="+">
+                                        <div class="quantity">
+                                            <button class="minus-btn" type="button" name="button" data-quantity="minus" data-field="quantity">
+                                                <img src="assets/Image/Checkout/minus (1).png" width="20" height="20" />
+                                            </button>
+                                            <input id="number" type="text" name="quantity" value="3">
+                                            <button class="plus-btn" type="button" name="button" data-quantity="plus" data-field="quantity">
+                                                <img src="assets/Image/Checkout/plus (1).png" width="20" height="20" />
+                                            </button>
                                         </div>
                                     </td>
                                 </tr>
@@ -199,10 +210,14 @@
                                     <td>0</td>
                                     <td>11.000.000</td>
                                     <td>
-                                        <div class="buttons_added">
-                                            <input class="minus is-form" type="button" value="-">
-                                            <input aria-label="quantity" class="input-qty" max="1000" min="-200" name="Quanware" type="number" value="0">
-                                            <input class="plus is-form" type="button" value="+">
+                                        <div class="quantity">
+                                            <button class="minus-btn" type="button" name="button" data-quantity="minus" data-field="quantity">
+                                                <img src="assets/Image/Checkout/minus (1).png" width="20" height="20" />
+                                            </button>
+                                            <input id="number" type="text" name="quantity" value="3">
+                                            <button class="plus-btn" type="button" name="button" data-quantity="plus" data-field="quantity">
+                                                <img src="assets/Image/Checkout/plus (1).png" width="20" height="20" />
+                                            </button>
                                         </div>
                                     </td>
                                 </tr>
@@ -214,10 +229,14 @@
                                     <td>0</td>
                                     <td>11.000.000</td>
                                     <td>
-                                        <div class="buttons_added">
-                                            <input class="minus is-form" type="button" value="-">
-                                            <input aria-label="quantity" class="input-qty" max="1000" min="-200" name="Quanware" type="number" value="0">
-                                            <input class="plus is-form" type="button" value="+">
+                                        <div class="quantity">
+                                            <button class="minus-btn" type="button" name="button" data-quantity="minus" data-field="quantity">
+                                                <img src="assets/Image/Checkout/minus (1).png" width="20" height="20" />
+                                            </button>
+                                            <input id="number" type="text" name="quantity" value="3">
+                                            <button class="plus-btn" type="button" name="button" data-quantity="plus" data-field="quantity">
+                                                <img src="assets/Image/Checkout/plus (1).png" width="20" height="20" />
+                                            </button>
                                         </div>
                                     </td>
                                 </tr>
@@ -229,10 +248,14 @@
                                     <td>0</td>
                                     <td>11.000.000</td>
                                     <td>
-                                        <div class="buttons_added">
-                                            <input class="minus is-form" type="button" value="-">
-                                            <input aria-label="quantity" class="input-qty" max="1000" min="-200" name="Quanware" type="number" value="0">
-                                            <input class="plus is-form" type="button" value="+">
+                                        <div class="quantity">
+                                            <button class="minus-btn" type="button" name="button" data-quantity="minus" data-field="quantity">
+                                                <img src="assets/Image/Checkout/minus (1).png" width="20" height="20" />
+                                            </button>
+                                            <input id="number" type="text" name="quantity" value="3">
+                                            <button class="plus-btn" type="button" name="button" data-quantity="plus" data-field="quantity">
+                                                <img src="assets/Image/Checkout/plus (1).png" width="20" height="20" />
+                                            </button>
                                         </div>
                                     </td>
                                 </tr>
@@ -244,10 +267,14 @@
                                     <td>0</td>
                                     <td>11.000.000</td>
                                     <td>
-                                        <div class="buttons_added">
-                                            <input class="minus is-form" type="button" value="-">
-                                            <input aria-label="quantity" class="input-qty" max="1000" min="-200" name="Quanware" type="number" value="0">
-                                            <input class="plus is-form" type="button" value="+">
+                                        <div class="quantity">
+                                            <button class="minus-btn" type="button" name="button" data-quantity="minus" data-field="quantity">
+                                                <img src="assets/Image/Checkout/minus (1).png" width="20" height="20" />
+                                            </button>
+                                            <input id="number" type="text" name="quantity" value="3">
+                                            <button class="plus-btn" type="button" name="button" data-quantity="plus" data-field="quantity">
+                                                <img src="assets/Image/Checkout/plus (1).png" width="20" height="20" />
+                                            </button>
                                         </div>
                                     </td>
                                 </tr>
@@ -259,10 +286,14 @@
                                     <td>0</td>
                                     <td>11.000.000</td>
                                     <td>
-                                        <div class="buttons_added">
-                                            <input class="minus is-form" type="button" value="-">
-                                            <input aria-label="quantity" class="input-qty" max="1000" min="-200" name="Quanware" type="number" value="0">
-                                            <input class="plus is-form" type="button" value="+">
+                                        <div class="quantity">
+                                            <button class="minus-btn" type="button" name="button" data-quantity="minus" data-field="quantity">
+                                                <img src="assets/Image/Checkout/minus (1).png" width="20" height="20" />
+                                            </button>
+                                            <input id="number" type="text" name="quantity" value="3">
+                                            <button class="plus-btn" type="button" name="button" data-quantity="plus" data-field="quantity">
+                                                <img src="assets/Image/Checkout/plus (1).png" width="20" height="20" />
+                                            </button>
                                         </div>
                                     </td>
                                 </tr>
@@ -274,10 +305,14 @@
                                     <td>0</td>
                                     <td>11.000.000</td>
                                     <td>
-                                        <div class="buttons_added">
-                                            <input class="minus is-form" type="button" value="-">
-                                            <input aria-label="quantity" class="input-qty" max="1000" min="-200" name="Quanware" type="number" value="0">
-                                            <input class="plus is-form" type="button" value="+">
+                                        <div class="quantity">
+                                            <button class="minus-btn" type="button" name="button" data-quantity="minus" data-field="quantity">
+                                                <img src="assets/Image/Checkout/minus (1).png" width="20" height="20" />
+                                            </button>
+                                            <input id="number" type="text" name="quantity" value="3">
+                                            <button class="plus-btn" type="button" name="button" data-quantity="plus" data-field="quantity">
+                                                <img src="assets/Image/Checkout/plus (1).png" width="20" height="20" />
+                                            </button>
                                         </div>
                                     </td>
                                 </tr>
@@ -289,10 +324,14 @@
                                     <td>0</td>
                                     <td>11.000.000</td>
                                     <td>
-                                        <div class="buttons_added">
-                                            <input class="minus is-form" type="button" value="-">
-                                            <input aria-label="quantity" class="input-qty" max="1000" min="-200" name="Quanware" type="number" value="0">
-                                            <input class="plus is-form" type="button" value="+">
+                                        <div class="quantity">
+                                            <button class="minus-btn" type="button" name="button" data-quantity="minus" data-field="quantity">
+                                                <img src="assets/Image/Checkout/minus (1).png" width="20" height="20" />
+                                            </button>
+                                            <input id="number" type="text" name="quantity" value="3">
+                                            <button class="plus-btn" type="button" name="button" data-quantity="plus" data-field="quantity">
+                                                <img src="assets/Image/Checkout/plus (1).png" width="20" height="20" />
+                                            </button>
                                         </div>
                                     </td>
                                 </tr>
@@ -304,10 +343,14 @@
                                     <td>0</td>
                                     <td>11.000.000</td>
                                     <td>
-                                        <div class="buttons_added">
-                                            <input class="minus is-form" type="button" value="-">
-                                            <input aria-label="quantity" class="input-qty" max="1000" min="-200" name="Quanware" type="number" value="0">
-                                            <input class="plus is-form" type="button" value="+">
+                                        <div class="quantity">
+                                            <button class="minus-btn" type="button" name="button" data-quantity="minus" data-field="quantity">
+                                                <img src="assets/Image/Checkout/minus (1).png" width="20" height="20" />
+                                            </button>
+                                            <input id="number" type="text" name="quantity" value="3">
+                                            <button class="plus-btn" type="button" name="button" data-quantity="plus" data-field="quantity">
+                                                <img src="assets/Image/Checkout/plus (1).png" width="20" height="20" />
+                                            </button>
                                         </div>
                                     </td>
                                 </tr>
@@ -319,10 +362,14 @@
                                     <td>0</td>
                                     <td>11.000.000</td>
                                     <td>
-                                        <div class="buttons_added">
-                                            <input class="minus is-form" type="button" value="-">
-                                            <input aria-label="quantity" class="input-qty" max="1000" min="-200" name="Quanware" type="number" value="0">
-                                            <input class="plus is-form" type="button" value="+">
+                                        <div class="quantity">
+                                            <button class="minus-btn" type="button" name="button" data-quantity="minus" data-field="quantity">
+                                                <img src="assets/Image/Checkout/minus (1).png" width="20" height="20" />
+                                            </button>
+                                            <input id="number" type="text" name="quantity" value="3">
+                                            <button class="plus-btn" type="button" name="button" data-quantity="plus" data-field="quantity">
+                                                <img src="assets/Image/Checkout/plus (1).png" width="20" height="20" />
+                                            </button>
                                         </div>
                                     </td>
                                 </tr>
@@ -412,11 +459,11 @@
                 tagA.addEventListener('click', () => {
                     item.classList.toggle('active');
                     let arrow = item.querySelector('.title .fas');
-                        if (arrow.classList.contains('fa-chevron-down')) {
-                            arrow.classList.replace('fa-chevron-down', 'fa-chevron-up');
-                        } else {
-                            arrow.classList.replace('fa-chevron-up', 'fa-chevron-down');
-                        }
+                    if (arrow.classList.contains('fa-chevron-down')) {
+                        arrow.classList.replace('fa-chevron-down', 'fa-chevron-up');
+                    } else {
+                        arrow.classList.replace('fa-chevron-up', 'fa-chevron-down');
+                    }
                 });
             })
         }

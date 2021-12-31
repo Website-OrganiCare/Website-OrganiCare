@@ -74,7 +74,14 @@ updateCartInfo();
                                     });
             productList.innerHTML = html;
         });
+}
+//Filter product
+for (var i = 0, length = data.length; i < length; i++) {
+    var current = data[i];
+    if (current.price >= 50000 && current.price <= 100000) {
+        //INSERT CODE HERE
     }
+}
     //purchase Product
         function purchaseProduct(e) {
             if (e.target.classList.contains('add-to-cart-btn')) {

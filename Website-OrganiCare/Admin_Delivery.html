@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Admin - Khách hàng</title>
+    <title>Admin - Vận chuyển</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/linearicons.css" />
@@ -101,7 +101,7 @@
             <div class="flex-item">
                 <div class="toggle" onclick="toggleMenu()"></div>
                 <div class="main-title">
-                    <h1>Khách hàng</h1>
+                    <h1>Vận chuyển</h1>
                 </div>
             </div>
             <div class="flex-item">
@@ -115,16 +115,17 @@
         <div class="wrapper-block">
             <div>
                 <button class="btn btn-primary">
-                    <span>Tạo khách hàng</span>
+                    <span>Xuất phiếu vận chuyển</span>
                 </button>
             </div>
             <div class="admin-order-tabs-wrapper">
                 <div class="admin-order-tabs-wrapper">
                     <div class="order-tab">
-                        <button class="tablinks" id="defaultOpen" onclick="openTab(event, 'all')">Tất cả khách hàng</button>
-                        <button class="tablinks" onclick="openTab(event, 'emailads')">Nhận email quảng cáo</button>
-                        <button class="tablinks" onclick="openTab(event, 'close')">Khách hàng thân thiết</button>
-                        <button class="tablinks" onclick="openTab(event, 'potential')">Khách hàng tiềm năng</button>
+                        <button class="tablinks" id="defaultOpen" onclick="openTab(event, 'all')">Tất cả đơn vận chuyển</button>
+                        <button class="tablinks" onclick="openTab(event, 'waiting')">Chờ lấy hàng</button>
+                        <button class="tablinks" onclick="openTab(event, 'delivering')">Đang giao</button>
+                        <button class="tablinks" onclick="openTab(event, 'nomeeting')">Giao không gặp khách</button>
+                        <button class="tablinks" onclick="openTab(event, 'delivered')">Đã giao hàng</button>
                     </div>
                     <div class="order-detail">
                         <div style="padding:5px">
@@ -141,7 +142,7 @@
                         </div>
                         <span style="width:800px;text-align:center" class="widget_search_order">
                             <span class="order_search_box">
-                                <input placeholder="Tìm thông tin khách hàng" type="text">
+                                <input placeholder="Tìm thông tin vận chuyển" type="text">
                             </span>
                         </span>
                         <span style="padding-right:5px;text-align:right">
@@ -149,20 +150,16 @@
                             Lọc
                         </span>
                     </div>
-                    <!--Bảng tất cả khách hàng-->
+                    <!--Bảng tất cả đơn vận chuyển-->
                     <table id="all" class="order-tabcontent">
                         <tr>
-                            <th>
-                                <label class="admin-order-child-container">
-                                    <input type="checkbox" onclick="checkAll(this)">
-                                    <span class="admin-order-checkmark"></span>
-                                </label>
-                            </th>
-                            <th>&nbsp;Khách hàng</th>
-                            <th>Tổng đơn hàng</th>
-                            <th>Tổng giá trị</th>
-                            <th>Địa chỉ</th>
-                            <th>Phân loại</th>
+                            <th></th>
+                            <th>Mã vận chuyển</th>
+                            <th>Mã đơn hàng</th>
+                            <th>Khách hàng</th>
+                            <th>Nhà vận chuyển</th>
+                            <th>Ngày tạo</th>
+                            <th>Trạng thái</th>
                         </tr>
 
                         <tr data-toggle="collapse" href="#collapse10004" aria-expanded="false" aria-controls="collapse10004">
@@ -172,11 +169,12 @@
                                     <span class="admin-order-checkmark"></span>
                                 </label>
                             </td>
-                            <td>&nbsp;Quân Nguyễn</td>
-                            <td>10</td>
-                            <td>7.000.000đ</td>
-                            <td>908 Trương Hán Siêu, Quận Thủ Đức, Việt Nam</td>
-                            <td><span class="status customer">Khách hàng</span></td>
+                            <td>10000003</td>
+                            <td>10003</td>
+                            <td>Thiên Kim</td>
+                            <td>Giao Hàng Nhanh</td>
+                            <td>01/12/2021</td>
+                            <td>Chờ lấy hàng</td>
                         </tr>
 
                         <tr data-toggle="collapse" href="#collapse10004" aria-expanded="false" aria-controls="collapse10004">
@@ -186,11 +184,12 @@
                                     <span class="admin-order-checkmark"></span>
                                 </label>
                             </td>
-                            <td>&nbsp;Băng Châu</td>
-                            <td>12</td>
-                            <td>10.000.000đ</td>
-                            <td>80/73 Hoàng Hoa Thám, Quận Bình Thạnh, Việt Nam</td>
-                            <td><span class="status customer">Khách hàng</span></td>
+                            <td>10000002</td>
+                            <td>10002</td>
+                            <td>Quân Nguyễn</td>
+                            <td>Hỏa Tốc</td>
+                            <td>17/11/2021</td>
+                            <td>Chờ lấy hàng</td>
                         </tr>
 
                         <tr data-toggle="collapse" href="#collapse10004" aria-expanded="false" aria-controls="collapse10004">
@@ -200,11 +199,12 @@
                                     <span class="admin-order-checkmark"></span>
                                 </label>
                             </td>
-                            <td>&nbsp;Thắng Nguyễn</td>
-                            <td>5</td>
-                            <td>2.000.000đ</td>
-                            <td>91 Võ Nguyên Giáp, Quận 5, Việt Nam</td>
-                            <td><span class="status customer">Đã nhận email</span></td>
+                            <td>10000001</td>
+                            <td>10001</td>
+                            <td>Nhật Phan</td>
+                            <td>Giao Hàng Tiết Kiệm</td>
+                            <td>20/11/2021</td>
+                            <td>Đã giao hàng</td>
                         </tr>
 
                         <tr data-toggle="collapse" href="#collapse10004" aria-expanded="false" aria-controls="collapse10004">
@@ -214,11 +214,12 @@
                                     <span class="admin-order-checkmark"></span>
                                 </label>
                             </td>
-                            <td>&nbsp;Nhật Phan</td>
-                            <td>20</td>
-                            <td>30.000.000đ</td>
-                            <td>833 Bà Triệu, Quận 9, Việt Nam</td>
-                            <td><span class="status customer">Đã phản hồi email</span></td>
+                            <td>10000004</td>
+                            <td>10004</td>
+                            <td>Thắng Nguyễn</td>
+                            <td>Hỏa Tốc</td>
+                            <td>30/11/2021</td>
+                            <td>Đang giao</td>
                         </tr>
 
                         <tr data-toggle="collapse" href="#collapse10004" aria-expanded="false" aria-controls="collapse10004">
@@ -228,16 +229,17 @@
                                     <span class="admin-order-checkmark"></span>
                                 </label>
                             </td>
-                            <td>&nbsp;Thiên Kim</td>
-                            <td>9</td>
-                            <td>9.000.000đ</td>
-                            <td>361/21 Nguyễn Đình Chiểu, Quận 3, Việt Nam</td>
-                            <td><span class="status customer">Đã phản hồi email</span></td>
+                            <td>10000005</td>
+                            <td>10005</td>
+                            <td>Băng Châu</td>
+                            <td>Giao Hàng Nhanh</td>
+                            <td>05/12/2021</td>
+                            <td>Giao không gặp khách</td>
                         </tr>
 
                         <tr>
                             <td></td>
-                            <td colspan="4">
+                            <td colspan="5">
                                 Đã tìm thấy 5 kết quả
                             </td>
                             <td style="text-align:right">
@@ -248,15 +250,16 @@
                         </tr>
                     </table>
 
-                    <!--Bảng khách hàng nhận email quảng cáo-->
-                    <table id="emailads" class="order-tabcontent">
+                    <!--Bảng chờ lấy hàng-->
+                    <table id="waiting" class="order-tabcontent">
                         <tr>
                             <th></th>
+                            <th>Mã vận chuyển</th>
+                            <th>Mã đơn hàng</th>
                             <th>Khách hàng</th>
-                            <th>Tổng đơn hàng</th>
-                            <th>Tổng giá trị</th>
-                            <th>Địa chỉ</th>
-                            <th>Phân loại</th>
+                            <th>Nhà vận chuyển</th>
+                            <th>Ngày tạo</th>
+                            <th>Trạng thái</th>
                         </tr>
 
                         <tr data-toggle="collapse" href="#collapse10004" aria-expanded="false" aria-controls="collapse10004">
@@ -266,11 +269,12 @@
                                     <span class="admin-order-checkmark"></span>
                                 </label>
                             </td>
-                            <td>&nbsp;Thắng Nguyễn</td>
-                            <td>5</td>
-                            <td>2.000.000đ</td>
-                            <td>91 Võ Nguyên Giáp, Quận 5, Việt Nam</td>
-                            <td><span class="status customer">Đã nhận email</span></td>
+                            <td>10000003</td>
+                            <td>10003</td>
+                            <td>Thiên Kim</td>
+                            <td>Giao Hàng Nhanh</td>
+                            <td>01/12/2021</td>
+                            <td>Chờ lấy hàng</td>
                         </tr>
 
                         <tr data-toggle="collapse" href="#collapse10004" aria-expanded="false" aria-controls="collapse10004">
@@ -280,59 +284,18 @@
                                     <span class="admin-order-checkmark"></span>
                                 </label>
                             </td>
-                            <td>&nbsp;Thiên Kim</td>
-                            <td>9</td>
-                            <td>9.000.000đ</td>
-                            <td>361/21 Nguyễn Đình Chiểu, Quận 3, Việt Nam</td>
-                            <td><span class="status customer">Đã phản hồi email</span></td>
-                        </tr>
-
-                        <tr data-toggle="collapse" href="#collapse10004" aria-expanded="false" aria-controls="collapse10004">
-                            <td>
-                                <label class="admin-order-child-container">
-                                    <input type="checkbox">
-                                    <span class="admin-order-checkmark"></span>
-                                </label>
-                            </td>
-                            <td>&nbsp;Quân Nguyễn</td>
-                            <td>10</td>
-                            <td>7.000.000đ</td>
-                            <td>908 Trương Hán Siêu, Quận Thủ Đức, Việt Nam</td>
-                            <td><span class="status customer">Đã nhận email</span></td>
-                        </tr>
-
-                        <tr data-toggle="collapse" href="#collapse10004" aria-expanded="false" aria-controls="collapse10004">
-                            <td>
-                                <label class="admin-order-child-container">
-                                    <input type="checkbox">
-                                    <span class="admin-order-checkmark"></span>
-                                </label>
-                            </td>
-                            <td>&nbsp;Băng Châu</td>
-                            <td>12</td>
-                            <td>10.000.000đ</td>
-                            <td>80/73 Hoàng Hoa Thám, Quận Bình Thạnh, Việt Nam</td>
-                            <td><span class="status customer">Đã nhận email</span></td>
-                        </tr>
-
-                        <tr data-toggle="collapse" href="#collapse10004" aria-expanded="false" aria-controls="collapse10004">
-                            <td>
-                                <label class="admin-order-child-container">
-                                    <input type="checkbox">
-                                    <span class="admin-order-checkmark"></span>
-                                </label>
-                            </td>
-                            <td>&nbsp;Nhật Phan</td>
-                            <td>20</td>
-                            <td>30.000.000đ</td>
-                            <td>833 Bà Triệu, Quận 9, Việt Nam</td>
-                            <td><span class="status customer">Đã phản hồi email</span></td>
+                            <td>10000002</td>
+                            <td>10002</td>
+                            <td>Quân Nguyễn</td>
+                            <td>Hỏa Tốc</td>
+                            <td>17/11/2021</td>
+                            <td>Chờ lấy hàng</td>
                         </tr>
 
                         <tr>
                             <td></td>
-                            <td colspan="4">
-                                Đã tìm thấy 5 kết quả
+                            <td colspan="5">
+                                Đã tìm thấy 2 kết quả
                             </td>
                             <td style="text-align:right">
                                 Trang
@@ -342,15 +305,16 @@
                         </tr>
                     </table>
 
-                    <!--Bảng khách hàng thân thiết-->
-                    <table id="close" class="order-tabcontent">
+                    <!--Bảng đang giao-->
+                    <table id="delivering" class="order-tabcontent">
                         <tr>
                             <th></th>
+                            <th>Mã vận chuyển</th>
+                            <th>Mã đơn hàng</th>
                             <th>Khách hàng</th>
-                            <th>Tổng đơn hàng</th>
-                            <th>Tổng giá trị</th>
-                            <th>Địa chỉ</th>
-                            <th>Phân loại</th>
+                            <th>Nhà vận chuyển</th>
+                            <th>Ngày tạo</th>
+                            <th>Trạng thái</th>
                         </tr>
 
                         <tr data-toggle="collapse" href="#collapse10004" aria-expanded="false" aria-controls="collapse10004">
@@ -360,16 +324,17 @@
                                     <span class="admin-order-checkmark"></span>
                                 </label>
                             </td>
-                            <td>&nbsp;Nhật Phan</td>
-                            <td>20</td>
-                            <td>30.000.000đ</td>
-                            <td>833 Bà Triệu, Quận 9, Việt Nam</td>
-                            <td><span class="status customer">Khách hàng thân thiết</span></td>
+                            <td>10000004</td>
+                            <td>10004</td>
+                            <td>Thắng Nguyễn</td>
+                            <td>Hỏa Tốc</td>
+                            <td>30/11/2021</td>
+                            <td>Đang giao</td>
                         </tr>
 
                         <tr>
                             <td></td>
-                            <td colspan="4">
+                            <td colspan="5">
                                 Đã tìm thấy 1 kết quả
                             </td>
                             <td style="text-align:right">
@@ -380,15 +345,16 @@
                         </tr>
                     </table>
 
-                    <!--Bảng khách hàng tiềm năng-->
-                    <table id="potential" class="order-tabcontent">
+                    <!--Bảng giao không gặp khách-->
+                    <table id="nomeeting" class="order-tabcontent">
                         <tr>
                             <th></th>
+                            <th>Mã vận chuyển</th>
+                            <th>Mã đơn hàng</th>
                             <th>Khách hàng</th>
-                            <th>Tổng đơn hàng</th>
-                            <th>Tổng giá trị</th>
-                            <th>Địa chỉ</th>
-                            <th>Phân loại</th>
+                            <th>Nhà vận chuyển</th>
+                            <th>Ngày tạo</th>
+                            <th>Trạng thái</th>
                         </tr>
 
                         <tr data-toggle="collapse" href="#collapse10004" aria-expanded="false" aria-controls="collapse10004">
@@ -398,31 +364,58 @@
                                     <span class="admin-order-checkmark"></span>
                                 </label>
                             </td>
-                            <td>&nbsp;Thiên Kim</td>
-                            <td>9</td>
-                            <td>9.000.000đ</td>
-                            <td>361/21 Nguyễn Đình Chiểu, Quận 3, Việt Nam</td>
-                            <td><span class="status customer">Đã phản hồi email</span></td>
-                        </tr>
-
-                        <tr data-toggle="collapse" href="#collapse10004" aria-expanded="false" aria-controls="collapse10004">
-                            <td>
-                                <label class="admin-order-child-container">
-                                    <input type="checkbox">
-                                    <span class="admin-order-checkmark"></span>
-                                </label>
-                            </td>
-                            <td>&nbsp;Thắng Nguyễn</td>
-                            <td>5</td>
-                            <td>2.000.000đ</td>
-                            <td>91 Võ Nguyên Giáp, Quận 5, Việt Nam</td>
-                            <td><span class="status customer">Đã nhận email</span></td>
+                            <td>10000005</td>
+                            <td>10005</td>
+                            <td>Băng Châu</td>
+                            <td>Giao Hàng Nhanh</td>
+                            <td>05/12/2021</td>
+                            <td>Giao không gặp khách</td>
                         </tr>
 
                         <tr>
                             <td></td>
-                            <td colspan="4">
-                                Đã tìm thấy 2 kết quả
+                            <td colspan="5">
+                                Đã tìm thấy 1 kết quả
+                            </td>
+                            <td style="text-align:right">
+                                Trang
+                                <input style="width:30px" value="1" type="number" />
+                                / 1
+                            </td>
+                        </tr>
+                    </table>
+
+                    <!--Bảng đã giao hàng-->
+                    <table id="delivered" class="order-tabcontent">
+                        <tr>
+                            <th></th>
+                            <th>Mã vận chuyển</th>
+                            <th>Mã đơn hàng</th>
+                            <th>Khách hàng</th>
+                            <th>Nhà vận chuyển</th>
+                            <th>Ngày tạo</th>
+                            <th>Trạng thái</th>
+                        </tr>
+
+                        <tr data-toggle="collapse" href="#collapse10004" aria-expanded="false" aria-controls="collapse10004">
+                            <td>
+                                <label class="admin-order-child-container">
+                                    <input type="checkbox">
+                                    <span class="admin-order-checkmark"></span>
+                                </label>
+                            </td>
+                            <td>10000001</td>
+                            <td>10001</td>
+                            <td>Nhật Phan</td>
+                            <td>Giao Hàng Tiết Kiệm</td>
+                            <td>20/11/2021</td>
+                            <td>Đã giao hàng</td>
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td colspan="5">
+                                Đã tìm thấy 1 kết quả
                             </td>
                             <td style="text-align:right">
                                 Trang
@@ -452,7 +445,6 @@
             main.classList.toggle('active');
         }
         toggleSubMenu();
-
         function toggleSubMenu() {
             let item_sub = document.querySelectorAll('.item-sub');
             item_sub.forEach(item => {
@@ -477,16 +469,8 @@
             });
 
         })
-
-        function checkAll(bx) {
-            var cbs = document.getElementsByTagName('label');
-            for (var i = 0; i < cbs.length; i++) {
-                if (cbs[i].className == 'admin-order-child-container') {
-                    cbs[i].checked = bx.checked;
-                }
-            }
-        }
     </script>
+
 
 </body>
 </html>
