@@ -1,0 +1,32 @@
+[
+    {
+    "FirstName":"Chownie",
+    "LastName":"Cao",
+    "Title":"Leader",
+    "Images": "assets/Image/Cat.jpg"
+    },
+    {
+    "FirstName":"QuanKun",
+    "LastName":"Nguyen",
+    "Title":"Operation",
+    "Images": "assets/Image/Cat.jpg"
+    },
+    {
+    "FirstName":"Kimmy",
+    "LastName":"To",
+    "Title":"Operation",
+    "Images": "assets/Image/Cat.jpg"
+    },
+    {
+    "FirstName":"Mike",
+    "LastName":"Phan",
+    "Title":"Marketing",
+    "Images": "assets/Image/Cat.jpg"
+    },
+    {
+    "FirstName":"Thang",
+    "LastName":"Nguyen",
+    "Title":"Sale",
+    "Images": "assets/Image/Cat.jpg"
+    }
+]

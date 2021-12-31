@@ -1,0 +1,126 @@
+
+<!doctype html>
+<html>
+<meta http-equiv="content-type" 
+content="text/html;charset=UTF-8"/>
+<head>
+    <title>OrganiCare</title>
+    <link rel="stylesheet" href="assets/css/aboutus.css">
+    <script src="https://kit.fontawesome.com/447269edb0.js" crossorigin="anonymous"></script>
+    <script src="assets/javascript/Name.json"></script>
+    <style>
+        table{
+            padding: 50px;
+        }
+        td{
+            width:120px;
+            height:120px;
+            text-align: justify;}
+    </style>
+</head>
+<body>
+    <div class="Content">
+        <h1 class="heading">Về OrganiCare</h1>
+        <hr width="50%">
+        <div class="image-container">
+            <div class="image"><img src="assets/Image/Banner-01.png" width="90%"></div>
+        </div>
+        <div class="content-container">
+            <p>OrganiCare là doanh nghiệp chuyên kinh doanh phân phối các sản phẩm hữu cơ đạt chuẩn chất lượng thực phẩm hữu cơ. Gồm 100 cửa hàng phân bổ tập trung chủ yếu ở các quận trung tâm của Thành phố Hồ Chí Minh và đang có kế hoạch phát triển lan rộng ra toàn khu vực Thành phố, OrganiCare tự tin với sự hiện diện của bản thân trong đời sống để đồng hành cùng khách hàng trong chặng đường chăm sóc sức khỏe với các sản phẩm uy tín, chuẩn chất lượng cũng như đưa thương hiệu, lối sống hữu cơ tuyệt vời đến gần với mọi người hơn.
+            </p>
+        </div>
+    </div>
+    <div class="Mission">
+        <table style="width:100%">
+            <tr>
+              <td style="text-align: center;"><img src="assets/Image/Aboutus-01.png"></td>
+              <td style="text-align: center;"><img src="assets/Image/Aboutus-02.png"></td>
+          
+            </tr>
+            <tr>
+              <td>
+                <p>
+                <ul style="list-style-type:none">
+                    <li>Cung cấp thực phẩm đạt tiêu chuẩn organic đến với người tiêu dùng</li>
+                    <li>Cam kết uy tín có trách nhiệm đối với khách hàng cũng như sản phẩm</li>
+                    <li>Là bạn đồng hành thân thiện cùng khách hàng trên con đường chăm sóc sức khỏe mỗi ngày
+                        Nhanh và chuẩn xác</li>
+                    <li>Là sứ giả mang đến thông điệp sống xanh sạch đẹp đến với mọi người</li>
+                </ul>
+                </p>
+            </td>
+              <td>
+                <p>
+                    <ul style="list-style-type:none">
+                        <li>Mang đến bữa ăn hữu cơ trọn vẹn cho người Việt.</li>
+                        <li>Góp phần mang đến cuộc sống thuần túy và an toàn cho người Việt</li>
+                        <li>Lan tỏa những giá trị tốt đẹp mà lối sống hữu cơ mang lại.</li>
+                        <li>Góp phần bảo vệ môi trường và tài nguyên Mẹ thiên nhiên ban tặng.</li>
+                        <li>Truyền cảm hứng cho thế hệ tiếp theo về lối sống hữu cơ.  </li>
+                    </ul>
+                
+                
+                
+                                  
+                </p>
+              </td>
+          
+            </tr>
+          </table>
+    </div>
+    <div class="OurTeam">
+        <h3 class="heading">Our Team</h3>
+        <div class="image-container">
+            <div class="image" onclick="fetch_info(0)"><img src="assets/Image/Cat.jpg"></div>
+            <div class="image" onclick="fetch_info(1)"><img src="assets/Image/Cat_1.jpg"></div>
+            <div class="image" onclick="fetch_info(2)"><img src="assets/Image/Cat.jpg"></div>
+            <div class="image" onclick="fetch_info(3)"><img src="assets/Image/Cat_1.jpg"></div>
+            <div class="image" onclick="fetch_info(4)"><img src="assets/Image/Cat.jpg"></div>
+        </div>
+        <div class="info-container">
+            <img class="profile" id="profile" src="assets/Image/Cat.jpg">
+            <div class="info">
+                <h1 class="name" id="name">Chownie</h1>
+                <h3 class="status" id="status">Leader</h3>
+                <p class="about" id="about">Chownie: My successful thing in my life is OrganiCare</p>
+            </div>
+        </div>
+    </div>
+    <div class="contact">
+        <div class="contact-container">
+            <ul style="list-style-type:none">
+                <li><h2>Liên hệ với chúng tôi</h2></li>
+                <li>OrganiCare - Just for the taste of care</li>
+                <li>Inbox:  m.me/msorganicare</li>
+                <li>Điện thoại: 0938 283 XXX (Zalo/Viber).</li>
+                <li>Giao hàng cho tất cả quận huyện thuộc Tp HCM</li>
+            </ul>
+            <div class="image">
+                <img src="assets/Image/logo.png">
+            </div>
+        </div>
+        
+    </div>
+    <script>
+        function fetch_info(i){
+            let profile=["assets/Image/Cat.jpg","assets/Image/Cat_1.jpg","assets/Image/Cat.jpg","assets/Image/Cat_1.jpg","assets/Image/Cat.jpg"];
+            let name=[
+                "Chownie",
+                "QuanKun",
+                "Kimmy",
+                "Mike",
+                "Thang"];
+            let status=[
+                "Leader",
+                "Operation",
+                "Operation",
+                "Marketing",
+                "Sale"];
+            document.getElementById("profile").src=profile[i];
+            document.getElementById("name").innerHTML=name[i];
+            document.getElementById("status").innerHTML=status[i];
+            document.getElementById("about").innerHTML= name[i] + ": My successful thing in my life is OrganiCare"
+        }
+    </script>
+</body>
+</html>
