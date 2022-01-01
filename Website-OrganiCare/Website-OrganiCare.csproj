@@ -67,9 +67,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="404Error.html" />
+    <Content Include="AboutUS.html" />
     <Content Include="Admin_Customer.html" />
     <Content Include="Admin_Delivery.html" />
     <Content Include="Admin_Report.html" />
+    <Content Include="assets\css\aboutus.css" />
     <Content Include="assets\css\app.min.css" />
     <Content Include="Admin_DonHangChuaXacNhan.html" />
     <Content Include="Admin_Quanlykho.html" />
@@ -79,6 +82,7 @@
     <Content Include="assets\css\admin.css" />
     <Content Include="assets\css\app.min.css" />
     <Content Include="assets\css\bootstrap.min.css" />
+    <Content Include="assets\css\error.css" />
     <Content Include="assets\css\FontAwesome.css" />
     <Content Include="assets\css\footer.css" />
     <Content Include="assets\css\header.css" />
@@ -132,7 +136,9 @@
     <Content Include="assets\Image\Checkout\trash.png" />
     <Content Include="assets\Image\comment.png.jpg" />
     <Content Include="assets\Image\controls.png" />
+    <Content Include="assets\Image\Error-01.png" />
     <Content Include="assets\Image\facebook.png" />
+    <Content Include="assets\Image\favicon.png" />
     <Content Include="assets\Image\icon\comment.jpg" />
     <Content Include="assets\Image\icon\facebook.png" />
     <Content Include="assets\Image\icon\zalo.png" />
@@ -225,6 +231,7 @@
   <ItemGroup>
     <Content Include="data\Products.json" />
     <Content Include="data\DataProduct.json" />
+    <Content Include="data\Name.json" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

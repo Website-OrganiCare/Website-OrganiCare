@@ -2,8 +2,10 @@
     position: fixed;
     width: 400px;
     height: 100%;
-    padding: 18px 28px 33px;
-    background: #48A9A6;
+    padding: 18px 28px 25px;
+    /*background: #48A9A6;*/
+    background:#fff;
+    border: 1px solid #005959;
     right: 0;
     top: 0;
     overflow-y: scroll;
