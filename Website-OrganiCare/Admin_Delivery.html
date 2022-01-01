@@ -154,7 +154,12 @@
                     <!--Bảng tất cả đơn vận chuyển-->
                     <table id="all" class="order-tabcontent">
                         <tr>
-                            <th></th>
+                            <th>
+                                <label class="admin-order-child-container">
+                                    <input type="checkbox" onclick="checkAll(this)">
+                                    <span class="admin-order-checkmark"></span>
+                                </label>
+                            </th>
                             <th>Mã vận chuyển</th>
                             <th>Mã đơn hàng</th>
                             <th>Khách hàng</th>
@@ -254,7 +259,12 @@
                     <!--Bảng chờ lấy hàng-->
                     <table id="waiting" class="order-tabcontent">
                         <tr>
-                            <th></th>
+                            <th>
+                                <label class="admin-order-child-container">
+                                    <input type="checkbox" onclick="checkAll(this)">
+                                    <span class="admin-order-checkmark"></span>
+                                </label>
+                            </th>
                             <th>Mã vận chuyển</th>
                             <th>Mã đơn hàng</th>
                             <th>Khách hàng</th>
@@ -309,7 +319,12 @@
                     <!--Bảng đang giao-->
                     <table id="delivering" class="order-tabcontent">
                         <tr>
-                            <th></th>
+                            <th>
+                                <label class="admin-order-child-container">
+                                    <input type="checkbox" onclick="checkAll(this)">
+                                    <span class="admin-order-checkmark"></span>
+                                </label>
+                            </th>
                             <th>Mã vận chuyển</th>
                             <th>Mã đơn hàng</th>
                             <th>Khách hàng</th>
@@ -349,7 +364,12 @@
                     <!--Bảng giao không gặp khách-->
                     <table id="nomeeting" class="order-tabcontent">
                         <tr>
-                            <th></th>
+                            <th>
+                                <label class="admin-order-child-container">
+                                    <input type="checkbox" onclick="checkAll(this)">
+                                    <span class="admin-order-checkmark"></span>
+                                </label>
+                            </th>
                             <th>Mã vận chuyển</th>
                             <th>Mã đơn hàng</th>
                             <th>Khách hàng</th>
@@ -389,7 +409,12 @@
                     <!--Bảng đã giao hàng-->
                     <table id="delivered" class="order-tabcontent">
                         <tr>
-                            <th></th>
+                            <th>
+                                <label class="admin-order-child-container">
+                                    <input type="checkbox" onclick="checkAll(this)">
+                                    <span class="admin-order-checkmark"></span>
+                                </label>
+                            </th>
                             <th>Mã vận chuyển</th>
                             <th>Mã đơn hàng</th>
                             <th>Khách hàng</th>
@@ -470,6 +495,14 @@
             });
 
         })
+        function checkAll(bx) {
+            var cbs = document.getElementsByTagName('input');
+            for (var i = 0; i < cbs.length; i++) {
+                if (cbs[i].type == 'checkbox') {
+                    cbs[i].checked = bx.checked;
+                }
+            }
+        }
     </script>
 
 

@@ -456,25 +456,25 @@ select {
     grid-template-columns: repeat(3,1fr);
     grid-gap: 20px;
 }
+
     .cardReportBox .cardReport {
         position: relative;
         background: #fff;
-        padding: 15px;
+        padding: 20px;
         display: flex;
-        border-radius: 15px;
-        border:solid;
+        border: solid;
         border-color: #999;
+        border-radius: 15px;
         justify-content: space-between;
         cursor: pointer;
     }
+
         .cardReportBox .cardReport .cardReportName {
             position: relative;
             font-size: 1.2em;
             font-weight: 500;
         }
-        .cardReportBox .cardReport .cardSubtitle {
-            color: #3A3A3A;
-        }
-        .cardReportBox .cardReport .cardDetail {
 
+        .cardReportBox .card .cardSubtitle {
+            color: #999;
         }

@@ -2,10 +2,8 @@
     position: fixed;
     width: 400px;
     height: 100%;
-    padding: 18px 28px 25px;
-    /*background: #48A9A6;*/
-    background:#fff;
-    border: 1px solid #005959;
+    padding: 18px 28px 33px;
+    background: #eeeeee;
     right: 0;
     top: 0;
     overflow-y: scroll;
@@ -119,7 +117,7 @@
 .cart_item{
     overflow: visible;
     padding: 20px 0;
-    border-bottom: 1px solid #ededed;
+    border-bottom: 1px solid #3a3a3a;
     display: flex;
     justify-content: space-between;
 }
@@ -163,17 +161,17 @@
     border-radius: 3px;
     font-size: 12px;
     font-weight: 500;
-    background: #eef0f1;
+    background: #005959;
+    color: #ffffff;
     display: block;
     text-align: center;
     line-height: 20px;
     margin-bottom: 0;
     padding: 13px 0px 11px;
-    border: 1px solid #ededed;
 }
 
     .cart_button a:hover {
-        background: #005959;
-        border-color: #005959;
+        background: #48A9A6;
+        border-color: #48A9A6;
         color: #ffffff;
     }

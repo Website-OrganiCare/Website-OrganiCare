@@ -252,8 +252,13 @@
                     <!--Bảng khách hàng nhận email quảng cáo-->
                     <table id="emailads" class="order-tabcontent">
                         <tr>
-                            <th></th>
-                            <th>Khách hàng</th>
+                            <th>
+                                <label class="admin-order-child-container">
+                                    <input type="checkbox" onclick="checkAll(this)">
+                                    <span class="admin-order-checkmark"></span>
+                                </label>
+                            </th>
+                            <th>&nbsp;Khách hàng</th>
                             <th>Tổng đơn hàng</th>
                             <th>Tổng giá trị</th>
                             <th>Địa chỉ</th>
@@ -346,8 +351,13 @@
                     <!--Bảng khách hàng thân thiết-->
                     <table id="close" class="order-tabcontent">
                         <tr>
-                            <th></th>
-                            <th>Khách hàng</th>
+                            <th>
+                                <label class="admin-order-child-container">
+                                    <input type="checkbox" onclick="checkAll(this)">
+                                    <span class="admin-order-checkmark"></span>
+                                </label>
+                            </th>
+                            <th>&nbsp;Khách hàng</th>
                             <th>Tổng đơn hàng</th>
                             <th>Tổng giá trị</th>
                             <th>Địa chỉ</th>
@@ -384,8 +394,13 @@
                     <!--Bảng khách hàng tiềm năng-->
                     <table id="potential" class="order-tabcontent">
                         <tr>
-                            <th></th>
-                            <th>Khách hàng</th>
+                            <th>
+                                <label class="admin-order-child-container">
+                                    <input type="checkbox" onclick="checkAll(this)">
+                                    <span class="admin-order-checkmark"></span>
+                                </label>
+                            </th>
+                            <th>&nbsp;Khách hàng</th>
                             <th>Tổng đơn hàng</th>
                             <th>Tổng giá trị</th>
                             <th>Địa chỉ</th>
@@ -480,9 +495,9 @@
         })
 
         function checkAll(bx) {
-            var cbs = document.getElementsByTagName('label');
+            var cbs = document.getElementsByTagName('input');
             for (var i = 0; i < cbs.length; i++) {
-                if (cbs[i].className == 'admin-order-child-container') {
+                if (cbs[i].type == 'checkbox') {
                     cbs[i].checked = bx.checked;
                 }
             }
