@@ -1,0 +1,135 @@
+﻿body {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    max-width: 1170px;
+    width: 100%;
+    background: #ffffff;
+    margin: 0 20px;
+    padding: 10px 20px 10px 20px;
+}
+
+    .container .content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .container .main-title {
+        font-size: 30px;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+
+    .container .content .list {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 30%;
+        margin-right: 20px;
+    }
+
+.content .list label {
+    height: 60px;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 12px;
+    line-height: 60px;
+    cursor: pointer;
+    margin: 5px 0px;
+    padding-left: 25px;
+    color: #333;
+    z-index: 12;
+}
+
+.content .indicator {
+    position: absolute;
+    height: 60px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #005959;
+    border-radius: 12px;
+    transition: all 0.4s ease;
+}
+
+#home:checked ~ .list .home,
+#blog:checked ~ .list .blog,
+#help:checked ~ .list .help,
+#code:checked ~ .list .code,
+#aboutt:checked ~ .list .aboutt {
+    color: #ffffff;
+}
+
+
+.content .list label:hover {
+    background: #808080;
+    color: #005959;
+}
+
+#home:checked ~ .list .indicator {
+    top: 5px;
+}
+
+#blog:checked ~ .list .indicator {
+    top: 75px;
+}
+
+#help:checked ~ .list .indicator {
+    top: 145px;
+}
+
+#code:checked ~ .list .indicator {
+    top: 215px;
+}
+
+#aboutt:checked ~ .list .indicator {
+    top: 285px;
+}
+
+.container .content input {
+    display: none;
+}
+
+.container .content .text-content {
+    width: 70%;
+    height: 100%;
+}
+
+.container .text-content .text {
+    display: none;
+}
+
+.container .text-content .home {
+    display: block;
+}
+
+#home:checked ~ .text-content .home,
+#blog:checked ~ .text-content .blog,
+#help:checked ~ .text-content .help,
+#code:checked ~ .text-content .code,
+#aboutt:checked ~ .text-content .aboutt {
+    display: block;
+}
+
+#blog:checked ~ .text-content .home,
+#help:checked ~ .text-content .home,
+#code:checked ~ .text-content .home,
+#aboutt:checked ~ .text-content .home {
+    display: none;
+}
+
+.container .text-content .title {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.container .text-content p {
+    text-align: justify;
+}

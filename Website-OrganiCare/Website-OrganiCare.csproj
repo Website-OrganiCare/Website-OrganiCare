@@ -73,6 +73,7 @@
     <Content Include="Admin_Delivery.html" />
     <Content Include="Admin_Report.html" />
     <Content Include="assets\css\aboutus.css" />
+    <Content Include="assets\css\account.css" />
     <Content Include="assets\css\app.min.css" />
     <Content Include="Admin_DonHangChuaXacNhan.html" />
     <Content Include="Admin_Quanlykho.html" />
@@ -214,6 +215,8 @@
     <Content Include="Forgot_Password.html" />
     <Content Include="Header.html" />
     <Content Include="Homepage.html" />
+    <Content Include="Register.html" />
+    <Content Include="Login.html" />
     <Content Include="mini-cart.html" />
     <Content Include="MyAccount.html" />
     <Content Include="Popup.html" />

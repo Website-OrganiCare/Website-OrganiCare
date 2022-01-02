@@ -1,0 +1,224 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>OrganiCare Đăng Nhập</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/header.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <link href="assets/css/popup.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/minicart.css">
+    <link rel="stylesheet" href="assets/css/ListProduct.css" />
+    <script src="https://kit.fontawesome.com/1147679ae7.js" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+    <header>
+        <!-- mobile menu -->
+        <div class="mobile-menu bg-second header" id="mobile-header">
+            <div style="background-color:white;border-radius:5px;padding:5px">
+                <a href="#" class="logo">
+                    <img src="assets/Image/logo.png" width="120px" />
+                </a>
+            </div>
+            <span class="mb-menu-toggle" id="mb-menu-toggle">
+                <i class='fas fa-bars'></i>
+            </span>
+        </div>
+        <!-- end mobile menu -->
+        <!-- main header -->
+        <div class="header-wrapper" id="header-wrapper">
+            <span class="mb-menu-toggle mb-menu-close" id="mb-menu-close">
+                <i class='fas fa-times'></i>
+            </span>
+            <!-- mid header -->
+            <div class="bg-main">
+                <div class="mid-header container">
+                    <div style="background-color:white;border-radius:5px;padding:5px">
+                        <a href="#" class="logo">
+                            <img src="assets/Image/logo.png" width="120px" />
+                        </a>
+                    </div>
+                    <div class="search">
+                        <input type="text" placeholder="Search">
+                        <i class='fas fa-search'></i>
+                    </div>
+                    <div class="btn">
+                        <a href="#">Đăng Nhập</a>
+                    </div>
+                    <ul class="user-menu">
+                        <li><a href="#"><i class='fas fa-bell'></i></a></li>
+                        <li><a href="#"><i class="far fa-user"></i></a></li>
+                        <li>
+                            <a href="#" class="cart-btn" style="position:relative">
+                                <i class='fas fa-shopping-cart'></i>
+                                <span id="cart-count-info"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- end mid header -->
+            <!-- bottom header -->
+            <div class="bg-second header" id="myHeader">
+                <div class="bottom-header container">
+                    <ul class="main-menu">
+                        <li><a href="#">Trang chủ</a></li>
+                        <!-- mega menu -->
+                        <li class="mega-dropdown">
+                            <a href="./products.html">Danh mục<i class='fas fa-angle-down' style="color:white"></i></a>
+                            <div class="mega-content">
+                                <div class="row">
+                                    <div class="col-3 col-md-12">
+                                        <div class="box">
+                                            <ul>
+                                                <li><a href="#">Rau củ</a></li>
+                                                <li><a href="#">Trái cây</a></li>
+                                                <li><a href="#">Thịt và thủy hải sản</a></li>
+                                                <li><a href="#">Đồ uống</a></li>
+                                                <li><a href="#">Ngũ cốc và hạt</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- end mega menu -->
+                        <li><a href="#">khuyến mãi</a></li>
+                        <li><a href="#">blog</a></li>
+                        <li><a href="#">đánh giá</a></li>
+                        <li><a href="#">về chúng tôi</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- end bottom header -->
+        </div>
+        <!-- end main header -->
+    </header>
+    <!-- end header -->
+    <!---------Mini cart------------>
+    <div class="minicart" style="z-index:1000">
+        <div class="cart_gallery">
+            <div class="cart_close">
+                <div class="cart_info">
+                    <div class="cart_text">
+                        <h2>Giỏ hàng</h2>
+                    </div>
+                </div>
+                <div class="cart_remove">
+                    <a href="#"><i class="fas fa-times-circle"></i></a>
+                </div>
+            </div>
+            <div class="cart-list">
+
+            </div>
+        </div>
+        <div class="mini_cart_table">
+            <div class="cart_table_border">
+                <div class="cart_total">
+                    <span>Tổng cộng:</span>
+                    <span class="price" id="cart-total-value"></span>
+                </div>
+                <div class="cart_total mt-10">
+                    <span>Thành tiền:</span>
+                    <span class="price" id="cart-total-value"></span>
+                </div>
+            </div>
+        </div>
+        <div class="mini_cart_footer">
+            <div class="cart_button">
+                <a href="Cart_Checkout.html"><i class="fa fa-shopping-cart"></i>&nbsp;Xem giỏ hàng</a>
+            </div>
+            <div class="cart_button">
+                <a href="Cart_Checkout.html"><i class="fa fa-sign-in"></i>&nbsp;Đặt hàng ngay</a>
+            </div>
+        </div>
+    </div>
+    <!----------------------------------------------->
+    <div class="breadcrumbs_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="breadcrumb_content">
+                        <ul>
+                            <li><a href="index.html">Trang chủ</a></li>
+                            <li>Đăng nhập</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="customer_login">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <div class="account_form">
+                        <h2>Đăng nhập</h2>
+                        <form action="#">
+                            <p>
+                                <label>Tên tài khoản hoặc Email <span>*</span></label>
+                                <input type="text">
+                            </p>
+                            <p>
+                                <label>Mật khẩu <span>*</span></label>
+                                <input type="password">
+                            </p>
+                            <div class="login_submit">
+                                <a href="#">Quên mật khẩu?</a>
+                                <label for="remember">
+                                    <input id="remember" type="checkbox">
+                                    Ghi nhớ tài khoản
+                                </label>
+                                <button type="submit">Đăng nhập</button>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const cart_close = document.querySelector('.fa-times-circle')
+        //const cart_close2 = document.querySelectorAll('.container')
+        const cart_open = document.querySelector('.cart-btn .fa-shopping-cart');
+        console.log(cart_open);
+        cart_open.addEventListener('click', function () {
+            document.querySelector('.minicart').style.right = '0'
+        })
+        cart_close.addEventListener('click', function () {
+            document.querySelector('.minicart').style.right = '-100%'
+        })
+        //cart_close2.forEach(close => {
+        //    close.addEventListener('click', function () {
+        //        document.querySelector('.minicart').style.right = '-100%'
+        //    })
+        //})
+    </script>
+    <!-- Script -->
+    <Script>
+
+        window.addEventListener("load", function () {
+            setTimeout(
+                function open(event) {
+                    document.querySelector(".popup").style.
+                        display = "block";
+                },
+                1000
+            )
+        });
+
+
+        document.querySelector("#close").addEventListener("click", function () {
+            document.querySelector(".popup").style.display = "none";
+        });
+        function RegisterSuccessful() {
+            alert("Đăng ký thành công!")
+        };
+
+    </Script>
+</body>
+</html>

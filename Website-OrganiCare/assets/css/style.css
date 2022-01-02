@@ -9482,7 +9482,9 @@ figure {
     .account_form button:hover {
         background: #222222;
     }
-
+.login_submit button:hover{
+    background:#48a9a6;
+}
 .login_submit label input[type="checkbox"] {
     width: 15px;
     height: 13px;
