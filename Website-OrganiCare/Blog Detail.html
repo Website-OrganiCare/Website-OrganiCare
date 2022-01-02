@@ -2,15 +2,145 @@
 <html>
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OrganiCare - Chi tiết Blog</title>
     <link rel="icon" type="image/x-icon" href="assets/Image/favicon.png">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/linearicons.css" />
     <link rel="stylesheet" href="assets/css/FontAwesome.css" />
+    <link rel="stylesheet" href="assets/css/header.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
 
+    <script src="https://kit.fontawesome.com/447269edb0.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <header>
+        <!-- mobile menu -->
+        <div class="mobile-menu bg-second header" id="mobile-header">
+            <div style="background-color:white;border-radius:5px;padding:5px">
+                <a href="#" class="logo">
+                    <img src="assets/Image/logo.png" width="120px" />
+                </a>
+            </div>
+            <span class="mb-menu-toggle" id="mb-menu-toggle">
+                <i class='fas fa-bars'></i>
+            </span>
+        </div>
+        <!-- end mobile menu -->
+        <!-- main header -->
+        <div class="header-wrapper" id="header-wrapper">
+            <span class="mb-menu-toggle mb-menu-close" id="mb-menu-close">
+                <i class='fas fa-times'></i>
+            </span>
+            <!-- mid header -->
+            <div class="bg-main">
+                <div class="mid-header container">
+                    <div style="background-color:white;border-radius:5px;padding:5px">
+                        <a href="#" class="logo">
+                            <img src="assets/Image/logo.png" width="120px" />
+                        </a>
+                    </div>
+                    <div class="search">
+                        <input type="text" placeholder="Tìm kiếm">
+                        <i class='fas fa-search'></i>
+                    </div>
+                    <div class="btn">
+                        <a href="#">Đăng Nhập</a>
+                    </div>
+                    <ul class="user-menu">
+                        <li><a href="Wishlist.html"><i class='fas fa-heart'></i></a></li>
+                        <li><a href="MyAccount.html"><i class="far fa-user"></i></a></li>
+                        <li>
+                            <a href="#" class="cart-btn" style="position:relative">
+                                <i class='fas fa-shopping-cart'></i>
+                                <span id="cart-count-info"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- end mid header -->
+            <!-- bottom header -->
+            <div class="bg-second header" id="myHeader">
+                <div class="bottom-header container">
+                    <ul class="main-menu">
+                        <li><a href="#">Trang chủ</a></li>
+                        <!-- mega menu -->
+                        <li class="mega-dropdown">
+                            <a href="./products.html">Danh mục<i class='fas fa-angle-down' style="color:white"></i></a>
+                            <div class="mega-content">
+                                <div class="row">
+                                    <div class="col-3 col-md-12">
+                                        <div class="box">
+                                            <ul>
+                                                <li><a href="ProductList.html">Rau củ</a></li>
+                                                <li><a href="ProductList.html">Trái cây</a></li>
+                                                <li><a href="ProductList.html">Thịt và thủy hải sản</a></li>
+                                                <li><a href="ProductList.html">Đồ uống</a></li>
+                                                <li><a href="ProductList.html">Ngũ cốc và hạt</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- end mega menu -->
+                        <li><a href="SanPhamKhuyenMai.html">khuyến mãi</a></li>
+                        <li><a href="Blog.html">blog</a></li>
+                        <li><a href="Reviews.html">đánh giá</a></li>
+                        <li><a href="AboutUS.html">về chúng tôi</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- end bottom header -->
+        </div>
+        <!-- end main header -->
+    </header>
+    <script type="text/javascript">
+        document.querySelectorAll('.dropdown > a').forEach(e => {
+            e.addEventListener('click', (event) => event.preventDefault())
+        })
+
+        document.querySelectorAll('.mega-dropdown > a').forEach(e => {
+            e.addEventListener('click', (event) => event.preventDefault())
+        })
+
+        document.querySelector('#mb-menu-toggle').addEventListener('click', () => document.querySelector('#header-wrapper').classList.add('active'))
+
+        document.querySelector('#mb-menu-close').addEventListener('click', () => document.querySelector('#header-wrapper').classList.remove('active'))
+    </script>
+    <script type="text/javascript">
+        document.querySelectorAll('.dropdown > a').forEach(e => {
+            e.addEventListener('click', (event) => event.preventDefault())
+        })
+
+        document.querySelectorAll('.mega-dropdown > a').forEach(e => {
+            e.addEventListener('click', (event) => event.preventDefault())
+        })
+
+        document.querySelector('#mb-menu-toggle').addEventListener('click', () => document.querySelector('#header-wrapper').classList.add('active'))
+
+        document.querySelector('#mb-menu-close').addEventListener('click', () => document.querySelector('#header-wrapper').classList.remove('active'))
+        window.onscroll = function () { myFunction() };
+
+        var header = document.getElementById("myHeader");
+        var mHeader = document.getElementById("mobile-header");
+        var sticky = header.offsetTop;
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+            if (window.pageYOffset > sticky) {
+                mHeader.classList.add("sticky");
+            } else {
+                mHeader.classList.remove("sticky");
+            }
+        }
+    </script>
+
     <!--Blog detail - breadcrumbs area-->
     <div class="breadcrumbs_area">
         <div class="container">
@@ -18,9 +148,9 @@
                 <div class="col-12">
                     <div class="breadcrumb_content">
                         <ul>
-                        <li><a href="Homepage.html">Trang chủ</a></li>
-                        <li><a href="Blog.html">Blog</a></li>
-                        <li>Chi tiết Blog</li>
+                            <li><a href="Homepage.html">Trang chủ</a></li>
+                            <li><a href="Blog.html">Blog</a></li>
+                            <li>Chi tiết Blog</li>
                         </ul>
                     </div>
                 </div>
@@ -79,7 +209,7 @@
                                     <article class="single_related">
                                         <figure>
                                             <div class="related_thumb">
-                                                <a href="blog-details.html"><img src="assets/Image/Blog-detail/Blog-raumuong.jpg"></a>
+                                                <a href="Blog Detail.html"><img src="assets/Image/Blog-detail/Blog-raumuong.jpg"></a>
                                             </div>
                                             <figcaption class="related_content">
                                                 <h4><a href="#">Cách luộc rau không bị đen</a></h4>
@@ -95,7 +225,7 @@
                                     <article class="single_related">
                                         <figure>
                                             <div class="related_thumb">
-                                                <a href="blog-details.html"><img src="assets/Image/Blog-detail/Blog-trungchien.jpg"></a>
+                                                <a href="Blog Detail.html"><img src="assets/Image/Blog-detail/Blog-trungchien.jpg"></a>
                                             </div>
                                             <figcaption class="related_content">
                                                 <h4><a href="#">5 cách chiên trứng mới lạ</a></h4>
@@ -111,7 +241,7 @@
                                     <article class="single_related">
                                         <figure>
                                             <div class="related_thumb">
-                                                <a href="blog-details.html"><img src="assets/Image/Blog-detail/Blog-naucom.jpg"></a>
+                                                <a href="Blog Detail.html"><img src="assets/Image/Blog-detail/Blog-naucom.jpg"></a>
                                             </div>
                                             <figcaption class="related_content">
                                                 <h4><a href="#">Cách nấu cơm cho tân sinh viên</a></h4>
@@ -172,28 +302,28 @@
                             </div>
                             <div class="post_wrapper">
                                 <div class="post_thumb">
-                                    <a href="blog-details.html"><img src="assets/Image/Blog-detail/Blog_noodle.jpg"></a>
+                                    <a href="Blog Detail.html"><img src="assets/Image/Blog-detail/Blog_noodle.jpg"></a>
                                 </div>
                                 <div class="post_info">
-                                    <h4><a href="blog-details.html">Cách nấu mì ngon</a></h4>
+                                    <h4><a href="Blog Detail.html">Cách nấu mì ngon</a></h4>
                                     <span>05/11/2021</span>
                                 </div>
                             </div>
                             <div class="post_wrapper">
                                 <div class="post_thumb">
-                                    <a href="blog-details.html"><img src="assets/Image/Blog-detail/Blog-hamthucan.jpg"></a>
+                                    <a href="Blog Detail.html"><img src="assets/Image/Blog-detail/Blog-hamthucan.jpg"></a>
                                 </div>
                                 <div class="post_info">
-                                    <h4><a href="blog-details.html">Cách hâm thức ăn</a></h4>
+                                    <h4><a href="Blog Detail.html">Cách hâm thức ăn</a></h4>
                                     <span>07/11/2021</span>
                                 </div>
                             </div>
                             <div class="post_wrapper">
                                 <div class="post_thumb">
-                                    <a href="blog-details.html"><img src="assets/Image/Blog-detail/Blog-slicefood.jpg"></a>
+                                    <a href="Blog Detail.html"><img src="assets/Image/Blog-detail/Blog-slicefood.jpg"></a>
                                 </div>
                                 <div class="post_info">
-                                    <h4><a href="blog-details.html">Cách gọt trái cây</a></h4>
+                                    <h4><a href="Blog Detail.html" >Cách gọt trái cây</a></h4>
                                     <span>09/11/2021</span>
                                 </div>
                             </div>
@@ -223,10 +353,52 @@
                         </div>
                     </div>
                 </div>
-             </div>
+            </div>
         </div>
     </div>
 
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <ul>
+                        <li><a href="#">Về chúng tôi</a></li>
+                        <li><a href="#">Thực phẩm Organic</a></li>
+                        <li><a href="#">Chứng nhận</a></li>
+                        <li><a href="#">Cửa hàng bán lẻ</a></li>
+                        <li><a href="#">Khám phá nông trại</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <ul>
+                        <li><a href="ProductList.html">Xem toàn bộ sản phẩm</a></li>
+                        <li><a href="#">Đăng nhập</a></li>
+                        <li><a href="#">Đăng ký</a></li>
+                        <li><a href="Cart_Checkout.html">Xem giỏ hàng</a></li>
+                        <li><a href="#">Hỗ trợ khách hàng</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <ul>
+                        <li><a href="FAQ.html">FAQs</a></li>
+                        <li><a href="#">Các điều kiện đi kèm</a></li>
+                        <li><a href="#">Chính sách huỷ đơn</a></li>
+                        <li><a href="#">Chính sách hoàn trả</a></li>
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Liên hệ với chúng tôi</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f" style="color: white;"></i></a>
+                        <a href="#"><i class="fab fa-youtube" style="color: white;"></i></a>
+                        <a href="#"><i class="fab fa-instagram" style="color: white;"></i></a>
+                        <a href="#"><i class="fab fa-twitter" style="color: white;"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
