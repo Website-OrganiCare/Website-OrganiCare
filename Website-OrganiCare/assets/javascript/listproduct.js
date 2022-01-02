@@ -9,20 +9,28 @@
 
     function ToggleCategory() {
         var x = document.getElementById("category-filter");
-        var y = document.getElementById("category-minus");
-        if (x.style.display === "none") {
+        var y = document.querySelector("#category-minus");
+        if (x.style.display == "none") {
             x.style.display = "block";
-            y.classList.toggle("fas fa-plus", true);
+            y.classList.remove('fa-plus');
+            y.classList.add('fa-minus');
         } else {
             x.style.display = "none";
+            y.classList.remove('fa-minus');
+            y.classList.add('fa-plus');
         }
     }
     function ToggleCategory2() {
         var x = document.getElementById("filter-price");
-        if (x.style.display === "none") {
+        var y = document.querySelector("#price-minus");
+        if (x.style.display == "none") {
             x.style.display = "block";
+            y.classList.remove('fa-plus');
+            y.classList.add('fa-minus');
         } else {
             x.style.display = "none";
+            y.classList.remove('fa-minus');
+            y.classList.add('fa-plus');
         }
     }
 
@@ -33,9 +41,6 @@
             loadCart();
         });
     //show-hide cart container
-        document.getElementById('cart-btn').addEventListener('click', () => {
-            cartContainer.classList.toggle('show-cart-container');
-             });
         productList.addEventListener('click', purchaseProduct);
         cartList.addEventListener('click', deleteProduct);
 }
@@ -53,16 +58,22 @@ updateCartInfo();
             data.forEach(product => {
                 html += `
                            <div class="item-product col-lg-4 col-md-6 col-xs-12">
-                                <a href="01-detail.html?id={{product.id}}" title="{{product.products_name}}" class="product-thumb">
+                                <a href="01-detail.html?id=${product.id}" title="${product.products_name}" class="product-thumb">
                                      <img src="${product.image}" class="item-thumb">
                                  </a>
                                  <div class="action_links">
-                                      <button type="button">
-                                            <i class="add-to-cart-btn fas fa-shopping-cart"></i>
-                                      </button>
-                                      <button type="button">
-                                                <i class="wishlist fas fa-heart"></i
-                                      </button>
+                                    <ul>
+                                        <li>
+                                              <a>
+                                                    <i class="add-to-cart-btn fas fa-shopping-cart"></i>
+                                              </a>
+                                        </li>
+                                        <li>
+                                          <a href="#">
+                                                    <i class="wishlist fas fa-heart"></i
+                                          </a>
+                                        </li>
+                                    </ul>
                                  </div>
                                  <div class="item-info">
                                     <a href="01-detail.html?id=${product.id}" title="${product.products_name}" class="item-info-name block-ellipsis ">${product.products_name}</a>
@@ -76,16 +87,16 @@ updateCartInfo();
         });
 }
 //Filter product
-for (var i = 0, length = data.length; i < length; i++) {
-    var current = data[i];
-    if (current.price >= 50000 && current.price <= 100000) {
-        //INSERT CODE HERE
-    }
-}
+//for (var i = 0, length = data.length; i < length; i++) {
+//    var current = data[i];
+//    if (current.price >= 50000 && current.price <= 100000) {
+//        //INSERT CODE HERE
+//    }
+//}
     //purchase Product
         function purchaseProduct(e) {
             if (e.target.classList.contains('add-to-cart-btn')) {
-                let product = e.target.parentElement.parentElement.parentElement;
+                let product = e.target.parentElement.parentElement.parentElement.parentElement.parentElement;
             getProductInfor(product);
 }
 }

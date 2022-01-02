@@ -448,3 +448,33 @@ select {
     outline: none;
     border: 1px solid #005959;
 }
+.cardReportBox {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+}
+
+    .cardReportBox .cardReport {
+        position: relative;
+        background: #fff;
+        padding: 20px;
+        display: flex;
+        border: solid;
+        border-color: #999;
+        border-radius: 15px;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+
+        .cardReportBox .cardReport .cardReportName {
+            position: relative;
+            font-size: 1.2em;
+            font-weight: 500;
+        }
+
+        .cardReportBox .card .cardSubtitle {
+            color: #999;
+        }
