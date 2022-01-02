@@ -2,22 +2,59 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/x-icon" href="assets/Image/favicon.png">
     <title></title>
-    <link rel="stylesheet" href="assets/css/Login_Signup_ForgotPassword.css" />
+    <!-- CSS
+    ========================= -->
+    <!--bootstrap min css-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <div class="box" style="display: flex; align-items: center; justify-content:center; text-align:center">
-        <div class="inner-box">
-            <form action="Recover.html" >
-                <img  src="assets/Image/logo.png" width="100%" height="100%"/>
-                <h3>Email xác nhận đã được gửi!</h3>
-                <p style="text-align: center">OrganiCare đã gửi link tạo mật khẩu mới qua email bạn cung cấp.
-                Vui lòng kiểm tra email của bạn!</p>  
-                <br />
-                <p style="text-align:center"><a  href="Login.html">Đăng nhập ngay</a></p>
-            </form>
+    <!--breadcrumbs area start-->
+    <div class="breadcrumbs_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="breadcrumb_content">
+                        <ul>
+                            <li><a href="Homepage.html">Home</a></li>
+                            <li><a href="Login.html">Đăng nhập ngay</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    <!--breadcrumbs area end-->
+    <!-- customer login start -->
+    <center>
+        <div class="customer_login">
+            <div class="container">
+                <div class="row">
+                    <!--register area start-->
+                    <div class="col-lg-6 col-md-6">
+                        <div class="account_form register">
+                            <form action="Login.html">
+                                <img src="assets/Image/logo.png" width="100%" height="100%" />
+                                <h3 style="text-align: center">Email xác nhận đã được gửi!</h3>
+                                <p style="text-align: center">
+                                    OrganiCare đã gửi link tạo mật khẩu mới qua email bạn cung cấp.
+                                    Vui lòng kiểm tra email của bạn!
+                                </p>
+                                <div class="login_submit">
+                                    <a href="Login.html">Đăng nhập ngay</a>
+                                    <button type="submit">Bỏ qua</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!--register area end-->
+                </div>
+            </div>
+        </div>
+    </center>
+   
+    <!-- customer login end -->
 </body>
 </html>
