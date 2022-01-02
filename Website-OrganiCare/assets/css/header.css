@@ -179,7 +179,15 @@ ul.devided > li {
         font-size: 25px;
         color:#005959;
     }
-
+.btn a{
+    border: 1px solid #fff;
+    background-color:#fff;
+    color:#005959;
+    padding:5px;
+    font-size:20px;
+    border-radius:5px;
+    font-weight:600;
+}
 .user-menu {
     display: flex;
 }

@@ -6,7 +6,6 @@
     box-sizing: border-box;
 }
 body{
-    background-color: aquamarine;
     height: 800px;
 }
 .popup{
@@ -21,6 +20,7 @@ body{
     top: 50%;
     font-family: Arial, Helvetica, sans-serif;
     display: none;
+    border-radius:5px;
 }
 .popup button{
     display: block;
