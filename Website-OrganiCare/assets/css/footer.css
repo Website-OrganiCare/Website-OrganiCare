@@ -21,11 +21,11 @@ ul{
     background-color: #005959;
     padding: 70px 0;
 }
-.footer-col{
+.footer .footer-col{
     width: 25%;
     padding: 0 15px;
 }
-.footer-col h4{
+.footer .footer-col h4{
     font-weight: 300;
     font-size: 16px;
     color:white;
@@ -34,7 +34,7 @@ ul{
     font-weight: 500;
     position: relative;
 }
-.footer-col h4::before{
+.footer .footer-col h4::before{
     content: '';
     position: absolute;
     left: 0;
@@ -45,10 +45,10 @@ ul{
     width: 50px;
     
 }
-.footer-col ul li :not(:last-child){
+.footer .footer-col ul li :not(:last-child){
     margin-bottom: 20px;
 }
-.footer-col ul li a{
+.footer .footer-col ul li a{
     font-weight: 300;
     font-size: 16px;
     text-transform: capitalize;
@@ -58,7 +58,7 @@ ul{
     margin-bottom: 10px;
     transition: all 0.3s;
 }
-.footer-col ul li a:hover{
+.footer .footer-col ul li a:hover{
     padding-left: 10px;
     color: white;
     font-weight: 400;
@@ -69,24 +69,23 @@ ul{
     width: 40px;
     text-align: center;
     line-height: 40px;
-    color: white;
     background-color: #013131;
     border-radius: 50%;
     transition: all 0.5s ease;
 }
 .footer-col .social-links a:hover{
-    background-color: white;
-    color: #013131;
+    background-color: #005959;
+    border: 1px solid white;
 }
 /*Responsive */
 @media(max-width: 1250px){
-    .footer-col{
+    .footer .footer-col{
         width: 50%;
         margin-bottom: 30px;
     }
 }
 @media(max-width: 900px){
-    .footer-col{
+    .footer .footer-col{
         width: 100%;
     }
 }
