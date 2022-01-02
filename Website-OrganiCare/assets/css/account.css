@@ -96,6 +96,10 @@
     display: none;
 }
 
+.container .text-content input {
+    display: flex;
+}
+
 .container .content .text-content {
     width: 70%;
     height: 100%;
