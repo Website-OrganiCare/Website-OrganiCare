@@ -625,9 +625,8 @@
         //    })
         //})
     </script>
-    <!-- Script -->
+    <!-- Script popup -->
     <Script>
-
         window.addEventListener("load", function () {
             setTimeout(
                 function open(event) {
@@ -637,15 +636,12 @@
                 1000
             )
         });
-
-
         document.querySelector("#close").addEventListener("click", function () {
             document.querySelector(".popup").style.display = "none";
         });
         function RegisterSuccessful() {
             alert("Đăng ký thành công!")
         };
-
     </Script>
 </body>
 </html>

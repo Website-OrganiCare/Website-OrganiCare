@@ -6507,7 +6507,7 @@ figure {
 .breadcrumb_content ul li {
     display: inline-block;
     text-transform: capitalize;
-    font-size: 14px;
+    font-size: 30px;
     margin-right: 3px;
     padding-right: 13px;
     position: relative;
@@ -11074,7 +11074,7 @@ figure {
 .widget_search button {
     color: #fff;
     display: inline-block;
-    background: #242424;
+    background: #005959;
     border: none;
     padding: 0 20px;
     height: 34px;
@@ -11089,7 +11089,7 @@ figure {
 }
 
     .widget_search button:hover {
-        background: #005959;
+        background: #48a9a6;
     }
 
 .tag_widget ul li {
@@ -11653,13 +11653,13 @@ figure {
 .your_comments_box form button {
     border: 0;
     line-height: 36px;
-    background: #222222;
+    background: #005959;
     font-weight: 500;
     margin-left: 70px;
 }
 
     .your_comments_box form button:hover {
-        background: #005959;
+        background: #48a9a6;
     }
 
 .comment_list {
@@ -11828,6 +11828,8 @@ figure {
 
     .related_content h4 a {
         color: #222222;
+        font-size:16px;
+        margin-bottom:10px;
     }
 
         .related_content h4 a:hover {
