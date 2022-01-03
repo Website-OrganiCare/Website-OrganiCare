@@ -5,14 +5,16 @@
     <link rel="icon" type="image/x-icon" href="assets/Image/favicon.png">
     <title>OrganiCare - Đánh giá của khách hàng</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/font.awesome.css">
     <link rel="stylesheet" href="assets/css/linearicons.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/minicart.css">
     <!--rate-bar-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <!-- Main Style CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/447269edb0.js" crossorigin="anonymous"></script>
 
     <!--modernizr min js here-->
     <script src="assets/js/vendor/modernizr-3.7.1.min.js"></script>
@@ -247,7 +249,7 @@
             }
         }
 
-        input, textarea, select {
+        .form-area input, textarea, select {
             width: 100%;
             padding: 12px 20px;
             margin: 8px 0;
@@ -257,7 +259,7 @@
             box-sizing: border-box;
         }
 
-            input[type=submit] {
+            .form-area input[type=submit] {
                 width: 100%;
                 background-color: #005959;
                 color: white;
@@ -268,168 +270,336 @@
                 cursor: pointer;
             }
 
-                input[type=submit]:hover {
+                .form-area input[type=submit]:hover {
                     background-color: #48a9a6;
                 }
     </style>
 </head>
 
 <body>
+    <header>
+        <!-- mobile menu -->
+        <div class="mobile-menu bg-second header" id="mobile-header">
+            <div style="background-color:white;border-radius:5px;padding:5px">
+                <a href="#" class="logo">
+                    <img src="assets/Image/logo.png" style="width:120px" />
+                </a>
+            </div>
+            <span class="mb-menu-toggle" id="mb-menu-toggle">
+                <i class='fas fa-bars'></i>
+            </span>
+        </div>
+        <!-- end mobile menu -->
+        <!-- main header -->
+        <div class="header-wrapper" id="header-wrapper">
+            <span class="mb-menu-toggle mb-menu-close" id="mb-menu-close">
+                <i class='fas fa-times'></i>
+            </span>
+            <!-- mid header -->
+            <div class="bg-main">
+                <div class="mid-header container">
+                    <div style="background-color:white;border-radius:5px;padding:5px">
+                        <a href="#" class="logo">
+                            <img src="assets/Image/logo.png" style="width:120px" />
+                        </a>
+                    </div>
+                    <div class="search">
+                        <input type="text" placeholder="Search">
+                        <i class='fas fa-search'></i>
+                    </div>
+                    <div class="btn">
+                        <a href="#">Đăng Nhập</a>
+                    </div>
+                    <ul class="user-menu">
+                        <li><a href="#"><i class='fas fa-bell'></i></a></li>
+                        <li><a href="#"><i class="far fa-user"></i></a></li>
+                        <li>
+                            <a href="#" class="cart-btn" style="position:relative">
+                                <i class='fas fa-shopping-cart'></i>
+                                <span id="cart-count-info"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- end mid header -->
+            <!-- bottom header -->
+            <div class="bg-second header" id="myHeader">
+                <div class="bottom-header container">
+                    <ul class="main-menu">
+                        <li><a href="#">Trang chủ</a></li>
+                        <!-- mega menu -->
+                        <li class="mega-dropdown">
+                            <a href="./products.html">Danh mục<i class='fas fa-angle-down' style="color:white"></i></a>
+                            <div class="mega-content">
+                                <div class="row">
+                                    <div class="col-3 col-md-12">
+                                        <div class="box">
+                                            <ul>
+                                                <li><a href="#">Rau củ</a></li>
+                                                <li><a href="#">Trái cây</a></li>
+                                                <li><a href="#">Thịt và thủy hải sản</a></li>
+                                                <li><a href="#">Đồ uống</a></li>
+                                                <li><a href="#">Ngũ cốc và hạt</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- end mega menu -->
+                        <li><a href="#">khuyến mãi</a></li>
+                        <li><a href="#">blog</a></li>
+                        <li><a href="#">đánh giá</a></li>
+                        <li><a href="#">về chúng tôi</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- end bottom header -->
+        </div>
+        <!-- end main header -->
+    </header>
+    <!-- end header -->
+    <!---------Mini cart------------>
+    <div class="minicart" style="z-index:1000">
+        <div class="cart_gallery">
+            <div class="cart_close">
+                <div class="cart_info">
+                    <div class="cart_text">
+                        <h2>Giỏ hàng</h2>
+                    </div>
+                </div>
+                <div class="cart_remove">
+                    <a href="#"><i class="fas fa-times-circle"></i></a>
+                </div>
+            </div>
+            <div class="cart-list">
 
-    <div class="breadcrumbs_area">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="breadcrumb_content">
-                        <h3>Khách hàng nói gì về OrganiCare?</h3>
+            </div>
+        </div>
+        <div class="mini_cart_table">
+            <div class="cart_table_border">
+                <div class="cart_total">
+                    <span>Tổng cộng:</span>
+                    <span class="price" id="cart-total-value"></span>
+                </div>
+                <div class="cart_total mt-10">
+                    <span>Thành tiền:</span>
+                    <span class="price" id="cart-total-value"></span>
+                </div>
+            </div>
+        </div>
+        <div class="mini_cart_footer">
+            <div class="cart_button">
+                <a href="Cart_Checkout.html"><i class="fa fa-shopping-cart"></i>&nbsp;Xem giỏ hàng</a>
+            </div>
+            <div class="cart_button">
+                <a href="Cart_Checkout.html"><i class="fa fa-sign-in"></i>&nbsp;Đặt hàng ngay</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="main_content">
+        <div class="breadcrumbs_area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="breadcrumb_content">
+                            <h3>Khách hàng nói gì về OrganiCare?</h3>
+                            <ul>
+                                <li><a href="Homepage.html">home</a></li>
+                                <li>Reviews</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="testim" id="testim">
+            <div class="wrap">
+                <span id="right-arrow" class="arrow right fa fa-chevron-right"></span>
+                <span id="left-arrow" class="arrow left fa fa-chevron-left"></span>
+                <ul class="dots" id="testim-dots">
+                    <li class="dot active"></li>
+                    <li class="dot"></li>
+                    <li class="dot"></li>
+                    <li class="dot"></li>
+                    <li class="dot"></li>
+                </ul>
+
+                <div class="cont" id="testim-content">
+                    <div class="active">
+                        <div class="img"><img src="assets/Image/testimonial/testimonial_1.png"></div>
+                        <h3>Trung Quân Idol</h3>
+                        <h5>Ca sĩ kiêm Chuyên gia về mưa</h5>
+                        <div class="product_rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <p>
+                            Cảm ơn OrganiCare đã cung cấp những thực phẩm hữu cơ tuyệt vời và bổ dưỡng đến cho tui vào những ngày mưa buồn.
+                            Nhờ thực phẩm của công ty mà tui có thể sáng tác ra những ca khúc tuyệt vời cho người hâm mộ.
+                            Chắc chắn sẽ quay lại sử dụng sản phẩm của OrganiCare.
+                            Chúc OrganiCare được điểm cao...à nhầm, làm ăn phát tài!!!
+                        </p>
+                    </div>
+
+                    <div>
+                        <div class="img"><img src="assets/Image/testimonial/testimonial_2.png"></div>
+                        <h3>Trung Quân Idol</h3>
+                        <h5>Ca sĩ kiêm Chuyên gia về mưa</h5>
+                        <div class="product_rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <p>
+                            Cảm ơn OrganiCare đã cung cấp những thực phẩm hữu cơ tuyệt vời và bổ dưỡng đến cho tui vào những ngày mưa buồn.
+                            Nhờ thực phẩm của công ty mà tui có thể sáng tác ra những ca khúc tuyệt vời cho người hâm mộ.
+                            Chắc chắn sẽ quay lại sử dụng sản phẩm của OrganiCare.
+                            Chúc OrganiCare được điểm cao...à nhầm, làm ăn phát tài!!!
+                        </p>
+                    </div>
+
+                    <div>
+                        <div class="img"><img src="assets/Image/testimonial/testimonial_3.png"></div>
+                        <h3>Trung Quân Idol</h3>
+                        <h5>Ca sĩ kiêm Chuyên gia về mưa</h5>
+                        <div class="product_rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <p>
+                            Cảm ơn OrganiCare đã cung cấp những thực phẩm hữu cơ tuyệt vời và bổ dưỡng đến cho tui vào những ngày mưa buồn.
+                            Nhờ thực phẩm của công ty mà tui có thể sáng tác ra những ca khúc tuyệt vời cho người hâm mộ.
+                            Chắc chắn sẽ quay lại sử dụng sản phẩm của OrganiCare.
+                            Chúc OrganiCare được điểm cao...à nhầm, làm ăn phát tài!!!
+                        </p>
+                    </div>
+
+                    <div>
+                        <div class="img"><img src="assets/Image/testimonial/testimonial_4.png"></div>
+                        <h3>Trung Quân Idol</h3>
+                        <h5>Ca sĩ kiêm Chuyên gia về mưa</h5>
+                        <div class="product_rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <p>
+                            Cảm ơn OrganiCare đã cung cấp những thực phẩm hữu cơ tuyệt vời và bổ dưỡng đến cho tui vào những ngày mưa buồn.
+                            Nhờ thực phẩm của công ty mà tui có thể sáng tác ra những ca khúc tuyệt vời cho người hâm mộ.
+                            Chắc chắn sẽ quay lại sử dụng sản phẩm của OrganiCare.
+                            Chúc OrganiCare được điểm cao...à nhầm, làm ăn phát tài!!!
+                        </p>
+                    </div>
+
+                    <div>
+                        <div class="img"><img src="assets/Image/testimonial/testimonial_5.png"></div>
+                        <h3>Trung Quân Idol</h3>
+                        <h5>Ca sĩ kiêm Chuyên gia về mưa</h5>
+                        <div class="product_rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <p>
+                            Cảm ơn OrganiCare đã cung cấp những thực phẩm hữu cơ tuyệt vời và bổ dưỡng đến cho tui vào những ngày mưa buồn.
+                            Nhờ thực phẩm của công ty mà tui có thể sáng tác ra những ca khúc tuyệt vời cho người hâm mộ.
+                            Chắc chắn sẽ quay lại sử dụng sản phẩm của OrganiCare.
+                            Chúc OrganiCare được điểm cao...à nhầm, làm ăn phát tài!!!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-md-12" style="text-align:left">
+                        <div class="center" style="vertical-align:middle">
+                            <h2>BẠN CÓ MUỐN ĐẶT CÂU HỎI GÌ CHO ORGANICARE KHÔNG?</h2>
+                            <p><i>(Hãy để lại thông tin để có thể theo dõi những chương trình mới nhất từ OrganiCare)</i></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-md-12">
+                        <form>
+                            <label for="name"><b>Họ và tên</b></label>
+                            <input type="text" id="name" name="name">
+
+                            <label for="email"><b>Email</b></label>
+                            <input type="email" id="email" name="email">
+
+                            <label for="question"><b>Câu hỏi</b></label>
+                            <textarea type="text" id="question" name="question"></textarea>
+
+                            <input type="submit" value="GỬI">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
                         <ul>
-                            <li><a href="Homepage.html">home</a></li>
-                            <li>Reviews</li>
+                            <li><a href="#">Về chúng tôi</a></li>
+                            <li><a href="#">Thực phẩm Organic</a></li>
+                            <li><a href="#">Chứng nhận</a></li>
+                            <li><a href="#">Cửa hàng bán lẻ</a></li>
+                            <li><a href="#">Khám phá nông trại</a></li>
                         </ul>
                     </div>
+                    <div class="footer-col">
+                        <ul>
+                            <li><a href="#">Xem toàn bộ sản phẩm</a></li>
+                            <li><a href="#">Đăng nhập</a></li>
+                            <li><a href="#">Đăng ký</a></li>
+                            <li><a href="#">Xem giỏ hàng</a></li>
+                            <li><a href="#">Hỗ trợ khách hàng</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <ul>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Các điều kiện đi kèm</a></li>
+                            <li><a href="#">Chính sách huỷ đơn</a></li>
+                            <li><a href="#">Chính sách hoàn trả</a></li>
+                            <li><a href="#">Chính sách bảo mật</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Liên hệ với chúng tôi</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </footer>
     </div>
 
-    <div class="testim" id="testim">
-        <div class="wrap">
-            <span id="right-arrow" class="arrow right fa fa-chevron-right"></span>
-            <span id="left-arrow" class="arrow left fa fa-chevron-left"></span>
-            <ul class="dots" id="testim-dots">
-                <li class="dot active"></li>
-                <li class="dot"></li>
-                <li class="dot"></li>
-                <li class="dot"></li>
-                <li class="dot"></li>
-            </ul>
-
-            <div class="cont" id="testim-content">
-                <div class="active">
-                    <div class="img"><img src="assets/Image/testimonial/testimonial_1.png"></div>
-                    <h3>Trung Quân Idol</h3>
-                    <h5>Ca sĩ kiêm Chuyên gia về mưa</h5>
-                    <div class="product_rating">
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star"></span>
-                    </div>
-                    <p>
-                        Cảm ơn OrganiCare đã cung cấp những thực phẩm hữu cơ tuyệt vời và bổ dưỡng đến cho tui vào những ngày mưa buồn.
-                        Nhờ thực phẩm của công ty mà tui có thể sáng tác ra những ca khúc tuyệt vời cho người hâm mộ.
-                        Chắc chắn sẽ quay lại sử dụng sản phẩm của OrganiCare.
-                        Chúc OrganiCare được điểm cao...à nhầm, làm ăn phát tài!!!
-                    </p>
-                </div>
-
-                <div>
-                    <div class="img"><img src="assets/Image/testimonial/testimonial_2.png"></div>
-                    <h3>Trung Quân Idol</h3>
-                    <h5>Ca sĩ kiêm Chuyên gia về mưa</h5>
-                    <div class="product_rating">
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star"></span>
-                    </div>
-                    <p>
-                        Cảm ơn OrganiCare đã cung cấp những thực phẩm hữu cơ tuyệt vời và bổ dưỡng đến cho tui vào những ngày mưa buồn.
-                        Nhờ thực phẩm của công ty mà tui có thể sáng tác ra những ca khúc tuyệt vời cho người hâm mộ.
-                        Chắc chắn sẽ quay lại sử dụng sản phẩm của OrganiCare.
-                        Chúc OrganiCare được điểm cao...à nhầm, làm ăn phát tài!!!
-                    </p>
-                </div>
-
-                <div>
-                    <div class="img"><img src="assets/Image/testimonial/testimonial_3.png"></div>
-                    <h3>Trung Quân Idol</h3>
-                    <h5>Ca sĩ kiêm Chuyên gia về mưa</h5>
-                    <div class="product_rating">
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star"></span>
-                    </div>
-                    <p>
-                        Cảm ơn OrganiCare đã cung cấp những thực phẩm hữu cơ tuyệt vời và bổ dưỡng đến cho tui vào những ngày mưa buồn.
-                        Nhờ thực phẩm của công ty mà tui có thể sáng tác ra những ca khúc tuyệt vời cho người hâm mộ.
-                        Chắc chắn sẽ quay lại sử dụng sản phẩm của OrganiCare.
-                        Chúc OrganiCare được điểm cao...à nhầm, làm ăn phát tài!!!
-                    </p>
-                </div>
-
-                <div>
-                    <div class="img"><img src="assets/Image/testimonial/testimonial_4.png"></div>
-                    <h3>Trung Quân Idol</h3>
-                    <h5>Ca sĩ kiêm Chuyên gia về mưa</h5>
-                    <div class="product_rating">
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star"></span>
-                    </div>
-                    <p>
-                        Cảm ơn OrganiCare đã cung cấp những thực phẩm hữu cơ tuyệt vời và bổ dưỡng đến cho tui vào những ngày mưa buồn.
-                        Nhờ thực phẩm của công ty mà tui có thể sáng tác ra những ca khúc tuyệt vời cho người hâm mộ.
-                        Chắc chắn sẽ quay lại sử dụng sản phẩm của OrganiCare.
-                        Chúc OrganiCare được điểm cao...à nhầm, làm ăn phát tài!!!
-                    </p>
-                </div>
-
-                <div>
-                    <div class="img"><img src="assets/Image/testimonial/testimonial_5.png"></div>
-                    <h3>Trung Quân Idol</h3>
-                    <h5>Ca sĩ kiêm Chuyên gia về mưa</h5>
-                    <div class="product_rating">
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star"></span>
-                    </div>
-                    <p>
-                        Cảm ơn OrganiCare đã cung cấp những thực phẩm hữu cơ tuyệt vời và bổ dưỡng đến cho tui vào những ngày mưa buồn.
-                        Nhờ thực phẩm của công ty mà tui có thể sáng tác ra những ca khúc tuyệt vời cho người hâm mộ.
-                        Chắc chắn sẽ quay lại sử dụng sản phẩm của OrganiCare.
-                        Chúc OrganiCare được điểm cao...à nhầm, làm ăn phát tài!!!
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="form-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5 col-md-12" style="text-align:left">
-                    <div class="center" style="vertical-align:middle">
-                        <h2>BẠN CÓ MUỐN ĐẶT CÂU HỎI GÌ CHO ORGANICARE KHÔNG?</h2>
-                        <p><i>(Hãy để lại thông tin để có thể theo dõi những chương trình mới nhất từ OrganiCare)</i></p>
-                    </div>
-                </div>
-                <div class="col-lg-7 col-md-12">
-                    <form>
-                        <label for="name"><b>Họ và tên</b></label>
-                        <input type="text" id="name" name="name">
-
-                        <label for="email"><b>Email</b></label>
-                        <input type="email" id="email" name="email">
-
-                        <label for="question"><b>Câu hỏi</b></label>
-                        <textarea type="text" id="question" name="question"></textarea>
-
-                        <input type="submit" value="GỬI">
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
+    <script src="assets/js/vendor/modernizr-3.7.1.min.js"></script>
+    <script src="assets/javascript/listproduct.js"></script>
     <script>
         'use strict'
         var testim = document.getElementById("testim"),
@@ -485,6 +655,49 @@
             }
             playSlide(currentSlide);
 
+        }
+
+        const cart_close = document.querySelector(".fa-times-circle")
+        const cart_close2 = document.querySelector(".main_content")
+        const cart_open = document.querySelector(".fa-shopping-cart")
+        cart_open.addEventListener("click", function () {
+            document.querySelector(".minicart").style.right = "0"
+        })
+        cart_close.addEventListener("click", function () {
+            document.querySelector(".minicart").style.right = "-100%"
+        })
+        cart_close2.addEventListener("click", function () {
+            document.querySelector(".minicart").style.right = "-100%"
+        })
+
+
+        document.querySelectorAll('.dropdown > a').forEach(e => {
+            e.addEventListener('click', (event) => event.preventDefault())
+        })
+
+        document.querySelectorAll('.mega-dropdown > a').forEach(e => {
+            e.addEventListener('click', (event) => event.preventDefault())
+        })
+
+        document.querySelector('#mb-menu-toggle').addEventListener('click', () => document.querySelector('#header-wrapper').classList.add('active'))
+
+        document.querySelector('#mb-menu-close').addEventListener('click', () => document.querySelector('#header-wrapper').classList.remove('active'))
+        window.onscroll = function () { myFunction() };
+
+        var header = document.getElementById("myHeader");
+        var mHeader = document.getElementById("mobile-header");
+        var sticky = header.offsetTop;
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+            if (window.pageYOffset > sticky) {
+                mHeader.classList.add("sticky");
+            } else {
+                mHeader.classList.remove("sticky");
+            }
         }
     </script>
 
