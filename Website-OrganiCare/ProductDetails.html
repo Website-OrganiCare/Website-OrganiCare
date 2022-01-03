@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/minicart.css">
 
     <!--rate-bar-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -70,22 +73,18 @@
             vertical-align: middle;
         }
 
-        /* Position the image container (needed to position the left and right arrows) */
         .product-details-tab {
             position: relative;
         }
 
-        /* Hide the images by default */
         .product_slides {
             display: none;
         }
 
-        /* Add a pointer when hovering over the thumbnail images */
         .cursor {
             cursor: pointer;
         }
 
-        /* Next & previous buttons */
         .prev,
         .next {
             cursor: pointer;
@@ -102,13 +101,11 @@
             -webkit-user-select: none;
         }
 
-        /* Position the "next button" to the right */
         .next {
             right: 0;
             border-radius: 3px 0 0 3px;
         }
 
-            /* On hover, add a black background color with a little bit see-through */
             .prev:hover,
             .next:hover {
                 background-color: grey;
@@ -126,7 +123,6 @@
             width: 33.33%;
         }
 
-        /* Add a transparency effect for thumnbail images */
         .demo {
             opacity: 0.6;
         }
@@ -157,12 +153,11 @@
                     font-weight: bolder;
                 }
 
-                /* Create an active/current tablink class */
+
                 .tab button.active {
                     font-weight: bolder;
                 }
 
-        /* Style the tab content */
         .tabcontent {
             display: none;
             padding: 6px 12px;
@@ -193,282 +188,449 @@
     </style>
 </head>
 <body>
-    
-    <div class="breadcrumbs_area">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="breadcrumb_content">
-                        <ul>
-                            <li><a href="#">Trang chủ</a></li>
-                            <li><a href="#">Rau củ</a></li>
-                            <li>Chi tiết sản phẩm</li>
-                        </ul>
+    <header>
+        <!-- mobile menu -->
+        <div class="mobile-menu bg-second header" id="mobile-header">
+            <div style="background-color:white;border-radius:5px;padding:5px">
+                <a href="#" class="logo">
+                    <img src="assets/Image/logo.png" style="width:120px" />
+                </a>
+            </div>
+            <span class="mb-menu-toggle" id="mb-menu-toggle">
+                <i class='fas fa-bars'></i>
+            </span>
+        </div>
+        <!-- end mobile menu -->
+        <!-- main header -->
+        <div class="header-wrapper" id="header-wrapper">
+            <span class="mb-menu-toggle mb-menu-close" id="mb-menu-close">
+                <i class='fas fa-times'></i>
+            </span>
+            <!-- mid header -->
+            <div class="bg-main">
+                <div class="mid-header container">
+                    <div style="background-color:white;border-radius:5px;padding:5px">
+                        <a href="#" class="logo">
+                            <img src="assets/Image/logo.png" style="width:120px" />
+                        </a>
                     </div>
+                    <div class="search">
+                        <input type="text" placeholder="Search">
+                        <i class='fas fa-search'></i>
+                    </div>
+                    <div class="btn">
+                        <a href="#">Đăng Nhập</a>
+                    </div>
+                    <ul class="user-menu">
+                        <li><a href="#"><i class='fas fa-bell'></i></a></li>
+                        <li><a href="#"><i class="far fa-user"></i></a></li>
+                        <li>
+                            <a href="#" class="cart-btn" style="position:relative">
+                                <i class='fas fa-shopping-cart'></i>
+                                <span id="cart-count-info"></span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </div>
-
-    <div class="product_details mt-70 mb-70">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-6">
-                    <div class="product-details-tab">
-                        <div class="product_slides">
-                            <img src="assets/Image/product/product11.jpg" style="width:100%">
-                        </div>
-
-                        <div class="product_slides">
-                            <img src="assets/Image/product/product12.jpg" style="width:100%">
-                        </div>
-
-                        <div class="product_slides">
-                            <img src="assets/Image/product/product14.jpg" style="width:100%">
-                        </div>
-
-                        <a class="prev" onclick="plusSlides(-1)">❮</a>
-                        <a class="next" onclick="plusSlides(1)">❯</a>
-
-                        <div class="row" style="margin-top: 20px">
-                            <div class="column">
-                                <img class="demo cursor" src="assets/Image/product/product11.jpg" style="width:100%" onclick="currentSlide(1)">
-                            </div>
-                            <div class="column">
-                                <img class="demo cursor" src="assets/Image/product/product12.jpg" style="width:100%" onclick="currentSlide(2)">
-                            </div>
-                            <div class="column">
-                                <img class="demo cursor" src="assets/Image/product/product14.jpg" style="width:100%" onclick="currentSlide(3)">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-6 col-md-6">
-                    <div class="product_d_right">
-                        <form>
-                            <h3>Kiwi vàng Zespri</h3>
-                            <div class="product_rating">
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star"></span>
-                                <span class="fa fa-star"></span>
-                                <span>&ensp;(Đánh giá từ khách hàng)</span>
-                            </div>
-                            <div class="price_box">
-                                <span class="current_price">80.000đ</span>
-                                <span class="old_price">100.000đ</span>
-                            </div>
-                            <div class="product_variant">
-                                <label for="packing">Quy cách</label>
-                                <select id="packing" name="packing">
-                                    <option value="kg">Kg</option>
-                                    <option value="bag">Túi</option>
-                                    <option value="box">Thùng</option>
-                                </select>
-                                &emsp;&emsp;
-                                <label>Số lượng</label>
-                                <input min="1" max="100" value="1" type="number">
-                            </div>
-                            <div class="product_variant">
-                                <button class="button" type="submit">Thêm vào giỏ hàng</button>
-                                <button class="button" type="submit">Mua ngay</button>
-                            </div>
-                            <div class=" product_d_action">
-                                <a href="#" title="Yêu thích">+ Thêm vào danh sách yêu thích</a>
-                            </div>
-                        </form>
-                        <div class="social">
-                            <p><b>Chia sẻ qua</b></p>
-                            <a href="#" title="Facebook"><img style="width:30px; height:30px" src="assets/Image/icon/facebook.png" /></a>
-                            <a href="#" title="Zalo"><img style="width:30px; height:30px" src="assets/Image/icon/zalo.png" /></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="product_d_info mb-65">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="tab">
-                        <button class="tablinks" onclick="openTab(event, 'ProductInfo')">Thông tin sản phẩm</button>
-                        <button class="tablinks" onclick="openTab(event, 'Review')">Đánh giá</button>
-                    </div>
-
-                    <div id="ProductInfo" class="tabcontent" style="display:block">
-                        <p style="color:#000000">Kiwi vàng có xuất xứ từ New Zealand có đài ở đầu quả và thuôn dài hơn so với kiwi xanh. Chúng có vỏ màu nâu vàng, trơn nhẵn, không có lông xù xì như kiwi xanh. Kiwi vàng có thịt quả màu vàng trong rất đẹp mắt, với nhiều hạt đen tạo thành một vòng tròn xung quanh trục dọc của quả và vị ngọt mát rất đặc trưng. Đây là loại quả ngon số 1 thế giới, với quy trình từ trồng, chăm bón đến thu, hái, vận chuyển được chính phủ New Zealand kiểm soát rất chặt chẽ để đảm bảo quả kiwi luôn đồng đều và tiêu chuẩn.</p>
-                        <h4>GIÁ TRỊ DINH DƯỠNG CỦA KIWI</h4>
-                        <ul style="list-style:circle; margin-left:15px">
-                            <li>Trung bình 2 trái kiwi có thể cung cấp khoảng 230% lượng Vitamin C, gần gấp đôi so với cam.</li>
-                            <li>Giúp vết thương nhanh lành, hấp thụ sắt để xương, mạch máu và răng chắc khỏe hơn.</li>
-                            <li>Hỗ trợ giấc ngủ và tăng cường sự tỉnh táo vào buổi sáng.</li>
-                            <li>2 trái kiwi chứa khoảng 30mg Magie, lượng Kali nhiều hơn chuối khoảng 20%, kiểm soát được huyết áp, ngăn ngừa sỏi thận, loãng xương và đột quỵ.</li>
-                            <li>Giúp trái tim của bạn khỏe mạnh, điều hòa quá trình tiêu hóa và kiểm soát cholesterol,...</li>
-                        </ul>
-                    </div>
-
-                    <div id="Review" class="tabcontent">
-                        <div class="reviews_comment_box">
-                            <div class="comment_thmb">
-                                <img src="assets/Image/icon/comment.jpg" alt="">
-                            </div>
-                            <div class="comment_text">
-                                <div class="reviews_meta">
-                                    <div class="star_rating">
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                    </div>
-                                    <p><strong>NGƯỜI BÍ ẨN </strong>- 17/12/2021</p>
-                                    <span>Thực phẩm ngon, chất lượng!!!</span>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="comment_title">
-                            <p><strong>THÊM NHẬN XÉT MỚI</strong></p>
-                            <span>Đánh giá của bạn &ensp;</span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                        </div>
-                        <div class="product_review_form">
-                            <form action="#">
+            <!-- end mid header -->
+            <!-- bottom header -->
+            <div class="bg-second header" id="myHeader">
+                <div class="bottom-header container">
+                    <ul class="main-menu">
+                        <li><a href="#">Trang chủ</a></li>
+                        <!-- mega menu -->
+                        <li class="mega-dropdown">
+                            <a href="./products.html">Danh mục<i class='fas fa-angle-down' style="color:white"></i></a>
+                            <div class="mega-content">
                                 <div class="row">
-                                    <div class="col-12">
-                                        <label for="review_comment">Nhận xét của bạn</label>
-                                        <textarea name="comment" id="review_comment"></textarea>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6">
-                                        <label for="author">Tên </label>
-                                        <input id="author" type="text">
-
-                                    </div>
-                                    <div class="col-lg-6 col-md-6">
-                                        <label for="email">Email </label>
-                                        <input id="email" type="text">
+                                    <div class="col-3 col-md-12">
+                                        <div class="box">
+                                            <ul>
+                                                <li><a href="#">Rau củ</a></li>
+                                                <li><a href="#">Trái cây</a></li>
+                                                <li><a href="#">Thịt và thủy hải sản</a></li>
+                                                <li><a href="#">Đồ uống</a></li>
+                                                <li><a href="#">Ngũ cốc và hạt</a></li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
-                                <button type="submit">GỬI</button>
-                            </form>
-                        </div>
+                            </div>
+                        </li>
+                        <!-- end mega menu -->
+                        <li><a href="#">khuyến mãi</a></li>
+                        <li><a href="#">blog</a></li>
+                        <li><a href="#">đánh giá</a></li>
+                        <li><a href="#">về chúng tôi</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- end bottom header -->
+        </div>
+        <!-- end main header -->
+    </header>
+    <!-- end header -->
+    <!---------Mini cart------------>
+    <div class="minicart" style="z-index:1000">
+        <div class="cart_gallery">
+            <div class="cart_close">
+                <div class="cart_info">
+                    <div class="cart_text">
+                        <h2>Giỏ hàng</h2>
                     </div>
                 </div>
+                <div class="cart_remove">
+                    <a href="#"><i class="fas fa-times-circle"></i></a>
+                </div>
+            </div>
+            <div class="cart-list">
 
+            </div>
+        </div>
+        <div class="mini_cart_table">
+            <div class="cart_table_border">
+                <div class="cart_total">
+                    <span>Tổng cộng:</span>
+                    <span class="price" id="cart-total-value"></span>
+                </div>
+                <div class="cart_total mt-10">
+                    <span>Thành tiền:</span>
+                    <span class="price" id="cart-total-value"></span>
+                </div>
+            </div>
+        </div>
+        <div class="mini_cart_footer">
+            <div class="cart_button">
+                <a href="Cart_Checkout.html"><i class="fa fa-shopping-cart"></i>&nbsp;Xem giỏ hàng</a>
+            </div>
+            <div class="cart_button">
+                <a href="Cart_Checkout.html"><i class="fa fa-sign-in"></i>&nbsp;Đặt hàng ngay</a>
             </div>
         </div>
     </div>
 
-    <section class="product-section">
-        <div class="container">
-            <h4 class="title-h4">Sản phẩm tương tự</h4>
-            <div class="product-items">
-                <div class="product-content owl-carousel owl-theme">
-                    <div class="product-content-items item">
-                        <img src="assets/Image/product/product1.jpg" alt="" />
-                        <div class="product-content-items-text">
-                            <h5>Chanh không hạt</h5>
-                            <p>150.000 VNĐ</p>
-                            <div class="action_links">
-                                <ul>
-                                    <li class="add_to_cart"><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
-                                    <li class="wishlist"><a href="wishlist.html"><i class=" fas fa-heart"></i></a></li>
-                                </ul>
+    <div class="main_content">
+        <div class="breadcrumbs_area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="breadcrumb_content">
+                            <ul>
+                                <li><a href="#">Trang chủ</a></li>
+                                <li><a href="#">Rau củ</a></li>
+                                <li>Chi tiết sản phẩm</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product_details mt-70 mb-70">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="product-details-tab">
+                            <div class="product_slides">
+                                <img src="assets/Image/product/product11.jpg" style="width:100%">
+                            </div>
+
+                            <div class="product_slides">
+                                <img src="assets/Image/product/product12.jpg" style="width:100%">
+                            </div>
+
+                            <div class="product_slides">
+                                <img src="assets/Image/product/product14.jpg" style="width:100%">
+                            </div>
+
+                            <a class="prev" onclick="plusSlides(-1)">❮</a>
+                            <a class="next" onclick="plusSlides(1)">❯</a>
+
+                            <div class="row" style="margin-top: 20px">
+                                <div class="column">
+                                    <img class="demo cursor" src="assets/Image/product/product11.jpg" style="width:100%" onclick="currentSlide(1)">
+                                </div>
+                                <div class="column">
+                                    <img class="demo cursor" src="assets/Image/product/product12.jpg" style="width:100%" onclick="currentSlide(2)">
+                                </div>
+                                <div class="column">
+                                    <img class="demo cursor" src="assets/Image/product/product14.jpg" style="width:100%" onclick="currentSlide(3)">
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="product-content-items item">
-                        <img src="assets/Image/product/product2.jpg" alt="" />
-                        <div class="product-content-items-text">
-                            <h5>Chanh không hạt</h5>
 
-                            <p>150.000 VNĐ</p>
-
-                            <div class="action_links">
-                                <ul>
-                                    <li class="add_to_cart"><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
-                                    <li class="wishlist"><a href="wishlist.html"><i class=" fas fa-heart"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-content-items item">
-                        <img src="assets/Image/product/product3.jpg" alt="" />
-                        <div class="product-content-items-text">
-                            <h5>Chanh không hạt</h5>
-
-                            <p>150.000 VNĐ</p>
-
-                            <div class="action_links">
-                                <ul>
-                                    <li class="add_to_cart"><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
-                                    <li class="wishlist"><a href="wishlist.html"><i class=" fas fa-heart"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-content-items item">
-                        <img src="assets/Image/product/product4.jpg" alt="" />
-                        <div class="product-content-items-text">
-                            <h5>Chanh không hạt</h5>
-                            <p>150.000 VNĐ</p>
-
-
-                            <div class="action_links">
-                                <ul>
-                                    <li class="add_to_cart"><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
-                                    <li class="wishlist"><a href="wishlist.html"><i class=" fas fa-heart"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-content-items item">
-                        <img src="assets/Image/product/product5.jpg" alt="" />
-                        <div class="product-content-items-text">
-                            <h5>Chanh không hạt</h5>
-
-                            <p>150.000 VNĐ</p>
-
-
-                            <div class="action_links">
-                                <ul>
-                                    <li class="add_to_cart"><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
-                                    <li class="wishlist"><a href="wishlist.html"><i class=" fas fa-heart"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-content-items item">
-                        <img src="assets/Image/product/product6.jpg" alt="" />
-                        <div class="product-content-items-text">
-                            <h5>Chanh không hạt</h5>
-
-                            <p>150.000 VNĐ</p>
-
-
-                            <div class="action_links">
-                                <ul>
-                                    <li class="add_to_cart"><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
-                                    <li class="wishlist"><a href="wishlist.html"><i class=" fas fa-heart"></i></a></li>
-                                </ul>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="product_d_right">
+                            <form>
+                                <h3>Kiwi vàng Zespri</h3>
+                                <div class="product_rating">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span>&ensp;(Đánh giá từ khách hàng)</span>
+                                </div>
+                                <div class="price_box">
+                                    <span class="current_price">80.000đ</span>
+                                    <span class="old_price">100.000đ</span>
+                                </div>
+                                <div class="product_variant">
+                                    <label for="packing">Quy cách</label>
+                                    <select id="packing" name="packing">
+                                        <option value="kg">Kg</option>
+                                        <option value="bag">Túi</option>
+                                        <option value="box">Thùng</option>
+                                    </select>
+                                    &emsp;&emsp;
+                                    <label>Số lượng</label>
+                                    <input min="1" max="100" value="1" type="number">
+                                </div>
+                                <div class="product_variant">
+                                    <button class="button" type="submit">Thêm vào giỏ hàng</button>
+                                    <button class="button" type="submit">Mua ngay</button>
+                                </div>
+                                <div class=" product_d_action">
+                                    <a href="#" title="Yêu thích">+ Thêm vào danh sách yêu thích</a>
+                                </div>
+                            </form>
+                            <div class="social">
+                                <p><b>Chia sẻ qua</b></p>
+                                <a href="#" title="Facebook"><img style="width:30px; height:30px" src="assets/Image/icon/facebook.png" /></a>
+                                <a href="#" title="Zalo"><img style="width:30px; height:30px" src="assets/Image/icon/zalo.png" /></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+
+        <div class="product_d_info mb-65">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="tab">
+                            <button class="tablinks" onclick="openTab(event, 'ProductInfo')">Thông tin sản phẩm</button>
+                            <button class="tablinks" onclick="openTab(event, 'Review')">Đánh giá</button>
+                        </div>
+
+                        <div id="ProductInfo" class="tabcontent" style="display:block">
+                            <p style="color:#000000">Kiwi vàng có xuất xứ từ New Zealand có đài ở đầu quả và thuôn dài hơn so với kiwi xanh. Chúng có vỏ màu nâu vàng, trơn nhẵn, không có lông xù xì như kiwi xanh. Kiwi vàng có thịt quả màu vàng trong rất đẹp mắt, với nhiều hạt đen tạo thành một vòng tròn xung quanh trục dọc của quả và vị ngọt mát rất đặc trưng. Đây là loại quả ngon số 1 thế giới, với quy trình từ trồng, chăm bón đến thu, hái, vận chuyển được chính phủ New Zealand kiểm soát rất chặt chẽ để đảm bảo quả kiwi luôn đồng đều và tiêu chuẩn.</p>
+                            <h4>GIÁ TRỊ DINH DƯỠNG CỦA KIWI</h4>
+                            <ul style="list-style:circle; margin-left:15px">
+                                <li>Trung bình 2 trái kiwi có thể cung cấp khoảng 230% lượng Vitamin C, gần gấp đôi so với cam.</li>
+                                <li>Giúp vết thương nhanh lành, hấp thụ sắt để xương, mạch máu và răng chắc khỏe hơn.</li>
+                                <li>Hỗ trợ giấc ngủ và tăng cường sự tỉnh táo vào buổi sáng.</li>
+                                <li>2 trái kiwi chứa khoảng 30mg Magie, lượng Kali nhiều hơn chuối khoảng 20%, kiểm soát được huyết áp, ngăn ngừa sỏi thận, loãng xương và đột quỵ.</li>
+                                <li>Giúp trái tim của bạn khỏe mạnh, điều hòa quá trình tiêu hóa và kiểm soát cholesterol,...</li>
+                            </ul>
+                        </div>
+
+                        <div id="Review" class="tabcontent">
+                            <div class="reviews_comment_box">
+                                <div class="comment_thmb">
+                                    <img src="assets/Image/icon/comment.jpg" alt="">
+                                </div>
+                                <div class="comment_text">
+                                    <div class="reviews_meta">
+                                        <div class="star_rating">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                        </div>
+                                        <p><strong>NGƯỜI BÍ ẨN </strong>- 17/12/2021</p>
+                                        <span>Thực phẩm ngon, chất lượng!!!</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="comment_title">
+                                <p><strong>THÊM NHẬN XÉT MỚI</strong></p>
+                                <span>Đánh giá của bạn &ensp;</span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+                            <div class="product_review_form">
+                                <form action="#">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <label for="review_comment">Nhận xét của bạn</label>
+                                            <textarea name="comment" id="review_comment"></textarea>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6">
+                                            <label for="author">Tên </label>
+                                            <input id="author" type="text">
+
+                                        </div>
+                                        <div class="col-lg-6 col-md-6">
+                                            <label for="email">Email </label>
+                                            <input id="email" type="text">
+                                        </div>
+                                    </div>
+                                    <button type="submit">GỬI</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <section class="product-section">
+            <div class="container">
+                <h4 class="title-h4">Sản phẩm tương tự</h4>
+                <div class="product-items">
+                    <div class="product-content owl-carousel owl-theme">
+                        <div class="product-content-items item">
+                            <img src="assets/Image/product/product1.jpg" alt="" />
+                            <div class="product-content-items-text">
+                                <h5>Chanh không hạt</h5>
+                                <p>150.000 VNĐ</p>
+                                <div class="action_links">
+                                    <ul>
+                                        <li class="add_to_cart"><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+                                        <li class="wishlist"><a href="wishlist.html"><i class=" fas fa-heart"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-content-items item">
+                            <img src="assets/Image/product/product2.jpg" alt="" />
+                            <div class="product-content-items-text">
+                                <h5>Chanh không hạt</h5>
+
+                                <p>150.000 VNĐ</p>
+
+                                <div class="action_links">
+                                    <ul>
+                                        <li class="add_to_cart"><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+                                        <li class="wishlist"><a href="wishlist.html"><i class=" fas fa-heart"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-content-items item">
+                            <img src="assets/Image/product/product3.jpg" alt="" />
+                            <div class="product-content-items-text">
+                                <h5>Chanh không hạt</h5>
+
+                                <p>150.000 VNĐ</p>
+
+                                <div class="action_links">
+                                    <ul>
+                                        <li class="add_to_cart"><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+                                        <li class="wishlist"><a href="wishlist.html"><i class=" fas fa-heart"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-content-items item">
+                            <img src="assets/Image/product/product4.jpg" alt="" />
+                            <div class="product-content-items-text">
+                                <h5>Chanh không hạt</h5>
+                                <p>150.000 VNĐ</p>
+
+
+                                <div class="action_links">
+                                    <ul>
+                                        <li class="add_to_cart"><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+                                        <li class="wishlist"><a href="wishlist.html"><i class=" fas fa-heart"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-content-items item">
+                            <img src="assets/Image/product/product5.jpg" alt="" />
+                            <div class="product-content-items-text">
+                                <h5>Chanh không hạt</h5>
+
+                                <p>150.000 VNĐ</p>
+
+
+                                <div class="action_links">
+                                    <ul>
+                                        <li class="add_to_cart"><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+                                        <li class="wishlist"><a href="wishlist.html"><i class=" fas fa-heart"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-content-items item">
+                            <img src="assets/Image/product/product6.jpg" alt="" />
+                            <div class="product-content-items-text">
+                                <h5>Chanh không hạt</h5>
+
+                                <p>150.000 VNĐ</p>
+
+
+                                <div class="action_links">
+                                    <ul>
+                                        <li class="add_to_cart"><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+                                        <li class="wishlist"><a href="wishlist.html"><i class=" fas fa-heart"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <ul>
+                            <li><a href="AboutUS.html">Về chúng tôi</a></li>
+                            <li><a href="#">Thực phẩm Organic</a></li>
+                            <li><a href="#">Chứng nhận</a></li>
+                            <li><a href="#">Cửa hàng bán lẻ</a></li>
+                            <li><a href="#">Khám phá nông trại</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <ul>
+                            <li><a href="ProductList.html">Xem toàn bộ sản phẩm</a></li>
+                            <li><a href="Login.html">Đăng nhập</a></li>
+                            <li><a href="Register.html">Đăng ký</a></li>
+                            <li><a href="Cart_Checkout.html">Xem giỏ hàng</a></li>
+                            <li><a href="#">Hỗ trợ khách hàng</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <ul>
+                            <li><a href="FAQ.html">FAQs</a></li>
+                            <li><a href="#">Các điều kiện đi kèm</a></li>
+                            <li><a href="#">Chính sách huỷ đơn</a></li>
+                            <li><a href="#">Chính sách hoàn trả</a></li>
+                            <li><a href="#">Chính sách bảo mật</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Liên hệ với chúng tôi</h4>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/MsOrganiCare"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="assets/javascript/owl.carousel.min.js" crossorigin="anonymous"></script>
+    <script src="assets/javascript/listproduct.js"></script>
     <script type="text/javascript">
 
         var slideIndex = 1;
@@ -529,6 +691,49 @@
                 }
             }
         })
+
+        const cart_close = document.querySelector(".fa-times-circle")
+        const cart_close2 = document.querySelector(".main_content")
+        const cart_open = document.querySelector(".fa-shopping-cart")
+        cart_open.addEventListener("click", function () {
+            document.querySelector(".minicart").style.right = "0"
+        })
+        cart_close.addEventListener("click", function () {
+            document.querySelector(".minicart").style.right = "-100%"
+        })
+        cart_close2.addEventListener("click", function () {
+            document.querySelector(".minicart").style.right = "-100%"
+        })
+
+
+        document.querySelectorAll('.dropdown > a').forEach(e => {
+            e.addEventListener('click', (event) => event.preventDefault())
+        })
+
+        document.querySelectorAll('.mega-dropdown > a').forEach(e => {
+            e.addEventListener('click', (event) => event.preventDefault())
+        })
+
+        document.querySelector('#mb-menu-toggle').addEventListener('click', () => document.querySelector('#header-wrapper').classList.add('active'))
+
+        document.querySelector('#mb-menu-close').addEventListener('click', () => document.querySelector('#header-wrapper').classList.remove('active'))
+        window.onscroll = function () { myFunction() };
+
+        var header = document.getElementById("myHeader");
+        var mHeader = document.getElementById("mobile-header");
+        var sticky = header.offsetTop;
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+            if (window.pageYOffset > sticky) {
+                mHeader.classList.add("sticky");
+            } else {
+                mHeader.classList.remove("sticky");
+            }
+        }
     </script>
 
 </body>
