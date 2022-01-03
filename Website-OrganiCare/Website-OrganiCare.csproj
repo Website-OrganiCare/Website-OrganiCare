@@ -145,7 +145,13 @@
     <Content Include="assets\Image\icon\zalo.png" />
     <Content Include="assets\Image\Admin\kanon.jpg" />
     <Content Include="assets\Image\logo.png" />
+    <Content Include="assets\Image\Member\CHBCPic.jpg" />
+    <Content Include="assets\Image\Member\KimPic.jpg" />
+    <Content Include="assets\Image\Member\NhatPicture.jpg" />
+    <Content Include="assets\Image\Member\QuanPicture.jpg" />
+    <Content Include="assets\Image\Member\ThangPic.jpg" />
     <Content Include="assets\Image\momo.png" />
+    <Content Include="assets\Image\OrganiCare.jpg" />
     <Content Include="assets\Image\product\product1.jpg" />
     <Content Include="assets\Image\product\product10.jpg" />
     <Content Include="assets\Image\product\product11.jpg" />
@@ -234,7 +240,7 @@
   <ItemGroup>
     <Content Include="data\Products.json" />
     <Content Include="data\DataProduct.json" />
-    <Content Include="data\Name.json" />
+    <Content Include="data\Member.json" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

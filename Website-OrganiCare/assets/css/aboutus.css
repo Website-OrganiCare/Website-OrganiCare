@@ -1,120 +1,124 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&family=Roboto:wght@300;400;700&display=swap');
-*{
-    font-family: Arial, Helvetica, sans-serif;
-}
+
 body{
     background-color: white;
 }
-.Content .heading{
-    text-align: center;
-    font-size: 50px;
-    margin: 0px;
-    padding: 20px;
-    color: #005959;
+.intro-content {
+    max-width: 1500px;
+    min-height: 100vh;
 }
-.Content .image-container{
-    padding-top: 100px;
+.intro-content .content-details {
+    padding-top: 10px;
     display: flex;
+
+}
+.intro-content .content-details .image-container{
     justify-content: center;
     align-items: center;
+    padding:20px;
 }
-.Content .image{
-    width: fit-content;
+.intro-content .content-details .image-container .image{
+    width:600px;
+    height:500px;
     background: white;
     margin: 2px 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: #005959;
+    margin-left:auto;
+    margin-right:auto;
 }
-.Content .content-container{
-    margin: 5px 70px;
-    padding: 20px;
+.intro-content .content-details .image-container .image img{
+    width: 100%;
+    height:100%;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+.intro-content .content-details .content-container{
+    position:relative;
+    margin:0 50px;
+}
+.intro-content .content-details .content-container .content-container-text{
+
     text-align: justify;
+    font-size:16px;
+    align-content:center;
+    align-items:center;
+    vertical-align:middle;
 }
-.OurTeam .heading{
-    text-align: center;
-    font-size: 50px;
-    margin: 0px;
-    padding: 0px;
-    color: #005959;
-    padding-top: 50px;
+.intro-content .content-details .content-container .content-container-text span{
+    color:#005959;
+    font-weight:600;
 }
-.OurTeam .image-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 50px;
+.content-container .company-info {
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-gap:40px;
+    text-align:justify;
 }
-.OurTeam .image{
-    width: 120px;
-    height: 120px;
-    background: white;
-    margin: 2px 50px;
-    border-radius: 50%;
-    border: 3px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: #005959;
+.content-container .company-info span{
+    color:#005959;
+    font-size:20px;
+    font-weight:600;
+
 }
-.OurTeam .image:hover{
-    border: 3px solid #005959;
+.content-container .company-info span i{
+    padding: 0 10px;
 }
-.OurTeam img{
-    width: 116px;
-    height: 116px;
-    border-radius: 50%;
+@media only screen and (max-width:992px) and (min-width: 769px){
+    .intro-content .content-details {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .contact {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
-.OurTeam .info-container{
-    width: 1100px;
-    height: 350px;
-    display: flex;
-    justify-content:left;
-    align-items: center;
-    background: #005959;
-    margin: 0 auto;
-    margin-top: 50px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 50px rgb(243, 243, 243);
-    color: white;
+@media only screen and (max-width:768px) {
+    .intro-content .content-details {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .content-container .company-info{
+        display:block;
+    }
+    .intro-content .content-details .image-container .image img {
+        width: 500px;
+        height: 400px;
+    }
+    .contact {
+        display: block!important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
 }
-.OurTeam .profile{
-    width: 250px;
-    height: 325px;
-    padding: 10px;
-    margin: 0;
-    position: relative;
+.contact .logo-image{
+    margin-bottom:10px;
 }
-.OurTeam .name{
-    margin-top: 80px;
-    padding: 0px 15px;
-    text-align: left;
-    font-size: 50px;
-    line-height: 20px;
+.contact .logo-image img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
-.OurTeam .status{
-    padding: 0px 20px;
-    text-align: left;
-    line-height: 20px;
-    margin: 0;
+.contact{
+    display:grid;
+    grid-template-columns: 1fr 0.8fr;
+    grid-gap:40px;
+    padding: 20px 20px;
 }
-.OurTeam .about{
-    height: 240px;
-    padding: 0px 20px;
+.contact .contact-container span{
+    color:#005959;
+    font-size:20px;
+    font-weight:600;
 }
 .contact .contact-container{
-    width: 1100px;
-    height: 350px;
-    display: flex;
-    justify-content:left;
-    align-items: center;
-    margin: 0 auto;
-    margin-top: 50px;
-    border-radius: 5px;
-    color: #005959;
+    width:100%;
+    height:100%;
 }
-.contact .contact-container .image{
-    margin-left: 100px;
-}
-

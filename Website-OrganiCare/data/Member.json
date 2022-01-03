@@ -1,0 +1,55 @@
+﻿[
+  {
+    "FirstName": "Quân",
+    "LastName": "Nguyễn Trung ",
+    "MSSV": "K174050589",
+    "Job": "Web Designer",
+    "Images": "assets/Image/Member/QuanPicture.jpg",
+    "Favorite": "Đọc sách",
+    "Quote": "Với em, OrganiCare là mở đầu cho tất cả"
+
+
+  },
+  {
+    "FirstName": "Châu",
+    "LastName": "Cao Hoài Băng ",
+    "MSSV": "K194111522",
+    "Job": "Web Designer",
+    "Images": "assets/Image/Member/CHBcPic.jpg",
+    "Favorite": "Nghe nhạc, ngủ",
+    "Quote": "Với em, OrganiCare là mở đầu cho tất cả"
+
+  },
+  {
+    "FirstName": "Kim",
+    "LastName": "Tô Thiên ",
+    "MSSV": "K194111539",
+    "Job": "UX Designer",
+    "Images": "assets/Image/Member/KimPic.jpg",
+    "Favorite": "Đọc sách, xem phim Marvel",
+    "Quote": "Với em, OrganiCare là mở đầu cho tất cả"
+
+
+  },
+  {
+    "FirstName": "Nhật",
+    "LastName": "Phan Minh ",
+    "MSSV": "K194111555",
+    "Job": "UI Designer",
+    "Images": "assets/Image/Member/NhatPicture.jpg",
+    "Favorite": "Học kỹ năng để trở thành con người full-stack",
+    "Quote": "Với em, OrganiCare là mở đầu cho tất cả"
+
+
+  },
+  {
+    "FirstName": "Thắng",
+    "LastName": "Nguyễn Hữu ",
+    "MSSV": "K194111576",
+    "Job": "UX Designer",
+    "Images": "assets/Image/Member/ThangPic.jpg",
+    "Favorite": "Chơi game, luyện phát âm tiếng anh",
+    "Quote": "Với em, OrganiCare là mở đầu cho tất cả"
+
+  }
+]
