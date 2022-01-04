@@ -9,6 +9,8 @@
     <link rel="icon" type="image/x-icon" href="assets/Image/favicon.png">
     <title>OrganiCare</title>
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/header.css" rel="stylesheet" />
+    <link href="assets/css/footer.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/aboutus.css">
     <script src="https://kit.fontawesome.com/447269edb0.js" crossorigin="anonymous"></script>
@@ -133,6 +135,7 @@
                 font-style: italic;
                 padding: 5px;
             }
+
         .button-control {
             display: flex;
             margin: 20px;
@@ -222,6 +225,88 @@
     </style>
 </head>
 <body>
+    <header>
+        <!-- mobile menu -->
+        <div class="mobile-menu bg-second header" id="mobile-header">
+            <div style="background-color:white;border-radius:5px;padding:5px">
+                <a href="#" class="logo">
+                    <img src="assets/Image/logo.png" width="120px" />
+                </a>
+            </div>
+            <span class="mb-menu-toggle" id="mb-menu-toggle">
+                <i class='fas fa-bars'></i>
+            </span>
+        </div>
+        <!-- end mobile menu -->
+        <!-- main header -->
+        <div class="header-wrapper" id="header-wrapper">
+            <span class="mb-menu-toggle mb-menu-close" id="mb-menu-close">
+                <i class='fas fa-times'></i>
+            </span>
+            <!-- mid header -->
+            <div class="bg-main">
+                <div class="mid-header container">
+                    <div style="background-color:white;border-radius:5px;padding:5px">
+                        <a href="#" class="logo">
+                            <img src="assets/Image/logo.png" width="120px" />
+                        </a>
+                    </div>
+                    <div class="search">
+                        <input type="text" placeholder="Search">
+                        <i class='fas fa-search'></i>
+                    </div>
+                    <div class="btn">
+                        <a href="#">Đăng Nhập</a>
+                    </div>
+                    <ul class="user-menu">
+                        <li><a href="Wishlist.html"><i class='fas fa-heart'></i></a></li>
+                        <li><a href="MyAccount.html"><i class="far fa-user"></i></a></li>
+                        <li>
+                            <a href="#" class="cart-btn" style="position:relative">
+                                <i class='fas fa-shopping-cart'></i>
+                                <span id="cart-count-info"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- end mid header -->
+            <!-- bottom header -->
+            <div class="bg-second header" id="myHeader">
+                <div class="bottom-header container">
+                    <ul class="main-menu">
+                        <li><a href="#">Trang chủ</a></li>
+                        <!-- mega menu -->
+                        <li class="mega-dropdown">
+                            <a href="./products.html">Danh mục<i class='fas fa-angle-down' style="color:white"></i></a>
+                            <div class="mega-content">
+                                <div class="row">
+                                    <div class="col-3 col-md-12">
+                                        <div class="box">
+                                            <ul>
+                                                <li><a href="ProductList.html">Rau củ</a></li>
+                                                <li><a href="ProductList.html">Trái cây</a></li>
+                                                <li><a href="ProductList.html">Thịt và thủy hải sản</a></li>
+                                                <li><a href="ProductList.html">Đồ uống</a></li>
+                                                <li><a href="ProductList.html">Ngũ cốc và hạt</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- end mega menu -->
+                        <li><a href="SanPhamKhuyenMai.html">khuyến mãi</a></li>
+                        <li><a href="Blog.html">blog</a></li>
+                        <li><a href="Reviews.html">đánh giá</a></li>
+                        <li><a href="AboutUS.html">về chúng tôi</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- end bottom header -->
+        </div>
+        <!-- end main header -->
+    </header>
     <div class="breadcrumbs_area">
         <div class="container">
             <div class="row">
@@ -244,9 +329,9 @@
             <div class="content-container">
                 <div class="content-container-text">
                     <span>OrganiCare</span> là doanh nghiệp chuyên kinh doanh phân phối các sản phẩm hữu cơ đạt chuẩn chất lượng thực phẩm hữu cơ.
-                        Gồm 100 cửa hàng phân bổ tập trung chủ yếu ở các quận trung tâm của Thành phố Hồ Chí Minh và đang có kế hoạch phát triển lan rộng ra toàn khu vực Thành phố,
-                        OrganiCare tự tin với sự hiện diện của bản thân trong đời sống để đồng hành cùng khách hàng trong chặng đường
-                        chăm sóc sức khỏe với các sản phẩm uy tín, chuẩn chất lượng cũng như đưa thương hiệu, lối sống hữu cơ tuyệt vời đến gần với mọi người hơn.
+                    Gồm 100 cửa hàng phân bổ tập trung chủ yếu ở các quận trung tâm của Thành phố Hồ Chí Minh và đang có kế hoạch phát triển lan rộng ra toàn khu vực Thành phố,
+                    OrganiCare tự tin với sự hiện diện của bản thân trong đời sống để đồng hành cùng khách hàng trong chặng đường
+                    chăm sóc sức khỏe với các sản phẩm uy tín, chuẩn chất lượng cũng như đưa thương hiệu, lối sống hữu cơ tuyệt vời đến gần với mọi người hơn.
                 </div>
                 <div class="company-info">
                     <div class="core-value">
@@ -275,8 +360,8 @@
             </div>
         </div>
     </div>
-    
-   
+
+
     <div class="team-section">
         <div class="container">
             <input type="radio" name="dot" id="one" />
@@ -392,7 +477,48 @@
             </ul>
         </div>
     </div>
-    
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <ul>
+                        <li><a href="AboutUS.html">Về chúng tôi</a></li>
+                        <li><a href="#">Thực phẩm Organic</a></li>
+                        <li><a href="#">Chứng nhận</a></li>
+                        <li><a href="#">Cửa hàng bán lẻ</a></li>
+                        <li><a href="#">Khám phá nông trại</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <ul>
+                        <li><a href="ProductList.html">Xem toàn bộ sản phẩm</a></li>
+                        <li><a href="Login.html">Đăng nhập</a></li>
+                        <li><a href="Register.html">Đăng ký</a></li>
+                        <li><a href="Cart_Checkout.html">Xem giỏ hàng</a></li>
+                        <li><a href="#">Hỗ trợ khách hàng</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <ul>
+                        <li><a href="FAQ.html">FAQs</a></li>
+                        <li><a href="#">Các điều kiện đi kèm</a></li>
+                        <li><a href="#">Chính sách huỷ đơn</a></li>
+                        <li><a href="#">Chính sách hoàn trả</a></li>
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Liên hệ với chúng tôi</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/MsOrganiCare"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script type="text/javascript">
         loadJSON();
         const cards = document.querySelector('.cards');
@@ -401,24 +527,55 @@
                 let html = '';
                 data.forEach(member => {
                     html += `
-                                   <div class="card-item col-lg-4 col-md-6 col-12">
-                                <div class="content">
-                                    <div class="img">
-                                        <img src="${member.Images}" />
-                                    </div>
-                                    <div class="details">
-                                        <div class="name">${member.LastName + member.FirstName}</div>
-                                        <div class="mssv">${member.MSSV}</div>
-                                        <div class="job">${member.Job}</div>
-                                        <div class="favo">${member.Favorite}</div>
-                                        <div class="quote">${member.Quote}</div>
-                                    </div>
-                                </div>
-                            </div>
-                                    `;
+                                               <div class="card-item col-lg-4 col-md-6 col-12">
+                                            <div class="content">
+                                                <div class="img">
+                                                    <img src="${member.Images}" />
+                                                </div>
+                                                <div class="details">
+                                                    <div class="name">${member.LastName + member.FirstName}</div>
+                                                    <div class="mssv">${member.MSSV}</div>
+                                                    <div class="job">${member.Job}</div>
+                                                    <div class="favo">${member.Favorite}</div>
+                                                    <div class="quote">${member.Quote}</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                                `;
                 });
                 cards.innerHTML = html;
             });
+        }
+    </script>
+    <script type="text/javascript">
+        document.querySelectorAll('.dropdown > a').forEach(e => {
+            e.addEventListener('click', (event) => event.preventDefault())
+        })
+
+        document.querySelectorAll('.mega-dropdown > a').forEach(e => {
+            e.addEventListener('click', (event) => event.preventDefault())
+        })
+
+        document.querySelector('#mb-menu-toggle').addEventListener('click', () => document.querySelector('#header-wrapper').classList.add('active'))
+
+        document.querySelector('#mb-menu-close').addEventListener('click', () => document.querySelector('#header-wrapper').classList.remove('active'))
+
+        window.onscroll = function () { myFunction() };
+
+        var header = document.getElementById("myHeader");
+        var mHeader = document.getElementById("mobile-header");
+        var sticky = header.offsetTop;
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+            if (window.pageYOffset > sticky) {
+                mHeader.classList.add("sticky");
+            } else {
+                mHeader.classList.remove("sticky");
+            }
         }
     </script>
 </body>

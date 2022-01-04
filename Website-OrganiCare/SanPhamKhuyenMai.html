@@ -4,53 +4,146 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="assets/Image/favicon.png">
-    <title>Sản phẩm khuyến mãi</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <title>Danh sách sản phẩm</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/minicart.css">
     <link rel="stylesheet" href="assets/css/ListProduct.css">
-    <script>
-        var app = angular.module("AngularApp", [])
-        app.controller('AppController', function ($scope, $http) {
-            $http({
-                method: "GET",
-                url: "data/DataProduct.json"
-            }).then(function mySucces(respone) {
-                const productCate = "raucu";
-                var temp = [];
-                const data = respone.data;
-                for (let index = 0; index < data.length; index++) {
-                    if (data[index].categories_name.toLowerCase() === productCate) temp.push(data[index]);
-                }
-                $scope.products = temp;
-            }, function myError(respone) {
-                $scope.dataError = respone.statusText
-            })
-        });
 
-        function ToggleCategory() {
-            var x = document.getElementById("category-filter");
-            var y = document.getElementById("category-minus");
-            if (x.style.display == "none") {
-                x.style.display = "block";
-                y.classList.toggle("fas fa-plus", true);
-            } else {
-                x.style.display = "none";
-            }
-        }
-        function ToggleCategory2() {
-            var x = document.getElementById("filter-price");
-            if (x.style.display == "none") {
-                x.style.display = "block";
-            } else {
-                x.style.display = "none";
-            }
-        }
-    </script>
 </head>
-<body ng-app="AngularApp" ng-controller="AppController">
-    <img src="assets/Image/banner3.jpg" alt="" srcset="">
+<body>
+    <header>
+        <!-- mobile menu -->
+        <div class="mobile-menu bg-second header" id="mobile-header">
+            <div style="background-color:white;border-radius:5px;padding:5px">
+                <a href="#" class="logo">
+                    <img src="assets/Image/logo.png" width="120px" />
+                </a>
+            </div>
+            <span class="mb-menu-toggle" id="mb-menu-toggle">
+                <i class='fas fa-bars'></i>
+            </span>
+        </div>
+        <!-- end mobile menu -->
+        <!-- main header -->
+        <div class="header-wrapper" id="header-wrapper">
+            <span class="mb-menu-toggle mb-menu-close" id="mb-menu-close">
+                <i class='fas fa-times'></i>
+            </span>
+            <!-- mid header -->
+            <div class="bg-main">
+                <div class="mid-header container">
+                    <div style="background-color:white;border-radius:5px;padding:5px">
+                        <a href="#" class="logo">
+                            <img src="assets/Image/logo.png" width="120px" />
+                        </a>
+                    </div>
+                    <div class="search">
+                        <input type="text" placeholder="Search">
+                        <i class='fas fa-search'></i>
+                    </div>
+                    <div class="btn">
+                        <a href="#">Đăng Nhập</a>
+                    </div>
+                    <ul class="user-menu">
+                        <li><a href="#"><i class='fas fa-bell'></i></a></li>
+                        <li><a href="#"><i class="far fa-user"></i></a></li>
+                        <li>
+                            <a href="#" class="cart-btn" style="position:relative">
+                                <i class='fas fa-shopping-cart'></i>
+                                <span id="cart-count-info"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- end mid header -->
+            <!-- bottom header -->
+            <div class="bg-second header" id="myHeader">
+                <div class="bottom-header container">
+                    <ul class="main-menu">
+                        <li><a href="#">Trang chủ</a></li>
+                        <!-- mega menu -->
+                        <li class="mega-dropdown">
+                            <a href="./products.html">Danh mục<i class='fas fa-angle-down' style="color:white"></i></a>
+                            <div class="mega-content">
+                                <div class="row">
+                                    <div class="col-3 col-md-12">
+                                        <div class="box">
+                                            <ul>
+                                                <li><a href="#">Rau củ</a></li>
+                                                <li><a href="#">Trái cây</a></li>
+                                                <li><a href="#">Thịt và thủy hải sản</a></li>
+                                                <li><a href="#">Đồ uống</a></li>
+                                                <li><a href="#">Ngũ cốc và hạt</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- end mega menu -->
+                        <li><a href="#">khuyến mãi</a></li>
+                        <li><a href="#">blog</a></li>
+                        <li><a href="#">đánh giá</a></li>
+                        <li><a href="#">về chúng tôi</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- end bottom header -->
+        </div>
+        <!-- end main header -->
+    </header>
+
+    <div class="minicart" style="z-index:999">
+        <div class="cart_gallery">
+            <div class="cart_close">
+                <div class="cart_info">
+                    <div class="cart_text">
+                        <h2>Giỏ hàng</h2>
+                    </div>
+                </div>
+                <div class="cart_remove">
+                    <a href="#"><i class="fas fa-times-circle"></i></a>
+                </div>
+            </div>
+            <div class="cart-list">
+
+            </div>
+        </div>
+        <div class="mini_cart_table">
+            <div class="cart_table_border">
+                <div class="cart_total">
+                    <span>Tổng cộng:</span>
+                    <span class="price" id="cart-total-value"></span>
+                </div>
+            </div>
+        </div>
+        <div class="mini_cart_footer">
+            <div class="cart_button">
+                <a href="Cart_Checkout.html"><i class="fa fa-shopping-cart"></i>&nbsp;Xem giỏ hàng</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="breadcrumbs_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="breadcrumb_content">
+                        <ul>
+                            <li><a href="Homepage.html">Trang chủ</a></li>
+                            <li>Sản phẩm khuyến mãi</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="container">
         <div class="row">
             <div class="col-lg-3 col-md-12">
@@ -58,33 +151,33 @@
                     <div class="category-filter">
                         <div class="category-filter-title" onclick="ToggleCategory()">
                             <h3>Danh mục</h3>
-                            <a class="filter-toggle"><i class="fas fa-minus" id="category-minus"></i></a>
+                            <a class="filter-toggle"><i id="category-minus" class="fas fa-minus"></i></a>
                         </div>
                         <div class="category-filter-content" id="category-filter">
                             <ul>
-                                <li><a href="#">Rau củ</a></li>
-                                <li><a href="#">Tươi sống</a></li>
-                                <li><a href="#">Hoa quả</a></li>
-                                <li><a href="#">Hạt dinh dưỡng</a></li>
-                                <li><a href="#">Đồ uống</a></li>
-                                <li><a href="#">Khác</a></li>
+                                <li><a>Rau củ</a></li>
+                                <li><a>Tươi sống</a></li>
+                                <li><a>Hoa quả</a></li>
+                                <li><a>Hạt dinh dưỡng</a></li>
+                                <li><a>Đồ uống</a></li>
+                                <li><a>Khác</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="category-filter">
                         <div class="category-filter-title" onclick="ToggleCategory2()">
                             <h3>Bộ lọc</h3>
-                            <a class="filter-toggle"><i class="fas fa-minus"></i></a>
+                            <a class="filter-toggle"><i id="price-minus" class="fas fa-minus"></i></a>
                         </div>
                         <div class="category-filter-content" id="filter-price">
                             <ul>
                                 <li><input type="checkbox" value="50 DOWN" />Dưới 50.000đ</li>
                                 <li><input type="checkbox" value="50.000đ - 100.000đ" />50.000đ - 100.000đ</li>
-                                <li><input type="checkbox" value="150.000đ - 200.000đ" />50.000đ - 100.000đ</li>
+                                <li><input type="checkbox" value="100.000đ - 150.000đ" />100.000đ - 150.000đ</li>
                                 <li><input type="checkbox" value="150.000đ - 200.000đ" />150.000đ - 200.000đ</li>
+                                <li><input type="checkbox" value="200.000đ - 250.000đ" />200.000đ - 250.000đ</li>
                                 <li><input type="checkbox" value="250.000đ - 300.000đ" />250.000đ - 300.000đ</li>
-                                <li><input type="checkbox" value="350.000đ - 400.000đ" />350.000đ - 400.000đ</li>
-                                <li><input type="checkbox" value="400 UP" />Trên 400.000đ</li>
+                                <li><input type="checkbox" value="300 UP" />Trên 300.000đ</li>
                             </ul>
                         </div>
 
@@ -93,32 +186,77 @@
             </div>
             <div class="col-lg-9 col-md-12">
                 <div class="items container">
-                    <h1>Trang chủ / Sản phẩm khuyến mãi</h1>
-                    <div class="row">
-                        <div ng-repeat="product in products" class="col-lg-4 col-md-6 col-xs-12">
-                            <div class="item-product">
-                                <a href="01-detail.html?id={{product.id}}" title="{{product.products_name}}">
-                                    <img src="{{product.image}}" class="item-thumb">
-                                </a>
-                                <div class="item-info">
-                                    <a href="01-detail.html?id={{product.id}}" title="{{product.products_name}}" class="item-info-name block-ellipsis ">{{product.products_name}}</a>
-                                    <!--<p class="item-info-desc block-ellipsis">{{product.description}}</p>-->
-                                    <p class="item-info-price" style="margin-bottom:auto!important">{{product.price | number:0}} VNĐ </p>
-                                    <p class="item-info-price" style="color:lightcoral">-20%</p>
-                                </div>
-                                <div class="action_links">
-                                    <ul>
-                                        <li class="add_to_cart"><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
-                                        <li class="wishlist"><a href="wishlist.html"><i class=" fas fa-heart"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="product-list row">
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+
+        const cart_close = document.querySelector('.fa-times-circle')
+        //const cart_close2 = document.querySelectorAll('.container')
+        const cart_open = document.querySelector('.cart-btn .fa-shopping-cart');
+        console.log(cart_open);
+        cart_open.addEventListener('click', function () {
+            document.querySelector('.minicart').style.right = '0'
+        })
+        cart_close.addEventListener('click', function () {
+            document.querySelector('.minicart').style.right = '-100%'
+        })
+        //cart_close2.forEach(close => {
+        //    close.addEventListener('click', function () {
+        //        document.querySelector('.minicart').style.right = '-100%'
+        //    })
+        //})
+
+    </script>
+    <script type="text/javascript">
+        document.querySelectorAll('.dropdown > a').forEach(e => {
+            e.addEventListener('click', (event) => event.preventDefault())
+        })
+
+        document.querySelectorAll('.mega-dropdown > a').forEach(e => {
+            e.addEventListener('click', (event) => event.preventDefault())
+        })
+
+        document.querySelector('#mb-menu-toggle').addEventListener('click', () => document.querySelector('#header-wrapper').classList.add('active'))
+
+        document.querySelector('#mb-menu-close').addEventListener('click', () => document.querySelector('#header-wrapper').classList.remove('active'))
+        window.onscroll = function () { myFunction() };
+
+        var header = document.getElementById("myHeader");
+        var mHeader = document.getElementById("mobile-header");
+        var sticky = header.offsetTop;
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+            if (window.pageYOffset > sticky) {
+                mHeader.classList.add("sticky");
+            } else {
+                mHeader.classList.remove("sticky");
+            }
+        }
+    </script>
+    <script src="assets/javascript/listproduct.js" crossorigin="anonymous"></script>
 
 </body>
 </html>

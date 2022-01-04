@@ -213,12 +213,14 @@
     text-align:center;
     margin:20px 0 30px;
     position:relative;
+    font-size:30px;
 }
 .title-h4::after{
     position:absolute;
     content:"";
     display:block;
     height:5px;
+    margin-top:10px;
     width:20%;
     background-color: #005959;
     left:50%;

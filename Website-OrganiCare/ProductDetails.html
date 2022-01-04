@@ -5,17 +5,22 @@
     <title>OrganiCare - Chi tiết sản phẩm</title>
     <link rel="icon" type="image/x-icon" href="assets/Image/favicon.png">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/homepage.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/homepage.css" />
+    <link rel="stylesheet" href="assets/css/lightslider.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/footer.css">
     <link rel="stylesheet" href="assets/css/minicart.css">
+    <link rel="stylesheet" href="assets/css/ListProduct.css" />
 
     <!--rate-bar-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/1147679ae7.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/javascript/jQuery360.js"></script>
+    <script type="text/javascript" src="assets/javascript/lightslider.js"></script>
+
     <style>
         .checked {
             color: orange;
@@ -44,7 +49,7 @@
         }
 
             .product_variant button:hover {
-                background: #3E444A;
+                background: #48a9a6;
             }
 
         .product_d_action {
@@ -165,14 +170,6 @@
             border-top: none;
         }
 
-        .box {
-            width: 200px;
-            box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
-            border-radius: 10px;
-            overflow: hidden;
-            margin: 25px;
-        }
-
         .slide-img {
             width: 200px;
             height: 200px;
@@ -245,7 +242,7 @@
                             <div class="mega-content">
                                 <div class="row">
                                     <div class="col-3 col-md-12">
-                                        <div class="box">
+                                        <div class="box" style="border:none;">
                                             <ul>
                                                 <li><a href="#">Rau củ</a></li>
                                                 <li><a href="#">Trái cây</a></li>
@@ -486,99 +483,247 @@
 
         <section class="product-section">
             <div class="container">
-                <h4 class="title-h4">Sản phẩm tương tự</h4>
+                <h4 class="title-h4">Sản phẩm liên quan</h4>
                 <div class="product-items">
-                    <div class="product-content owl-carousel owl-theme">
-                        <div class="product-content-items item">
-                            <img src="assets/Image/product/product1.jpg" alt="" />
-                            <div class="product-content-items-text">
-                                <h5>Chanh không hạt</h5>
-                                <p>150.000 VNĐ</p>
-                                <div class="action_links">
-                                    <ul>
-                                        <li class="add_to_cart"><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
-                                        <li class="wishlist"><a href="wishlist.html"><i class=" fas fa-heart"></i></a></li>
-                                    </ul>
+                    <div class="product-content">
+                        <ul id="autoWidth" class="cs-hidden">
+                            <li class="item-a">
+                                <div class="item-product">
+                                    <a href="ProductDetails.html" title="{{product.products_name}}" class="product-thumb">
+                                        <img src="assets/Image/product/product1.jpg" class="item-thumb">
+                                    </a>
+                                    <div class="action_links">
+                                        <ul>
+                                            <li>
+                                                <a>
+                                                    <i class="add-to-cart-btn fas fa-shopping-cart"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="wishlist fas fa-heart"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-info">
+                                        <a href="ProductDetails.html" title="{{product.products_name}}" class="item-info-name block-ellipsis ">Chanh không hạt</a>
+                                        <p class="item-info-desc block-ellipsis">Chua thanh, mọng nước</p>
+                                        <p class="item-info-price">50000 VNĐ</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="product-content-items item">
-                            <img src="assets/Image/product/product2.jpg" alt="" />
-                            <div class="product-content-items-text">
-                                <h5>Chanh không hạt</h5>
-
-                                <p>150.000 VNĐ</p>
-
-                                <div class="action_links">
-                                    <ul>
-                                        <li class="add_to_cart"><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
-                                        <li class="wishlist"><a href="wishlist.html"><i class=" fas fa-heart"></i></a></li>
-                                    </ul>
+                            </li>
+                            <li class="item-b">
+                                <div class="item-product">
+                                    <a href="ProductDetails.html" title="{{product.products_name}}" class="product-thumb">
+                                        <img src="assets/Image/product/product2.jpg" class="item-thumb">
+                                    </a>
+                                    <div class="action_links">
+                                        <ul>
+                                            <li>
+                                                <a>
+                                                    <i class="add-to-cart-btn fas fa-shopping-cart"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="wishlist fas fa-heart"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-info">
+                                        <a href="ProductDetails.html" title="{{product.products_name}}" class="item-info-name block-ellipsis ">Rau xà lách hữu cơ</a>
+                                        <p class="item-info-desc block-ellipsis">Healthy tươi sạch</p>
+                                        <p class="item-info-price">40000 VNĐ</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="product-content-items item">
-                            <img src="assets/Image/product/product3.jpg" alt="" />
-                            <div class="product-content-items-text">
-                                <h5>Chanh không hạt</h5>
-
-                                <p>150.000 VNĐ</p>
-
-                                <div class="action_links">
-                                    <ul>
-                                        <li class="add_to_cart"><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
-                                        <li class="wishlist"><a href="wishlist.html"><i class=" fas fa-heart"></i></a></li>
-                                    </ul>
+                            </li>
+                            <li class="item-c">
+                                <div class="item-product">
+                                    <a href="ProductDetails.html" title="{{product.products_name}}" class="product-thumb">
+                                        <img src="assets/Image/product/product3.jpg" class="item-thumb">
+                                    </a>
+                                    <div class="action_links">
+                                        <ul>
+                                            <li>
+                                                <a>
+                                                    <i class="add-to-cart-btn fas fa-shopping-cart"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="wishlist fas fa-heart"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-info">
+                                        <a href="ProductDetails.html" title="{{product.products_name}}" class="item-info-name block-ellipsis ">Chanh dây hữu cơ</a>
+                                        <p class="item-info-desc block-ellipsis">Ngọt chua thanh mát</p>
+                                        <p class="item-info-price">100000 VNĐ</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="product-content-items item">
-                            <img src="assets/Image/product/product4.jpg" alt="" />
-                            <div class="product-content-items-text">
-                                <h5>Chanh không hạt</h5>
-                                <p>150.000 VNĐ</p>
+                            </li>
 
-
-                                <div class="action_links">
-                                    <ul>
-                                        <li class="add_to_cart"><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
-                                        <li class="wishlist"><a href="wishlist.html"><i class=" fas fa-heart"></i></a></li>
-                                    </ul>
+                            <li class="item-d">
+                                <div class="item-product">
+                                    <a href="ProductDetails.html" title="{{product.products_name}}" class="product-thumb">
+                                        <img src="assets/Image/product/product4.jpg" class="item-thumb">
+                                    </a>
+                                    <div class="action_links">
+                                        <ul>
+                                            <li>
+                                                <a>
+                                                    <i class="add-to-cart-btn fas fa-shopping-cart"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="wishlist fas fa-heart"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-info">
+                                        <a href="ProductDetails.html" title="{{product.products_name}}" class="item-info-name block-ellipsis ">Bí đao hữu cơ</a>
+                                        <p class="item-info-desc block-ellipsis">Vị ngọt thanh mát</p>
+                                        <p class="item-info-price">120000 VNĐ</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="product-content-items item">
-                            <img src="assets/Image/product/product5.jpg" alt="" />
-                            <div class="product-content-items-text">
-                                <h5>Chanh không hạt</h5>
-
-                                <p>150.000 VNĐ</p>
-
-
-                                <div class="action_links">
-                                    <ul>
-                                        <li class="add_to_cart"><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
-                                        <li class="wishlist"><a href="wishlist.html"><i class=" fas fa-heart"></i></a></li>
-                                    </ul>
+                            </li>
+                            <li class="item-e">
+                                <div class="item-product">
+                                    <a href="ProductDetails.html" title="{{product.products_name}}" class="product-thumb">
+                                        <img src="assets/Image/product/product5.jpg" class="item-thumb">
+                                    </a>
+                                    <div class="action_links">
+                                        <ul>
+                                            <li>
+                                                <a>
+                                                    <i class="add-to-cart-btn fas fa-shopping-cart"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="wishlist fas fa-heart"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-info">
+                                        <a href="ProductDetails.html" title="{{product.products_name}}" class="item-info-name block-ellipsis ">Súp lơ hữu cơ</a>
+                                        <p class="item-info-desc block-ellipsis">Ngọt tươi hương vị Việt</p>
+                                        <p class="item-info-price">70000 VNĐ</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="product-content-items item">
-                            <img src="assets/Image/product/product6.jpg" alt="" />
-                            <div class="product-content-items-text">
-                                <h5>Chanh không hạt</h5>
-
-                                <p>150.000 VNĐ</p>
-
-
-                                <div class="action_links">
-                                    <ul>
-                                        <li class="add_to_cart"><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
-                                        <li class="wishlist"><a href="wishlist.html"><i class=" fas fa-heart"></i></a></li>
-                                    </ul>
+                            </li>
+                            <li class="item-f">
+                                <div class="item-product">
+                                    <a href="ProductDetails.html" title="{{product.products_name}}" class="product-thumb">
+                                        <img src="assets/Image/product/product6.jpg" class="item-thumb">
+                                    </a>
+                                    <div class="action_links">
+                                        <ul>
+                                            <li>
+                                                <a>
+                                                    <i class="add-to-cart-btn fas fa-shopping-cart"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="wishlist fas fa-heart"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-info">
+                                        <a href="ProductDetails.html" title="{{product.products_name}}" class="item-info-name block-ellipsis ">Bắp cải xanh hữu cơ</a>
+                                        <p class="item-info-desc block-ellipsis">Tươi sạch ngọt thanh</p>
+                                        <p class="item-info-price">70000 VNĐ</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
+                            </li>
+                            <li class="item-g">
+                                <div class="item-product">
+                                    <a href="ProductDetails.html" title="{{product.products_name}}" class="product-thumb">
+                                        <img src="assets/Image/product/product12.jpg" class="item-thumb">
+                                    </a>
+                                    <div class="action_links">
+                                        <ul>
+                                            <li>
+                                                <a>
+                                                    <i class="add-to-cart-btn fas fa-shopping-cart"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="wishlist fas fa-heart"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-info">
+                                        <a href="ProductDetails.html" title="{{product.products_name}}" class="item-info-name block-ellipsis ">Cà chua</a>
+                                        <p class="item-info-desc block-ellipsis">Tươi ngon bổ rẻ</p>
+                                        <p class="item-info-price">50000 VNĐ</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item-h">
+                                <div class="item-product">
+                                    <a href="ProductDetails.html" title="{{product.products_name}}" class="product-thumb">
+                                        <img src="assets/Image/product/product7.jpg" class="item-thumb">
+                                    </a>
+                                    <div class="action_links">
+                                        <ul>
+                                            <li>
+                                                <a>
+                                                    <i class="add-to-cart-btn fas fa-shopping-cart"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="wishlist fas fa-heart"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-info">
+                                        <a href="ProductDetails.html" title="{{product.products_name}}" class="item-info-name block-ellipsis ">Cà chua hữu cơ</a>
+                                        <p class="item-info-desc block-ellipsis">Chua ngọt hòa quyện</p>
+                                        <p class="item-info-price">100000 VNĐ</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item-i">
+                                <div class="item-product">
+                                    <a href="ProductDetails.html" title="{{product.products_name}}" class="product-thumb">
+                                        <img src="assets/Image/product/product8.jpg" class="item-thumb">
+                                    </a>
+                                    <div class="action_links">
+                                        <ul>
+                                            <li>
+                                                <a>
+                                                    <i class="add-to-cart-btn fas fa-shopping-cart"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="wishlist fas fa-heart"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-info">
+                                        <a href="ProductDetails.html" title="{{product.products_name}}" class="item-info-name block-ellipsis ">Cải thìa hữu cơ</a>
+                                        <p class="item-info-desc block-ellipsis">Bổ sung vitamin</p>
+                                        <p class="item-info-price">150000 VNĐ</p>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -628,9 +773,7 @@
         </footer>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="assets/javascript/owl.carousel.min.js" crossorigin="anonymous"></script>
-    <script src="assets/javascript/listproduct.js"></script>
     <script type="text/javascript">
 
         var slideIndex = 1;
@@ -691,7 +834,15 @@
                 }
             }
         })
-
+        $(document).ready(function () {
+            $('#autoWidth').lightSlider({
+                autoWidth: true,
+                loop: true,
+                onSliderLoad: function () {
+                    $('#autoWidth').removeClass('cS-hidden');
+                }
+            });
+        });
         const cart_close = document.querySelector(".fa-times-circle")
         const cart_close2 = document.querySelector(".main_content")
         const cart_open = document.querySelector(".fa-shopping-cart")
