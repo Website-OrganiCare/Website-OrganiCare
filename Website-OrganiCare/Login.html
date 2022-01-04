@@ -181,6 +181,79 @@
             </div>
         </div>
     </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <ul>
+                        <li><a href="AboutUS.html">Về chúng tôi</a></li>
+                        <li><a href="#">Thực phẩm Organic</a></li>
+                        <li><a href="#">Chứng nhận</a></li>
+                        <li><a href="#">Cửa hàng bán lẻ</a></li>
+                        <li><a href="#">Khám phá nông trại</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <ul>
+                        <li><a href="ProductList.html">Xem toàn bộ sản phẩm</a></li>
+                        <li><a href="Login.html">Đăng nhập</a></li>
+                        <li><a href="Register.html">Đăng ký</a></li>
+                        <li><a href="Cart_Checkout.html">Xem giỏ hàng</a></li>
+                        <li><a href="#">Hỗ trợ khách hàng</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <ul>
+                        <li><a href="FAQ.html">FAQs</a></li>
+                        <li><a href="#">Các điều kiện đi kèm</a></li>
+                        <li><a href="#">Chính sách huỷ đơn</a></li>
+                        <li><a href="#">Chính sách hoàn trả</a></li>
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Liên hệ với chúng tôi</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/MsOrganiCare"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        document.querySelectorAll('.dropdown > a').forEach(e => {
+            e.addEventListener('click', (event) => event.preventDefault())
+        })
+
+        document.querySelectorAll('.mega-dropdown > a').forEach(e => {
+            e.addEventListener('click', (event) => event.preventDefault())
+        })
+
+        document.querySelector('#mb-menu-toggle').addEventListener('click', () => document.querySelector('#header-wrapper').classList.add('active'))
+
+        document.querySelector('#mb-menu-close').addEventListener('click', () => document.querySelector('#header-wrapper').classList.remove('active'))
+
+        window.onscroll = function () { myFunction() };
+
+        var header = document.getElementById("myHeader");
+        var mHeader = document.getElementById("mobile-header");
+        var sticky = header.offsetTop;
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+            if (window.pageYOffset > sticky) {
+                mHeader.classList.add("sticky");
+            } else {
+                mHeader.classList.remove("sticky");
+            }
+        }
+    </script>
     <script>
         const cart_close = document.querySelector('.fa-times-circle')
         //const cart_close2 = document.querySelectorAll('.container')
