@@ -25,7 +25,7 @@
         <!-- mobile menu -->
         <div class="mobile-menu bg-second header" id="mobile-header">
             <div style="background-color:white;border-radius:5px;padding:5px">
-                <a href="#" class="logo">
+                <a href="index.html" class="logo">
                     <img src="assets/Image/logo.png" width="120px" />
                 </a>
             </div>
@@ -43,7 +43,7 @@
             <div class="bg-main">
                 <div class="mid-header container">
                     <div style="background-color:white;border-radius:5px;padding:5px">
-                        <a href="#" class="logo">
+                        <a href="index.html" class="logo">
                             <img src="assets/Image/logo.png" width="120px" />
                         </a>
                     </div>
@@ -52,7 +52,7 @@
                         <i class='fas fa-search'></i>
                     </div>
                     <div class="btn">
-                        <a href="#">Đăng Nhập</a>
+                        <a href="Login.html">Đăng Nhập</a>
                     </div>
                     <ul class="user-menu">
                         <li><a href="Wishlist.html"><i class='fas fa-heart'></i></a></li>
@@ -71,7 +71,7 @@
             <div class="bg-second header" id="myHeader">
                 <div class="bottom-header container">
                     <ul class="main-menu">
-                        <li><a href="#">Trang chủ</a></li>
+                        <li><a href="index.html">Trang chủ</a></li>
                         <!-- mega menu -->
                         <li class="mega-dropdown">
                             <a href="./products.html">Danh mục<i class='fas fa-angle-down' style="color:white"></i></a>
@@ -104,7 +104,59 @@
         <!-- end main header -->
     </header>
 
-    
+    <!---------Mini cart------------>
+    <div class="minicart" style="z-index:1000">
+        <div class="cart_gallery">
+            <div class="cart_close">
+                <div class="cart_info">
+                    <div class="cart_text">
+                        <h2>Giỏ hàng</h2>
+                    </div>
+                </div>
+                <div class="cart_remove">
+                    <a href="#"><i class="fas fa-times-circle"></i></a>
+                </div>
+            </div>
+            <div class="cart-list">
+
+            </div>
+        </div>
+        <div class="mini_cart_table">
+            <div class="cart_table_border">
+                <div class="cart_total">
+                    <span>Tổng cộng:</span>
+                    <span class="price" id="cart-total-value"></span>
+                </div>
+                <div class="cart_total mt-10">
+                    <span>Thành tiền:</span>
+                    <span class="price" id="cart-total-value"></span>
+                </div>
+            </div>
+        </div>
+        <div class="mini_cart_footer">
+            <div class="cart_button">
+                <a href="Cart_Checkout.html"><i class="fa fa-shopping-cart"></i>&nbsp;Xem giỏ hàng</a>
+            </div>
+            <div class="cart_button">
+                <a href="Cart_Checkout.html"><i class="fa fa-sign-in"></i>&nbsp;Đặt hàng ngay</a>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        const cart_close = document.querySelector(".fa-times-circle")
+        const cart_close2 = document.querySelector(".main_content")
+        const cart_open = document.querySelector(".fa-shopping-cart")
+        cart_open.addEventListener("click", function () {
+            document.querySelector(".minicart").style.right = "0"
+        })
+        cart_close.addEventListener("click", function () {
+            document.querySelector(".minicart").style.right = "-100%"
+        })
+        cart_close2.addEventListener("click", function () {
+            document.querySelector(".minicart").style.right = "-100%"
+        })
+
+    </script>
     <div class="breadcrumbs_area">
         <div class="container">
             <div class="row">
@@ -248,6 +300,24 @@
         <div class="container">
             <div class="row">
                 <div class="footer-col">
+                    <a href="index.html">
+                        <img src="assets/Image/logo.png" style="max-width:150px;background-color:white;border-radius:5px;padding:5px" />
+                    </a>
+                    <h4>Liên hệ với chúng tôi</h4>
+                    <ul>
+                        <li><a><i style="font-weight:600;">OrganiCare - Just for the taste of care</i></a></li>
+                        <li><a>Inbox: m.me/msorganicare</a></li>
+                        <li><a>Điện thoại: 0938 283 999 (Zalo)</a></li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/MsOrganiCare"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+
+                </div>
+                <div class="footer-col">
                     <ul>
                         <li><a href="AboutUS.html">Về chúng tôi</a></li>
                         <li><a href="#">Thực phẩm Organic</a></li>
@@ -268,24 +338,16 @@
                 <div class="footer-col">
                     <ul>
                         <li><a href="FAQ.html">FAQs</a></li>
-                        <li><a href="#">Các điều kiện đi kèm</a></li>
+                        <li><a href="404Error.html">404 Error</a></li>
                         <li><a href="#">Chính sách huỷ đơn</a></li>
                         <li><a href="#">Chính sách hoàn trả</a></li>
                         <li><a href="#">Chính sách bảo mật</a></li>
                     </ul>
                 </div>
-                <div class="footer-col">
-                    <h4>Liên hệ với chúng tôi</h4>
-                    <div class="social-links">
-                        <a href="https://www.facebook.com/MsOrganiCare"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                    </div>
-                </div>
             </div>
         </div>
     </footer>
+    <script src="assets/javascript/listproduct.js"></script>
     <script type="text/javascript">
         function checkAll(bx) {
             var cbs = document.getElementsByTagName('input');

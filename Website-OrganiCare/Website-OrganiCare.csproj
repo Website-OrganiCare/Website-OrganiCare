@@ -135,11 +135,11 @@
     <Content Include="assets\Image\Blog\Blog-tea.jpg" />
     <Content Include="assets\Image\Category\Bông cải xanh hữu cơ.jpg" />
     <Content Include="assets\Image\Category\Cá Hồi Hữu Cơ 200g.jpg" />
+    <Content Include="assets\Image\Category\Fruit.jpg" />
     <Content Include="assets\Image\Category\Hạt sen.jpg" />
     <Content Include="assets\Image\Category\Khác.jpg" />
     <Content Include="assets\Image\Category\Sữa.jpg" />
     <Content Include="assets\Image\Category\Trà hữu cơ.jpg" />
-    <Content Include="assets\Image\Category\Trái cây.jpg" />
     <Content Include="assets\Image\Checkout\add-to-cart.png" />
     <Content Include="assets\Image\Checkout\minus %281%29.png" />
     <Content Include="assets\Image\Checkout\plus %281%29.png" />

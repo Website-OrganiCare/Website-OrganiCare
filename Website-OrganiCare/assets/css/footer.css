@@ -63,6 +63,9 @@ ul{
     color: white;
     font-weight: 400;
 }
+.footer .footer-col a img{
+    margin-bottom:10px;
+}
 .footer-col .social-links a{
     display: inline-block;
     height: 40px;
@@ -72,7 +75,10 @@ ul{
     background-color: #013131;
     border-radius: 50%;
     transition: all 0.5s ease;
-    color:white;
+    color:white!important;
+}
+.footer-col .social-links a i{
+    color:white!important;
 }
 .footer-col .social-links a:hover{
     background-color: #005959;

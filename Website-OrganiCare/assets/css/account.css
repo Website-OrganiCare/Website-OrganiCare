@@ -5,28 +5,28 @@
     justify-content: center;
 }
 
-.container {
+.containers {
     max-width: 1170px;
     width: 100%;
-    background: #ffffff;
+    /*background: #ffffff;*/
     margin: 0 20px;
     padding: 10px 20px 10px 20px;
 }
 
-    .container .content {
+    .containers .content {
         display: flex;
         align-items: center;
         vertical-align: top;
         justify-content: space-between;
     }
 
-    .container .main-title {
+    .containers .main-title {
         font-size: 30px;
         font-weight: 500;
         margin-bottom: 20px;
     }
 
-    .container .content .list {
+    .containers .content .list {
         display: flex;
         flex-direction: column;
         position: relative;
@@ -92,24 +92,24 @@
     top: 285px;
 }
 
-.container input {
+.containers input {
     display: none;
 }
 
-.container .text-content input {
+.containers .text-content input {
     display: flex;
 }
 
-.container .content .text-content {
+.containers .content .text-content {
     width: 70%;
     height: 100%;
 }
 
-.container .text-content .text {
+.containers .text-content .text {
     display: none;
 }
 
-.container .text-content .home {
+.containers .text-content .home {
     display: block;
 }
 
@@ -128,12 +128,12 @@
     display: none;
 }
 
-.container .text-content .title {
+.containers .text-content .title {
     font-size: 25px;
     font-weight: 500;
     margin-bottom: 10px;
 }
 
-.container .text-content p {
+.containers .text-content p {
     text-align: justify;
 }

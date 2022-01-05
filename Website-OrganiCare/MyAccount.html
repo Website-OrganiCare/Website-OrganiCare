@@ -6,6 +6,7 @@
     <title>Tài khoản của tôi</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="assets/css/ListProduct.css" rel="stylesheet" />
     <link href="assets/css/footer.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/header.css">
     <script src="https://kit.fontawesome.com/447269edb0.js" crossorigin="anonymous"></script>
@@ -57,14 +58,36 @@
             text-align: justify;
         }
 
-        .breadcrumbs_area .container {
+        .breadcrumbs_area .containers {
             margin-left: auto;
             margin-right: auto;
         }
 
-        .account_section .container {
+        .account_section .containers {
             position: relative;
         }
+
+        .btn-acc button, .accordion-item button {
+            background: #005959 !important;
+            border: 0;
+            color: #ffffff;
+            display: inline-block;
+            font-size: 12px;
+            font-weight: 700;
+            height: 34px;
+            line-height: 26px;
+            padding: 5px 20px;
+            text-transform: uppercase;
+            cursor: pointer;
+            -webkit-transition: 0.3s;
+            transition: 0.3s;
+            margin-left: 20px;
+            border-radius: 20px;
+        }
+
+            .btn-acc button:hover, .accordion-item button:hover {
+                background: #48a9a6;
+            }
     </style>
 
     <!-- CSS
@@ -73,6 +96,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- Main Style CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link href="assets/css/minicart.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/account.css">
 
 </head>
@@ -82,7 +106,7 @@
         <!-- mobile menu -->
         <div class="mobile-menu bg-second header" id="mobile-header">
             <div style="background-color:white;border-radius:5px;padding:5px">
-                <a href="#" class="logo">
+                <a href="index.html" class="logo">
                     <img src="assets/Image/logo.png" width="120px" />
                 </a>
             </div>
@@ -100,7 +124,7 @@
             <div class="bg-main">
                 <div class="mid-header container">
                     <div style="background-color:white;border-radius:5px;padding:5px">
-                        <a href="#" class="logo">
+                        <a href="index.html" class="logo">
                             <img src="assets/Image/logo.png" width="120px" />
                         </a>
                     </div>
@@ -109,7 +133,7 @@
                         <i class='fas fa-search'></i>
                     </div>
                     <div class="btn">
-                        <a href="#">Đăng Nhập</a>
+                        <a href="Login.html">Đăng Nhập</a>
                     </div>
                     <ul class="user-menu">
                         <li><a href="Wishlist.html"><i class='fas fa-heart'></i></a></li>
@@ -128,7 +152,7 @@
             <div class="bg-second header" id="myHeader">
                 <div class="bottom-header container">
                     <ul class="main-menu">
-                        <li><a href="#">Trang chủ</a></li>
+                        <li><a href="index.html">Trang chủ</a></li>
                         <!-- mega menu -->
                         <li class="mega-dropdown">
                             <a href="./products.html">Danh mục<i class='fas fa-angle-down' style="color:white"></i></a>
@@ -160,18 +184,68 @@
         </div>
         <!-- end main header -->
     </header>
+    <!---------Mini cart------------>
+    <div class="minicart" style="z-index:1000">
+        <div class="cart_gallery">
+            <div class="cart_close">
+                <div class="cart_info">
+                    <div class="cart_text">
+                        <h2>Giỏ hàng</h2>
+                    </div>
+                </div>
+                <div class="cart_remove">
+                    <a href="#"><i class="fas fa-times-circle"></i></a>
+                </div>
+            </div>
+            <div class="cart-list">
+
+            </div>
+        </div>
+        <div class="mini_cart_table">
+            <div class="cart_table_border">
+                <div class="cart_total">
+                    <span>Tổng cộng:</span>
+                    <span class="price" id="cart-total-value"></span>
+                </div>
+                <div class="cart_total mt-10">
+                    <span>Thành tiền:</span>
+                    <span class="price" id="cart-total-value"></span>
+                </div>
+            </div>
+        </div>
+        <div class="mini_cart_footer">
+            <div class="cart_button">
+                <a href="Cart_Checkout.html"><i class="fa fa-shopping-cart"></i>&nbsp;Xem giỏ hàng</a>
+            </div>
+            <div class="cart_button">
+                <a href="Cart_Checkout.html"><i class="fa fa-sign-in"></i>&nbsp;Đặt hàng ngay</a>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        const cart_close = document.querySelector(".fa-times-circle")
+        const cart_close2 = document.querySelector(".main_content")
+        const cart_open = document.querySelector(".fa-shopping-cart")
+        cart_open.addEventListener("click", function () {
+            document.querySelector(".minicart").style.right = "0"
+        })
+        cart_close.addEventListener("click", function () {
+            document.querySelector(".minicart").style.right = "-100%"
+        })
+        cart_close2.addEventListener("click", function () {
+            document.querySelector(".minicart").style.right = "-100%"
+        })
+
+    </script>
     <!--breadcrumbs area start-->
     <div class="breadcrumbs_area">
-        <div class="container">
+        <div class="containers">
             <div class="row">
                 <div class="col-12">
                     <div class="breadcrumb_content">
-                        <h3>
-                            Tài khoản khách hàng
-                        </h3>
                         <ul>
                             <li><a href="Homepage.html">Trang chủ</a></li>
-                            <li> <a href="#">Thông tin khách hàng</a></li>
+                            <li> <a href="#">Tài khoản khách hàng</a></li>
                         </ul>
                     </div>
                 </div>
@@ -181,7 +255,7 @@
     <!--breadcrumbs area end-->
     <!-- my account start  -->
     <div class="account_section">
-        <div class="container">
+        <div class="containers">
             <div class="main-title"></div>
             <div class="content">
                 <input type="radio" name="indicator" checked id="home">
@@ -230,7 +304,7 @@
                                         <input type="password" name="pwdCheck">
                                         <br />
 
-                                        <div>
+                                        <div class="btn-acc">
                                             <button type="submit" style="color: white; font-weight: 500; background-color: teal">Lưu</button>
                                             <button type="reset" style="color: white; font-weight: 500; background-color: teal">Huỷ</button>
                                         </div>
@@ -244,7 +318,7 @@
                         <div class="title">Đơn hàng</div>
                         <!---->
                         <div class="accordion_area">
-                            <div class="container">
+                            <div class="containers">
                                 <div class="row">
                                     <div class="col-12">
                                         <div class="accordion-item">
@@ -354,7 +428,7 @@
                                         <input type="text" value="Hồ Chí Minh" name="provinceName">
                                         <br />
 
-                                        <div>
+                                        <div class="btn-acc">
                                             <button type="submit" style="color: white; font-weight: 500; background-color: teal">Lưu</button>
                                             <button type="reset" style="color: white; font-weight: 500; background-color: teal">Huỷ</button>
                                         </div>
@@ -402,7 +476,7 @@
                                         <input type="text" value=" Số 192/2, đường Trần Văn Kiểu, phường 10, quận 6, TPHCM" name="address">
                                         <br />
 
-                                        <div>
+                                        <div class="btn-acc">
                                             <button type="submit" style="color: white; font-weight: 500; background-color: teal">Lưu</button>
                                             <button type="reset" style="color: white; font-weight: 500; background-color: teal">Huỷ</button>
                                         </div>
@@ -418,7 +492,7 @@
                             <label>Bạn có chắc muốn thoát không?</label>
                             <br />
                             <br />
-                            <div>
+                            <div class="btn-acc">
                                 <button type="submit" style="color: white; font-weight: 500; background-color: teal">Đồng ý</button>
                                 <button type="reset" style="color: white; font-weight: 500; background-color: teal">Huỷ</button>
                             </div>
@@ -432,6 +506,24 @@
     <footer class="footer">
         <div class="container">
             <div class="row">
+                <div class="footer-col">
+                    <a href="index.html">
+                        <img src="assets/Image/logo.png" style="max-width:150px;background-color:white;border-radius:5px;padding:5px" />
+                    </a>
+                    <h4>Liên hệ với chúng tôi</h4>
+                    <ul>
+                        <li><a><i style="font-weight:600;">OrganiCare - Just for the taste of care</i></a></li>
+                        <li><a>Inbox: m.me/msorganicare</a></li>
+                        <li><a>Điện thoại: 0938 283 999 (Zalo)</a></li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/MsOrganiCare"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+
+                </div>
                 <div class="footer-col">
                     <ul>
                         <li><a href="AboutUS.html">Về chúng tôi</a></li>
@@ -453,24 +545,16 @@
                 <div class="footer-col">
                     <ul>
                         <li><a href="FAQ.html">FAQs</a></li>
-                        <li><a href="#">Các điều kiện đi kèm</a></li>
+                        <li><a href="404Error.html">404 Error</a></li>
                         <li><a href="#">Chính sách huỷ đơn</a></li>
                         <li><a href="#">Chính sách hoàn trả</a></li>
                         <li><a href="#">Chính sách bảo mật</a></li>
                     </ul>
                 </div>
-                <div class="footer-col">
-                    <h4>Liên hệ với chúng tôi</h4>
-                    <div class="social-links">
-                        <a href="https://www.facebook.com/MsOrganiCare"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                    </div>
-                </div>
             </div>
         </div>
     </footer>
+    <script src="assets/javascript/listproduct.js"></script>
     <script type="text/javascript">
         document.querySelectorAll('.dropdown > a').forEach(e => {
             e.addEventListener('click', (event) => event.preventDefault())

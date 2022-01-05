@@ -8,19 +8,19 @@
 body{
     height: 800px;
 }
-.popup{
+.popup {
     background-color: #005959;
     width: 450px;
     height: 550px;
-    margin:50px 0;
+    margin: 50px 0;
     padding: 0px 40px;
     position: fixed;
     transform: translate(-50%,-50%);
     left: 50%;
     top: 50%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Work Sans", sans-serif;
     display: none;
-    border-radius:5px;
+    border-radius: 5px;
 }
 .popup button{
     display: block;
