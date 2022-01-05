@@ -6,113 +6,193 @@
           content="text/html;charset=UTF-8" />
     <link rel="icon" type="image/x-icon" href="assets/Image/favicon.png">
     <title>OrganiCare</title>
+    <link href="assets/css/footer.css" rel="stylesheet" />
+    <link href="assets/css/header.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/error.css">
     <script src="https://kit.fontawesome.com/447269edb0.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <div id="main">
-      <!-- <div id="pre-header">
-        <div id="pre-header-logo"><img src="Logo_color.png" width="10%"></div>
-        <div class="pre-header-search-wrap">
-            <div class="search-box">
-                    <input type="text" class="input" placeholder="Nhập sản phẩm bạn tìm kiếm">
-                    <div class="btn btn-common" style="display: inline;">
-                        <i class="fas fa-search"></i>
-                    </div>
+    <header>
+        <!-- mobile menu -->
+        <div class="mobile-menu bg-second header" id="mobile-header">
+            <div style="background-color:white;border-radius:5px;padding:5px">
+                <a href="#" class="logo">
+                    <img src="assets/Image/logo.png" width="120px" />
+                </a>
             </div>
+            <span class="mb-menu-toggle" id="mb-menu-toggle">
+                <i class='fas fa-bars'></i>
+            </span>
         </div>
-      </div> -->
-      <!-- <div id="header">
-          <ul id="nav">
-              <li>
-                  <a href="">Danh mục</a>
-                  <ul class="subnav">
-                      <li><a href="">Rau củ</a></li>
-                      <li><a href="">Trái cây</a></li>
-                      <li><a href="">Thịt và Thuỷ hải sản</a></li>
-                      <li><a href="">Thức uống</a></li>
-                      <li><a href="">Ngũ cốc, Đậu & Hạt</a></li>
-                  </ul>
-                </li>
-              <li><a href="">Trang chủ</a></li>
-              <li><a href="">Khuyến mãi</a></li>
-              <li><a href="">Blog</a></li>
-              <li><a href="">Đánh giá</a></li>
-              <li><a href="">Về chúng tôi</a></li>
-          </ul>
-      </div> -->
-      <div id="content">
-        <div class="content-section">
-            <h2 class="section-heading"><img src="assets/Image/Error-01.png" width="50%"></h2>
-            <h2 class="section-halfheading">Oops! Hình như có chút lỗi tại đây</h2>
-            <p class="section-subheading">Thật thứ lỗi vì trang mà bạn tìm kiếm có thể đã bị xoá, thay đổi tên hoặc không còn hiệu lực.
-            <br>Bạn có thể tìm kiếm thêm các sản phẩm khác tại đây.</p>
+        <!-- end mobile menu -->
+        <!-- main header -->
+        <div class="header-wrapper" id="header-wrapper">
+            <span class="mb-menu-toggle mb-menu-close" id="mb-menu-close">
+                <i class='fas fa-times'></i>
+            </span>
+            <!-- mid header -->
+            <div class="bg-main">
+                <div class="mid-header container">
+                    <div style="background-color:white;border-radius:5px;padding:5px">
+                        <a href="#" class="logo">
+                            <img src="assets/Image/logo.png" width="120px" />
+                        </a>
+                    </div>
+                    <div class="search">
+                        <input type="text" placeholder="Search">
+                        <i class='fas fa-search'></i>
+                    </div>
+                    <div class="btn">
+                        <a href="#">Đăng Nhập</a>
+                    </div>
+                    <ul class="user-menu">
+                        <li><a href="Wishlist.html"><i class='fas fa-heart'></i></a></li>
+                        <li><a href="MyAccount.html"><i class="far fa-user"></i></a></li>
+                        <li>
+                            <a href="#" class="cart-btn" style="position:relative">
+                                <i class='fas fa-shopping-cart'></i>
+                                <span id="cart-count-info"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- end mid header -->
+            <!-- bottom header -->
+            <div class="bg-second header" id="myHeader">
+                <div class="bottom-header container">
+                    <ul class="main-menu">
+                        <li><a href="#">Trang chủ</a></li>
+                        <!-- mega menu -->
+                        <li class="mega-dropdown">
+                            <a href="./products.html">Danh mục<i class='fas fa-angle-down' style="color:white"></i></a>
+                            <div class="mega-content">
+                                <div class="row">
+                                    <div class="col-3 col-md-12">
+                                        <div class="box">
+                                            <ul>
+                                                <li><a href="ProductList.html">Rau củ</a></li>
+                                                <li><a href="ProductList.html">Trái cây</a></li>
+                                                <li><a href="ProductList.html">Thịt và thủy hải sản</a></li>
+                                                <li><a href="ProductList.html">Đồ uống</a></li>
+                                                <li><a href="ProductList.html">Ngũ cốc và hạt</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- end mega menu -->
+                        <li><a href="SanPhamKhuyenMai.html">khuyến mãi</a></li>
+                        <li><a href="Blog.html">blog</a></li>
+                        <li><a href="Reviews.html">đánh giá</a></li>
+                        <li><a href="AboutUS.html">về chúng tôi</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- end bottom header -->
+        </div>
+        <!-- end main header -->
+    </header>
+    <div id="main">
+        <div id="content">
+            <div class="content-section">
+                <h2 class="section-heading"><img src="assets/Image/Error-01.png" width="50%"></h2>
+                <h2 class="section-halfheading">Oops! Hình như có chút lỗi tại đây</h2>
+                <p class="section-subheading">
+                    Thật thứ lỗi vì trang mà bạn tìm kiếm có thể đã bị xoá, thay đổi tên hoặc không còn hiệu lực.
+                    <br>Bạn có thể tìm kiếm thêm các sản phẩm khác tại đây.
+                </p>
 
-            <div class="search-wrap">
-                <div class="search-box">
+                <div class="search-wrap">
+                    <div class="search-box">
                         <input type="text" class="input" placeholder="Nhập sản phẩm bạn tìm kiếm">
                         <div class="btn btn-common" style="display: inline;">
                             <i class="fas fa-search"></i>
                         </div>
-                </div>
-            </div>
-
-            <a href="Homepage.html" style="text-decoration: none;">
-                <div class="button-contentframe">
-                    <div class="section-button">
-                         <p>Quay về trang chủ</p>  
                     </div>
                 </div>
-            </a>
-        </div>
-            
-                
-      </div>
-      <!-- <div id="footer">
-          <table>
-              <tr>
-                  <td colspan="6"></td>
-              </tr>
-              <tr>
-                  <td rowspan="6"><img src="Logo.png" width="100%"></td>
-              </tr>
-              <tr>
-                    <td>Về chúng tôi</td>
-                    <td>Xem toàn bộ sản phẩm</td>
-                    <td>FAQs</td>
-                    <td>Form điền thông tin</td>
-              </tr>
-              <tr>
-                    <td>Thực phẩm Organic</td>
-                    <td>Đăng nhập</td>
-                    <td>Các điều kiện đi kèm</td>
-                    <td><input type="text" name="txtsl2" style="background: white; border: none; "></td>
-              </tr>
-              <tr>
-                    <td>Chứng nhận</td>
-                    <td>Đăng ký</td>
-                    <td>Chính sách huỷ đơn</td>
-                    <td>
-                        <a href=""><img src="icon_social-01.png" width="10%"></a>
-                        <a href=""><img src="icon_social-02.png" width="10%"></a>
-                        <a href="https://www.facebook.com/MsOrganiCare"><img src="icon_social-03.png" width="10%"></a>
-                        <a href=""><img src="icon_social-04.png" width="10%"></a>
-                    </td>
-              </tr>
-              <tr>
-                    <td>Cửa hàng bán lẻ</td>
-                    <td>Xem giỏ hàng</td>
-                    <td>Chính sách hoàn trả</td>
-                </tr>
-                <tr>
-                    <td>Khám phá nông trại</td>
-                    <td>Hỗ trợ khách hàng</td>
-                    <td>Chính sách bán hàng</td>
-                </tr>
-          </table>
-      </div>
 
-  </div>
-     -->
+                    <div class="button-contentframe">
+                        <div class="section-button">
+                            <a href="Homepage.html" style="text-decoration: none;">Quay về trang chủ</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <ul>
+                        <li><a href="AboutUS.html">Về chúng tôi</a></li>
+                        <li><a href="#">Thực phẩm Organic</a></li>
+                        <li><a href="#">Chứng nhận</a></li>
+                        <li><a href="#">Cửa hàng bán lẻ</a></li>
+                        <li><a href="#">Khám phá nông trại</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <ul>
+                        <li><a href="ProductList.html">Xem toàn bộ sản phẩm</a></li>
+                        <li><a href="Login.html">Đăng nhập</a></li>
+                        <li><a href="Register.html">Đăng ký</a></li>
+                        <li><a href="Cart_Checkout.html">Xem giỏ hàng</a></li>
+                        <li><a href="#">Hỗ trợ khách hàng</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <ul>
+                        <li><a href="FAQ.html">FAQs</a></li>
+                        <li><a href="#">Các điều kiện đi kèm</a></li>
+                        <li><a href="#">Chính sách huỷ đơn</a></li>
+                        <li><a href="#">Chính sách hoàn trả</a></li>
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Liên hệ với chúng tôi</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/MsOrganiCare"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        document.querySelectorAll('.dropdown > a').forEach(e => {
+            e.addEventListener('click', (event) => event.preventDefault())
+        })
+
+        document.querySelectorAll('.mega-dropdown > a').forEach(e => {
+            e.addEventListener('click', (event) => event.preventDefault())
+        })
+
+        document.querySelector('#mb-menu-toggle').addEventListener('click', () => document.querySelector('#header-wrapper').classList.add('active'))
+
+        document.querySelector('#mb-menu-close').addEventListener('click', () => document.querySelector('#header-wrapper').classList.remove('active'))
+        window.onscroll = function () { myFunction() };
+
+        var header = document.getElementById("myHeader");
+        var mHeader = document.getElementById("mobile-header");
+        var sticky = header.offsetTop;
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+            if (window.pageYOffset > sticky) {
+                mHeader.classList.add("sticky");
+            } else {
+                mHeader.classList.remove("sticky");
+            }
+        }
+    </script>
+
 </body>
 </html>
