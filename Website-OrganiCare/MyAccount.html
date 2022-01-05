@@ -6,6 +6,9 @@
     <title>Tài khoản của tôi</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="assets/css/footer.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/header.css">
+    <script src="https://kit.fontawesome.com/447269edb0.js" crossorigin="anonymous"></script>
 
     <style type="text/css">
         .topbar {
@@ -53,6 +56,15 @@
             overflow: hidden;
             text-align: justify;
         }
+
+        .breadcrumbs_area .container {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .account_section .container {
+            position: relative;
+        }
     </style>
 
     <!-- CSS
@@ -65,278 +77,351 @@
 
 </head>
 
-<body style="direction: inherit">
-    <!-- my account start  -->
-    <div class="container">
-        <div class="main-title">Tài khoản khách hàng</div>
-        <div class="content">
-            <input type="radio" name="indicator" checked id="home">
-            <input type="radio" name="indicator" id="blog">
-            <input type="radio" name="indicator" id="help">
-            <input type="radio" name="indicator" id="code">
-            <input type="radio" name="indicator" id="aboutt">
-            <div class="list">
-                <label for="home" class="home">
-                    <span class="topic">Mật khẩu</span>
-                </label>
-                <label for="blog" class="blog">
-                    <span class="topic">Đơn hàng</span>
-                </label>
-                <label for="help" class="help">
-                    <span class="topic">Địa chỉ</span>
-                </label>
-                <label for="code" class="code">
-                    <span class="topic">Hồ sơ</span>
-                </label>
-                <label for="aboutt" class="aboutt">
-                    <span class="topic">Logout</span>
-                </label>
-                <div class="indicator"></div>
+<body>
+    <header>
+        <!-- mobile menu -->
+        <div class="mobile-menu bg-second header" id="mobile-header">
+            <div style="background-color:white;border-radius:5px;padding:5px">
+                <a href="#" class="logo">
+                    <img src="assets/Image/logo.png" width="120px" />
+                </a>
             </div>
-            <div class="text-content">
-                <div class="home text">
-                    <div class="title">Đổi mật khẩu</div>
-                    <!---->
-                    <div>
-                        <form >
-                            <label>Nhập mật khẩu hiện tại:</label>
-                            <br />
-                            <textarea rows="1" cols="30"></textarea>
-                            <br />
-                            <br />
-
-                            <label>Nhập mật khẩu mới:</label>
-                            <br />
-                                <input type="text"/>
-                            <br />
-                            <br />
-
-                            <label>Xác nhận mật khẩu mới:</label>
-                            <br />
-                            <textarea rows="1" cols="30"></textarea>
-                            <br />
-                            <br />
-
-                            <br>
-                            <div style="color: #40A944; font-weight: 500; background-color: none">
-                                <button type="submit">Lưu</button>
-                                <button type="reset">Huỷ</button>
-                            </div>
-                        </form>
+            <span class="mb-menu-toggle" id="mb-menu-toggle">
+                <i class='fas fa-bars'></i>
+            </span>
+        </div>
+        <!-- end mobile menu -->
+        <!-- main header -->
+        <div class="header-wrapper" id="header-wrapper">
+            <span class="mb-menu-toggle mb-menu-close" id="mb-menu-close">
+                <i class='fas fa-times'></i>
+            </span>
+            <!-- mid header -->
+            <div class="bg-main">
+                <div class="mid-header container">
+                    <div style="background-color:white;border-radius:5px;padding:5px">
+                        <a href="#" class="logo">
+                            <img src="assets/Image/logo.png" width="120px" />
+                        </a>
                     </div>
-                    <!---->
+                    <div class="search">
+                        <input type="text" placeholder="Search">
+                        <i class='fas fa-search'></i>
+                    </div>
+                    <div class="btn">
+                        <a href="#">Đăng Nhập</a>
+                    </div>
+                    <ul class="user-menu">
+                        <li><a href="Wishlist.html"><i class='fas fa-heart'></i></a></li>
+                        <li><a href="MyAccount.html"><i class="far fa-user"></i></a></li>
+                        <li>
+                            <a href="#" class="cart-btn" style="position:relative">
+                                <i class='fas fa-shopping-cart'></i>
+                                <span id="cart-count-info"></span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="blog text">
-                    <div class="title">Đơn hàng</div>
-                    <!---->
-                    <div class="accordion_area">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="accordion-item">
-                                        <button class="accordion" style="color: #40A944; font-weight: 500; background-color: none"><p>Đơn hàng 1: Đã giao</p></button>
-                                        <div class="panel">
-                                            <div class="table-responsive">
-                                                <table class="table">
-                                                    <thead>
-                                                        <tr>
-                                                            <th>Thứ tự sản phẩm</th>
-                                                            <th>Tên sản phẩm</th>
-                                                            <th>Hình ảnh</th>
-                                                            <th>Ngày đặt hàng</th>
-                                                            <th>Giá</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>1</td>
-                                                            <td>Chanh tươi hữu cơ</td>
-                                                            <td><img src="assets/Image/product/product1.jpg"></td>
-                                                            <td>11/12/2021</td>
-                                                            <td>$25.00</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>2</td>
-                                                            <td>Oliu hữu cơ</td>
-                                                            <td><img src="assets/Image/product/product11.jpg"></td>
-                                                            <td>11/12/2021</td>
-                                                            <td>$25.00</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td colspan="3"></td>
-                                                            <th>Tổng tiền:</th>
-                                                            <td>$50.00</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
+            </div>
+            <!-- end mid header -->
+            <!-- bottom header -->
+            <div class="bg-second header" id="myHeader">
+                <div class="bottom-header container">
+                    <ul class="main-menu">
+                        <li><a href="#">Trang chủ</a></li>
+                        <!-- mega menu -->
+                        <li class="mega-dropdown">
+                            <a href="./products.html">Danh mục<i class='fas fa-angle-down' style="color:white"></i></a>
+                            <div class="mega-content">
+                                <div class="row">
+                                    <div class="col-3 col-md-12">
+                                        <div class="box">
+                                            <ul>
+                                                <li><a href="ProductList.html">Rau củ</a></li>
+                                                <li><a href="ProductList.html">Trái cây</a></li>
+                                                <li><a href="ProductList.html">Thịt và thủy hải sản</a></li>
+                                                <li><a href="ProductList.html">Đồ uống</a></li>
+                                                <li><a href="ProductList.html">Ngũ cốc và hạt</a></li>
+                                            </ul>
                                         </div>
                                     </div>
-                                    <br />
-                                    <div class="accordion-item">
-                                        <button class="accordion" style="color: #40A944; font-weight: 500; background-color: none"><p>Đơn hàng 2: Đang giao</p></button>
-                                        <div class="panel">
-                                            <div class="table-responsive">
-                                                <table class="table">
-                                                    <thead>
-                                                        <tr>
-                                                            <th>Thứ tự sản phẩm</th>
-                                                            <th>Tên sản phẩm</th>
-                                                            <th>Hình ảnh</th>
-                                                            <th>Ngày đặt hàng</th>
-                                                            <th>Giá</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>1</td>
-                                                            <td>Chanh tươi hữu cơ</td>
-                                                            <td><img src="assets/Image/product/product1.jpg"></td>
-                                                            <td>11/12/2021</td>
-                                                            <td>$25.00</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>2</td>
-                                                            <td>Oliu hữu cơ</td>
-                                                            <td><img src="assets/Image/product/product11.jpg"></td>
-                                                            <td>11/12/2021</td>
-                                                            <td>$25.00</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td colspan="3"></td>
-                                                            <th>Tổng tiền:</th>
-                                                            <td>$50.00</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- end mega menu -->
+                        <li><a href="SanPhamKhuyenMai.html">khuyến mãi</a></li>
+                        <li><a href="Blog.html">blog</a></li>
+                        <li><a href="Reviews.html">đánh giá</a></li>
+                        <li><a href="AboutUS.html">về chúng tôi</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- end bottom header -->
+        </div>
+        <!-- end main header -->
+    </header>
+    <!--breadcrumbs area start-->
+    <div class="breadcrumbs_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="breadcrumb_content">
+                        <h3>
+                            Tài khoản khách hàng
+                        </h3>
+                        <ul>
+                            <li><a href="Homepage.html">Trang chủ</a></li>
+                            <li> <a href="#">Thông tin khách hàng</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--breadcrumbs area end-->
+    <!-- my account start  -->
+    <div class="account_section">
+        <div class="container">
+            <div class="main-title"></div>
+            <div class="content">
+                <input type="radio" name="indicator" checked id="home">
+                <input type="radio" name="indicator" id="blog">
+                <input type="radio" name="indicator" id="help">
+                <input type="radio" name="indicator" id="code">
+                <input type="radio" name="indicator" id="aboutt">
+                <div class="list">
+                    <label for="home" class="home">
+                        <span class="topic">Mật khẩu</span>
+                    </label>
+                    <label for="blog" class="blog">
+                        <span class="topic">Đơn hàng</span>
+                    </label>
+                    <label for="help" class="help">
+                        <span class="topic">Địa chỉ</span>
+                    </label>
+                    <label for="code" class="code">
+                        <span class="topic">Hồ sơ</span>
+                    </label>
+                    <label for="aboutt" class="aboutt">
+                        <span class="topic">Đăng xuất</span>
+                    </label>
+                    <div class="indicator"></div>
+                </div>
+                <div class="text-content">
+                    <div class="home text">
+                        <div class="title">Đổi mật khẩu</div>
+                        <!---->
+                        <div class="login">
+                            <div class="login_form_container">
+                                <div class="account_login_form">
+                                    <form action="#">
+                                        <label>Nhập mật khẩu hiện tại:</label>
+                                        <br />
+                                        <input type="password" name="pwdNow">
+                                        <br />
+
+                                        <label>Nhập mật khẩu mới:</label>
+                                        <br />
+                                        <input type="password" name="pwdNew">
+                                        <br />
+
+                                        <label>Xác nhận mật khẩu mới:</label>
+                                        <br />
+                                        <input type="password" name="pwdCheck">
+                                        <br />
+
+                                        <div>
+                                            <button type="submit" style="color: white; font-weight: 500; background-color: teal">Lưu</button>
+                                            <button type="reset" style="color: white; font-weight: 500; background-color: teal">Huỷ</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <!---->
+                    </div>
+                    <div class="blog text">
+                        <div class="title">Đơn hàng</div>
+                        <!---->
+                        <div class="accordion_area">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="accordion-item">
+                                            <button class="accordion" style="color: white; font-weight: 500; background-color: teal; width: 200px"><p>Đơn hàng 1: Đã giao  </p></button>
+                                            <div class="panel">
+                                                <div class="table-responsive">
+                                                    <table class="table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Thứ tự sản phẩm</th>
+                                                                <th>Tên sản phẩm</th>
+                                                                <th>Hình ảnh</th>
+                                                                <th>Ngày đặt hàng</th>
+                                                                <th>Giá</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>1</td>
+                                                                <td>Chanh tươi hữu cơ</td>
+                                                                <td><img src="assets/Image/product/product1.jpg"></td>
+                                                                <td>11/12/2021</td>
+                                                                <td>$25.00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>2</td>
+                                                                <td>Oliu hữu cơ</td>
+                                                                <td><img src="assets/Image/product/product11.jpg"></td>
+                                                                <td>11/12/2021</td>
+                                                                <td>$25.00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td colspan="3"></td>
+                                                                <th>Tổng tiền:</th>
+                                                                <td>$50.00</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <br />
+                                        <div class="accordion-item">
+                                            <button class="accordion" style="color: white; font-weight: 500; background-color: teal; width: 200px"><p>Đơn hàng 2: Đang giao</p></button>
+                                            <div class="panel">
+                                                <div class="table-responsive">
+                                                    <table class="table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Thứ tự sản phẩm</th>
+                                                                <th>Tên sản phẩm</th>
+                                                                <th>Hình ảnh</th>
+                                                                <th>Ngày đặt hàng</th>
+                                                                <th>Giá</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>1</td>
+                                                                <td>Chanh tươi hữu cơ</td>
+                                                                <td><img src="assets/Image/product/product1.jpg"></td>
+                                                                <td>11/12/2021</td>
+                                                                <td>$25.00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>2</td>
+                                                                <td>Oliu hữu cơ</td>
+                                                                <td><img src="assets/Image/product/product11.jpg"></td>
+                                                                <td>11/12/2021</td>
+                                                                <td>$25.00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td colspan="3"></td>
+                                                                <th>Tổng tiền:</th>
+                                                                <td>$50.00</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <!---->
                     </div>
-                    <!---->
-                </div>
-                <div class="help text">
-                    <div class="title">Cập nhật địa chỉ</div>
-                    <!---->
-                    <div class="login">
-                        <div class="login_form_container">
-                            <div class="account_login_form">
-                                <form action="#">
+                    <div class="help text">
+                        <div class="title">Cập nhật địa chỉ</div>
+                        <!---->
+                        <div class="login">
+                            <div class="login_form_container">
+                                <div class="account_login_form">
+                                    <form action="#">
+                                        <label>Số nhà, tên đường/tổ/ấp:</label>
+                                        <br />
+                                        <input type="text" value="Số 192/2, đường Trần Văn Kiểu" name="houseNumber">
+                                        <br />
 
-                                    <label>Số nhà:</label>
-                                    <br />
-                                    <textarea rows="1" cols="30">  192/2</textarea>
-                                    <br />
-                                    <br />
+                                        <label>Phường/xã, quận/huyện:</label>
+                                        <br />
+                                        <input type="text" value="Phường 10, quận 6" name="groupName">
+                                        <br />
 
+                                        <label>Tỉnh/thành phố:</label>
+                                        <br />
+                                        <input type="text" value="Hồ Chí Minh" name="provinceName">
+                                        <br />
 
-                                    <label>Tên đường:</label>
-                                    <br />
-                                    <textarea rows="1" cols="30">  Trần Văn Kiểu</textarea>
-                                    <br />
-                                    <br />
-
-                                    <label>Phường:</label>
-                                    <br />
-                                    <textarea rows="1" cols="30">  10</textarea>
-                                    <br />
-                                    <br />
-
-                                    <label>Quận:</label>
-                                    <br />
-                                    <textarea rows="1" cols="30">  6</textarea>
-                                    <br />
-                                    <br />
-
-                                    <label>Thành phố:</label>
-                                    <br />
-                                    <textarea rows="1" cols="30">  Hồ Chí Minh</textarea>
-                                    <br />
-                                    <br />
-
-                                    <span class="example">
-                                    </span>
-                                    <br>
-                                    <span class="custom_checkbox">
-                                        <textarea rows="1" cols="1"></textarea>
-                                        <label>Nhận ưu đãi từ các đối tác của OrganiCare</label>
-                                    </span>
-                                    <br>
-                                    <span class="custom_checkbox">
-                                        <textarea rows="1" cols="1"></textarea>
-                                        <label>Đăng ký nhận email từ OrganiCare<br></label><br />
-                                        <i>Khách hàng có thể nhận các thông báo cập nhật, khuyến mãi, mã giảm giá từ OrganiCare.</i>
-                                    </span>
-                                    <div style="color: #40A944; font-weight: 500; background-color: none">
-                                        <button type="submit">Lưu</button>
-                                        <button type="reset">Huỷ</button>
-                                    </div>
-                                </form>
+                                        <div>
+                                            <button type="submit" style="color: white; font-weight: 500; background-color: teal">Lưu</button>
+                                            <button type="reset" style="color: white; font-weight: 500; background-color: teal">Huỷ</button>
+                                        </div>
+                                    </form>
+                                </div>
                             </div>
                         </div>
+                        <!---->
                     </div>
-                    <!---->
-                </div>
-                <div class="code text">
-                    <div class="title">Hồ sơ cá nhân</div>
-                    <!---->
-                    <div class="login">
-                        <div class="login_form_container">
-                            <div class="account_login_form">
-                                <form action="#">
-                                    <label>Họ và tên:</label>
-                                    <br />
-                                    <textarea rows="1" cols="30">  Victor Nguyễn</textarea>
-                                    <br />
-                                    <br />
+                    <div class="code text">
+                        <div class="title">Hồ sơ cá nhân </div>
+                        <!---->
+                        <div class="login">
+                            <div class="login_form_container">
+                                <div class="account_login_form">
+                                    <form action="#">
+                                        <label>Họ và tên:</label>
+                                        <br />
+                                        <input type="text" value=" Victor Nguyễn" name="fullName">
+                                        <br />
 
-                                    <label>Giới tính:</label>
-                                    <br />
-                                    <textarea rows="1" cols="30">  Nam</textarea>
-                                    <br />
-                                    <br />
+                                        <label>Giới tính:</label>
+                                        <br />
+                                        <input type="text" value="Nam" name="gender">
+                                        <br />
 
-                                    <label>Email:</label>
-                                    <br />
-                                    <textarea rows="1" cols="30">  Victor2022@gmail.com</textarea>
-                                    <br />
-                                    <br />
 
-                                    <label>Hạng mức thành viên:</label>
-                                    <br />
-                                    <textarea rows="1" cols="30">  Gold</textarea>
-                                    <br />
-                                    <br />
+                                        <label>Email:</label>
+                                        <br />
+                                        <input type="text" value=" Victor2022@gmail.com" name="email">
+                                        <br />
 
-                                    <label>Ngày sinh:</label>
-                                    <br />
-                                    <textarea rows="1" cols="30">  18/12/2000</textarea>
-                                    <br />
-                                    <br />
+                                        <label>Hạng mức thành viên:</label>
+                                        <br />
+                                        <input type="text" value="Vàng" name="rank">
+                                        <br />
 
-                                    <label>Địa chỉ giao hàng:</label>
-                                    <br />
-                                    <textarea rows="2" cols="30">  192/2, Trần Văn Kiểu, Phường 10, Quận 6, TPHCM</textarea>
-                                    <br />
-                                    <br />
+                                        <label>Ngày sinh:</label>
+                                        <br />
+                                        <input type="datetime" value="18/12/2000" name="dob">
+                                        <br />
 
-                                </form>
+                                        <label>Địa chỉ giao hàng:</label>
+                                        <br />
+                                        <input type="text" value=" Số 192/2, đường Trần Văn Kiểu, phường 10, quận 6, TPHCM" name="address">
+                                        <br />
+
+                                        <div>
+                                            <button type="submit" style="color: white; font-weight: 500; background-color: teal">Lưu</button>
+                                            <button type="reset" style="color: white; font-weight: 500; background-color: teal">Huỷ</button>
+                                        </div>
+                                    </form>
+                                </div>
                             </div>
                         </div>
+                        <!---->
                     </div>
-                    <!---->
-                </div>
-                <div class="aboutt text">
-                    <div class="title">Logout</div>
-                    <div>
-                        <label>Bạn có chắc muốn thoát không?</label>
-                        <br />
-                        <div style="color: #40A944; font-weight: 500; background-color: none">
-                            <button type="submit">Đồng ý</button>
-                            <button type="reset">Huỷ</button>
+                    <div class="aboutt text">
+                        <div class="title">Đăng xuất</div>
+                        <div>
+                            <label>Bạn có chắc muốn thoát không?</label>
+                            <br />
+                            <br />
+                            <div>
+                                <button type="submit" style="color: white; font-weight: 500; background-color: teal">Đồng ý</button>
+                                <button type="reset" style="color: white; font-weight: 500; background-color: teal">Huỷ</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -344,6 +429,79 @@
         </div>
     </div>
     <!-- my account end   -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <ul>
+                        <li><a href="AboutUS.html">Về chúng tôi</a></li>
+                        <li><a href="#">Thực phẩm Organic</a></li>
+                        <li><a href="#">Chứng nhận</a></li>
+                        <li><a href="#">Cửa hàng bán lẻ</a></li>
+                        <li><a href="#">Khám phá nông trại</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <ul>
+                        <li><a href="ProductList.html">Xem toàn bộ sản phẩm</a></li>
+                        <li><a href="Login.html">Đăng nhập</a></li>
+                        <li><a href="Register.html">Đăng ký</a></li>
+                        <li><a href="Cart_Checkout.html">Xem giỏ hàng</a></li>
+                        <li><a href="#">Hỗ trợ khách hàng</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <ul>
+                        <li><a href="FAQ.html">FAQs</a></li>
+                        <li><a href="#">Các điều kiện đi kèm</a></li>
+                        <li><a href="#">Chính sách huỷ đơn</a></li>
+                        <li><a href="#">Chính sách hoàn trả</a></li>
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Liên hệ với chúng tôi</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/MsOrganiCare"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        document.querySelectorAll('.dropdown > a').forEach(e => {
+            e.addEventListener('click', (event) => event.preventDefault())
+        })
+
+        document.querySelectorAll('.mega-dropdown > a').forEach(e => {
+            e.addEventListener('click', (event) => event.preventDefault())
+        })
+
+        document.querySelector('#mb-menu-toggle').addEventListener('click', () => document.querySelector('#header-wrapper').classList.add('active'))
+
+        document.querySelector('#mb-menu-close').addEventListener('click', () => document.querySelector('#header-wrapper').classList.remove('active'))
+
+        window.onscroll = function () { myFunction() };
+
+        var header = document.getElementById("myHeader");
+        var mHeader = document.getElementById("mobile-header");
+        var sticky = header.offsetTop;
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+            if (window.pageYOffset > sticky) {
+                mHeader.classList.add("sticky");
+            } else {
+                mHeader.classList.remove("sticky");
+            }
+        }
+    </script>
 
     <script>
         var acc = document.getElementsByClassName("accordion");
@@ -361,7 +519,6 @@
             });
         }
     </script>
-
 </body>
 
 </html>

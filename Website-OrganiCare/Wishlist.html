@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <script src="https://kit.fontawesome.com/1147679ae7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/minicart.css">
     <link href="assets/css/header.css" rel="stylesheet" />
     <link href="assets/css/footer.css" rel="stylesheet" />
     <script src="assets/javascript/bootstrap.min.js" crossorigin="anonymous"></script>
@@ -327,6 +330,48 @@
 
     </script>
     <script type="text/javascript">
+        document.querySelectorAll('.dropdown > a').forEach(e => {
+            e.addEventListener('click', (event) => event.preventDefault())
+        })
+
+        document.querySelectorAll('.mega-dropdown > a').forEach(e => {
+            e.addEventListener('click', (event) => event.preventDefault())
+        })
+
+        document.querySelector('#mb-menu-toggle').addEventListener('click', () => document.querySelector('#header-wrapper').classList.add('active'))
+
+        document.querySelector('#mb-menu-close').addEventListener('click', () => document.querySelector('#header-wrapper').classList.remove('active'))
+        window.onscroll = function () { myFunction() };
+
+        var header = document.getElementById("myHeader");
+        var mHeader = document.getElementById("mobile-header");
+        var sticky = header.offsetTop;
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+            if (window.pageYOffset > sticky) {
+                mHeader.classList.add("sticky");
+            } else {
+                mHeader.classList.remove("sticky");
+            }
+        }
+
+        const cart_close = document.querySelector(".fa-times-circle")
+        const cart_close2 = document.querySelector(".main_content")
+        const cart_open = document.querySelector(".fa-shopping-cart")
+        cart_open.addEventListener("click", function () {
+            document.querySelector(".minicart").style.right = "0"
+        })
+        cart_close.addEventListener("click", function () {
+            document.querySelector(".minicart").style.right = "-100%"
+        })
+        cart_close2.addEventListener("click", function () {
+            document.querySelector(".minicart").style.right = "-100%"
+        })
+
         document.querySelectorAll('.dropdown > a').forEach(e => {
             e.addEventListener('click', (event) => event.preventDefault())
         })
