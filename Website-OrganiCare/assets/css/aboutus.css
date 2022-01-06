@@ -4,11 +4,13 @@ body{
 }
 .intro-content {
     max-width: 1500px;
-    min-height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
 }
 .intro-content .content-details {
     padding-top: 10px;
     display: flex;
+    
 
 }
 .intro-content .content-details .image-container{
@@ -50,6 +52,7 @@ body{
 .intro-content .content-details .content-container .content-container-text span{
     color:#005959;
     font-weight:600;
+    font-size:20px;
 }
 .content-container .company-info {
     padding: 20px 0;
@@ -107,11 +110,14 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
-.contact{
-    display:grid;
+.contact {
+    display: grid;
     grid-template-columns: 1fr 0.8fr;
-    grid-gap:40px;
+    grid-gap: 40px;
     padding: 20px 20px;
+    max-width: 1500px;
+    margin-left:auto;
+    margin-right:auto;  
 }
 .contact .contact-container span{
     color:#005959;

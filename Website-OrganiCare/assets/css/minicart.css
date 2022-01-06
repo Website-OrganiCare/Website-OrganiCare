@@ -169,7 +169,9 @@
     margin-bottom: 0;
     padding: 13px 0px 11px;
 }
-
+.cart_button a i{
+    color:white;
+}
     .cart_button a:hover {
         background: #48A9A6;
         border-color: #48A9A6;

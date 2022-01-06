@@ -18,6 +18,7 @@
         align-items: center;
         vertical-align: top;
         justify-content: space-between;
+        align-items:flex-start;
     }
 
     .containers .main-title {

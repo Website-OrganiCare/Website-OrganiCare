@@ -297,6 +297,9 @@ img {
     border-radius:5px;
 
 }
+.cart-item-del-btn i{
+    color:#fff;
+}
 .cart-item img{
     width:80px;
     margin-left:auto;

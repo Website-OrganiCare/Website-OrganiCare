@@ -93,7 +93,7 @@ updateCartInfo();
 //        //INSERT CODE HERE
 //    }
 //}
-    //purchase Product
+//purchase Product
         function purchaseProduct(e) {
             if (e.target.classList.contains('add-to-cart-btn')) {
                 let product = e.target.parentElement.parentElement.parentElement.parentElement.parentElement;

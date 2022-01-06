@@ -1053,7 +1053,10 @@ h1,h2,h3,h4,h5,h6 {
     border-radius:5px;
 
 }
-.cart-item img{
+.cart-item-del-btn i{
+    color:#fff;
+}
+    .cart-item img{
     width:80px;
     margin-left:auto;
     margin-right:auto;
