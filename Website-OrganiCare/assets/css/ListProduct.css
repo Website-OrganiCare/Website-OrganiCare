@@ -1,13 +1,10 @@
 ﻿html {
     margin: 0;
-    color: var(--main-color);
     box-sizing: border-box;
 }
 
 :root {
-    --main-color: #727272;
-    --primary-color: #003349;
-    --link-color: #0080ff;
+
 }
 /*----------------Filter-------------------*/
 .category-filter {

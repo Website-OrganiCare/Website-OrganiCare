@@ -98,7 +98,6 @@
     <Content Include="assets\css\owl.carousel.min.css" />
     <Content Include="assets\css\owl.theme.default.min.css" />
     <Content Include="assets\css\popup.css" />
-    <Content Include="assets\css\profile.css" />
     <Content Include="assets\css\slick.css" />
     <Content Include="assets\css\style.css" />
     <Content Include="assets\Image\Admin\filter.png" />
