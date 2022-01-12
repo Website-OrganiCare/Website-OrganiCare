@@ -13,7 +13,8 @@
       "Dactinh": "Đặc điểm của cây chanh không hạt là cây không gai, thích hợp và sinh trưởng tốt với khí hậu Việt Nam Hoa chanh không hạt mọc thành chùm, cánh hoa có màu trắng, dạng quả hơi dài, có vị chua và thơm.",
 
       "Chinhsach": "Đổi trả trong 12h"
-    }
+    },
+    "link":  "ProductDetails.html"
   },
   {
     "id": 2,
@@ -97,39 +98,7 @@
       "Chinhsach": "Đổi trả trong 12h"
     }
   },
-  {
-    "id": 7,
-    "products_model": "SP9",
-    "products_name": "Cà chua hữu cơ",
-    "categories_name": "RauCu",
-    "categories_type": "RauCu",
-    "description": "Chua ngọt hòa quyện",
-    "price": 100000,
-    "image": "assets/Image/product/product7.jpg",
-    "detail": {
-      "Tinhnang": "Cà chua hướng hữu cơ là giống cà chua cao cấp khác hẳn cà chua thông thường ở điểm quả cà chua to, chắc, ít hạt, cơm dày.  Cà chua cung cấp một lượng Vitamin A, C, K tuyệt vời. Những chất này có tác dụng giúp tăng cường thị lực, phòng bệnh quáng gà. Ngoài ra, cà chua hữu cơ còn là loại thực phẩm giúp kiểm soát lượng đường trong máu, có canxi hỗ trợ cho xương chắc khỏe.",
-      "Dactinh": "Cà chua hướng hữu cơ là giống cà chua cao cấp khác hẳn cà chua thông thường ở điểm quả cà chua to, chắc, ít hạt, cơm dày.  Cà chua cung cấp một lượng Vitamin A, C, K tuyệt vời. Những chất này có tác dụng giúp tăng cường thị lực, phòng bệnh quáng gà. Ngoài ra, cà chua hữu cơ còn là loại thực phẩm giúp kiểm soát lượng đường trong máu, có canxi hỗ trợ cho xương chắc khỏe.",
-
-      "Chinhsach": "Đổi trả trong 12h"
-    }
-  },
-  {
-    "id": 8,
-    "products_model": "SP10",
-    "products_name": "Cải thìa hữu cơ",
-    "categories_name": "RauCu",
-    "categories_type": "RauCu",
-    "description": "Bổ sung vitamin",
-    "price": 150000,
-    "image": "assets/Image/product/product8.jpg",
-    "detail": {
-      "Tinhnang": "Một chén cải thìa sống (tương đương khoảng 170g) chứa 9 calo, 1g protein, 1,5g carbohydrate, 0,7g chất xơ, không có cholesterol và chỉ 0,1g chất béo không có khả năng sản sinh cholesterol. Với hàm lượng dinh dưỡng lành mạnh như trên, cải thìa không chỉ ngon mà còn rất có lợi cho sức khỏe.",
-      "Dactinh:": "Cải thìa rất giàu vitamin C. Hoạt động sản sinh collagen - hệ thống nâng đỡ cấu trúc da - luôn phải được hỗ trợ từ vitamin C. Ngoài ra, loại vitamin thiết yếu này còn là một chất chống oxy hóa mạnh mẽ giúp ngăn ngừa những hư tổn trên da do tia tử ngoại, không khí ô nhiễm và khói thuốc gây ra. Vitamin C còn hỗ trợ cho collagen phát huy sức mạnh “chăm sóc sắc đẹp” cho da bằng cách đánh bay những nếp nhăn do lão hóa, cải thiện cấu trúc của toàn bộ bề mặt da.",
-
-      "Chinhsach": "Đổi trả trong 12h"
-    }
-  },
-  {
+   {
     "id": 9,
     "products_model": "SP11",
     "products_name": "Đậu hà lan hữu cơ",
@@ -145,36 +114,7 @@
       "Chinhsach": "Đổi trả trong 12h"
     }
   },
-  {
-    "id": 10,
-    "products_model": "SP12",
-    "products_name": "Cà dài hữu cơ",
-    "categories_name": "RauCu",
-    "categories_type": "RauCuFoam",
-    "description": "Hương vị thu hút",
-    "price": 60000,
-    "image": "assets/Image/product/product10.jpg",
-    "detail": {
-      "Tinhnang": "Chế biến được nhiều món như : Cà nướng mỡ hành, cà xào thịt băm, cà xào tóp mỡ, cà xào cá, cà om thịt ba chỉ đậu phụ, cà xào thịt hộp, nướng lẩu luộc hay nấu canh đều ngon !",
-      "Dactinh": "Cà xanh dài cao sản là Cây lâu năm ,thu hoạch bốn mùa. Sinh trưởng mạnh, kháng bệnh tốt, trồng được quanh năm. Trái thuôn dài 20 – 25cm, màu xanh mỡ rất đẹp, thịt chắc , vỏ mỏng , mềm không dai, ăn rất ngon",
-      "Chinhsach": "Đổi trả trong 12h"
-    }
-  },
-  {
-    "id": 11,
-    "products_model": "SP13",
-    "products_name": "Lê Ki Ma hữu cơ",
-    "categories_name": "RauCu",
-    "categories_type": "RauCu",
-    "description": "Ngọt bùi hương lan tỏa",
-    "price": 150000,
-    "image": "assets/Image/product/product11.jpg",
-    "detail": {
-      "Tinhnang": "Được dùng để làm sinh tố chung với quả bơ và làm kem.",
-      "Dactinh": "Có hàm lượng cao vitamin B3, beta-caroten, sắt và chất xơ, tăng hồng cầu. giảm cholesterol và triglyceride, tăng lực tốt,v.v...[1] là những thành phần chống oxy hóa cực mạnh cho da và cần thiết cho hoạt động của cơ thể. Lê ki ma còn giúp tăng tỷ lệ hồng cầu trong máu, kích thích hoạt động của hệ thần kinh, chống trầm cảm, giảm cholesterol và triglyceride trong máu, ngăn ngừa các bệnh tim mạch và béo phì, hạn chế các cơn nhồi máu cơ tim, tăng hiệu quả của hệ miễn nhiễm và tăng lực rất tốt.",
-      "Chinhsach": "Đổi trả trong 12h"
-    }
-  },
+  
   {
     "id": 12,
     "products_model": "SP14",

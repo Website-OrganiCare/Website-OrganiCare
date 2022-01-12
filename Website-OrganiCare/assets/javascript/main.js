@@ -87,7 +87,7 @@ function myFunction() {
 
 //------------------------------
 const cartContainer = document.querySelector('.cart-container');
-//const productList = document.querySelector('.product-list');
+const productList = document.querySelector('.product-list');
 const cartList = document.querySelector('.cart-list');
 const cartTotalValue = document.getElementById('cart-total-value');
 const cartCountInfo = document.getElementById('cart-count-info');
@@ -117,11 +117,11 @@ function ToggleCategory2() {
 eventListeners();
 function eventListeners() {
     window.addEventListener('DOMContentLoaded', () => {
-        //loadJSON();
+        loadJSON();
         loadCart();
     });
     //show-hide cart container
-    //productList.addEventListener('click', purchaseProduct);
+    productList.addEventListener('click', purchaseProduct);
     cartList.addEventListener('click', deleteProduct);
 }
 //update cart info
@@ -137,20 +137,26 @@ function loadJSON() {
         let html = '';
         data.forEach(product => {
             html += `
-                           <div class="item-product col-lg-4 col-md-6 col-xs-12">
-                                <a href="01-detail.html?id={{product.id}}" title="{{product.products_name}}" class="product-thumb">
+                          <div class="item-product col-lg-4 col-md-6 col-xs-12">
+                                <a href="${product.link}" title="${product.products_name}" class="product-thumb">
                                      <img src="${product.image}" class="item-thumb">
                                  </a>
                                  <div class="action_links">
-                                      <button type="button">
-                                            <i class="add-to-cart-btn fas fa-shopping-cart"></i>
-                                      </button>
-                                      <button type="button">
-                                                <i class="wishlist fas fa-heart"></i
-                                      </button>
+                                    <ul>
+                                        <li>
+                                              <a>
+                                                    <i class="add-to-cart-btn fas fa-shopping-cart"></i>
+                                              </a>
+                                        </li>
+                                        <li>
+                                          <a href="#">
+                                                    <i class="wishlist fas fa-heart"></i
+                                          </a>
+                                        </li>
+                                    </ul>
                                  </div>
                                  <div class="item-info">
-                                    <a href="01-detail.html?id=${product.id}" title="${product.products_name}" class="item-info-name block-ellipsis ">${product.products_name}</a>
+                                    <a href="ProductDet" title="${product.products_name}" class="item-info-name block-ellipsis ">${product.products_name}</a>
                                     <p class="item-info-desc block-ellipsis">${product.description}</p>
                                     <p class="item-info-price">${product.price} VNĐ</p>
                                 </div>
@@ -170,7 +176,7 @@ function loadJSON() {
 //purchase Product
 function purchaseProduct(e) {
     if (e.target.classList.contains('add-to-cart-btn')) {
-        let product = e.target.parentElement.parentElement.parentElement;
+        let product = e.target.parentElement.parentElement.parentElement.parentElement.parentElement;
         getProductInfor(product);
     }
 }
@@ -178,10 +184,10 @@ function purchaseProduct(e) {
 function getProductInfor(product) {
     let productInfo = {
         id: cartItemID,
-        image: product.querySelector('.product-content-items img').src,
-        name: product.querySelector('.product-content-items-text h5').textContent,
+        image: product.querySelector('.product-thumb img').src,
+        name: product.querySelector('.item-info-name').textContent,
         category: product.querySelector('.item-info-desc').textContent,
-        price: product.querySelector('.product-content-items-text p').textContent
+        price: product.querySelector('.item-info-price').textContent
     }
     cartItemID++;
     addToCartList(productInfo);

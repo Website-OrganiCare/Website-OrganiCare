@@ -90,7 +90,6 @@
     <Content Include="assets\css\Homepage.css" />
     <Content Include="assets\css\icons.min.css" />
     <Content Include="assets\css\homepage.css" />
-    <Content Include="assets\css\lightslider.css" />
     <Content Include="assets\css\linearicons.css" />
     <Content Include="assets\css\ListProduct.css" />
     <Content Include="assets\css\Login_Signup_ForgotPassword.css" />
@@ -144,7 +143,6 @@
     <Content Include="assets\Image\Checkout\plus %281%29.png" />
     <Content Include="assets\Image\Checkout\trash.png" />
     <Content Include="assets\Image\comment.png.jpg" />
-    <Content Include="assets\Image\controls.png" />
     <Content Include="assets\Image\Error-01.png" />
     <Content Include="assets\Image\facebook.png" />
     <Content Include="assets\Image\favicon.png" />
@@ -182,7 +180,6 @@
     <Content Include="assets\javascript\Admin-Order.js" />
     <Content Include="assets\javascript\bootstrap.min.js" />
     <Content Include="assets\javascript\jQuery360.js" />
-    <Content Include="assets\javascript\lightslider.js" />
     <Content Include="assets\javascript\main.js" />
     <Content Include="assets\javascript\modernizr-3.7.1.min.js" />
     <Content Include="assets\javascript\owl.carousel.min.js" />
