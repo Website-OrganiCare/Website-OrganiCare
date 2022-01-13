@@ -76,7 +76,7 @@ updateCartInfo();
                                     </ul>
                                  </div>
                                  <div class="item-info">
-                                    <a href="ProductDet" title="${product.products_name}" class="item-info-name block-ellipsis ">${product.products_name}</a>
+                                    <a href="${product.link}" title="${product.products_name}" class="item-info-name block-ellipsis ">${product.products_name}</a>
                                     <p class="item-info-desc block-ellipsis">${product.description}</p>
                                     <p class="item-info-price">${product.price} VNĐ</p>
                                 </div>

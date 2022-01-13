@@ -1213,6 +1213,13 @@ input[type="radio"] {
         width: 100%;
     }
 
+    #two:checked ~ .product-items .product-content {
+        margin-left: 20px;
+    }
+
+    #three:checked ~ .product-items .product-content {
+        margin-left: 20px;
+    }
     .product-section .container .product-items .product-content {
         max-width: 992px;
         width: 100%;
@@ -1238,11 +1245,16 @@ input[type="radio"] {
         flex-wrap: wrap;
         width: 100%;
     }
-
     .product-section .container .product-items .product-content {
         max-width: 768px;
     }
+    #two:checked ~ .product-items .product-content {
+        margin-left: 20px;
+    }
 
+    #three:checked ~ .product-items .product-content {
+        margin-left: 20px;
+    }
     .product-items .product-content {
         width: 100%;
         display: block;
