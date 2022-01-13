@@ -1,0 +1,668 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>OrganiCare - Chi tiết sản phẩm</title>
+    <link rel="icon" type="image/x-icon" href="assets/Image/favicon.png">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/homepage.css" />
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/minicart.css">
+    <link rel="stylesheet" href="assets/css/ListProduct.css" />
+
+    <!--rate-bar-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/1147679ae7.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/javascript/jQuery360.js"></script>
+
+    <style>
+        .checked {
+            color: orange;
+        }
+
+        select, input[type=number] {
+            width: 130px;
+            border: 1px solid #ebebeb;
+            background: none;
+            height: 42px;
+            padding: 0 12px;
+            border-radius: 5px;
+            margin-left: 15px;
+        }
+
+        .product_variant button {
+            border: 0;
+            font-size: 16px;
+            background: #005959;
+            height: 42px;
+            line-height: 42px;
+            text-transform: capitalize;
+            min-width: 225px;
+            margin-inline-end: 12px;
+            margin-top: 16px;
+        }
+
+            .product_variant button:hover {
+                background: #48a9a6;
+            }
+
+        .product_d_action {
+            margin-top: 14px;
+            margin-bottom: 14px;
+        }
+
+            .product_d_action a {
+                font-size: 14px;
+                line-height: 28px;
+            }
+
+                .product_d_action a:hover {
+                    color: #005959;
+                }
+
+        .social a {
+            margin-inline-end: 10px;
+        }
+
+            .social a:hover {
+                opacity: 0.8;
+            }
+
+        img {
+            vertical-align: middle;
+        }
+
+        .product-details-tab {
+            position: relative;
+        }
+
+        .product_slides {
+            display: none;
+        }
+
+        .cursor {
+            cursor: pointer;
+        }
+
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 40%;
+            width: auto;
+            padding: 16px;
+            margin-top: -50px;
+            color: #005959;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            -webkit-user-select: none;
+        }
+
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+            .prev:hover,
+            .next:hover {
+                background-color: grey;
+                color: white;
+            }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .column {
+            float: left;
+            width: 33.33%;
+        }
+
+        .demo {
+            opacity: 0.6;
+        }
+
+            .active,
+            .demo:hover {
+                opacity: 1;
+            }
+
+        .tab {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+        }
+
+            .tab button {
+                background-color: inherit;
+                float: left;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                padding: 14px 16px;
+                transition: 0.3s;
+                font-size: 17px;
+            }
+
+                .tab button:hover {
+                    font-weight: bolder;
+                }
+
+
+                .tab button.active {
+                    font-weight: bolder;
+                }
+
+        .tabcontent {
+            display: none;
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+            border-top: none;
+        }
+
+        .slide-img {
+            width: 200px;
+            height: 200px;
+            position: relative;
+        }
+
+            .slide-img img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                box-sizing: border-box;
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- mobile menu -->
+        <div class="mobile-menu bg-second header" id="mobile-header">
+            <div style="background-color:white;border-radius:5px;padding:5px">
+                <a href="index.html" class="logo">
+                    <img src="assets/Image/logo.png" style="width:120px" />
+                </a>
+            </div>
+            <span class="mb-menu-toggle" id="mb-menu-toggle">
+                <i class='fas fa-bars'></i>
+            </span>
+        </div>
+        <!-- end mobile menu -->
+        <!-- main header -->
+        <div class="header-wrapper" id="header-wrapper">
+            <span class="mb-menu-toggle mb-menu-close" id="mb-menu-close">
+                <i class='fas fa-times'></i>
+            </span>
+            <!-- mid header -->
+            <div class="bg-main">
+                <div class="mid-header container">
+                    <div style="background-color:white;border-radius:5px;padding:5px">
+                        <a href="index.html" class="logo">
+                            <img src="assets/Image/logo.png" style="width:120px" />
+                        </a>
+                    </div>
+                    <div class="search">
+                        <input type="text" placeholder="Search">
+                        <i class='fas fa-search'></i>
+                    </div>
+                    <div class="btn">
+                        <a href="Login.html">Đăng Nhập</a>
+                    </div>
+                    <ul class="user-menu">
+                        <li><a href="Wishlist.html"><i class='fas fa-heart'></i></a></li>
+                        <li><a href="MyAccount.html"><i class="far fa-user"></i></a></li>
+                        <li>
+                            <a href="#" class="cart-btn" style="position:relative">
+                                <i class='fas fa-shopping-cart'></i>
+                                <span id="cart-count-info"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- end mid header -->
+            <!-- bottom header -->
+            <div class="bg-second header" id="myHeader">
+                <div class="bottom-header container">
+                    <ul class="main-menu">
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <!-- mega menu -->
+                        <li class="mega-dropdown">
+                            <a href="./products.html">Danh mục<i class='fas fa-angle-down' style="color:white"></i></a>
+                            <div class="mega-content">
+                                <div class="row">
+                                    <div class="col-3 col-md-12">
+                                        <div class="box">
+                                            <ul>
+                                                <li><a href="ProductList.html">Rau củ</a></li>
+                                                <li><a href="ProductList.html">Trái cây</a></li>
+                                                <li><a href="ProductList.html">Thịt và thủy hải sản</a></li>
+                                                <li><a href="ProductList.html">Đồ uống</a></li>
+                                                <li><a href="ProductList.html">Ngũ cốc và hạt</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- end mega menu -->
+                        <li><a href="SanPhamKhuyenMai.html">khuyến mãi</a></li>
+                        <li><a href="Blog.html">blog</a></li>
+                        <li><a href="Reviews.html">đánh giá</a></li>
+                        <li><a href="AboutUS.html">về chúng tôi</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- end bottom header -->
+        </div>
+        <!-- end main header -->
+    </header>
+    <!-- end header -->
+    <!---------Mini cart------------>
+    <div class="minicart" style="z-index:1000">
+        <div class="cart_gallery">
+            <div class="cart_close">
+                <div class="cart_info">
+                    <div class="cart_text">
+                        <h2>Giỏ hàng</h2>
+                    </div>
+                </div>
+                <div class="cart_remove">
+                    <a href="#"><i class="fas fa-times-circle"></i></a>
+                </div>
+            </div>
+            <div class="cart-list">
+
+            </div>
+        </div>
+        <div class="mini_cart_table">
+            <div class="cart_table_border">
+                <div class="cart_total">
+                    <span>Tổng cộng:</span>
+                    <span class="price" id="cart-total-value"></span>
+                </div>
+            </div>
+        </div>
+        <div class="mini_cart_footer">
+            <div class="cart_button">
+                <a href="Cart_Checkout.html"><i class="fa fa-shopping-cart"></i>&nbsp;Xem giỏ hàng</a>
+            </div>
+            <div class="cart_button">
+                <a href="Cart_Checkout.html"><i class="fa fa-sign-in"></i>&nbsp;Đặt hàng ngay</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="main_content">
+        <div class="breadcrumbs_area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="breadcrumb_content">
+                            <ul>
+                                <li><a href="Homepage.html">Trang chủ</a></li>
+                                <li><a href="ProductList.html">Rau củ</a></li>
+                                <li>Chi tiết sản phẩm</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product_details mt-70 mb-70">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="product-details-tab">
+                            <div class="product_slides">
+                                <img src="assets/Image/product/BapCai1.png" style="width:100%">
+                            </div>
+
+                            <div class="product_slides">
+                                <img src="assets/Image/product/BapCai2.png" style="width:100%">
+                            </div>
+
+                            <div class="product_slides">
+                                <img src="assets/Image/product/product6.jpg" style="width:100%">
+                            </div>
+
+                            <a class="prev" onclick="plusSlides(-1)">❮</a>
+                            <a class="next" onclick="plusSlides(1)">❯</a>
+
+                            <div class="row" style="margin-top: 20px">
+                                <div class="column">
+                                    <img class="demo cursor" src="assets/Image/product/BapCai1.png" style="width:100%" onclick="currentSlide(1)">
+                                </div>
+                                <div class="column">
+                                    <img class="demo cursor" src="assets/Image/product/BapCai2.png" style="width:100%" onclick="currentSlide(2)">
+                                </div>
+                                <div class="column">
+                                    <img class="demo cursor" src="assets/Image/product/product6.jpg" style="width:100%" onclick="currentSlide(3)">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6">
+                        <div class="product_d_right">
+                            <form>
+                                <h3>Bắp cải xanh hữu cơ</h3>
+                                <div class="product_rating">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span>&ensp;(Đánh giá từ khách hàng)</span>
+                                </div>
+                                <div class="price_box">
+                                    <span class="current_price">89.000đ</span>
+                                    <span class="old_price">120.000đ</span>
+                                </div>
+                                <div class="product_variant">
+                                    <label for="packing">Quy cách</label>
+                                    <select id="packing" name="packing">
+                                        <option value="kg">Kg</option>
+                                        <option value="bag">Túi</option>
+                                        <option value="box">Thùng</option>
+                                    </select>
+                                    &emsp;&emsp;
+                                    <label>Số lượng</label>
+                                    <input min="1" max="100" value="1" type="number">
+                                </div>
+                                <div class="product_variant">
+                                    <button class="button" type="submit">Thêm vào giỏ hàng</button>
+                                    <button class="button" type="submit">Mua ngay</button>
+                                </div>
+                                <div class=" product_d_action">
+                                    <a href="#" title="Yêu thích">+ Thêm vào danh sách yêu thích</a>
+                                </div>
+                            </form>
+                            <div class="social">
+                                <p><b>Chia sẻ qua</b></p>
+                                <a href="#" title="Facebook"><img style="width:30px; height:30px" src="assets/Image/icon/facebook.png" /></a>
+                                <a href="#" title="Zalo"><img style="width:30px; height:30px" src="assets/Image/icon/zalo.png" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product_d_info mb-65">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="tab">
+                            <button class="tablinks" onclick="openTab(event, 'ProductInfo')">Thông tin sản phẩm</button>
+                            <button class="tablinks" onclick="openTab(event, 'Review')">Đánh giá</button>
+                        </div>
+
+                        <div id="ProductInfo" class="tabcontent" style="display:block">
+                            <span>
+                                - Bắp cải chứa nhiều nước, vitamin, chất xơ và khoáng chất.<br />
+                                - Bắp cải chứa hàm lượng chất chống oxy hóa cao như lutein, zaexathin và vitamin C giúp cơ thể chống lại các gốc tự do.<br />
+                                - Hợp chất lưu huỳnh trong bắp cải giúp cơ thể chống lại vi khuẩn, giảm lượng cholesterol xấu và chống ung thư hiệu quả.<br />
+                                - Bắp cải có vị ngọt dịu, lá giòn; khi nấu ra nhiều nước ngọt.<br /><br />
+                                HƯỚNG DẪN SỬ DỤNG:<br />
+                                - Bắp cải khi dùng cần cắt bỏ gốc, tách từng lá hoặc bào mỏng.<br />
+                                - Bắp cải xanh thường dùng chế biến món luộc, món xào, làm salad hoặc làm gỏi.
+                            </span>
+                        </div>
+
+                        <div id="Review" class="tabcontent">
+                            <div class="reviews_comment_box">
+                                <div class="comment_thmb">
+                                    <img src="assets/Image/icon/comment.jpg" alt="">
+                                </div>
+                                <div class="comment_text">
+                                    <div class="reviews_meta">
+                                        <div class="star_rating">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                        </div>
+                                        <p><strong>NGƯỜI BÍ ẨN </strong>- 17/12/2021</p>
+                                        <span>Thực phẩm ngon, chất lượng!!!</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="comment_title">
+                                <p><strong>THÊM NHẬN XÉT MỚI</strong></p>
+                                <span>Đánh giá của bạn &ensp;</span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+                            <div class="product_review_form">
+                                <form action="#">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <label for="review_comment">Nhận xét của bạn</label>
+                                            <textarea name="comment" id="review_comment"></textarea>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6">
+                                            <label for="author">Tên </label>
+                                            <input id="author" type="text">
+
+                                        </div>
+                                        <div class="col-lg-6 col-md-6">
+                                            <label for="email">Email </label>
+                                            <input id="email" type="text">
+                                        </div>
+                                    </div>
+                                    <button type="submit">GỬI</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <section class="product-section">
+            <div class="container">
+                <h4 class="title-h4">Sản phẩm bán chạy</h4>
+                <input type="radio" name="dot" id="one" />
+                <input type="radio" name="dot" id="two" />
+                <input type="radio" name="dot" id="three" />
+                <div class="product-items">
+                    <div class="product-content">
+                        <div class="product-list">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="button-control">
+                    <label for="one" class="one active"></label>
+                    <label for="two" class="two"></label>
+                    <label for="three" class="three"></label>
+                </div>
+            </div>
+
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <a href="index.html">
+                            <img src="assets/Image/logo.png" style="max-width:150px;background-color:white;border-radius:5px;padding:5px" />
+                        </a>
+                        <h4>Liên hệ với chúng tôi</h4>
+                        <ul>
+                            <li><a><i style="font-weight: 600; color: white">OrganiCare - Just for the taste of care</i></a></li>
+                            <li><a>Inbox: m.me/msorganicare</a></li>
+                            <li><a>Điện thoại: 0938 283 999 (Zalo)</a></li>
+                        </ul>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/MsOrganiCare"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+
+                    </div>
+                    <div class="footer-col">
+                        <ul>
+                            <li><a href="AboutUS.html">Về chúng tôi</a></li>
+                            <li><a href="#">Thực phẩm Organic</a></li>
+                            <li><a href="#">Chứng nhận</a></li>
+                            <li><a href="#">Cửa hàng bán lẻ</a></li>
+                            <li><a href="#">Khám phá nông trại</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <ul>
+                            <li><a href="ProductList.html">Xem toàn bộ sản phẩm</a></li>
+                            <li><a href="Login.html">Đăng nhập</a></li>
+                            <li><a href="Register.html">Đăng ký</a></li>
+                            <li><a href="Cart_Checkout.html">Xem giỏ hàng</a></li>
+                            <li><a href="#">Hỗ trợ khách hàng</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <ul>
+                            <li><a href="FAQ.html">FAQs</a></li>
+                            <li><a href="404Error.html">404 Error</a></li>
+                            <li><a href="#">Chính sách huỷ đơn</a></li>
+                            <li><a href="#">Chính sách hoàn trả</a></li>
+                            <li><a href="#">Chính sách bảo mật</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="assets/javascript/listproduct.js"></script>
+    <script src="assets/javascript/owl.carousel.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("product_slides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 4
+                }
+            }
+        })
+        $(document).ready(function () {
+            $('#autoWidth').lightSlider({
+                autoWidth: true,
+                loop: true,
+                onSliderLoad: function () {
+                    $('#autoWidth').removeClass('cS-hidden');
+                }
+            });
+        });
+        const cart_close = document.querySelector(".fa-times-circle")
+        const cart_close2 = document.querySelector(".main_content")
+        const cart_open = document.querySelector(".fa-shopping-cart")
+        cart_open.addEventListener("click", function () {
+            document.querySelector(".minicart").style.right = "0"
+        })
+        cart_close.addEventListener("click", function () {
+            document.querySelector(".minicart").style.right = "-100%"
+        })
+        cart_close2.addEventListener("click", function () {
+            document.querySelector(".minicart").style.right = "-100%"
+        })
+
+
+        document.querySelectorAll('.dropdown > a').forEach(e => {
+            e.addEventListener('click', (event) => event.preventDefault())
+        })
+
+        document.querySelectorAll('.mega-dropdown > a').forEach(e => {
+            e.addEventListener('click', (event) => event.preventDefault())
+        })
+
+        document.querySelector('#mb-menu-toggle').addEventListener('click', () => document.querySelector('#header-wrapper').classList.add('active'))
+
+        document.querySelector('#mb-menu-close').addEventListener('click', () => document.querySelector('#header-wrapper').classList.remove('active'))
+        window.onscroll = function () { myFunction() };
+
+        var header = document.getElementById("myHeader");
+        var mHeader = document.getElementById("mobile-header");
+        var sticky = header.offsetTop;
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+            if (window.pageYOffset > sticky) {
+                mHeader.classList.add("sticky");
+            } else {
+                mHeader.classList.remove("sticky");
+            }
+        }
+    </script>
+
+</body>
+</html>
