@@ -58,7 +58,7 @@ updateCartInfo();
             data.forEach(product => {
                 html += `
                            <div class="item-product col-lg-4 col-md-6 col-xs-12">
-                                <a href="ProductDetails.html" title="${product.products_name}" class="product-thumb">
+                                <a href="${product.link}" title="${product.products_name}" class="product-thumb">
                                      <img src="${product.image}" class="item-thumb">
                                  </a>
                                  <div class="action_links">
@@ -76,7 +76,7 @@ updateCartInfo();
                                     </ul>
                                  </div>
                                  <div class="item-info">
-                                    <a href="ProductDet" title="${product.products_name}" class="item-info-name block-ellipsis ">${product.products_name}</a>
+                                    <a href="${product.link}" title="${product.products_name}" class="item-info-name block-ellipsis ">${product.products_name}</a>
                                     <p class="item-info-desc block-ellipsis">${product.description}</p>
                                     <p class="item-info-price">${product.price} VNĐ</p>
                                 </div>

@@ -13,7 +13,8 @@
       "Dactinh": "Đặc điểm của cây chanh không hạt là cây không gai, thích hợp và sinh trưởng tốt với khí hậu Việt Nam Hoa chanh không hạt mọc thành chùm, cánh hoa có màu trắng, dạng quả hơi dài, có vị chua và thơm.",
 
       "Chinhsach": "Đổi trả trong 12h"
-    }
+    },
+    "link":  "PD_ChanhKhongHat.html"
   },
   {
     "id": 2,
@@ -30,7 +31,8 @@
       "Dactinh": "Cung cấp chất xơ, làm đẹp da",
 
       "Chinhsach": "Đổi trả trong 12h"
-    }
+    },
+    "link": "PD_RauXaLachHuuCo.html"
   },
   {
     "id": 3,
@@ -47,7 +49,8 @@
 
       "Chinhsach": "Đổi trả trong 12h"
 
-    }
+    },
+    "link": "PD_ChanhDayHuuCo.html"
   },
   {
     "id": 4,
@@ -63,7 +66,8 @@
       "Dactinh": "Cây bí đao thuộc họ bầu bí nó thích hợp với khí hậu nóng ẩm và có tốc độ phát triển khá nhanh dễ dàng thích ứng với nhiều điều kiện khí hậu thời tiết khác nhau đặc biệt là sức đề kháng khả năng chống chịu sâu bệnh cực tốt. Bởi thế mà khi trồng loại cây này ta không cần sử dụng quá nhiều thuốc bảo vệ thực phẩm chính vì thế mà loại quả này được cho là khá an toàn, một loại thực phẩm sạch.",
 
       "Chinhsach": "Đổi trả trong 12h"
-    }
+    },
+    "link": "PD_BiDaoHuuCo.html"
   },
   {
     "id": 5,
@@ -79,7 +83,8 @@
       "Dactinh": "Bắp cải luộc thơm ngọt vị gừng, bắp cải xào cà chua thanh mát, dưa bắp cải muối giòn rụm, chấm cùng nước mắm cay thật ngon miệng. Cầu kỳ hơn, nhiều người còn làm gỏi bắp cải, bắp cải cuốn thịt bằm nấu canh. Nhiều người mới chỉ biết bắp cải là loại rau lành, mát, dễ ăn mà chưa biết hết những giá trị y học quý giá của nó.",
 
       "Chinhsach": "Đổi trả trong 12h"
-    }
+    },
+    "link": "PD_SupLoHuuCo.html"
   },
   {
     "id": 6,
@@ -95,42 +100,11 @@
       "Dactinh": "Bắp cải luộc thơm ngọt vị gừng, bắp cải xào cà chua thanh mát, dưa bắp cải muối giòn rụm, chấm cùng nước mắm cay thật ngon miệng. Cầu kỳ hơn, nhiều người còn làm gỏi bắp cải, bắp cải cuốn thịt bằm nấu canh. Nhiều người mới chỉ biết bắp cải là loại rau lành, mát, dễ ăn mà chưa biết hết những giá trị y học quý giá của nó.",
 
       "Chinhsach": "Đổi trả trong 12h"
-    }
+    },
+    "link": "PD_BapCaiXanhHuuCo.html"
   },
   {
     "id": 7,
-    "products_model": "SP9",
-    "products_name": "Cà chua hữu cơ",
-    "categories_name": "RauCu",
-    "categories_type": "RauCu",
-    "description": "Chua ngọt hòa quyện",
-    "price": 100000,
-    "image": "assets/Image/product/product7.jpg",
-    "detail": {
-      "Tinhnang": "Cà chua hướng hữu cơ là giống cà chua cao cấp khác hẳn cà chua thông thường ở điểm quả cà chua to, chắc, ít hạt, cơm dày.  Cà chua cung cấp một lượng Vitamin A, C, K tuyệt vời. Những chất này có tác dụng giúp tăng cường thị lực, phòng bệnh quáng gà. Ngoài ra, cà chua hữu cơ còn là loại thực phẩm giúp kiểm soát lượng đường trong máu, có canxi hỗ trợ cho xương chắc khỏe.",
-      "Dactinh": "Cà chua hướng hữu cơ là giống cà chua cao cấp khác hẳn cà chua thông thường ở điểm quả cà chua to, chắc, ít hạt, cơm dày.  Cà chua cung cấp một lượng Vitamin A, C, K tuyệt vời. Những chất này có tác dụng giúp tăng cường thị lực, phòng bệnh quáng gà. Ngoài ra, cà chua hữu cơ còn là loại thực phẩm giúp kiểm soát lượng đường trong máu, có canxi hỗ trợ cho xương chắc khỏe.",
-
-      "Chinhsach": "Đổi trả trong 12h"
-    }
-  },
-  {
-    "id": 8,
-    "products_model": "SP10",
-    "products_name": "Cải thìa hữu cơ",
-    "categories_name": "RauCu",
-    "categories_type": "RauCu",
-    "description": "Bổ sung vitamin",
-    "price": 150000,
-    "image": "assets/Image/product/product8.jpg",
-    "detail": {
-      "Tinhnang": "Một chén cải thìa sống (tương đương khoảng 170g) chứa 9 calo, 1g protein, 1,5g carbohydrate, 0,7g chất xơ, không có cholesterol và chỉ 0,1g chất béo không có khả năng sản sinh cholesterol. Với hàm lượng dinh dưỡng lành mạnh như trên, cải thìa không chỉ ngon mà còn rất có lợi cho sức khỏe.",
-      "Dactinh:": "Cải thìa rất giàu vitamin C. Hoạt động sản sinh collagen - hệ thống nâng đỡ cấu trúc da - luôn phải được hỗ trợ từ vitamin C. Ngoài ra, loại vitamin thiết yếu này còn là một chất chống oxy hóa mạnh mẽ giúp ngăn ngừa những hư tổn trên da do tia tử ngoại, không khí ô nhiễm và khói thuốc gây ra. Vitamin C còn hỗ trợ cho collagen phát huy sức mạnh “chăm sóc sắc đẹp” cho da bằng cách đánh bay những nếp nhăn do lão hóa, cải thiện cấu trúc của toàn bộ bề mặt da.",
-
-      "Chinhsach": "Đổi trả trong 12h"
-    }
-  },
-  {
-    "id": 9,
     "products_model": "SP11",
     "products_name": "Đậu hà lan hữu cơ",
     "categories_name": "RauCu",
@@ -143,66 +117,40 @@
       "Dactinh": "Hạt đậu Hà Lan được dùng làm rau ăn ở các dạng tươi, đông lạnh, đóng hộp, hoặc khô. Trong ẩm thực Việt Nam, quả đậu Hà Lan non còn được dùng nguyên quả cho các món xào hoặc canh.",
 
       "Chinhsach": "Đổi trả trong 12h"
-    }
+    },
+    "link": "PD_DauHaLanHuuCo.html"
   },
+
   {
-    "id": 10,
-    "products_model": "SP12",
-    "products_name": "Cà dài hữu cơ",
-    "categories_name": "RauCu",
-    "categories_type": "RauCuFoam",
-    "description": "Hương vị thu hút",
-    "price": 60000,
-    "image": "assets/Image/product/product10.jpg",
-    "detail": {
-      "Tinhnang": "Chế biến được nhiều món như : Cà nướng mỡ hành, cà xào thịt băm, cà xào tóp mỡ, cà xào cá, cà om thịt ba chỉ đậu phụ, cà xào thịt hộp, nướng lẩu luộc hay nấu canh đều ngon !",
-      "Dactinh": "Cà xanh dài cao sản là Cây lâu năm ,thu hoạch bốn mùa. Sinh trưởng mạnh, kháng bệnh tốt, trồng được quanh năm. Trái thuôn dài 20 – 25cm, màu xanh mỡ rất đẹp, thịt chắc , vỏ mỏng , mềm không dai, ăn rất ngon",
-      "Chinhsach": "Đổi trả trong 12h"
-    }
-  },
-  {
-    "id": 11,
-    "products_model": "SP13",
-    "products_name": "Lê Ki Ma hữu cơ",
+    "id": 8,
+    "products_model": "SP9",
+    "products_name": "Cà chua hữu cơ",
     "categories_name": "RauCu",
     "categories_type": "RauCu",
-    "description": "Ngọt bùi hương lan tỏa",
+    "description": "Chua ngọt hòa quyện",
+    "price": 100000,
+    "image": "assets/Image/product/product7.jpg",
+    "detail": {
+      "Tinhnang": "Cà chua hướng hữu cơ là giống cà chua cao cấp khác hẳn cà chua thông thường ở điểm quả cà chua to, chắc, ít hạt, cơm dày.  Cà chua cung cấp một lượng Vitamin A, C, K tuyệt vời. Những chất này có tác dụng giúp tăng cường thị lực, phòng bệnh quáng gà. Ngoài ra, cà chua hữu cơ còn là loại thực phẩm giúp kiểm soát lượng đường trong máu, có canxi hỗ trợ cho xương chắc khỏe.",
+      "Dactinh": "Cà chua hướng hữu cơ là giống cà chua cao cấp khác hẳn cà chua thông thường ở điểm quả cà chua to, chắc, ít hạt, cơm dày.  Cà chua cung cấp một lượng Vitamin A, C, K tuyệt vời. Những chất này có tác dụng giúp tăng cường thị lực, phòng bệnh quáng gà. Ngoài ra, cà chua hữu cơ còn là loại thực phẩm giúp kiểm soát lượng đường trong máu, có canxi hỗ trợ cho xương chắc khỏe.",
+      "Chinhsach": "Đổi trả trong 12h"
+    },
+    "link": "PD_CaChuaHuuCo.html"
+  },
+  {
+    "id": 9,
+    "products_model": "SP10",
+    "products_name": "Cải thìa hữu cơ",
+    "categories_name": "RauCu",
+    "categories_type": "RauCu",
+    "description": "Bổ sung vitamin",
     "price": 150000,
-    "image": "assets/Image/product/product11.jpg",
+    "image": "assets/Image/product/product8.jpg",
     "detail": {
-      "Tinhnang": "Được dùng để làm sinh tố chung với quả bơ và làm kem.",
-      "Dactinh": "Có hàm lượng cao vitamin B3, beta-caroten, sắt và chất xơ, tăng hồng cầu. giảm cholesterol và triglyceride, tăng lực tốt,v.v...[1] là những thành phần chống oxy hóa cực mạnh cho da và cần thiết cho hoạt động của cơ thể. Lê ki ma còn giúp tăng tỷ lệ hồng cầu trong máu, kích thích hoạt động của hệ thần kinh, chống trầm cảm, giảm cholesterol và triglyceride trong máu, ngăn ngừa các bệnh tim mạch và béo phì, hạn chế các cơn nhồi máu cơ tim, tăng hiệu quả của hệ miễn nhiễm và tăng lực rất tốt.",
+      "Tinhnang": "Một chén cải thìa sống (tương đương khoảng 170g) chứa 9 calo, 1g protein, 1,5g carbohydrate, 0,7g chất xơ, không có cholesterol và chỉ 0,1g chất béo không có khả năng sản sinh cholesterol. Với hàm lượng dinh dưỡng lành mạnh như trên, cải thìa không chỉ ngon mà còn rất có lợi cho sức khỏe.",
+      "Dactinh:": "Cải thìa rất giàu vitamin C. Hoạt động sản sinh collagen - hệ thống nâng đỡ cấu trúc da - luôn phải được hỗ trợ từ vitamin C. Ngoài ra, loại vitamin thiết yếu này còn là một chất chống oxy hóa mạnh mẽ giúp ngăn ngừa những hư tổn trên da do tia tử ngoại, không khí ô nhiễm và khói thuốc gây ra. Vitamin C còn hỗ trợ cho collagen phát huy sức mạnh “chăm sóc sắc đẹp” cho da bằng cách đánh bay những nếp nhăn do lão hóa, cải thiện cấu trúc của toàn bộ bề mặt da.",
       "Chinhsach": "Đổi trả trong 12h"
-    }
-  },
-  {
-    "id": 12,
-    "products_model": "SP14",
-    "products_name": "Xoài cát Bảo Lộc hữu cơ",
-    "categories_name": "RauCu",
-    "categories_type": "RauCu",
-    "description": "Giòn ngọt tươi xanh",
-    "price": 140000,
-    "image": "assets/Image/product/product12.jpg",
-    "detail": {
-      "Tinhnang": "Ăn xoài sẽ giúp ngăn ngừa bệnh tim mạch, cải thiện trí nhớ, làm đẹp da, hỗ trợ tiêu hóa. Xoài được sử dụng như một thực phẩm không thể thiếu trong các món ngọt, món tráng miệng.",
-      "Dactinh": "Xoài cát Hòa Lộc là loại xoài nổi tiếng nhất Việt Nam bởi kích thước xoài lớn, hạt nhỏ, ít xơ, thịt chắc, ngọt lịm đậm đà. Vỏ xoài sáng bóng, căng tròn, vàng tươi khi xoài chín. Khi ăn không thể lẫn được với bất kì loại xoài nào khác bởi mùi thơm và vị ngon khó cưỡng.  ",
-      "Chinhsach": "Đổi trả trong 12h"
-    }
-  },
-  {
-    "id": 13,
-    "products_model": "SP15",
-    "products_name": "Táo xanh hữu cơ",
-    "categories_name": "RauCu",
-    "categories_type": "RauCu",
-    "description": "Ngọt thanh mọng nước",
-    "price": 230000,
-    "image": "assets/Image/product/product13.jpg",
-    "detail": {
-      "Tinhnang": "Là dòng táo được trồng hữu cơ, thịt táo chứa nhiều chất pectin, một chất xơ hòa tan làm giảm cholesterol và chất chống oxy hóa, ngăn ngừa bệnh tim. ",
-      "Dactinh": "Lượng magiê và kali trong táo Organic giúp điều chỉnh áp suất máu và giữ cho nhịp đập tim ở mức ổn định, chất chống ôxy hoá tự nhiên giúp bảo vệ thành mạch máu",
-      "Chinhsach": "Đổi trả trong 12h"
-    }
+    },
+    "link": "PD_CaiThiaHuuCo.html"
   }
 ]
